@@ -1,0 +1,48 @@
+{
+  "title": "Header Large Properties",
+  "tabs": {
+    "tabMain": {
+      "variant": {
+        "label": "Variant",
+        "type": "SELECT_FIELD",
+        "options": {
+          "red": "Red",
+          "gold": "Gold",
+          "silver": "Silver"
+        },
+        "default": "red"
+      },
+      "logo": {
+        "label": "Logo",
+        "type": "SELECT_FIELD",
+        "options": {
+          "none": "None",
+          "elevate-logo": "Elevate",
+          "elevate-gold-logo": "Gold",
+          "elevate-silver-logo": "Silver"
+        },
+        "default": "none"
+      },
+      "heading": { 
+        "label": "Heading",
+        "validationPattern":".{0,20}",
+        "type": "TEXT_FIELD"
+      },
+      "subheading": { 
+        "label": "Subheading",
+        "rows":3,
+        "validationPattern":".{0,84}",
+        "type": "TEXT_FIELD"
+      },
+      "buttonLabel": { 
+        "label": "Button Label",
+        "type": "TEXT_FIELD"
+      },
+      "buttonLink": { 
+        "label": "Button Link",
+        "type": "TEXT_FIELD",
+        "default": "http://"
+      }
+    }
+  }
+}

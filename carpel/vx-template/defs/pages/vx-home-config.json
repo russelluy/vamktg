@@ -1,0 +1,46 @@
+{
+  "title": "[VX] Home Config",
+  "extends": "/modules/standard-templating-kit/templates/pages/stkArticle",
+  "category": "home",
+  "dialog": "vxPageProperties",
+  "areas": { 
+
+    "travelerAdvisory": {
+      "type": "single",
+      "components": [
+        "vxTravelerAdvisoryMsg"
+      ]
+    },
+      
+    "airports": {
+      "type": "list",
+      "components": [
+        "vxAirportEntry"
+      ]
+    },
+      
+    "airportMapping": {
+      "type": "list",
+      "components": [
+        "vxAirportMappingEntry"
+      ]
+    },
+      
+    "noFlyDates": {
+      "type": "list",
+      "components": [
+        "vxNoFlyDatesEntry"
+      ]
+    },
+      
+    "seasonalAvailability": {
+      "type": "list",
+      "components": [
+        "vxSeasonalAvailabilityEntry"
+      ]
+    }
+
+
+
+  }
+}

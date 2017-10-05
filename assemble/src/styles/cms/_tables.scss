@@ -1,0 +1,109 @@
+//roger// send those variables to _variable.scss OR _components.scss
+
+// @variables
+//
+
+//$include-html-table-classes: $include-html-classes !default;
+
+// These control the background color for the table and even rows
+$table-bg: #fff !default;
+$table-even-row-bg: #fff !default;
+
+// These control the table cell border style
+$table-border-style: solid !default;
+$table-border-size: 1px !default;
+$table-border-color: $light-grey !default;
+
+// These control the table head styles
+$table-head-bg: #fff !default;
+//$table-head-font-size: rem-calc(14) !default;
+$table-head-font-color: #000 !default;
+$table-head-font-weight: normal !default;
+$table-head-padding: rem-calc(8 10 10) !default;
+$table-head-text-trasform: uppercase !default;
+
+// These control the row padding and font styles
+$table-row-padding: rem-calc(9 10) !default;
+//$table-row-font-size: rem-calc(14) !default;
+$table-row-font-color: #000 !default;
+$table-line-height: rem-calc(18) !default;
+
+// These are for controlling the display and margin of tables
+$table-display: table-cell !default;
+$table-margin-bottom: rem-calc(20) !default;
+
+// We use these to control text direction settings
+$default-float: left !default;
+
+//
+// @mixins
+//
+
+@mixin table {
+
+  //background: $table-bg;
+  //margin-bottom: $table-margin-bottom;
+  //border: $table-border-style $table-border-size $table-border-color;
+  margin: 0 auto;
+  border-spacing:0px;
+  width: 100%;
+
+  thead,
+  tfoot {
+    background: $table-head-bg;
+    text-transform: $table-head-text-trasform;
+
+    tr {
+      th,
+      td {
+        //padding: $table-head-padding;
+        //font-size: $table-head-font-size;
+        font-weight: $table-head-font-weight;
+        color: $table-head-font-color;
+        text-align: $default-float;
+
+      }
+    }
+  }
+
+  thead {
+
+    tr {
+      th {
+        @include gotham-medium;
+        @include font-size(1.4);
+        @include line-height(2.2);
+        border-bottom: $table-border-style 3px $table-border-color;
+      }
+    }
+  }
+
+  tr {
+    th,
+    td {
+      padding: $table-row-padding;
+      color: $table-row-font-color;
+      border-bottom: $table-border-style $table-border-size $table-border-color;
+      @include gotham-book;
+      @include font-size(1.3);
+      @include line-height(2.2);
+      height:50px;
+      vertical-align: middle;
+    }
+
+    &.even,
+    &.alt,
+    &:nth-of-type(even) { background: $table-even-row-bg; }
+  }
+
+  thead tr th,
+  tfoot tr th,
+  tbody tr td,
+  tr td,
+  tfoot tr td { display: $table-display; line-height: $table-line-height; }
+
+  a{
+    border-bottom: 1px solid $medium-grey;
+  }
+}
+

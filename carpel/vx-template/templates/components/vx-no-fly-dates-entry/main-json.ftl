@@ -1,0 +1,1 @@
+	"${content.code_from!}_${content.code_to!}": [<#assign first="true"><#list content.weekDays as week><#if first="false">,</#if>"${week!}"<#assign first="false"></#list><#if first="true">"None"</#if>]<#if (content?parent?children?last.path != content.@path)>,</#if>

@@ -1,0 +1,136 @@
+/* ==========================================================================
+   COMPONENT - HeaderStacked
+   ========================================================================== */
+.header-stacked{
+	.container{
+		@include clearfix;
+	}
+	.col{
+		@include header;
+		height: 319px;
+			a{
+				height: 40px;
+				color: $white;
+
+				&:hover{
+
+					border-color: $white !important;
+				}
+				&:active{
+
+					color: $black !important;
+					border: none !important;
+					background-color: $white !important;
+					background-image: none !important;
+				}
+			}
+	}
+	.heading{
+		@include gotham-thin;
+		@include font-size(6);
+		@include line-height(6);
+
+		color: $white;
+		margin: 0 auto 15px auto;
+		margin-bottom: 8px;
+	}
+	.subheading{
+		@include gotham-light;
+		@include font-size(1.8);
+		@include line-height(3.4);
+		font-weight: 200;
+		color: $white;
+		margin: 0 auto 20px auto;
+				a,
+		a:hover{
+			background: initial;
+			border: initial;
+			color: initial;
+			display: initial;
+			font: initial;
+			height: initial;
+			letter-spacing: initial;
+			line-height: initial;
+			text-transform: initial;
+			visibility: initial;
+			width: initial;
+			word-spacing: initial;
+			z-index: initial;
+			text-align: initial;
+			text-decoration: underline;
+			text-transform: initial;
+			cursor: initial;
+			padding: initial;
+			max-width: initial;
+			min-width: initial;
+			margin: initial;
+			@include gotham-light;
+			@include font-size(1.8);
+			@include line-height(3.4);
+			font-weight: 200;
+			color: $white;
+		}
+	}
+	.comp-bg-gold a {
+		border: 1px solid #efd6ac !important;
+	}
+	.comp-bg-silver a {
+		border: 1px solid #e4e4e4 !important;
+	}
+
+  	@include at-medium {
+    	$gutter-width: 0px;
+    	$grid-padding: 0px;
+
+    	@include container;
+
+    	.col{
+			height: 260px;
+		}
+    	.first{
+			@include span-columns(6, 12);
+		}
+		.second{
+			@include span-columns(6 omega, 12);
+		}
+		.heading{
+			@include font-size(5);
+			@include line-height(5);
+			padding-left: 0px !important;
+			padding-right: 0px !important;
+		}
+		.subheading{
+			@include font-size(1.6);
+			@include line-height(1.6);
+		}
+ 	}
+	@include at-large {
+
+		$gutter-width: 0px;
+    	$grid-padding: 0px;
+
+		@include container;
+
+		.col{
+			height: 320px;
+		}
+		.heading{
+			@include font-size(10);
+			@include line-height(10);
+			@include letter-spacing (-300);
+			margin-bottom: 8px;		
+		}
+		.subheading{
+			@include font-size(2.6);
+			@include line-height(3.4);
+			@include pad(3,3);
+			text-transform: none;
+		}
+	}
+	@include at-breakpoint(1230px) {
+ 		.heading{
+			@include font-size(12);
+			@include line-height(11);
+		}
+	}
+}

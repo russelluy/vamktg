@@ -1,0 +1,34 @@
+{
+  "title": "Text Body Properties",
+  "tabs": {
+    "tabMain": {
+      "variant": {
+        "label": "Variant",
+        "type": "SELECT_FIELD",
+        "options": {
+          "red": "Red",
+          "purple": "Purple",
+          "blue": "Blue"
+        },
+        "default": "red"
+      },
+      "text": {
+        "label": "Text",
+        "type": "RICH_TEXT_FIELD",
+
+        "fonts":"Span;Header;Paragraph",
+        "old_styles":"ABC,DEF,QWE,ZXC",
+        "old_colors":"7B4397,DC232E,6FC3E5,000000,FFFFFF",
+        "old_fonts": "Gotham 1r;Gotham 3r;Gotham 5r;Gotham A;Gotham B;Arial;sans-serif",
+        "old_fontSizes":"0.8rem;1rem;1.8rem;2rem;2.8rem;3rem",
+
+        "images":"true",
+        "lists":"true",
+        "alignment":"true",
+        "tables":"true",
+        "source":"true"
+
+      }
+    }
+  }
+}

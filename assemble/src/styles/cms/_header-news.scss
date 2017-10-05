@@ -1,0 +1,92 @@
+/* ==========================================================================
+   COMPONENT - HeaderNews
+   ========================================================================== */
+.header-news{
+	@include component;
+
+	padding-top: 60px;
+	padding-bottom: 0px;
+	
+	.content {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
+	.heading{
+		@include gotham-light;
+		@include font-size(3.2);
+		@include line-height(3.8);
+		letter-spacing: -0.05rem;
+		color: $purple;
+		text-transform: none;
+		text-align: left;
+	}
+	.subheading{
+		@include gotham-light;
+		@include font-size(2);
+		@include line-height(2.8);
+		letter-spacing: -0.02rem;
+		text-align: left;
+		margin-top: 17px;
+				a,
+		a:hover{
+			background: initial;
+			border: initial;
+			color: initial;
+			display: initial;
+			font: initial;
+			height: initial;
+			letter-spacing: initial;
+			line-height: initial;
+			text-transform: initial;
+			visibility: initial;
+			width: initial;
+			word-spacing: initial;
+			z-index: initial;
+			text-align: initial;
+			text-decoration: underline;
+			text-transform: initial;
+			cursor: initial;
+			padding: initial;
+			max-width: initial;
+			min-width: initial;
+			margin: initial;
+			@include gotham-medium;
+			@include font-size (1.2);
+			@include line-height (1.8);
+		}
+	}
+	.header-news-date{
+		@include gotham-light;
+		@include font-size(1.1);
+		@include line-height(2.4);
+		color: $medium-grey;
+		margin-top: 17px;
+	}
+	@include at-medium {
+		.content {
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+    	.heading{
+			@include font-size(3.2);
+			@include line-height(3.8);
+			letter-spacing: -0.05rem;
+		}
+		.subheading{
+			@include font-size(2);
+			@include line-height(2.8);
+			letter-spacing: -0.02rem;
+		}	
+    	.wrap{
+    		.content{
+				@include pad(1, 1, 12);
+			}		
+		}	
+ 	}
+	@include at-large {
+	  	.content{
+	  		@include pad(2, 2, 12);
+	  	}
+	}
+}

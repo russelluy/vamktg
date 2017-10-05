@@ -1,0 +1,35 @@
+{
+  "name": "angular-bindonce",
+  "main": "bindonce.js",
+  "description": "Zero watchers binding directives for AngularJS",
+  "homepage": "https://github.com/Pasvaz/bindonce",
+  "author": "Pasquale Vazzana <pasqualevazzana@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pasvaz/bindonce.git"
+  },
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {},
+  "keywords": [
+    "angularjs",
+    "angular",
+    "directive",
+    "binding",
+    "watcher",
+    "bindonce"
+  ],
+  "_release": "75fb7d6328",
+  "_resolution": {
+    "type": "branch",
+    "branch": "rebind-debug",
+    "commit": "75fb7d63288186543517226533f1193d186a31d3"
+  },
+  "_source": "git://github.com/oliverdore-work/bindonce.git",
+  "_target": "rebind-debug",
+  "_originalSource": "git://github.com/oliverdore-work/bindonce.git"
+}

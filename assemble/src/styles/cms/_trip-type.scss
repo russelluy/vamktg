@@ -1,0 +1,44 @@
+.trip-type {
+  @include reset-list;
+  border-bottom: 1px solid #d6d5d4;
+  display: table;
+  margin: 0 auto;
+  padding: 30px 0 10px;
+  text-align: center;
+  white-space: nowrap;
+
+  > li {
+    color: #000;
+    display: table-cell;
+    @include gotham-medium;
+    @include font-size(1.2);
+    line-height: 16px;
+    padding: 0 0 0 12px;
+    text-transform: none;
+
+    &:first-child {
+      padding-left: 0;
+    }
+    span {
+      display: inline-block;
+    }
+  }
+
+  @include at-medium {
+    display: block;
+    max-width: 352px;
+    padding: 30px 60px 10px;
+  }
+}
+
+.trip-type--calendar {
+  @extend .trip-type;
+  display: none;
+
+  @include at-medium {
+    display: table;
+    margin-bottom: -30px;
+    position: relative;
+    top: -55px;
+  }
+}

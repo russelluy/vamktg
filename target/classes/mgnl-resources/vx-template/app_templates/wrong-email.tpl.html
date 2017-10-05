@@ -1,0 +1,7 @@
+<form method="POST" data-vx-form-handler data-fields="wrongEmail.fields" data-submit-message="Send Email" data-submit-error-message="Fill Email To Proceed" data-on-success="wrongEmail.sendEmail()">
+    <div class="form-instruction">If <strong class="is-lowercase">{{wrongEmail.currentEmail}}</strong> is not correct, please fix it below to receive the details of your purchase in your email.</div>
+
+    <input data-vx-form-input data-validate="required,email" name="email" data-input-label="Email address" />
+
+    <button data-vx-form-submit />
+</form>

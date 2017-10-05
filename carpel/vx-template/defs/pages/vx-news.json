@@ -1,0 +1,15 @@
+{
+  "title": "[VX] News",
+  "extends": "/modules/standard-templating-kit/templates/pages/stkArticle",
+  "category": "content",
+  "dialog": "vxPageProperties",
+  "areas": {
+
+    "newsItem": {
+      "type": "single",
+      "components": [
+        "vxNewsItemMsg"
+      ]
+    }
+  }
+}

@@ -1,0 +1,1 @@
+[#if content.heading??]<a href="${content.link!}"><p class="${content.variant!}">${content.heading!}</p></a>[/#if]

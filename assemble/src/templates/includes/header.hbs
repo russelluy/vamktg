@@ -1,0 +1,74 @@
+<header data-vx-common-header role="banner" class="banner" ng-class="{'is-nav-expanded-active': header.dropdown.navActive, 'is-nav-elevate-active': header.elevateLogin}">
+    <h1 class="navbar__logo">
+        <a href="#" data-vx-common-prevent-default ng-click="header.resetFlow()">Virgin America</a>
+    </h1>
+    <nav class="navbar__main cf">
+        <ul class="navlist--main cf" ng-hide="header.breakpoint === 'small'">
+           <li>
+                <a href="/book-travel">Book</a>
+            </li>
+            <li>
+                <a href="/check-in">Check In</a>
+            </li>
+            <li>
+                <a href="/manage">Manage</a>
+            </li>
+        </ul>
+        <ul class="navlist--sub cf" ng-hide="header.breakpoint === 'small' || header.breakpoint === 'medium'">
+            <li>
+                <a href="/cms/travel-deals.html">Deals</a>
+            </li>
+            <li>
+                <a href="/cms/fly-with-us">Flying With Us</a>
+            </li>
+            <li>
+                <a href="/cms/fly-with-us/airport-destinations">Where We Fly</a>
+            </li>
+            <li>
+                <a href="/cms/fly-with-us/vx-fees">Fees</a>
+            </li>
+            <li>
+                <a href="/flight-status">Flight Status</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="navbar__right cf">
+        <div class="navbar__expand-nav">
+            <a href="#" data-vx-common-prevent-default class="expand-nav icon-nav-toggle" ng-click="header.toggleDropdown()">Nav</a>
+        </div>
+        <div class="navbar__elevate-nav" ng-switch="header.elevateLoggedIn">
+            <span class="elevate-nav--logged-out cf" ng-switch-when="false">
+                <span class="elevate-nav__title">Elevate</span>
+                <a href="/elevate" class="elevate-nav__link">Sign In</a>
+                <a href="/elevate/sign-up" class="elevate-nav__link" ng-show="header.breakpoint !== 'small'">Sign Up</a>
+            </span>
+            <a href="/elevate/landing" data-vx-common-prevent-default class="elevate-nav--logged-in" ng-switch-when="true">
+                <div class="navbar-avatar">
+                    <span class="icon-avatar-\{{header.memberAvatar}}-sm"></span>
+                </div>
+                <span>\{{header.elevateUser.firstName}} \{{header.elevateUser.lastName}}</span>
+                <span>\{{header.elevateUser.numOfPointsAvailable || '0' | number}} Points</span>
+            </a>
+        </div>
+    </div>
+
+    <nav class="nav-dropdown js-dropdown" ng-hide="!header.dropdown.navActive || header.breakpoint === 'large'">
+        <div class="nav-expanded">
+            <ul class="nav-expanded__list" ng-repeat="linkGroup in header.links[0]">
+                <li>
+                    <a href="/" ng-click="header.toggleDropdown()">Home</a>
+                </li>
+                <li bindonce ng-repeat="link in linkGroup">
+                    <a ng-href="\{{link.url}}" ng-click="header.toggleDropdown()" bo-text="link.name"></a>
+                </li>
+            </ul>
+            <ul class="nav-expanded__list--sub" bindonce ng-repeat="linkGroup in header.links[1]">
+                <li bindonce ng-repeat="link in linkGroup">
+                    <a ng-href="\{{link.url}}" ng-click="header.toggleDropdown()" bo-text="link.name"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--<div data-vx-common-saved-choices-bar></div>-->
+</header>

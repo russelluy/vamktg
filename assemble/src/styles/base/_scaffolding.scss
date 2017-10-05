@@ -1,0 +1,437 @@
+/* ==========================================================================
+   Base styles - Scaffolding
+   ========================================================================== */
+
+
+/* Reset the box-sizing
+   ========================================================================== */
+
+* {
+  @include box-sizing(border-box);
+}
+
+html {
+  font-size: 62.5%;
+  min-height: 100%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  width: 100%;
+}
+
+body {
+  background-color: $body-bg;
+  color: $text-color;
+  font-family: $font-family-base;
+  font-weight: 400;
+  font-style: normal;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  -webkit-overflow-scrolling: touch;
+  text-rendering: optimizeLegibility;
+  min-height: 100%;
+  @include single-transition (background-color, 500ms, ease-in-out);
+  overflow-x: hidden;
+  width: 100%;
+
+  &.is-modal-open, &.is-ui-blocked {
+    overflow: hidden !important;
+  }
+
+
+  &.is-yts-expanded {
+    overflow: hidden;
+  }
+
+  &.is-chrome-hidden {
+    &:after {
+      display: none;
+    }
+  }
+
+  // thick bottom border
+  &:after {
+    background: $purple;
+    content: '';
+    display: block;
+    height: 20px;
+    width: 100%;
+  }
+}
+
+.bg-dark {
+  background: $dark-bg;
+  color: $white;
+  -webkit-font-smoothing: antialiased;
+}
+
+.view {
+  min-width: 320px;
+  padding-top: 0;
+
+  .is-header-fixed & {
+    padding-top: 54px;
+  }
+
+  .is-double-header & {
+    padding-top: 54px;
+
+    @include at-large {
+      padding-top: 94px;
+    }
+  }
+
+  .is-status-bar-fixed & {
+    padding-top: 54px;
+
+    @include at-large {
+      padding-top: 90px;
+    }
+  }
+
+  .is-header-visible.is-status-bar-fixed & {
+    padding-top: 0;
+  }
+
+  .is-header-fixed.is-double-header & {
+    padding-top: 114px;
+
+    @include at-large {
+      padding-top: 154px;
+    }
+  }
+
+  .is-yts-visible.is-header-fixed & {
+    padding-top: 0;
+  }
+
+  .is-yts-visible.is-yts-fixed & {
+    padding-top: 54px;
+
+    @include at-large {
+      padding-top: 90px;
+    }
+  }
+
+  .is-header-visible.is-yts-visible.is-yts-fixed & {
+    padding-top: 54px;
+
+    @include at-medium {
+      padding-top: 114px;
+    }
+
+    @include at-large {
+      padding-top: 144px;
+    }
+  }
+}
+
+.view-header {
+  padding: 28px 0 36px;
+  text-align: center;
+
+  @include at-medium {
+    padding: 50px 0 32px;
+  }
+
+  @include at-large {
+    padding: 72px 0 36px;
+  }
+
+  > h1 {
+    @include gotham-light;
+    @include font-size(2.4);
+    line-height: 40px;
+    margin: 0;
+
+    @include at-medium {
+      @include font-size(3);
+      line-height: 44px;
+    }
+
+    @include at-large {
+      @include font-size(4);
+      line-height: 52px;
+    }
+  }
+
+  > h2 {
+    @include gotham-bold;
+    @include font-size(1.4);
+    line-height: 20px;
+    margin: 0;
+    text-transform: uppercase;
+
+    @include at-medium {
+      @include font-size(1.6);
+      line-height: 24px;
+    }
+
+    @include at-large {
+      @include font-size(2);
+      line-height: 32px;
+    }
+  }
+}
+
+.section {
+  border-top: 1px solid $border-grey;
+  padding: 40px 0;
+
+  @include at-medium {
+    padding: 48px 0;
+  }
+
+  @include at-large {
+    padding: 72px 0;
+  }
+
+  &:first-child {
+    border: 0;
+  }
+}
+
+.section--home {
+  background: $extra-light-grey;
+  //
+  padding: 0 0 40px;
+
+  @include at-large {
+    padding: 0 0 60px;
+  }
+
+  @include lt-ie9 {
+    border: 0;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  &.is-bottom-border {
+    border-bottom: 1px solid $border-grey;
+  }
+
+  > .wrap {
+    border-top: 1px solid $border-grey;
+    padding-top: 40px;
+
+    @include at-large {
+      padding-top: 60px;
+    }
+  }
+
+  &:first-child {
+    > .wrap {
+      border: 0;
+    }
+  }
+}
+
+/* Angular cloaking
+   ========================================================================== */
+
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+  display: none !important;
+}
+
+/* Links
+   ========================================================================== */
+
+a {
+  color: $link-color;
+  outline: none;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+
+  }
+
+  &:focus {
+    //@include tab-focus();
+    outline: none;
+  }
+}
+
+.link-underline {
+  text-decoration: underline;
+
+  .no-touch & {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/* Images
+   ========================================================================== */
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+
+/* Links
+   ========================================================================== */
+.checklist {
+  @include reset-list;
+  color: $black;
+  @include gotham-book;
+  @include font-size(1.2);
+  margin: 10px 0;
+
+  > li {
+    background-position: left center;
+    background-size: 14px;
+    line-height: 16px;
+    padding: 4px 0 4px 24px;
+    position: relative;
+  }
+}
+
+/* Clearfix
+   ========================================================================== */
+
+.cf {
+  @include clearfix();
+}
+
+
+/* Box gradient and animations
+   ========================================================================== */
+
+.animate-view-opacity {
+  opacity: 1;
+  @include transition(opacity 0.2s ease-in-out);
+
+  &.animate-enter {
+    &.ng-enter-active {
+      opacity: 0;
+    }
+  }
+
+  &.animate-leave {
+    &.ng-leave-active {
+      opacity: 0;
+    }
+  }
+
+  &.animate-enter-leave {
+    &.ng-leave-active,
+    &.ng-enter-active {
+      opacity: 0;
+    }
+  }
+}
+
+@-moz-keyframes gradient-fadeout
+{
+    0%   { opacity: 1; color: #fff; }
+    100% { opacity: 0; color: $purple-turbo; }
+}
+@-webkit-keyframes gradient-fadeout
+{
+    0%   { opacity: 1; color: #fff; }
+    100% { opacity: 0; color: $purple-turbo; }
+}
+@keyframes gradient-fadeout
+{
+    0%   { opacity: 1; color: #fff; }
+    100% { opacity: 0; color: $purple-turbo; }
+}
+
+@-webkit-keyframes whitetopurple
+{
+    0%   { color: #fff; }
+    100% { color: $purple-turbo; }
+}
+@-moz-keyframes whitetopurple
+{
+    0%   { color: #fff; }
+    100% { color: $purple-turbo; }
+}
+@keyframes whitetopurple
+{
+    0%   { color: #fff; }
+    100% { color: $purple-turbo; }
+}
+
+@-webkit-keyframes disabledtransforms {
+  0%   { -webkit-transform: translate3d(0,0,0); }
+  5%   { -webkit-transform: translate3d(-2px,0,0); }
+  15%  { -webkit-transform: translate3d(-6px,0,0); }
+  50%  { -webkit-transform: translate3d(6px,0,0); }
+  85%  { -webkit-transform: translate3d(-6px,0,0); }
+  95%  { -webkit-transform: translate3d(-2px,0,0); }
+  100% { -webkit-transform: translate3d(0,0,0); }
+}
+@-moz-keyframes disabledtransforms {
+  0%   { -moz-transform: translate3d(0,0,0); }
+  5%   { -moz-transform: translate3d(-2px,0,0); }
+  15%  { -moz-transform: translate3d(-6px,0,0); }
+  50%  { -moz-transform: translate3d(6px,0,0); }
+  85%  { -moz-transform: translate3d(-6px,0,0); }
+  95%  { -moz-transform: translate3d(-2px,0,0); }
+  100% { -moz-transform: translate3d(0,0,0); }
+}
+@keyframes disabledtransforms {
+  0%   { transform: translate3d(0,0,0); }
+  5%   { transform: translate3d(-2px,0,0); }
+  15%  { transform: translate3d(-6px,0,0); }
+  50%  { transform: translate3d(6px,0,0); }
+  85%  { transform: translate3d(-6px,0,0); }
+  95%  { transform: translate3d(-2px,0,0); }
+  100% { transform: translate3d(0,0,0); }
+}
+
+@-webkit-keyframes disablednotransforms {
+  0%   { left: 0px; }
+  15%  { left: -6px; }
+  50%  { left: 6px; }
+  85%  { left: -6px; }
+  100% { left: 0px; }
+}
+@-moz-keyframes disablednotransforms {
+  0%   { left: 0px; }
+  15%  { left: -6px; }
+  50%  { left: 6px; }
+  85%  { left: -6px; }
+  100% { left: 0px; }
+}
+@keyframes disablednotransforms {
+  0%   { left: 0px; }
+  15%  { left: -6px; }
+  50%  { left: 6px; }
+  85%  { left: -6px; }
+  100% { left: 0px; }
+}
+
+.box-gradient {
+  @include animation(1s, gradient-fadeout, 1, forwards);
+  @include background-image(linear-gradient(#641988, #a12dd9));
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}

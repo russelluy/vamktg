@@ -1,0 +1,12 @@
+{
+  "module": {
+    "name": "vx-template",
+    "src-path": "vx-template",
+    "pom-path": "../pom.xml",
+    "ui-path": "../assemble/dist",
+    "version-file-path": "vx-template/templates/pages/vx-version/main-json.ftl",
+    "base-version-file-path": "vx-template/templates/pages/vx-version/base_main-json.ftl",
+    "mgnl-resources-path": "../src/main/resources",
+    "mgnl-fast-deploy": "~/magnolia-5.1.1/apache-tomcat-7.0.40/webapps/magnoliaAuthor"
+  }
+}

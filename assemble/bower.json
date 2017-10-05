@@ -1,0 +1,32 @@
+{
+  "name": "virgin-america-cms",
+  "version": "0.1.0-SNAPSHOT",
+  "dependencies": {
+    "angular": "~1.2.12",
+    "angular-resource": "~1.2.12",
+    "jquery": "~1.10.2",
+    "modernizr": "~2.6.2",
+    "momentjs": "~2.4.0",
+    "almond": "~0.2.6",
+    "tv4": "~1.0.11",
+    "jquery-tiny-pubsub": "git://github.com/cowboy/jquery-tiny-pubsub/",
+    "jquery-custom-select": "git://github.com/workco/jquery.customSelect/",
+    "css3-multi-column": "git://github.com/BetleyWhitehorne/CSS3MultiColumn.git",
+    "angular-bindonce": "git://github.com/oliverdore-work/bindonce.git#rebind-debug",
+    "matchMedia": "git://github.com/paulirish/matchMedia.js"
+  },
+  "devDependencies": {
+    "requirejs": "~2.1.9"
+  },
+  "exportsOverride": {
+    "modernizr": {
+      "./": "modernizr.js"
+    },
+    "jquery-tiny-pubsub": {
+      "js": "dist/ba-tiny-pubsub.js"
+    },
+    "css3-multi-column": {
+      "./": "css3-multi-column.min.js"
+    }
+  }
+}

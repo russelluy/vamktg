@@ -1,0 +1,759 @@
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  color: $medium-grey;
+  @include gotham-medium;
+  @include font-size(1);
+  margin-bottom: 2px;
+  text-transform: uppercase;
+}
+
+/**
+ * <div class="form__input">
+ *   <label class="label">
+ *     Email address or Gift certificate #
+ *     <input type="text" class="input-text" placeholder="Placeholder text..." />
+ *   </label>
+ * </div>
+ */
+.form__input {
+  padding-bottom: 20px;
+}
+
+.form__input--tight {
+  padding-bottom: 15px;
+}
+
+.form__input--border-spacer {
+  border-bottom: 1px solid $border-grey;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+
+  .bg-dark & {
+    border-color: $check-in-border-grey;
+  }
+}
+
+.form__input--security {
+  padding-bottom: 20px;
+
+  // don't apply padding on input validation
+  .input-text {
+    padding-right: 12px !important;
+  }
+
+  // don't display validation message
+  .input-message-validate {
+    display: none;
+  }
+
+  .input-extra {
+    color: $medium-grey;
+    float: left;
+
+    a {
+      color: $medium-grey;
+      text-decoration: underline;
+
+      .no-touch & {
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.label {
+  color: $extra-dark-grey;
+  display: block;
+  @include gotham-medium;
+  @include font-size(1.2);
+  line-height: 21px;
+
+  .bg-dark & {
+    color: $light-grey;
+  }
+}
+
+/**
+ * Use for input[type="text"], input[type="email"], input[type="password"]
+ * e.g. <input type="email" class="input-text" />
+ */
+.input-text {
+  background: transparent;
+  border: 1px solid $light-grey;
+  @include single-box-shadow($extra-light-grey, 2px, 2px, 0, 0, true);
+  color: $black;
+  display: block;
+  @include arial;
+  @include font-size(1.4);
+  height: 36px;
+  padding: 0 12px;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+
+  @include single-transition (border-color, 100ms, ease-in);
+
+  &::-webkit-input-placeholder { color: $dark-grey; }
+  &:-moz-placeholder { color: $dark-grey; }
+  &::-moz-placeholder { color: $dark-grey; }
+  &:-ms-input-placeholder { color: $dark-grey; }
+
+  &.is-valid {
+    border-color: $valid-green !important;
+  }
+
+  &.is-invalid {
+    border-color: $invalid-red !important;
+  }
+
+  &.is-disabled {
+    line-height: 34px;
+    opacity: 0.5;
+  }
+
+  .no-touch & {
+    &:hover {
+      border-color: $medium-grey;
+    }
+
+    &.is-disabled:hover {
+      border-color: $light-grey;
+    }
+  }
+
+  &:focus {
+    border-color: $purple-turbo !important;
+    outline: none;
+  }
+
+  @include lt-ie9 {
+    padding: 10px 12px;
+  }
+
+  .form__input--security & {
+    float: left;
+    margin-right: 12px;
+    width: 90px;
+  }
+
+  .bg-dark & {
+    border: 1px solid $check-in-border-grey;
+    @include single-box-shadow($black, 2px, 2px, 0, 0, true);
+    color: $light-grey;
+
+    &::-webkit-input-placeholder { color: $light-grey; }
+    &:-moz-placeholder { color: $light-grey; }
+    &::-moz-placeholder { color: $light-grey; }
+    &:-ms-input-placeholder { color: $light-grey; }
+  }
+}
+
+.form__dob {
+  @include single-transition (opacity, 250ms, ease-out);
+
+  &.is-disabled {
+    opacity: .4;
+  }
+}
+
+/**
+ * form-input.tpl.html
+ */
+.input-wrap {
+  position: relative;
+  background: $white;
+
+  .bg-dark & {
+    background: transparent;
+  }
+}
+
+.input-message {
+  @include clearfix;
+  display: block;
+  line-height: 36px;
+  padding: 0 12px;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.input-message-validate {
+  @extend .input-message;
+
+  color: $valid-green;
+  @include gotham-book;
+  @include font-size(0.9);
+  text-transform: uppercase;
+
+  &.is-invalid {
+    color: $invalid-red;
+  }
+}
+
+.input-text-optional {
+  background: $off-white;
+}
+
+.input-message-optional {
+  color: $medium-grey;
+  @include arial;
+  @include font-size(1.1);
+  text-transform: none;
+  z-index: 2;
+
+  &.is-filled {
+    display: none;
+  }
+
+  &.is-valid {
+    color: $valid-green;
+    @include gotham-book;
+    @include font-size(0.9);
+    text-transform: uppercase;
+  }
+}
+
+/**
+ * Radio buttons
+ */
+.form__radio-list {
+  @include reset-list;
+
+  > li {
+    line-height: 36px;
+  }
+}
+
+.input-radio {
+  > label {
+    cursor: pointer;
+    display: inline-block;
+    line-height: 16px;
+    position: relative;
+    padding-left: 20px;
+
+    @include lt-ie9 {
+      padding-left: 16px;
+    }
+
+    &:before {
+      border: 2px solid #dad9d8;
+      border-radius: 14px;
+      content: '';
+      display: block;
+      height: 12px;
+      left: 0;
+      position: absolute;
+      width: 12px;
+      top: 0;
+
+      @include lt-ie9 {
+        display: none;
+      }
+    }
+
+    &:after {
+      background: $purple;
+      border-radius: 10px;
+      content: '';
+      display: none;
+      height: 10px;
+      left: 3px;
+      position: absolute;
+      top: 3px;
+      width: 10px;
+
+      @include lt-ie9 {
+        display: none;
+      }
+    }
+
+    > input[type="radio"] {
+      display: none;
+
+      @include lt-ie9 {
+        display: inline-block;
+        outline: none;
+        position: absolute;
+        left: 0;
+        top: 2px;
+      }
+    }
+  }
+
+  &:hover {
+    > label {
+      &:before {
+        border-color: $purple;
+      }
+      &:active {
+        &:before {
+          background: $purple;
+          border-color: $purple;
+        }
+      }
+    }
+  }
+
+  &.is-selected {
+    label {
+      &:after {
+        display: block;
+
+        @include lt-ie9 {
+          display: none;
+        }
+      }
+      &:before {
+        border-color: $border-grey;
+      }
+    }
+  }
+}
+
+.input-radio--inline {
+  display: inline-block;
+}
+
+
+/**
+ * Select boxes
+ */
+.select-inline {
+  float: left;
+  margin-right: 7px;
+
+  &.is-last-child {
+    margin: 0;
+  }
+}
+
+.select {
+  border: 1px solid $light-grey;
+  color: $dark-grey;
+  display: block;
+  @include arial;
+  @include font-size(1.4);
+  height: 36px;
+  padding: 0 12px;
+  width: 100%;
+
+  @include single-transition(border-color, 150ms, ease-in-out);
+
+  .no-touch & {
+    &:hover {
+      border-color: $medium-grey;
+    }
+  }
+
+  .bg-dark & {
+    border-color: $check-in-border-grey;
+    color: $light-grey;
+  }
+
+  .is-valid & {
+    border-color: $valid-green !important;
+  }
+
+  .is-invalid & {
+    border-color: $invalid-red !important;
+  }
+
+  &:focus, &.custom-selectFocus {
+    border-color: $purple-turbo !important;
+    outline: none;
+  }
+
+  @include lt-ie9 {
+    padding: 10px 12px;
+  }
+
+  &.hasCustomSelect {
+    z-index: 1;
+  }
+
+  &.custom-select {
+    display: block;
+    height: 36px;
+    position: relative;
+
+    &:after {
+      @include background-size(contain);
+      content: '';
+      height: 6px;
+      margin-top: -3px;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      width: 9px;
+    }
+
+    > span {
+      line-height: 34px;
+    }
+  }
+}
+
+.select--block {
+  max-width: 284px;
+  width: 100% !important;
+
+  &.custom-select {
+    max-width: 284px;
+    width: 100% !important;
+
+    > .custom-selectInner {
+      width: 100% !important;
+    }
+  }
+}
+
+.select--optional {
+  background: $off-white;
+}
+
+.select--bold {
+  font-weight: bold;
+}
+
+.select--month {
+  width: 147px;
+}
+
+.select--year {
+  width: 79px;
+}
+
+.select--date-month {
+  width: 74px;
+}
+
+.select--date-day {
+  width: 60px;
+}
+
+.select--date-year {
+  width: 65px;
+}
+
+.select--avatar {
+  line-height: 32px;
+  padding: 0;
+  position: relative;
+  width: 124px;
+
+  &.is-valid {
+    border-color: $valid-green;
+  }
+
+  > div {
+    display: block;
+    padding-left: 42px;
+
+    &:after {
+      @include background-size(contain);
+      content: '';
+      height: 6px;
+      margin-top: -3px;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      width: 9px;
+    }
+
+    > span {
+      display: block;
+      height: 30px;
+      left: 2px;
+      position: absolute;
+      top: 2px;
+      width: 30px;
+    }
+  }
+}
+
+.avatar-list {
+  @include reset-list;
+  background: #fff;
+  border: 1px solid $purple-turbo;
+  padding: 5px;
+  position: absolute;
+  right: -1px;
+  top: 34px;
+  width: 222px;
+  z-index: 10;
+
+  .select--avatar--left & {
+    left: -1px;
+  }
+
+  > li {
+    float: left;
+    width: 70px;
+
+    > span {
+      border: 5px solid transparent;
+      border-radius: 35px;
+      display: block;
+      height: 70px;
+      @include single-transition(border-color, 150ms, ease-in-out);
+
+      .no-touch &:hover {
+        border: 5px solid $extra-light-grey;
+      }
+    }
+  }
+}
+
+
+/**
+ * Textarea
+ */
+
+.input-textarea {
+  border: 1px solid $light-grey;
+  @include single-box-shadow($extra-light-grey, 2px, 2px, 0, 0, true);
+  color: $dark-grey;
+  display: block;
+  @include arial;
+  @include font-size(1.4);
+  height: 106px;
+  line-height: 18px;
+  padding: 8px 12px;
+  resize: none;
+  width: 100%;
+
+  .no-touch & {
+    &:hover {
+      border-color: $medium-grey;
+    }
+  }
+
+  &.is-valid {
+    border-color: $valid-green !important;
+  }
+
+  &.is-invalid {
+    border-color: $invalid-red !important;
+  }
+
+  &:focus {
+    border-color: $purple-turbo !important;
+    outline: none;
+  }
+}
+
+
+/**
+ * Buttons
+ */
+
+.form__btn--tight {
+  padding-bottom: 15px;
+}
+
+/**
+ * Misc
+ */
+.smallprint {
+  @include arial;
+  @include font-size(1.1);
+  line-height: 12px;
+}
+
+.checkbox--remember {
+  @include gotham-book;
+  line-height: 14px;
+
+  > label {
+    color: $dark-grey;
+    @include font-size(1.2);
+  }
+
+  > a {
+    color: $dark-grey;
+    @include font-size(1.1);
+    float: right;
+    text-decoration: underline;
+
+    .no-touch & {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+/*.toggle {
+  @include reset-list;
+
+  > li {
+    float: left;
+    width: 50%;
+
+    > a {
+      background: #fff;
+      border: 1px solid $border-grey;
+      color: #000;
+      display: block;
+      @include gotham-bold;
+      @include font-size(1.1);
+      height: 24px;
+      line-height: 22px;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      &:hover {
+
+      }
+    }
+
+    &.is-active {
+      > a {
+        background: $purple;
+        border: 1px solid $purple;
+        color: #fff;
+        cursor: default;
+        pointer-events: none;
+      }
+    }
+  }
+}*/
+
+.card-list {
+  @include reset-list;
+  height: 18px;
+  margin: -10px 0 20px;
+
+  > li {
+    background-image: url('/images/credit-cards-sprite-2x.jpg');
+    background-repeat: no-repeat;
+    background-size: 198px;
+    float: left;
+    overflow: hidden;
+    margin-right: 10px;
+    text-indent: -9999px;
+  }
+}
+
+.card-list__amex {
+  background-position: 0 0;
+  width: 30px;
+
+  &.is-inactive {
+    background-position: 0 -18px;
+  }
+}
+
+.card-list__discover {
+  background-position: -40px 0;
+  width: 30px;
+
+  &.is-inactive {
+    background-position: -40px -18px;
+  }
+}
+
+.card-list__mastercard {
+  background-position: -80px 0;
+  width: 27px;
+
+  &.is-inactive {
+    background-position: -80px -18px;
+  }
+}
+
+.card-list__visa {
+  background-position: -116px 0;
+  width: 34px;
+
+  &.is-inactive {
+    background-position: -116px -18px;
+  }
+}
+
+.card-list__uatp {
+  background-position: -160px 0;
+  width: 38px;
+
+  &.is-inactive {
+    background-position: -160px -18px;
+  }
+}
+
+.input-wrap--date-inline {
+  position: relative;
+
+  > .label {
+    line-height: 36px;
+    margin-right: 10px;
+  }
+}
+
+.date-inline {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.form-instruction {
+  color: $dark-grey;
+  @include gotham-book;
+  @include font-size(1.3);
+  line-height: 18px;
+  padding-bottom: 16px;
+}
+
+/* Elevate forms
+   ========================================================================== */
+.input-text-elevate {
+
+  &:focus {
+    border-color: $red !important;
+    outline: none;
+  }
+}
+
+.select-elevate {
+
+  &:focus, &.custom-selectFocus {
+    border-color: $red !important;
+    outline: none;
+  }
+}
+
+.input-radio-elevate {
+
+  > label {
+    &:after {
+      background: $red-bright;
+    }
+
+    &:hover {
+      &:before {
+        border-color: $red-bright;
+      }
+
+      &:active {
+        &:before {
+          background: $red-bright;
+          border-color: $red-bright;
+        }
+      }
+    }
+  }
+}

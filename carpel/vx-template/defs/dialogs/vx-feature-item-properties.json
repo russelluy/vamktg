@@ -1,0 +1,36 @@
+{
+  "title": "Feature",
+  
+  "tabs": {
+    "entry": {
+      "text": { 
+        "label": "Text",
+        "type": "RICH_TEXT_FIELD"
+      },
+      "link": { 
+        "label": "Link",
+        "type": "TEXT_FIELD"
+      },
+      "linkText": { 
+        "label": "Link Text",
+        "type": "TEXT_FIELD"
+      },
+      "image": { 
+	  "targetWorkspace": "dam",
+	  "appName": "assets",
+	  "identifierToPathConverter": "info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter",
+	  "contentPreviewDefinition": "",
+	  "label": "Image",
+	  "type": "IMAGE"
+      },
+      "imageRollover": { 
+	  "targetWorkspace": "dam",
+	  "appName": "assets",
+	  "identifierToPathConverter": "info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter",
+	  "contentPreviewDefinition": "",
+	  "label": "Image Rollover",
+	  "type": "IMAGE"
+      }
+    }
+  }
+}

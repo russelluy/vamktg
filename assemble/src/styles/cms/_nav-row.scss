@@ -1,0 +1,149 @@
+/* ==========================================================================
+	 COMPONENT - NavRow
+	 ========================================================================== */
+.nav-row {
+	border-bottom: 1px solid $border-grey;
+	position: relative;
+
+	&.comp-bg-red {
+    background: $elevate-red;
+    border-bottom: 1px solid #991b25;
+    border-top: 1px solid #991b25;
+    color: $white;
+  }
+
+  &.comp-bg-silver {
+    background: $elevate-silver;
+    border-bottom: 1px solid $middling-grey;
+  }
+
+  &.comp-bg-gold {
+    background: $elevate-gold;
+    border-bottom: 1px solid #b28a46;
+    color: $white;
+  }
+
+  .is-elevate-member-red & {
+    background: $elevate-red;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    color: $white;
+  }
+
+  .is-elevate-member-silver & {
+    background: $elevate-silver;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+  }
+
+  .is-elevate-member-gold & {
+    background: $elevate-gold;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    color: $white;
+  }
+}
+
+// mobile
+.nav-row-container--mobile {
+	height: 54px;
+	min-width: 320px;
+	padding: 0 18px;
+
+	@include at-medium {
+		display: none;
+	}
+}
+
+.nav-row-selectbox {
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+	background-position: right center;
+	border: none;
+	-webkit-border-radius: 0px;
+ 	-moz-border-radius: 0px;
+  border-radius: 0px;
+	box-shadow: none;
+	height: 54px;
+  width: 100%;
+
+  &:focus {
+  	outline: none;
+  }
+
+  .customSelectInner {
+  	@include gotham-medium;
+		@include font-size(1.2);
+		line-height: 54px;
+  }
+}
+
+// tablet, desktop
+.nav-row-container{
+	display: none;
+	max-height: 54px;
+	overflow: hidden;
+	padding: 0 22px;
+
+	@include at-medium {
+		display: block;
+	}
+
+	&.is-expanded {
+		max-height: 1000px;
+	}
+}
+
+.nav-row-container__arrow {
+	background-position: 50%;
+	background-size: 16px;
+	height: 54px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 60px;
+
+	.is-desktop & {
+		display: none;
+	}
+
+	@media (min-width: 1200px) {
+		display: none;
+	}
+}
+
+.nav-row-list {
+	@include reset-list;
+
+	.is-desktop & {
+		text-align: center;
+	}
+
+	@media (min-width: 1200px) {
+		text-align: center;
+	}
+
+	> li {
+		@include gotham-medium;
+		@include font-size(1.2);
+		line-height: 54px;
+		float: left;
+		padding-right: 48px;
+
+		@media (min-width: 1200px) {
+			display: inline-block;
+			float: none;
+			padding: 0 24px;
+		}
+
+		> a {
+			.comp-bg-red &,
+			.comp-bg-gold &,
+      .is-elevate-member-red &,
+      .is-elevate-member-gold & {
+				color: $white;
+			}
+		}
+	}
+}

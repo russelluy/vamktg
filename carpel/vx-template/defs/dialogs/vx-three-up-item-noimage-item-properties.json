@@ -1,0 +1,37 @@
+{
+  "title": "Item No Image",
+  "tabs": {
+    "tabMain": {
+      "heading": { 
+        "label": "Heading",
+        "type": "TEXT_FIELD",
+        "validationPattern":".{0,20}",
+        "rows":3
+      },
+      "subheading": { 
+        "label": "Subheading",
+        "type": "TEXT_FIELD",
+        "validationPattern":".{0,84}",
+        "rows":3
+      },
+      "buttonVariant": {
+        "label": "Button Variant",
+        "type": "SELECT_FIELD",
+        "options": {
+          "red": "Red",
+          "purple": "Purple"
+        },
+        "default": "purple"
+      },
+      "buttonLabel": { 
+        "label": "Button Label",
+        "type": "TEXT_FIELD"
+      },
+      "buttonLink": { 
+        "label": "Button Link",
+        "type": "TEXT_FIELD",
+        "default": "http://"
+      }
+    }
+  }
+}

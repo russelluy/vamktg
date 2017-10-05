@@ -1,0 +1,16 @@
+{
+  "title": "Text Footer Properties",
+  "tabs": {
+    "tabMain": {
+      "placement": { 
+        "label": "Placement",
+        "type": "TEXT_FIELD"
+      },
+      "text": { 
+        "label": "Text",
+        "type": "RICH_TEXT_FIELD",
+        "source":"true"
+      }
+    }
+  }
+}

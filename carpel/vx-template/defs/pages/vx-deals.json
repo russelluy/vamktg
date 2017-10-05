@@ -1,0 +1,16 @@
+{
+  "title": "[VX] Deals",
+  "extends": "/modules/standard-templating-kit/templates/pages/stkArticle",
+  "dialog": "vxPageProperties",
+  "category": "functional",
+  "areas": {
+    "stripes": {
+      "type": "list",
+      "components": [
+        "vxSpacerItemMsg",
+        "vxTextFooterItemMsg",
+        "vxFareItemMsg"
+      ]
+    }
+  }
+}

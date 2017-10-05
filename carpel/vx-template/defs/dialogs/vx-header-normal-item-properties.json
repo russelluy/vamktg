@@ -1,0 +1,36 @@
+{
+  "title": "Header Normal Properties",
+  "tabs": {
+    "tabMain": {
+      "variant": {
+        "label": "Variant",
+        "type": "SELECT_FIELD",
+        "options": {
+          "h1": "H1",
+          "h2": "H2",
+          "h3": "H3"
+        },
+        "default": "h1"
+      },
+      "heading": {
+        "label": "Heading",
+        "validationPattern":".{0,27}",
+        "type": "TEXT_FIELD"
+      },
+      "subheading": {
+        "label": "Subheading",
+        "rows":3,
+        "type": "TEXT_FIELD"
+      },
+      "buttonLabel": {
+        "label": "Button Label",
+        "type": "TEXT_FIELD"
+      },
+      "buttonLink": {
+        "label": "Button Link",
+        "type": "TEXT_FIELD",
+        "default": "http://"
+      }
+    }
+  }
+}

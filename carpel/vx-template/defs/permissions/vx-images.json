@@ -1,0 +1,5 @@
+{
+  "class": "info.magnolia.voting.voters.URIStartsWithVoter",
+  "not": "true",
+  "pattern": "/dam/vx-images"
+}

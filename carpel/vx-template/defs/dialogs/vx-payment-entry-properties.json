@@ -1,0 +1,15 @@
+{
+	"title": "Payment Entry",
+	"tabs": {
+		"entry": {
+			"infantFare": {
+				"label": "Infant Fare",
+				"type": "TEXT_FIELD"
+			},
+			"mceSeatsFare": {
+				"label": "MCE Seats Fare",
+				"type": "TEXT_FIELD"
+			}
+		}
+	}
+}

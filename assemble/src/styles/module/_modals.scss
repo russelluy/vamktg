@@ -1,0 +1,400 @@
+/* ==========================================================================
+   Modals
+   ========================================================================== */
+.modal__backdrop {
+  @include backface-visibility(hidden);
+  background: $off-white;
+  height: 100%;
+  left: 0;
+  @include opacity(0.1);
+  position: fixed;
+  top: 0;
+  @include single-transition(opacity, 250ms, ease-out);
+  width: 100%;
+  z-index: 1500;
+
+  &.is-visible {
+     @include opacity(0.8);
+  }
+
+  .bg-dark & {
+    background: #222;
+  }
+}
+
+.modal__backdrop--grey {
+  background: $light-grey;
+
+  &.is-visible {
+     @include opacity(0.7);
+  }
+}
+
+.modal__backdrop--white {
+  background: $white;
+
+  &.is-visible {
+    @include opacity(0.5);
+  }
+}
+
+.modal__window {
+  background: $white;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  overflow-y: scroll;
+  position: fixed;
+  padding: 0;
+  top: 0;
+  @include single-transition(opacity, 250ms, ease-out);
+  width: 100%;
+
+  &.is-visible {
+    opacity: 1;
+  }
+}
+
+.modal__header {
+  background: $white;
+  background-size: 122px auto;
+  background-position: 17px 13px;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid #E5E5E5;
+  left: 0;
+  min-height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 6001;
+
+  .bg-dark & {
+    background: $dark-bg;
+  }
+}
+
+.modal__dialog {
+  background: #FFF;
+  margin: 0;
+  position: relative;
+  width: auto;
+
+  .bg-dark & {
+    background: $dark-bg;
+  }
+}
+
+.modal__title {
+  color: $purple;
+  @include font-size (2);
+  @include gotham-book;
+  line-height: 125%;
+  margin: 0 0 25px 0;
+
+  .bg-dark & {
+    color: $white;
+  }
+
+  .is-elevate-mode & {
+    color: $elevate-red;
+  }
+}
+
+.modal__content {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  padding: 90px 18px 50px;
+  position: relative;
+
+  &.is-best-fares {
+    h2,
+    h3 {
+      color: $purple;
+      @include gotham-bold;
+    }
+
+    h2 {
+      @include font-size (1.6);
+      line-height: 135%;
+      margin: 0 0 25px;
+    }
+
+    h3 {
+      @include font-size (1.3);
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    p {
+      line-height: 185%;
+      margin: 0 0 25px;
+      word-wrap: break-word;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  &.is-generic {
+    h2,
+    h3 {
+      color: $purple;
+      @include gotham-bold;
+    }
+
+    h2 {
+      @include font-size (1.6);
+      line-height: 135%;
+      margin: 0 0 5px;
+    }
+
+    h3 {
+      @include font-size (1.3);
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+
+    p {
+      line-height: 185%;
+      margin: 0 0 25px;
+      word-wrap: break-word;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+
+    p > a {
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    ul {
+      line-height: 185%;
+      list-style: none;
+      margin: 0 0 30px;
+      padding: 0 0 0 30px;
+
+      li {
+        margin-bottom: 20px;
+        position: relative;
+      }
+
+      &.has-headings strong {
+        display: block;
+      }
+
+      li:before {
+        background: $purple;
+        @include border-radius (6px);
+        content: '';
+        display: block;
+        left: -28px;
+        position: absolute;
+        top: 8px;
+        height: 6px;
+        width: 6px;
+      }
+
+      ul {
+        padding: 20px 0 0 40px;
+      }
+
+      ul li:before {
+        border: 1px solid $purple;
+        background: $white;
+      }
+    }
+
+    small {
+      color: $medium-grey;
+      display: block;
+      @include font-size(1.2);
+      margin-bottom: 20px;
+    }
+
+    .hr {
+      background: #E5E5E5;
+      height: 1px;
+      margin-bottom: 30px;
+      overflow: hidden;
+
+      > hr { display: none; }
+    }
+
+    @include at-medium {
+      .btn {
+        display: inline-block;
+        float: right;
+      }
+    }
+
+    .modal__quick-links {
+      @include gotham-bold;
+      margin-bottom: 30px;
+
+      li {
+        margin: 0;
+        padding-left: 10px;
+      }
+
+      a {
+        border-bottom: 1px solid #7F7F7F;
+
+        .no-touch &:hover {
+          border-bottom-color: transparent;
+        }
+      }
+    }
+  }
+
+  &.is-full {
+    padding-left: 0;
+    padding-right: 0;
+
+    > h1 {
+      padding: 0 18px;
+
+      @include at-medium {
+        padding: 0 22px;
+      }
+    }
+  }
+}
+
+.modal__close {
+  @include background-size(cover);
+  display: block;
+  position: absolute;
+  top: 22px;
+  right: 18px;
+  height: 15px;
+  width: 15px;
+}
+
+
+@media only screen and (min-width: 550px) {
+  .modal__content {
+    padding: 100px 84px 40px;
+
+    &.is-custom {
+      padding: 100px 20px 40px;
+    }
+  }
+
+  .modal__title {
+    @include font-size(2.2);
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .modal__dialog {
+    margin: 0 auto;
+    border: 5px solid $purple;
+    position: relative;
+
+    .is-small & {
+      max-width: 370px;
+    }
+
+    .is-medium & {
+      max-width: 670px;
+    }
+
+    .is-large & {
+      max-width: 1070px;
+    }
+
+    .is-scrollable & {
+      &:after {
+        bottom: 0;
+        content: '';
+        display: block;
+        height: 5px;
+        left: 0;
+        position: absolute;
+        width: 100%;
+      }
+    }
+
+    .bg-dark & {
+      border: 6px solid $check-in-purple;
+    }
+
+    .is-elevate-mode & {
+      border: 6px solid $elevate-red;
+    }
+  }
+
+  .modal__close {
+    right: 40px;
+    top: 40px;
+  }
+
+  .modal__window {
+    background: transparent;
+    padding: 0 22px;
+  }
+
+  .modal__content,
+  .modal__content.is-custom {
+    padding: 0 40px 40px;
+
+    .is-scrollable & {
+      padding-top: 20px;
+    }
+  }
+
+  .modal__content.is-generic {
+    small.large-align-right {
+      text-align: right;
+    }
+  }
+
+  .modal__header {
+    border-bottom: 0;
+    margin: 0 40px;
+    min-height: 0;
+    padding-top: 32px;
+    position: static;
+    width: auto;
+
+    .is-popup & {
+      background: none;
+    }
+
+    .is-scrollable & {
+      border-bottom: 1px solid #E5E5E5;
+    }
+  }
+
+  .modal__title {
+    padding: 0 60px 0 0;
+  }
+}
+
+/*
+ * Footer Modal
+ */
+.modal-links {
+  @include reset-list;
+
+  &:last-child {
+    //padding-bottom: 40px;
+  }
+}
+
+.modal-links__item {
+  @include font-size(1.6);
+  line-height: 36px;
+
+  > a {
+    .no-touch &:hover {
+      text-decoration: underline;
+    }
+  }
+}

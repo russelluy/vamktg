@@ -1,0 +1,105 @@
+$nav-drop-down-small-width: 284px;
+$nav-drop-down-medium-width: 352px;
+$nav-drop-down-large-width: 477px;
+
+.nav-drop-down {
+  height: 55px;
+  margin: 0 auto 3px auto;
+  width: $nav-drop-down-small-width;
+
+  @include at-medium {
+    width: $nav-drop-down-medium-width;
+  }
+
+  @include at-large {
+    width: $nav-drop-down-large-width;
+  }
+}
+
+.nav-drop-down-container {
+  background-color: $white;
+  border: 1px solid $medium-grey;
+  display: block;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  padding: 2px;
+  position: relative;
+
+  label {
+    color: $dark-grey;
+    @include gotham-book;
+    @include font-size(1.6);
+    @include line-height(5.3);
+    margin-left: 18px;
+    position: absolute;
+  }
+}
+
+.nav-drop-down-container-red {
+  @extend .nav-drop-down-container;
+  @include box-shadow(
+    $off-white 0 0 0 3px inset,
+    $red-light 2px 3px 0
+    );
+
+  .no-touch &:hover,
+  &.is-selected {
+    @include box-shadow($red-light 2px 3px 0);
+    border: 3px solid $red;
+    padding: 0px;
+    text-decoration: none;
+  }
+
+  .is-leg-two & {
+    .no-touch &:hover,
+    &.is-selected {
+      border: 3px solid $red;
+    }
+  }
+}
+
+.nav-drop-down-container-purple{
+  @extend .nav-drop-down-container;
+  @include box-shadow(
+    $off-white 0 0 0 3px inset,
+    $purple-light 2px 3px 0
+    );
+
+  .no-touch &:hover,
+  &.is-selected {
+    @include box-shadow($purple-light 2px 3px 0);
+    border: 3px solid $purple;
+    padding: 0px;
+    text-decoration: none;
+  }
+
+  .is-leg-two & {
+    .no-touch &:hover,
+    &.is-selected {
+      border: 3px solid $purple;
+    }
+  }
+}
+
+.nav-drop-down-selectbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-position: right center;
+  border: none;
+  box-shadow: none;
+  color: $dark-grey;
+  @include gotham-book;
+  @include font-size(1.6);
+  @include line-height(5.3);
+  min-height: 53px;
+  float: right;
+  margin-right: 20px;
+  padding-left: 38px;
+  width: 100% !important;
+}
+
+.nav-drop-down-selectbox:focus {
+  outline: none;
+}

@@ -1,0 +1,396 @@
+.routes__header {
+  padding-top: 36px;
+  padding-bottom: 40px;
+  text-align: center;
+
+  @include at-medium {
+    padding-top: 56px;
+    padding-bottom: 50px;
+  }
+
+  @include at-large {
+    padding-top: 100px;
+  }
+
+  > h1, > h2 {
+    @include gotham-book;
+    @include font-size(2);
+    line-height: 28px;
+    margin: 0 0 20px;
+
+    @include at-medium {
+      @include gotham-light;
+      @include font-size(3);
+      line-height: 36px;
+    }
+
+    @include at-large {
+      @include font-size(4);
+      line-height: 48px;
+      margin-bottom: 25px;
+    }
+  }
+
+  > div {
+    @include gotham-book;
+    @include font-size(1.3);
+    line-height: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+
+    @include at-medium {
+      @include font-size(1.4);
+      line-height: 23px;
+    }
+
+    @include at-large {
+      line-height: 25px;
+    }
+  }
+}
+
+.routes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 18px;
+
+  @include at-medium {
+    margin: 0 22px;
+  }
+  @include at-large {
+    margin: 0px;
+  }
+  &.is-first {
+    //border-top: 1px solid $border-grey;
+  }
+  &.is-last {
+    border-bottom: 0px;
+  }
+}
+
+.routes-list__route-city {
+  border-top: 1px solid $border-grey;
+  border-left: 1px solid $border-grey;
+  float: left;
+  height: 0px;
+  padding-bottom: 55%;
+  position: relative;
+  width: 50%;
+
+  @include at-medium {
+    padding-bottom: 25%;
+    width: 25%;
+  }
+
+  @include at-large {
+    padding-bottom: 22.5%;
+  }
+
+  &.is-large {
+    border-top: 1px solid $border-grey;
+    padding-bottom: 110%;
+    width: 100%;
+
+    @include at-medium {
+      padding-bottom: 50%;
+      width: 50%;
+    }
+
+    @include at-large {
+      padding-bottom: 45%;
+    }
+  }
+
+  &.is-no-border {
+    border-left: 0;
+  }
+
+  &.is-float-right {
+    float: right;
+  }
+
+  &.is-placeholder {
+    h2 {
+      color: #cccccc;
+    }
+  }
+}
+
+.route-city {
+  display: block;
+  left: 0;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+
+  > .img {
+    margin: percentage(20/156) auto 0;
+    width: percentage(80/144);
+
+    @include at-medium {
+      margin-top: percentage(32/178);
+      width: percentage(80/181);
+    }
+
+    @include at-large {
+      margin-top: percentage(40/264);
+      width: percentage(122/295);
+    }
+
+    .is-large & {
+      margin-top: percentage(20/312);
+      width: percentage(242/288);
+
+      @include at-medium {
+        margin-top: percentage(32/356);
+        width: percentage(250/362);
+      }
+
+      @include at-large {
+        margin-top: percentage(40/528);
+        width: percentage(388/590);
+      }
+    }
+
+    > img {
+      display: block;
+    }
+  }
+
+  > h2 {
+    color: $purple;
+    @include gotham-medium;
+    @include font-size(1.2);
+    line-height: 16px;
+    margin: 8px 0 0;
+    text-transform: uppercase;
+
+    @include at-medium {
+      @include font-size(1.4);
+      line-height: 18px;
+    }
+
+    @include at-large {
+      @include font-size(2.2);
+      line-height: 28px;
+      margin-top: 16px;
+    }
+  }
+
+  > div {
+    color: $purple;
+    @include gotham-light;
+    @include font-size(1.2);
+    line-height: 16px;
+    text-transform: uppercase;
+
+    @include at-medium {
+      @include font-size(1.4);
+      line-height: 18px;
+    }
+
+    @include at-large {
+      @include font-size(2.2);
+      line-height: 28px;
+    }
+  }
+}
+
+.routes-backdrop {
+  @include backface-visibility(hidden);
+  background: $medium-grey;
+  height: 100%;
+  left: 0;
+  @include opacity(0.3);
+  position: fixed;
+  top: 0;
+  @include single-transition(opacity, 250ms, ease-out);
+  width: 100%;
+  z-index: 1500;
+}
+
+.routes-expanded {
+  background: #fff;
+  padding: 32px 0;
+  position: relative;
+  z-index: 1501;
+  .wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.routes-expanded__header {
+  padding-bottom: 32px;
+  position: relative;
+
+  > img {
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 80px;
+
+    @include at-medium {
+      display: block;
+    }
+  }
+
+  > h1, > h2 {
+    @include gotham-book;
+    @include font-size(1.2);
+    line-height: 24px;
+    margin: 0;
+    text-transform: uppercase;
+
+    @include at-medium {
+      @include font-size(2.2);
+      line-height: 80px;
+      padding-left: 100px;
+    }
+
+    > strong {
+      @include gotham-medium;
+    }
+  }
+
+  > a {
+    background-position: center right;
+    background-size: 16px;
+    height: 32px;
+    margin-top: -4px;
+    position: absolute;
+    right: 0;
+    text-indent: -9999px;
+    top: 0;
+    width: 32px;
+
+    @include at-medium {
+      margin-top: 24px;
+    }
+  }
+}
+
+.routes-expanded__routes-book {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  > li {
+    @include at-medium {
+      float: left;
+      width: 50%;
+    }
+
+    &.is-odd {
+      @include at-medium {
+        padding-left: 30px;
+      }
+    }
+  }
+}
+
+.routes-book {
+  border-bottom: 1px solid $border-grey;
+  display: table;
+  @include gotham-book;
+  @include font-size(1.2);
+  line-height: 20px;
+  padding: 18px 0;
+  position: relative;
+  text-transform: uppercase;
+  padding-right: 100px; //force button space on right
+  height: 55px;
+  width: 100%;
+
+  @include at-medium {
+    @include font-size(1.5);
+    padding: 17px 0;
+    padding-right: 100px; //force button space on right
+    height: 76px;
+  }
+  @include at-large {
+    @include font-size(1.8);
+    padding: 27px 0;
+    padding-right: 100px; //force button space on right
+  }
+
+  &.is-first {
+    border-top: 1px solid $border-grey;
+    @include lt-ie9 {
+      border-top: 0;
+    }
+  }
+
+  &.is-second {
+    @include at-medium {
+      border-top: 1px solid $border-grey;
+    }
+  }
+
+  &.is-even {
+    @include at-medium {
+      padding: 17px 0;
+      padding-right: 100px; //force button space on right
+    }
+    @include at-large {
+      padding: 27px 0;
+      padding-right: 100px; //force button space on right
+    }
+  }
+
+  > .is-centered {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.routes-book__city {
+  > strong {
+    @include gotham-medium;
+  }
+}
+
+.routes-book__btn {
+  background: transparent;
+  border: 1px solid $border-grey;
+  color: $black;
+  cursor: pointer;
+  display: block;
+  @include gotham-bold;
+  @include font-size(1);
+  -webkit-font-smoothing: antialiased;
+  line-height: 14px;
+  padding: 10px 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: 8px;
+  width: 80px;
+
+  @include at-medium {
+    top: 20px;
+  }
+
+  .no-touch & {
+    &:hover,
+    &:focus {
+      border: 1px solid $purple;
+      color: $purple;
+    }
+    &:active {
+      color: $white;
+    }
+  }
+
+  &:active {
+    @include background(
+      linear-gradient(top, #671186, #A321D3)
+    );
+    color: $white;
+  }
+}

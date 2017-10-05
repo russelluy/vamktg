@@ -1,0 +1,87 @@
+/* ==========================================================================
+COMPONENT - ThreeUp
+========================================================================== */
+.three-up{
+	@include component;
+	@include container;
+
+	padding: 0px;
+
+	.subheading{
+		a, a:hover{
+			background: initial;
+			border: initial;
+			color: initial;
+			display: initial;
+			font: initial;
+			height: initial;
+			letter-spacing: initial;
+			line-height: initial;
+			text-transform: initial;
+			visibility: initial;
+			width: initial;
+			word-spacing: initial;
+			z-index: initial;
+			text-align: initial;
+			text-decoration: underline;
+			text-transform: initial;
+			cursor: initial;
+			padding: initial;
+			max-width: initial;
+			min-width: initial;
+			margin: initial;
+			font-size: 1.3rem;
+		}
+	}
+	&.border-top{
+
+		@include border-top;
+	}
+
+	&.border-bottom{
+
+		@include border-bottom;
+	}
+
+	.col{
+
+		border-bottom: 1px solid $border-grey;
+	}
+	.first{
+		@include clearfix;
+	}
+	.second{
+		@include clearfix;
+	}
+	.third{
+		@include clearfix;
+		border-bottom: none !important;
+		border-right: none !important;
+	}
+
+	@include at-medium {
+
+    	//$grid-padding: 0px;
+    	$gutter-width: 0px;
+
+    	.col{
+
+			border-bottom: none;
+			border-right: 1px solid $border-grey;
+		}
+    	.first{
+			@include span-columns(4, 12);
+		}
+		.second{
+			@include span-columns(4, 12);
+		}
+		.third{
+			@include span-columns(4 omega, 12);
+		}
+ 	}
+
+	@include at-large {
+
+		$grid-padding: 0px;
+	}
+}

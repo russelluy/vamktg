@@ -1,0 +1,119 @@
+{
+  "title": "Page Properties",
+  "tabs": {
+    "tabMain": {
+      "label":"Main Properties",
+      "title": {
+        "label": "Title",
+        "required": "true",
+        "type": "TEXT_FIELD"
+      },
+      "airportRelated": {
+        "label": "Airport Related",
+        "type": "TEXT_FIELD"
+      },
+      "dropDownLabel": {
+        "label": "Drop Down Label",
+        "type": "TEXT_FIELD"
+      },
+      "abstract": {
+        "label": "Abstract Description",
+        "rows": "5",
+        "type": "TEXT_FIELD"
+      }
+    },
+    "tabTagging": {
+      "label":"Tagging",
+      "pageSlug": {
+        "label": "Page Slug",
+        "type": "TEXT_FIELD",
+        "default": ""
+      },
+      "siteArea": {
+        "label": "Site Area",
+        "type": "TEXT_FIELD",
+        "default": "cms"
+      },
+      "pairValues": { 
+        "label": "Pairs",
+        "type": "MULTI_FIELD",
+        "fields":[
+          {
+            "name": "n",
+            "label": "Name",
+            "type": "TEXT_FIELD"
+          },
+          {
+            "name": "v",
+            "label": "Value",
+            "type": "TEXT_FIELD"
+          }
+        ]
+      }
+    },
+    "tabMetaData": {
+      "label":"Meta Data",
+      "canonical": {
+        "label": "Canonical",
+        "type": "TEXT_FIELD"
+      },
+      "keywords": {
+        "label": "Keywords",
+        "rows": "3",
+        "type": "TEXT_FIELD"
+      },
+      "description": {
+        "label": "Description",
+        "rows": "3",
+        "type": "TEXT_FIELD"
+      },
+      "author": {
+        "label": "Author",
+        "type": "TEXT_FIELD"
+      },
+      "robots": {
+        "label": "Robots",
+        "type": "TEXT_FIELD"
+      }
+    },
+    "tabTwitter": {
+      "label":"Twitter",
+      "twitter_summary": {
+        "label": "Summary",
+        "type": "TEXT_FIELD"
+      }
+    },
+    "tabFacebook": {
+      "label":"Facebook",
+      "face_url": {
+        "label": "URL",
+        "type": "TEXT_FIELD"
+      },
+      "face_site_name": {
+        "label": "Site Name",
+        "type": "TEXT_FIELD"
+      },
+      "face_title": {
+        "label": "Title",
+        "type": "TEXT_FIELD"
+      },
+      "face_admins": {
+        "label": "Admins",
+        "type": "TEXT_FIELD"
+      },
+      "face_description": {
+        "label": "Description",
+        "rows": "3",
+        "type": "TEXT_FIELD"
+      },
+      "face_type": {
+        "label": "Type",
+        "type": "TEXT_FIELD"
+      },
+      "face_image": {
+        "label": "Image",
+        "type": "TEXT_FIELD"
+      }
+    }
+  }
+}

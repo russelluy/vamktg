@@ -1,0 +1,164 @@
+/* ==========================================================================
+   COMPONENT - HeaderLarge
+   ========================================================================== */
+.header-large{
+
+	@include header;
+	height: 260px;
+	.wrap{
+
+		padding-top: 65px;
+		padding-bottom: 65px;
+	}
+	.heading{
+		@include gotham-thin;
+		@include font-size(6);
+		@include line-height(6);
+		@include letter-spacing (-40);
+
+		color: $white;
+		margin: 0 auto 20px auto;
+		margin-bottom: 8px;
+	}
+	.subheading{
+		@include gotham-light;
+		@include font-size(1.7);
+		@include line-height(2.4);
+		@include letter-spacing (-25);
+
+		color: $white;
+		margin: 0 auto;
+				a,
+		a:hover{
+			background: initial;
+			border: initial;
+			color: initial;
+			display: initial;
+			font: initial;
+			height: initial;
+			letter-spacing: initial;
+			line-height: initial;
+			text-transform: initial;
+			visibility: initial;
+			width: initial;
+			word-spacing: initial;
+			z-index: initial;
+			text-align: initial;
+			text-decoration: underline;
+			text-transform: initial;
+			cursor: initial;
+			padding: initial;
+			max-width: initial;
+			min-width: initial;
+			margin: initial;
+			@include gotham-light;
+			@include font-size(1.7);
+			@include line-height(2.4);
+			@include letter-spacing (-25);
+			color: $white;
+		}
+	}
+	img{
+		padding-bottom: 20px;
+		max-width: 260px;
+		width:100%;
+		@include at-medium {
+			padding-bottom: 20px;
+			max-width: 320px;
+		}
+		@include at-large {
+			padding-bottom: 20px;
+			max-width: 450px;
+		}
+	}
+
+		a{
+			padding: 10px;
+			height: 40px;
+			color: $white;
+			&:hover{
+				padding: 9px;
+				border: 2px solid $white;
+			}
+			&:active{
+				padding: 10px;
+				color: $black;
+				@include background-image(linear-gradient($white, $white));
+			}
+		}
+	
+
+  	@include at-medium {
+
+    	@include container;
+    	.wrap{
+
+			//padding-top: 42px;
+			//padding-bottom: 42px;
+		}
+		.heading{
+
+			@include font-size(8);
+			@include line-height(8);
+			@include letter-spacing (-20);
+		}
+		.subheading{
+
+			@include gotham-book;
+			@include font-size(1.6);
+			@include line-height(1.6);
+			@include letter-spacing (-25);
+			a,
+		a:hover{
+
+			@include gotham-book;
+			@include font-size(1.6);
+			@include line-height(1.6);
+			@include letter-spacing (-25);
+		}
+		}
+ 	}
+
+	@include at-large {
+
+		@include container;
+		height: 320px;
+		.wrap{
+			//padding-top: 115px;
+			//padding-bottom: 115px;
+		}
+		.heading{
+
+			@include font-size(10);
+			@include line-height(10);
+			@include letter-spacing (-600);
+			//margin-bottom: 20px;
+			margin-bottom: 8px;
+		}
+		.subheading{
+
+			@include gotham-thin;
+			@include font-size(2.8);
+			@include line-height(3.4);
+			@include letter-spacing (-25);
+			text-transform: none;
+			a,
+		a:hover{
+		
+			@include gotham-thin;
+			@include font-size(2.8);
+			@include line-height(3.4);
+			@include letter-spacing (-25);
+			text-transform: none;
+		}
+		}
+	}
+
+	@include at-breakpoint(1580px) {
+
+ 		.heading{
+
+			@include pad(0, 0, 12);
+		}
+	}
+}

@@ -1,0 +1,6 @@
+{
+	"type": "VANITY_REGEXP",
+	"fromURI": "/contentFeeds/([a-zA-Z0-9]*)/([a-zA-Z0-9]*)/(.*)",
+	"method": "REDIRECT",
+	"toURI": "/rss/?generatorName=templateContent&amp;category=$1&amp;subCategory=$2&amp;siteRoot=/$3"
+}

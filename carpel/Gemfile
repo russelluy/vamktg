@@ -1,0 +1,4 @@
+source 'https://rubygems.org'
+ruby "2.0.0"
+
+gem 'xml-simple', "~> 1.1.2"

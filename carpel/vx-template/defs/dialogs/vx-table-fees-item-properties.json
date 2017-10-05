@@ -1,0 +1,215 @@
+{
+  "title": "Fees Table Properties",
+  "tabs": {
+    "tabReservations": {
+      "label": "Reservations",
+      "reservationsSubheading": {
+        "label": "Subheading",
+        "rows":3,
+        "type": "TEXT_FIELD"
+      },
+      "reservationsColumns": {
+        "label": " ",
+        "type": "MULTI_FIELD",
+        "fields":[
+          {
+            "name": "col1",
+            "label": "Fee",
+            "rows": 2,
+            "type": "TEXT_FIELD"
+          },
+          {
+            "name": "col2",
+            "label": "Main Cabin",
+            "rows": 2,
+            "type": "TEXT_FIELD"
+          },
+          {
+            "name": "col3",
+            "label": "Refundable",
+            "rows": 2,
+            "type": "TEXT_FIELD"
+          },
+          {
+            "name": "col4",
+            "label": "Upgrade",
+            "rows": 2,
+            "type": "TEXT_FIELD"
+          },
+          {
+            "name": "col5",
+            "label": "Select",
+            "rows": 2,
+            "type": "TEXT_FIELD"
+          },
+          {
+            "name": "col6",
+            "label": "FirstClass",
+            "rows": 2,
+            "type": "TEXT_FIELD"
+          },
+          {
+            "name": "col7",
+            "label": "Refundable",
+            "rows": 2,
+            "type": "TEXT_FIELD"
+          }
+        ]
+      },
+      "reservationsFooter": {
+        "label": "Footer Note",
+        "type": "RICH_TEXT_FIELD"
+      }
+    },
+    "tabBaggage": {
+      "label": "Baggage",
+      "baggageSubheading": {
+        "label": "Subheading",
+        "rows":3,
+        "type": "TEXT_FIELD"
+      },
+      "baggageColumns": {
+        "label": " ",
+        "type": "MULTI_FIELD",
+        "fields":[
+          {
+            "name": "col1",
+            "label": "Fee",
+            "rows": 2,
+            "type": "TEXT_FIELD"
+          },
+          {
+            "name": "col2",
+            "label": "Main Cabin",
+            "rows": 2,
+            "type": "TEXT_FIELD"
+          },
+          {
+            "name": "col3",
+            "label": "Refundable",
+            "rows": 2,
+            "type": "TEXT_FIELD"
+          },
+          {
+            "name": "col4",
+            "label": "Upgrade",
+            "rows": 2,
+            "type": "TEXT_FIELD"
+          },
+          {
+            "name": "col5",
+            "label": "Select",
+            "rows": 2,
+            "type": "TEXT_FIELD"
+          },
+          {
+            "name": "col6",
+            "label": "FirstClass",
+            "rows": 2,
+            "type": "TEXT_FIELD"
+          },
+          {
+            "name": "col7",
+            "label": "Refundable",
+            "rows": 2,
+            "type": "TEXT_FIELD"
+          }
+        ]
+      },
+      "baggageFooter": {
+        "label": "Footer Note",
+        "type": "RICH_TEXT_FIELD"
+      }
+    },
+    "tabAmenities": {
+      "label": "Amenities",
+      "amenitiesSubheading": {
+        "label": "Subheading",
+        "rows":3,
+        "type": "TEXT_FIELD"
+      },
+      "amenitiesColumns": {
+        "label": " ",
+        "type": "MULTI_FIELD",
+        "fields":[
+          {
+            "name": "col1",
+            "label": "Fee",
+            "rows": 2,
+            "type": "TEXT_FIELD"
+          },
+          {
+            "name": "col2",
+            "label": "Main Cabin",
+            "rows": 2,
+            "type": "TEXT_FIELD"
+          },
+          {
+            "name": "col3",
+            "label": "Refundable",
+            "rows": 2,
+            "type": "TEXT_FIELD"
+          },
+          {
+            "name": "col4",
+            "label": "Upgrade",
+            "rows": 2,
+            "type": "TEXT_FIELD"
+          },
+          {
+            "name": "col5",
+            "label": "Select",
+            "rows": 2,
+            "type": "TEXT_FIELD"
+          },
+          {
+            "name": "col6",
+            "label": "FirstClass",
+            "rows": 2,
+            "type": "TEXT_FIELD"
+          },
+          {
+            "name": "col7",
+            "label": "Refundable",
+            "rows": 2,
+            "type": "TEXT_FIELD"
+          }
+        ]
+      },
+      "amenitiesFooter": {
+        "label": "Footer Note",
+        "type": "RICH_TEXT_FIELD"
+      }
+    },
+    "tabUpgrades": {
+      "label": "Upgrades",
+      "upgradesSubheading": {
+        "label": "Subheading",
+        "rows":3,
+        "type": "TEXT_FIELD"
+      },
+      "upgradesColumns": {
+        "label": " ",
+        "type": "MULTI_FIELD",
+        "fields":[
+          {
+            "name": "col1",
+            "label": "Fee",
+            "rows": 2,
+            "type": "TEXT_FIELD"
+          },
+          {
+            "name": "col2",
+            "label": "Main Cabin",
+            "rows": 2,
+            "type": "TEXT_FIELD"
+          }
+        ]
+      },
+      "upgradesFooter": {
+        "label": "Footer Note",
+        "type": "RICH_TEXT_FIELD"
+      }
+    }
+  }
+}

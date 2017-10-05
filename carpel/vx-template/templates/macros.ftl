@@ -1,0 +1,18 @@
+[#macro createLink link]${link}[/#macro]
+[#macro old_createLink link][#if cmsfn.isAuthorInstance()]${link}[#else]${link?replace(".html","")?replace("/cms","")}[/#if][/#macro]
+[#macro createAnchor _str]
+[#assign finalAnchor = _str]
+[#assign finalAnchor = finalAnchor?replace('[link','<a target=_self href=')]
+[#assign finalAnchor = finalAnchor?replace('[/link]','</a>')]
+[#assign finalAnchor = finalAnchor?replace('[bold','<b')]
+[#assign finalAnchor = finalAnchor?replace('[/bold]','</b>')]
+[#assign finalAnchor = finalAnchor?replace('[sup','<sup')]
+[#assign finalAnchor = finalAnchor?replace('[/sup]','</sup>')]
+[#assign finalAnchor = finalAnchor?replace('[sub','<sub')]
+[#assign finalAnchor = finalAnchor?replace('[/sub]','</sub>')]
+[#assign finalAnchor = finalAnchor?replace('[check]','<span style="font-size:2em;color:#DC232E">&#10004;</span>')]
+[#assign finalAnchor = finalAnchor?replace(']','>')]
+${finalAnchor}
+[/#macro]
+
+[#macro getAirport airport property][#assign returnAirport = ''][#assign _airports = cmsfn.contentByPath('/config/airports' ,'website')][#list _airports?children as _airport][#if _airport.getProperty('code').string = airport][#if _airport.hasProperty(property)]${_airport.getProperty(property).string}[/#if][/#if][/#list][/#macro]

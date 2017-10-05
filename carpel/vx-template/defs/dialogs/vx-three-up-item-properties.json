@@ -1,0 +1,18 @@
+{
+  "title": "Three Up Properties",
+  "tabs": {
+    "tabMain": {
+      "variant": {
+        "label": "Border",
+        "type": "SELECT_FIELD",
+        "options": {
+          "regular": "None",
+          "border-top":"Top",
+          "border-bottom":"Bottom",
+          "border-top border-bottom":"Top and Bottom"
+        },
+        "default": "regular"
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+[#import "../default.ftl" as base/]
+[@base.page content model]
+    <div class="header-normal">
+      <div class="wrap">
+        <span class="heading">News & Updates</span>
+        <p class="subheading"></p>
+      </div>
+    </div>
+    <div class="wrap">
+    	<div class="spacer" style="height:1px; padding-top:0px"><div class="line"></div></div>
+    </div>
+    [@cms.area name="newsItem"/]
+[/@base.page]

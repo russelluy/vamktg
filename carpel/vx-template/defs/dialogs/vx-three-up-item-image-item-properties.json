@@ -1,0 +1,39 @@
+{
+  "title": "Item Image",
+  "tabs": {
+    "tabMain": {
+      "image": { 
+        "targetWorkspace": "dam",
+        "appName": "assets",
+        "identifierToPathConverter": "info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter",
+        "contentPreviewDefinition": "",
+        "label": "Image <small>(610px)</small>",
+        "type": "IMAGE"
+      },
+      "subheading": { 
+        "label": "Subheading",
+        "type": "TEXT_FIELD",
+        "validationPattern":".{0,48}",
+        "rows":3
+      },
+      "buttonVariant": {
+        "label": "Button Variant",
+        "type": "SELECT_FIELD",
+        "options": {
+          "red": "Red",
+          "purple": "Purple"
+        },
+        "default": "purple"
+      },
+      "buttonLabel": { 
+        "label": "Button Label",
+        "type": "TEXT_FIELD"
+      },
+      "buttonLink": { 
+        "label": "Button Link",
+        "type": "TEXT_FIELD",
+        "default": "http://"
+      }
+    }
+  }
+}

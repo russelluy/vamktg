@@ -1,0 +1,37 @@
+{
+  "title": "[VX] Fly With Us",
+  "extends": "/modules/standard-templating-kit/templates/pages/stkArticle",
+  "dialog": "vxPageProperties",
+  "category": "functional",
+  "areas": {
+    "stripes": {
+      "type": "list",
+      "components": [
+        "vxElevateNavRowItemMsg",
+        "vxNavRowItemMsg",
+        "vxCabinsItemMsg",
+        "vxHeaderNormalItemMsg",
+        "vxHeaderMediumItemMsg",
+        "vxHeaderLargeItemMsg",
+        "vxHeaderStackedItemMsg",
+        "vxTextFooterItemMsg",
+        "vxTextBodyItemMsg",
+        "vxOneUpItemMsg",
+        "vxTwoUpItemMsg",
+        "vxThreeUpItemMsg",
+        "vxImageTeaserItemMsg",
+        "vxTableTwoColumnItemMsg",
+        "vxTableThreeColumnItemMsg",
+        "vxTableFourColumnItemMsg",
+        "vxFareItemMsg",
+        "vxNavDrop-downItemMsg",
+        "vxPromoBoxItemMsg",
+        "vxSpacerItemMsg",
+        "vxTableFaresItemMsg",
+        "vxCalculatorItemMsg",
+        "vxFaqItemMsg",
+        "vxLogoItemMsg"
+      ]
+    }
+  }
+}

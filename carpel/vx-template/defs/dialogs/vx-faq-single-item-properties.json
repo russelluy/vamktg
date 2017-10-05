@@ -1,0 +1,16 @@
+{
+  "title": "FAQ Item Properties",
+  "tabs": {
+    "tabMain": {
+      "heading": {
+        "label": "Heading",
+        "type": "TEXT_FIELD",
+        "rows":3
+      },
+      "text": {
+        "label": "Text",
+        "type": "RICH_TEXT_FIELD"
+      }
+    }
+  }
+}

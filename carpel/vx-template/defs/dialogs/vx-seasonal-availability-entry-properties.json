@@ -1,0 +1,36 @@
+{
+  "title": "Seasonal Availability Entry",
+  
+  "tabs": {
+    "entry": {
+      "code_from": { 
+        "label": "Airport From",
+        "type": "TEXT_FIELD",
+        "teste_type": "SELECT_FIELD",
+	"teste_path": "/config/airports/*",
+	"teste_valueProperty": "code",
+	"teste_labelProperty": "name"
+      },
+      "code_to": { 
+        "label": "Airport To",
+        "type": "TEXT_FIELD",
+        "teste_type": "SELECT_FIELD",
+	"teste_path": "/config/airports/*",
+	"teste_valueProperty": "code",
+	"teste_labelProperty": "name"
+      },
+      "from": { 
+        "label": "From",
+	"time":"false",
+        "type": "DATE_FIELD"
+      },
+
+      "to": { 
+        "label": "To",
+	"time":"false",
+        "type": "DATE_FIELD"
+      }
+
+    }
+  }
+}

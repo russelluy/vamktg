@@ -1,0 +1,12 @@
+{
+  "title": "[VX] Home Info",
+  "extends": "/modules/standard-templating-kit/templates/pages/stkArticle",
+  "category": "home",
+  "dialog": "vxPageProperties",
+  "areas": { 
+    "navigation": { "type": "list", "components": [ ] },
+    "slotsPromotional": { "type": "list", "components": [ 
+	"vxSlotsPromotionalEntry"
+    ] }
+  }
+}

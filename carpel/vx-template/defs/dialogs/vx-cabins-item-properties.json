@@ -1,0 +1,260 @@
+{
+  "title": "Cabins Properties",
+  "tabs": {
+    "tabMain": {
+      "label": "Main Cabin",
+      "tabMainImageOne": {
+        "targetWorkspace": "dam",
+        "appName": "assets",
+        "identifierToPathConverter": "info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter",
+        "contentPreviewDefinition": "",
+        "label": "First Image <small>(450px)</small>",
+        "type": "IMAGE"
+      },
+      "tabMainHeadingOne": {
+        "label": "First Image Heading",
+        "type": "TEXT_FIELD"
+      },
+      "tabMainSubheadingOne": {
+        "label": "First Image Subheading",
+        "type": "TEXT_FIELD"
+      },
+      "tabMainImageTwo": {
+        "targetWorkspace": "dam",
+        "appName": "assets",
+        "identifierToPathConverter": "info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter",
+        "contentPreviewDefinition": "",
+        "label": "Second Image <small>(450px)</small>",
+        "type": "IMAGE"
+      },
+      "tabMainHeadingTwo": {
+        "label": "Second Image Heading",
+        "type": "TEXT_FIELD"
+      },
+      "tabMainSubheadingTwo": {
+        "label": "Second Image Subheading",
+        "type": "TEXT_FIELD"
+      },
+      "tabMainImageThree": {
+        "targetWorkspace": "dam",
+        "appName": "assets",
+        "identifierToPathConverter": "info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter",
+        "contentPreviewDefinition": "",
+        "label": "Third Image <small>(450px)</small>",
+        "type": "IMAGE"
+      },
+      "tabMainHeadingThree": {
+        "label": "Third Image Heading",
+        "type": "TEXT_FIELD"
+      },
+      "tabMainSubheadingThree": {
+        "label": "Third Image Subheading",
+        "type": "TEXT_FIELD"
+      },
+      "tabMainTable": {
+        "label": "Table",
+        "type": "MULTI_FIELD",
+        "fields":[
+          {
+            "name": "c1",
+            "label": " ",
+            "type": "TEXT_FIELD"
+          },
+          {
+            "name": "c2",
+            "label": " ",
+            "type": "TEXT_FIELD"
+          }
+        ]
+      },
+      "tabMainImages": {
+        "label": "Images",
+        "type": "MULTI_FIELD",
+        "fields":[
+          {
+            "name": "image",
+            "label": "Image <small>(1170px)</small>",
+            "targetWorkspace": "dam",
+            "appName": "assets",
+            "type": "IMAGE"
+          },
+          {
+            "name": "desc",
+            "label": "Description",
+            "type": "TEXT_FIELD"
+          }
+        ]
+      }
+    },
+    "tabSelect": {
+      "label": "Main Cabin Select",
+      "tabSelectImageOne": {
+        "targetWorkspace": "dam",
+        "appName": "assets",
+        "identifierToPathConverter": "info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter",
+        "contentPreviewDefinition": "",
+        "label": "First Image <small>(450px)</small>",
+        "type": "IMAGE"
+      },
+      "tabSelectHeadingOne": {
+        "label": "First Image Heading",
+        "type": "TEXT_FIELD"
+      },
+      "tabSelectSubheadingOne": {
+        "label": "First Image Subheading",
+        "type": "TEXT_FIELD"
+      },
+      "tabSelectImageTwo": {
+        "targetWorkspace": "dam",
+        "appName": "assets",
+        "identifierToPathConverter": "info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter",
+        "contentPreviewDefinition": "",
+        "label": "Second Image <small>(450px)</small>",
+        "type": "IMAGE"
+      },
+      "tabSelectHeadingTwo": {
+        "label": "Second Image Heading",
+        "type": "TEXT_FIELD"
+      },
+      "tabSelectSubheadingTwo": {
+        "label": "Second Image Subheading",
+        "type": "TEXT_FIELD"
+      },
+      "tabSelectImageThree": {
+        "targetWorkspace": "dam",
+        "appName": "assets",
+        "identifierToPathConverter": "info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter",
+        "contentPreviewDefinition": "",
+        "label": "Third Image <small>(450px)</small>",
+        "type": "IMAGE"
+      },
+      "tabSelectHeadingThree": {
+        "label": "Third Image Heading",
+        "type": "TEXT_FIELD"
+      },
+      "tabSelectSubheadingThree": {
+        "label": "Third Image Subheading",
+        "type": "TEXT_FIELD"
+      },
+      "tabSelectTable": {
+        "label": "Table",
+        "type": "MULTI_FIELD",
+        "fields":[
+          {
+            "name": "c1",
+            "label": " ",
+            "type": "TEXT_FIELD"
+          },
+          {
+            "name": "c2",
+            "label": " ",
+            "type": "TEXT_FIELD"
+          }
+        ]
+      },
+      "tabSelectImages": {
+        "label": "Images",
+        "type": "MULTI_FIELD",
+        "fields":[
+          {
+            "name": "image",
+            "label": "Image <small>(1170px)</small>",
+            "targetWorkspace": "dam",
+            "appName": "assets",
+            "type": "IMAGE"
+          },
+          {
+            "name": "desc",
+            "label": "Description",
+            "type": "TEXT_FIELD"
+          }
+        ]
+      }
+    },
+    "tabFirst": {
+      "label": "First Class",
+      "tabFirstImageOne": {
+        "targetWorkspace": "dam",
+        "appName": "assets",
+        "identifierToPathConverter": "info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter",
+        "contentPreviewDefinition": "",
+        "label": "First Image <small>(450px)</small>",
+        "type": "IMAGE"
+      },
+      "tabFirstHeadingOne": {
+        "label": "First Image Heading",
+        "type": "TEXT_FIELD"
+      },
+      "tabFirstSubheadingOne": {
+        "label": "First Image Subheading",
+        "type": "TEXT_FIELD"
+      },
+      "tabFirstImageTwo": {
+        "targetWorkspace": "dam",
+        "appName": "assets",
+        "identifierToPathConverter": "info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter",
+        "contentPreviewDefinition": "",
+        "label": "Second Image <small>(450px)</small>",
+        "type": "IMAGE"
+      },
+      "tabFirstHeadingTwo": {
+        "label": "Second Image Heading",
+        "type": "TEXT_FIELD"
+      },
+      "tabFirstSubheadingTwo": {
+        "label": "Second Image Subheading",
+        "type": "TEXT_FIELD"
+      },
+      "tabFirstImageThree": {
+        "targetWorkspace": "dam",
+        "appName": "assets",
+        "identifierToPathConverter": "info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter",
+        "contentPreviewDefinition": "",
+        "label": "Third Image <small>(450px)</small>",
+        "type": "IMAGE"
+      },
+      "tabFirstHeadingThree": {
+        "label": "Third Image Heading",
+        "type": "TEXT_FIELD"
+      },
+      "tabFirstSubheadingThree": {
+        "label": "Third Image Subheading",
+        "type": "TEXT_FIELD"
+      },
+      "tabFirstTable": {
+        "label": "Table",
+        "type": "MULTI_FIELD",
+        "fields":[
+          {
+            "name": "c1",
+            "label": " ",
+            "type": "TEXT_FIELD"
+          },
+          {
+            "name": "c2",
+            "label": " ",
+            "type": "TEXT_FIELD"
+          }
+        ]
+      },
+      "tabFirstImages": {
+        "label": "Images",
+        "type": "MULTI_FIELD",
+        "fields":[
+          {
+            "name": "image",
+            "label": "Image <small>(1170px)</small>",
+            "targetWorkspace": "dam",
+            "appName": "assets",
+            "type": "IMAGE"
+          },
+          {
+            "name": "desc",
+            "label": "Description",
+            "type": "TEXT_FIELD"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+/* City List
+   ========================================================================== */
+.city-list {
+  @include reset-list();
+  @include clearfix;
+
+  // negative margin to combat <li> bottom margin
+  margin-bottom: -20px;
+
+  > li {
+    height: 68px;
+    margin-bottom: 20px;
+
+    @include span-columns(3, 6);
+    @include nth-omega(2n);
+
+    @include at-medium {
+      height: 98px;
+
+      @include span-columns(4, 12);
+      @include remove-nth-omega(2n);
+      @include nth-omega(3n);
+    }
+
+    @include at-large {
+      @include span-columns(2, 12);
+      @include remove-nth-omega(2n);
+      @include remove-nth-omega(3n);
+      @include nth-omega(6n);
+    }
+  }
+}
+
+.city-list--multi-city {
+  @extend .city-list;
+}
+
+.city-list__item {
+  border: 1px solid $medium-grey;
+  @include box-shadow(
+    $off-white 0 0 0 3px inset,
+    $purple-light 2px 3px 0
+    );
+  display: table;
+  height: 100%;
+  padding: 10px;
+  position: relative;
+  text-transform: uppercase;
+  width: 100%;
+
+  .no-touch &:hover,
+  &.is-selected {
+    border: 3px solid $purple;
+    @include box-shadow($purple-light 2px 3px 0);
+    padding: 8px;
+    text-decoration: none;
+  }
+
+  .is-leg-two & {
+    .no-touch &:hover,
+    &.is-selected {
+      border: 3px solid $red;
+    }
+  }
+}
+
+.city-list__wrap {
+  display: table-cell;
+  vertical-align: middle;
+  @include font-size (1.2);
+
+  > .city-list__title {
+    display: block;
+  }
+
+  .city-list__country {
+    text-transform: none;
+  }
+
+  @include at-medium {
+    @include font-size (1.5);
+  }
+}
+
+.city-list__title {
+  color: $purple;
+  font-weight: 700;
+
+  .is-leg-two & {
+    color: $red;
+  }
+}
+
+.city-list__title--all-cities {
+  @extend .city-list__title;
+
+  &:after {
+    content: '';
+    display: block;
+    height: 10px;
+    margin-top: 2px;
+    width: 15px;
+  }
+}

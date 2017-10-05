@@ -1,0 +1,27 @@
+{
+  "title": "Promo Box Properties",
+  "tabs": {
+    "tabMain": {
+      "heading": {
+        "label": "Heading",
+        "validationPattern":".{0,29}",
+        "type": "TEXT_FIELD"
+      },
+      "text": {
+        "label": "Text",
+        "type": "TEXT_FIELD",
+        "validationPattern":".{0,54}",
+        "rows": 5
+      },
+      "buttonLabel": {
+        "label": "Button Label",
+        "type": "TEXT_FIELD"
+      },
+      "buttonLink": {
+        "label": "Button Link",
+        "type": "TEXT_FIELD",
+        "default": "http://"
+      }
+    }
+  }
+}

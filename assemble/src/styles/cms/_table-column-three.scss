@@ -1,0 +1,23 @@
+/* ==========================================================================
+COMPONENT - TableThreeColumn
+========================================================================== */
+.table-column-three{
+	@include wrap;
+	@include component;
+	.container{
+		@include overflow-scrolling;
+	}
+	table{
+		@include table;
+        min-width: 1000px;
+        .first {
+          width: 50%;
+        }
+        .second {
+          width: 25%;
+        }
+        .third {
+          width: 25%;
+        }
+	}
+}

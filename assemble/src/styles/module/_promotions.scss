@@ -1,0 +1,615 @@
+/* ==========================================================================
+   Promotions pages/tabs
+   ========================================================================== */
+.promotion {
+  border-bottom: 1px solid $border-grey;
+}
+
+.promotion__header {
+  @include container;
+
+  @include at-medium {
+    @include container;
+  }
+
+  @include at-large {
+    max-width: 1292px; // max-width of content is 1292-(22*2) = 1248px
+    @include container;
+  }
+
+  //line-height: 30px;
+  padding-top: 40px;
+  //padding-bottom: 30px;
+  > h1 > span, > h2 > span {
+    color: $purple;
+    margin: 0;
+    position: relative;
+    @include gotham-light;
+    @include font-size(2.4);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  > h1, > h2 {
+    color: $purple;
+    margin: 0;
+    position: relative;
+    @include gotham-light;
+    @include font-size(2.4);
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 24px;
+
+    > a {
+      color: $purple;
+      display: block;
+
+      &:after {
+        background-position: center left;
+        @include background-size(20px);
+        height: 20px;
+        width: 20px;
+        content: '';
+        //display: none;
+        margin-top: -13px;
+        padding-right: 0px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+
+        @include at-medium {
+          @include background-size(26px);
+          height: 26px;
+          width: 26px;
+          padding-right: percentage(42/724);
+        }
+        @include at-large {
+          @include background-size(26px);
+          height: 26px;
+          width: 26px;
+          padding-right: percentage(200/1180);
+        }
+
+        @media (min-width: 1280px) {
+          padding-right: percentage(280/1180);
+        }
+
+        @include lt-ie9 {
+          padding-right: percentage(280/1180);
+        }
+      }
+    }
+  }
+
+  padding-bottom: 10px;
+
+  @include at-medium {
+    //line-height: 60px;
+    line-height: initial;
+    padding-top: 50px;
+    padding-bottom: 0px;
+
+    > h1 > a, > h2 > a {
+      &:after {
+        display: block;
+      }
+    }
+  }
+
+  @media (min-width: 740px) {
+    > h1 > a, > h2 > a {
+      @include font-size(3.6);
+    }
+    > h1 >span, > h2 >span  {
+      @include font-size(3.6);
+    }
+  }
+
+  @include lt-ie9 {
+    > h1 > a, > h2 > a {
+      @include font-size(3.6);
+    }
+    > h1 >span, > h2 >span {
+      @include font-size(3.6);
+    }
+  }
+}
+
+.promotion__header--entertainment {
+  @extend .promotion__header;
+
+  > h1, > h2 {
+    color: $red-purple;
+
+    > a {
+      color: $red-purple;
+    }
+  }
+}
+
+.promotion__header--food {
+  @extend .promotion__header;
+
+  > h1, > h2 {
+    color: $reddish;
+
+    > a {
+      color: $reddish;
+    }
+  }
+}
+
+.accordion__main {
+  max-height: 0px;
+  overflow: hidden;
+  @include transition(0.3s max-height ease-in);
+
+  &.is-active {
+    max-height: 9999px;
+  }
+}
+
+.promotion-list {
+  @include reset-list;
+  //padding-top: 40px;
+
+  @include at-medium {
+  //padding-top: 50px;
+    padding-bottom: 32px;
+  }
+}
+
+.promotion-select {
+  //margin-bottom: 24px;
+  text-align: center;
+}
+
+.promotion-selection {
+  padding-top: 40px;
+  @include at-medium {
+    padding-top: 50px;
+  }
+}
+
+.tab-select {
+  @extend .select;
+
+  border: 1px solid $medium-grey;
+  @include box-shadow(
+    $off-white 0 0 0 3px inset,
+    $purple-light 2px 3px 0
+    );
+  color: $dark-grey;
+  @include gotham-book;
+  @include font-size(1.6);
+  padding: 0 16px;
+  position: relative;
+  //text-transform: capitalize;
+  width: 100%;
+
+  &.custom-select {
+    height: 50px;
+    line-height: 48px;
+
+    &:after {
+      background-position: center;
+      @include background-size(contain);
+      height: 16px;
+      margin-top: -8px;
+      right: 16px;
+      width: 16px;
+    }
+  }
+}
+
+.tab-select--food {
+  @extend .tab-select;
+
+  &:focus, &.custom-selectFocus {
+    border-color: $reddish !important;
+  }
+}
+
+select.tab-select {
+  z-index: 1;
+}
+
+select.tab-select--food {
+  @extend select.tab-select;
+}
+
+.tab-list {
+  @include reset-list;
+  display: inline-block;
+  //margin-bottom: 24px;
+}
+
+.tab-list__item {
+  display: inline-block;
+  padding: 0 7px;
+  @include at-medium {
+    padding: 0 10px;
+  }
+  &.is-selected {
+    > a {
+      border-bottom: 1px solid transparent;
+    }
+  }
+
+  > a {
+    border-bottom: 1px solid $purple;
+    display: block;
+    @include gotham-book;
+    @include font-size(1.3);
+    line-height: 13px;
+    padding: 6px 0 0;
+    margin-bottom: 12px;
+    @include at-medium {
+      @include font-size(1.4);
+      line-height: 20px;
+      margin-bottom: 0px;
+    }
+
+
+    .no-touch & {
+      &:hover {
+        border-bottom: 1px solid transparent;
+      }
+    }
+  }
+}
+
+/* Flying with us
+   ========================================================================== */
+.promotion-flying {
+  border-top: 1px solid $border-grey;
+  padding: 0px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  &:first-child {
+    border: 0;
+    padding-top: 0px;
+  }
+
+  @include at-medium {
+    @include span-columns(4,12);
+    @include nth-omega('3n+3');
+    border: 0;
+    //padding: 0 0 44px;
+    padding: 0 0 24px;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:nth-child(3n+4) {
+      clear: both;
+    }
+  }
+}
+
+.promotion-flying__img {
+  float: left;
+  padding-right: 10px;
+  max-width: 39px;
+  width: percentage(50/285);
+
+  @include at-medium {
+    max-width: 60px;
+    width: percentage(62/228);
+  }
+
+  @include at-large {
+    max-width: 80px;
+    width: percentage(80/380);
+  }
+
+  > img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.promotion-flying__main {
+  float: left;
+  width: percentage(235/285);
+
+  @include at-medium {
+    width: percentage(166/228);
+  }
+
+  @include at-large {
+    width: percentage(300/380);
+  }
+  > h2 {
+    color: $purple;
+    @include gotham-bold;
+    @include font-size(1.4);
+    line-height: 14px;
+    margin: 0;
+    padding-bottom: 6px;
+  }
+
+  > p, > p > span > p {
+    color: $extra-dark-grey;
+    @include gotham-book;
+    @include font-size(1.1);
+    line-height: 16px;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 6px;
+    > a {
+      color: $extra-dark-grey;
+      text-decoration: underline;
+    }
+    > a:hover {
+      color: $extra-dark-grey;
+      text-decoration: none;
+    }
+  }
+}
+
+/* Entertainment
+   ========================================================================== */
+.entertainment-item {
+  @include span-columns(3,6);
+  @include nth-omega('2n+2');
+  @include gotham-book;
+  line-height: 18px;
+  margin-bottom: 16px;
+  text-align: left;
+
+  @include at-medium {
+    @include span-columns(3,12);
+    @include remove-nth-omega('2n+2');
+    @include nth-omega('4n+4');
+    margin-bottom: 36px;
+    text-align: center;
+  }
+
+  @include at-large {
+    @include span-columns(2,12);
+    @include remove-nth-omega('2n+2');
+    @include remove-nth-omega('4n+4');
+    @include nth-omega('6n+6');
+  }
+
+  &.is-tight {
+    margin-bottom: 8px;
+
+    @include at-medium {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.entertainment-item__img {
+  display: block;
+  padding-bottom: 8px;
+  margin: 0 auto;
+  max-width: 137px;
+  width: 100%;
+
+  @include at-medium {
+    max-width: 166px;
+    padding-bottom: 16px;
+  }
+  @include at-large {
+    max-width: 180px;
+  }
+}
+
+.entertainment-item__title {
+  color: $black;
+  @include font-size(1.2);
+  @include text-overflow-ellipsis;
+}
+
+.entertainment-item__meta {
+  color: $medium-grey;
+  @include font-size(1.1);
+  @include text-overflow-ellipsis;
+}
+
+.virgin-channel {
+  @include at-medium {
+    padding-bottom: 32px;
+    text-align: center;
+  }
+}
+
+.virgin-channel__header {
+  margin-bottom: 20px;
+
+  > h1 {
+    margin: 0 auto;
+    width: 180px;
+  }
+}
+
+.virgin-channel__about {
+  line-height: 22px;
+  margin: 0 auto 36px;
+  max-width: 780px;
+}
+
+.virgin-channel__lineup {
+  @include reset-list;
+
+  > li {
+    line-height: 22px;
+    @include text-overflow-ellipsis;
+
+    @include at-medium {
+      float: left;
+      margin-bottom: 16px;
+      padding: 0 10px;
+      width: percentage(1/3);
+    }
+  }
+}
+
+
+/* Food & Drink
+   ========================================================================== */
+.promotion-food {
+
+}
+
+.promotion-food--long-haul {
+  @include at-medium {
+    @include span-columns(8,12);
+  }
+}
+
+.promotion-food--all-flights {
+  @include at-medium {
+    @include span-columns(4,12);
+    @include omega;
+  }
+}
+
+.promotion-food__heading {
+  color: $dark-grey;
+  @include gotham-bold;
+  @include font-size(1.4);
+  line-height: 16px;
+  height: 40px;
+  padding: 4px 0;
+  text-transform: uppercase;
+}
+
+.promotion-food__list {
+  @include reset-list;
+  margin-bottom: 48px;
+}
+
+.promotion-food__first-class {
+  color: $extra-dark-grey;
+  @include gotham-book;
+  @include font-size(1.2);
+  line-height: 18px;
+  margin-bottom: 36px;
+
+  @include at-medium {
+    text-align: center;
+  }
+}
+
+.promotion-food__list--columns-2 {
+  @extend .promotion-food__list;
+
+  @include at-medium {
+    .csscolumns & {
+      @include column-count(2);
+      @include column-gap(20px);
+
+      > .food-item {
+        // prevents list items being split on column wrap
+        display: inline-block;
+        width: 100%;
+      }
+    }
+
+    .no-csscolumns & {
+      > li {
+        @include span-columns(4,8);
+        @include nth-omega('2n+2');
+      }
+    }
+  }
+}
+
+.promotion-food__list--columns-3 {
+  @extend .promotion-food__list--columns-2;
+
+  @include at-medium {
+    .csscolumns & {
+      @include column-count(3);
+    }
+
+    .no-csscolumns & {
+      > li {
+        @include span-columns(4,12);
+        @include nth-omega('3n+3');
+      }
+    }
+  }
+}
+
+.food-item {
+  padding-bottom: 24px;
+}
+
+.food-item--smallprint {
+  @extend .smallprint;
+
+  border-top: 1px solid $border-grey;
+  color: $medium-grey;
+  line-height: 14px;
+  margin: 10px 0 0 percentage(50/285);
+  padding: 10px 0 0;
+
+  @include at-medium {
+    margin: 0 0 0 percentage(62/228);
+  }
+
+  @include at-large {
+    margin: 0 0 0 percentage(80/380);
+  }
+
+  .no-csscolumns & {
+    @include at-medium {
+      border: 0;
+      margin: 0;
+      padding: 0 0 0 percentage(31/228);
+    }
+
+    @include at-large {
+      padding: 0 0 0 percentage(40/380);
+    }
+  }
+}
+
+.food-item__img {
+  @extend .promotion-flying__img;
+  max-width: 39px;
+
+  @include at-medium {
+    max-width: 60px;
+  }
+
+  @include at-large {
+    max-width: 80px;
+  }
+}
+
+.food-item__main {
+  @extend .promotion-flying__main;
+
+  > h2 {
+    //color: $reddish;
+    color: $purple;
+  }
+}
+
+.food-item__list-title {
+  color: $dark-grey;
+  @include gotham-bold;
+  @include font-size(1.4);
+  line-height: 18px;
+  margin: 0 0 24px;
+  text-transform: uppercase
+}
+
+.food-item__list {
+  @include reset-list;
+  margin-bottom: 10px;
+
+  > li {
+    color: $extra-dark-grey;
+    @include gotham-book;
+    @include font-size(1.2);
+    line-height: 21px;
+  }
+}

@@ -1,0 +1,156 @@
+/* ==========================================================================
+COMPONENT - News
+========================================================================== */
+.news {
+	@include component;
+	@include container;
+	padding: 0px;
+
+	&.border-top {
+		@include border-top;
+	}
+
+	&.border-bottom {
+		@include border-bottom;
+	}
+
+	.col {
+		border-bottom: 1px solid $border-grey;
+	}
+
+	.first {
+		@include clearfix;
+	}
+
+	.second {
+		@include clearfix;
+	}
+
+	.third {
+		@include clearfix;
+		border-bottom: none !important;
+		border-right: none !important;
+	}
+
+	@include at-medium {
+  	//$grid-padding: 0px;
+  	$gutter-width: 0px;
+
+    .col {
+			border-bottom: none;
+			border-right: 1px solid $border-grey;
+		}
+
+    .first {
+			@include span-columns(4, 12);
+		}
+
+    .second {
+			@include span-columns(4, 12);
+		}
+
+    .third {
+			@include span-columns(4 omega, 12);
+		}
+ 	}
+
+	@include at-large {
+		$grid-padding: 0px;
+	}
+}
+
+.three-up-item-news{
+  @include component;
+  //@include susy-grid-background;
+
+  text-align: center;
+  margin: 0px auto;
+  width: 100%;
+  min-height: 200px;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;  /* Adjusts for spacing */
+  }
+
+  .centered {
+    display: inline-block;
+    vertical-align: middle;
+    width: 80%;
+    padding: 0px;
+    background: none;
+  }
+
+  .heading {
+    @include gotham-light;
+    @include font-size(2.0);
+    @include line-height(3.2);
+    @include letter-spacing (-15);
+	word-break: break-word; 
+    margin: 0 auto 15px auto;
+    text-transform: none;
+    color: #7b4397;
+  }
+
+  .subheading {
+    @include gotham-book;
+    @include font-size(1.1);
+    @include line-height(1.8);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #666666;
+        a,
+    a:hover{
+      background: initial;
+      border: initial;
+      color: initial;
+      display: initial;
+      font: initial;
+      height: initial;
+      letter-spacing: initial;
+      line-height: initial;
+      text-transform: initial;
+      visibility: initial;
+      width: initial;
+      word-spacing: initial;
+      z-index: initial;
+      text-align: initial;
+      text-decoration: underline;
+      text-transform: initial;
+      cursor: initial;
+      padding: initial;
+      max-width: initial;
+      min-width: initial;
+      margin: initial;
+      @include gotham-medium;
+      @include font-size (1.2);
+      @include line-height (1.8);
+    }
+  }
+
+	a {
+		@include font-size(1.1);
+		@include gotham-light;
+		text-transform: uppercase;
+		border-bottom: 1px solid #7b4397;
+	}
+
+  @include at-medium {
+  	min-height: 260px;
+
+    .heading{
+      @include font-size(2.2);
+    }
+  }
+
+  @include at-large {
+  	min-height: 260px;
+
+    .heading{
+      @include font-size(3);
+    }
+  }
+}

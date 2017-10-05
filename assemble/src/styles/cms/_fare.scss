@@ -1,0 +1,146 @@
+/* ==========================================================================
+   Fares Component
+   ========================================================================== */
+.fares{
+	@include image-teaser;
+
+	.col{
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding-bottom: 40px;
+		//padding-top: 60px;
+	}
+	.first, .second, .third {
+		float: none;
+		display: inline-block;
+		width: 100%;
+		margin: 0;
+		@include at-medium {
+			width: 32%;
+		}
+		@include at-large {
+			width: 32%;
+		}
+	}
+	.second, .third {
+		border-top: 1px solid $border-grey;
+		padding-top: 60px;
+	}
+	img{
+		max-width: 80px;
+		@include at-medium {
+			max-width: 120px;
+		}
+		@include at-large {
+			max-width: 120px;
+		}
+	}
+   	.yts-trip--lg__yts-summary {
+
+		.yts-summary {
+
+			margin: 0px auto;
+
+			.image{
+
+				padding-bottom: 16px;
+
+				@include at-large {
+					padding-bottom: 20px;
+				}
+			}
+			.fromto {
+
+				@include gotham-light;
+				@include font-size(3.2);
+
+				color: $purple;
+				height: 22px;
+				line-height: 22px;
+				text-align: middle;
+				vertical-align: middle;
+
+				&.is-dest {
+
+					&.is-from {
+						text-align:right;
+
+					}
+					&.is-to {
+						text-align:left;
+					}
+				}
+
+				&.is-arr {
+
+					background-position: 50%;
+					text-indent: -9999px;
+					width: 20px;
+				}
+
+				@include at-large {
+					@include font-size(4);
+				}
+			}
+
+			.price{
+				@include gotham-book;
+				@include font-size(1.8);
+
+				color: $purple;
+				padding-top: 15px;
+				padding-bottom: 16px;
+
+				@include at-medium {
+					padding-bottom: 32px;
+				}
+				@include at-large {
+					@include font-size(2.6);
+					padding-bottom: 36px;
+				}
+			}
+
+			.compare{
+				@include gotham-book;
+				@include font-size(1.3);
+				@include line-height(1.8);
+			}
+
+			.button{
+				a{
+					@include gotham-bold;
+					@include font-size(1.4);
+
+					border: none;
+					padding: 0px;
+					margin: 0px auto;
+					cursor: pointer;
+					display: block;
+					-webkit-font-smoothing: antialiased;
+					text-transform: none;
+					border-bottom: 1px solid $purple;
+					display: inline;
+
+					&:hover {
+						border-bottom: none;
+					}
+					&:active {
+						border-bottom: none;
+					}
+				}
+			}
+		}
+	}
+
+	@include at-medium {
+		.col{
+			border: none;
+			margin-bottom: 0px;
+			padding-bottom: 0px;
+		}
+		.second{
+			//border-left: 1px solid $border-grey;
+			padding-top: 0px;
+		}
+	}
+}

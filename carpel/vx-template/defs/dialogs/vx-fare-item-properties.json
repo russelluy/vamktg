@@ -1,0 +1,27 @@
+{
+  "title": "Fare Properties",
+  "tabs": {
+    "tabMain": {
+      "variant": {
+        "label": "Variant",
+        "type": "SELECT_FIELD",
+        "options": {
+          "3": "3 Up",
+          "6": "6 Up"
+        },
+        "default": "yes"
+      },
+      "placement": {
+        "label": "Placement",
+        "type": "TEXT_FIELD",
+        "required": "true"
+      },
+      "airport": {
+        "label": "Airport",
+        "type": "TEXT_FIELD",
+        "required": "true",
+        "default": "ALL"
+      }
+    }
+  }
+}

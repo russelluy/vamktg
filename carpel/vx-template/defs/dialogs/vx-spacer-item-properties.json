@@ -1,0 +1,12 @@
+{
+  "title": "Spacer Properties",
+  "tabs": {
+    "tabMain": {
+      "varheight": {
+        "label": "Height <small>(20px)</small>",
+        "type": "TEXT_FIELD",
+        "default": "20px"
+      }
+    }
+  }
+}

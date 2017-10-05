@@ -1,0 +1,22 @@
+/* ==========================================================================
+COMPONENT - TableFourColumn
+========================================================================== */
+.table-column-four{
+	@include wrap;
+	@include component;
+	.container{
+		@include overflow-scrolling;
+	}
+	table{
+		@include table;
+    min-width: 1000px;
+		.first{
+    	width: 50%;
+    }
+  	.second,
+  	.third,
+  	.fourth {
+			width: 16.666%;
+		}
+	}
+}

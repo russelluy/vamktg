@@ -1,0 +1,14 @@
+{
+  "title": "[VX] Feature",
+  "extends": "/modules/standard-templating-kit/templates/pages/stkArticle",
+  "category": "content",
+  "dialog": "vxPageProperties",
+  "areas": { 
+    "featureItem": {
+      "type": "single",
+      "components": [
+        "vxFeatureItemMsg"
+      ]
+    }
+  }
+}

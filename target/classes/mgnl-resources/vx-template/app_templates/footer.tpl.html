@@ -1,0 +1,5 @@
+<ul class="modal-links" ng-repeat="linkGroup in footer.links">
+    <li class="modal-links__item" ng-repeat="link in linkGroup.group">
+        <a ng-href="{{link.url}}" ng-bind="link.name"></a>
+    </li>
+</ul>

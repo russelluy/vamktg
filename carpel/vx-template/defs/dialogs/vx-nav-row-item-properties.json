@@ -1,0 +1,26 @@
+{
+  "title": "Navigation Row Properties",
+  "tabs": {
+    "tabMain": {
+      "variant": {
+        "label": "Variant",
+        "type": "SELECT_FIELD",
+        "options": {
+          "red": "Red",
+          "white": "White",
+          "gold": "Gold",
+          "silver": "Silver"
+        },
+        "default": "red"
+      },
+      "targetPage": {
+        "label": "Page",
+        "required": "true",
+        "type": "LINK",
+        "targetWorkspace": "website",
+        "appName": "pages",
+        "identifierToPathConverter": "info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter"
+      }
+    }
+  }
+}

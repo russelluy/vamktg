@@ -1,0 +1,28 @@
+{
+  "title": "Nav Drop Down Properties",
+  "tabs": {
+    "tabMain": {
+      "variant": {
+        "label": "Variant",
+        "type": "SELECT_FIELD",
+        "options": {
+          "red": "Red",
+          "purple": "Purple"
+        },
+        "default": "red"
+      },
+      "heading": {
+        "label": "Heading",
+        "type": "TEXT_FIELD"
+      },
+      "targetPage": {
+        "label": "Page",
+        "required": "true",
+        "type": "LINK",
+        "targetWorkspace": "website",
+        "appName": "pages",
+        "identifierToPathConverter": "info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter"
+      }
+    }
+  }
+}

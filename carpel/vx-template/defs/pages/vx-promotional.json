@@ -1,0 +1,15 @@
+{
+  "title": "[VX] Promotional",
+  "extends": "/modules/standard-templating-kit/templates/pages/stkArticle",
+  "category": "content",
+  "dialog": "vxPageProperties",
+  "areas": {
+
+    "promotionalItem": {
+      "type": "single",
+      "components": [
+        "vxPromotionalItemMsg"
+      ]
+    }
+  }
+}

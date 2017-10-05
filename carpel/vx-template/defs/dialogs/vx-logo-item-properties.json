@@ -1,0 +1,26 @@
+{
+  "title": "Logo Properties",
+  "tabs": {
+    "tabMain": {
+      "variant": {
+        "label": "Border",
+        "type": "SELECT_FIELD",
+        "options": {
+          "regular": "None",
+          "border-top":"Top",
+          "border-bottom":"Bottom",
+          "border-top border-bottom":"Top and Bottom"
+        },
+        "default": "regular"
+      },
+      "image": {
+        "targetWorkspace": "dam",
+        "appName": "assets",
+        "identifierToPathConverter": "info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter",
+        "contentPreviewDefinition": "",
+        "label": "Logo <small>(570px)</small>",
+        "type": "IMAGE"
+      }
+    }
+  }
+}

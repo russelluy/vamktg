@@ -1,0 +1,1332 @@
+<!doctype html>
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]> <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> | Virgin America</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="shortcut icon" href="/images/favicon.ico">
+
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="/styles/main-ie8.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <link rel="stylesheet" href="/styles/main.css">
+        <!--<![endif]-->
+
+        <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6612472/695864/css/fonts.css">
+
+        <script src="scripts/vx-cms-head.min.js"></script>
+
+    </head>
+
+    <body data-vx-common-window="">
+        
+
+        <header data-ng-cloak="" data-vx-common-header="" role="banner" class="banner" ng-class="{'is-nav-expanded-active': header.dropdown.navActive, 'is-nav-elevate-active': header.elevateLogin}" ng-show="header.visible">
+            <h1 class="navbar__logo">
+                <a href="/" target="_self">Virgin America</a>
+            </h1>
+            <nav class="navbar__main cf">
+                <ul class="navlist--main cf" ng-hide="header.breakpoint === 'small'">
+                    <li><a href="/cms/book-travel" target="_self">Book</a></li>
+                    <li><a href="/flight-check-in">Check In</a></li>
+                    <li><a href="/manage-itinerary">Manage</a></li>
+                </ul>
+                <ul class="navlist--sub cf" ng-hide="header.breakpoint === 'small' || header.breakpoint === 'medium'">
+                    <li><a href="/cms/travel-deals" target="_self">Deals</a></li>
+                    <li><a href="/cms/fly-with-us" target="_self">Flying With Us</a></li>
+                    <li><a href="/cms/airport-destinations" target="_self">Where We Fly</a></li>
+                    <li><a href="/cms/vx-fees" target="_self">Fees</a></li>
+                    <li><a href="/check-flight-status">Flight Status</a></li>
+                    <li><a href="/get-flight-alerts">Flight Alerts</a></li>
+                </ul>
+            </nav>
+            <div class="navbar__right cf">
+                <div class="navbar__expand-nav">
+                    <a href="#" data-vx-common-prevent-default="" class="expand-nav icon-nav-toggle" ng-click="header.toggleDropdown()">Nav</a>
+                </div>
+                <div class="navbar__elevate-nav" ng-switch="header.mustShowElevateTicker">
+                    <span class="elevate-nav--logged-out cf" ng-switch-when="false">
+                        <a href="/cms/elevate-frequent-flyer" class="elevate-nav__link elevate-nav__link--about icon-elevate-small">About Elevate</a>
+                        <a href="/elevate-frequent-flyer" class="elevate-nav__link elevate-nav__link--sign-in icon-elevate-small">Sign In</a>
+                        <a href="/elevate-frequent-flyer/sign-up" class="elevate-nav__link" ng-show="header.breakpoint !== 'small'">Sign Up</a>
+                    </span>
+                    <a ng-href="{{(header.elevateLoggedIn) ? '/elevate-frequent-flyer/landing': '/elevate-frequent-flyer'}}" data-vx-common-prevent-default="" class="elevate-nav--logged-in" ng-switch-when="true">
+                        <div class="navbar-avatar">
+                            <span class="icon-avatar-{{header.memberAvatar}}-sm"></span>
+                        </div>
+                        <span>{{header.elevateUser.firstName}} {{header.elevateUser.lastName}}</span>
+                        <span>{{header.elevateUser.numOfPointsAvailable || '0' | number}} Points</span>
+                    </a>
+                </div>
+            </div>
+            <nav class="nav-dropdown js-dropdown" ng-hide="!header.dropdown.navActive || header.breakpoint === 'large'">
+                <div class="nav-expanded">
+                    <ul class="nav-expanded__list">
+                        <li>
+                            <a href="/" ng-click="header.toggleDropdown()">Home</a>
+                        </li>
+                        <li>
+                            <a href="/cms/book-travel" ng-click="header.toggleDropdown()" target="_self">Book</a>
+                        </li>
+                        <li>
+                            <a href="/flight-check-in" ng-click="header.toggleDropdown()">Check In</a>
+                        </li>
+                        <li>
+                            <a href="/manage-itinerary" ng-click="header.toggleDropdown()">Manage</a>
+                        </li>
+                    </ul>
+                    <ul class="nav-expanded__list--sub">
+                        <li><a href="/cms/travel-deals" target="_self" ng-click="header.toggleDropdown()">Deals</a></li>
+                        <li><a href="/cms/fly-with-us" target="_self" ng-click="header.toggleDropdown()">Flying With Us</a></li>
+                        <li><a href="/cms/airport-destinations" target="_self" ng-click="header.toggleDropdown()">Where We Fly</a></li>
+                        <li><a href="/cms/vx-fees" target="_self" ng-click="header.toggleDropdown()">Fees</a></li>
+                        <li><a href="/check-flight-status" target="_self" ng-click="header.toggleDropdown()">Flight Status</a></li>
+                        <li><a href="/get-flight-alerts" target="_self" ng-click="header.toggleDropdown()">Flight Alerts</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!--<div data-vx-common-saved-choices-bar></div>-->
+        </header>
+
+        <div role="main" class="content">
+            
+
+<div style="clear:both;height: 30px"></div>
+
+<div class="promobox">
+	<div class="centered">
+		<h2>Offer</h2>
+		<h1>Join Portico and Earn 35,000 Elevate points</h1>
+	</div>
+	<a href="">Join Now</a>
+</div>
+
+
+<div style="clear:both;height: 30px"></div>
+<div class="text-body red">
+	<div class="wrap">
+		<div class="content">
+			<h1>Portico is the private club that puts the ‘ahh’ in vacation. With spacious homes in 70 of the world’s most sought-after destinations, you can start relaxing before you even arrive.</h1><h2>Luxury Travel. Reinvented.</h2><p>Being on vacation isn’t good enough. We know you deserve to be in vacation. That’s why Portico combines luxury resort-style services and customized pre-trip planning with hundreds of the best homes in the world’s most sought-after destinations. So you’re free to truly detach and be completely immersed in every moment with your loved ones. After all, vacations are about more than just getting away. They’re about getting together.</p><h2>Free Upgrades to Main Cabin Select</h2><p>Opt in for free upgrades to Main Cabin Select when there’s space available.</p><ul><li>If you’re flying solo, you’ll have the chance to opt in for an upgrade while you book your flight online, through an authorized travel agent, or when booking through the Virgin America Call Center, and we’ll update your flight status with your new cabin (if available) up to two hours before departure.</li><li>Since the upgrades are automatic, we can’t guarantee availability of any previously selected Main Cabin seats once you’ve been assigned a spot in Main Cabin Select.</li><li>If you’re upgraded to Main Cabin Select when you have already checked in for your flight, you’ll need to check in again online or at the airport to select your new seat in Main Cabin Select.</li></ul>
+		</div>
+	</div>
+</div>
+<div style="clear:both;height: 30px"></div>
+<div class="text-body purple">
+	<div class="wrap">
+		<div class="content">
+			<h1>Portico is the private club that puts the ‘ahh’ in vacation. With spacious homes in 70 of the world’s most sought-after destinations, you can start relaxing before you even arrive.</h1><h2>Luxury Travel. Reinvented.</h2><p>Being on vacation isn’t good enough. We know you deserve to be in vacation. That’s why Portico combines luxury resort-style services and customized pre-trip planning with hundreds of the best homes in the world’s most sought-after destinations. So you’re free to truly detach and be completely immersed in every moment with your loved ones. After all, vacations are about more than just getting away. They’re about getting together.</p><h2>Free Upgrades to Main Cabin Select</h2><p>Opt in for free upgrades to Main Cabin Select when there’s space available.</p><ul><li>If you’re flying solo, you’ll have the chance to opt in for an upgrade while you book your flight online, through an authorized travel agent, or when booking through the Virgin America Call Center, and we’ll update your flight status with your new cabin (if available) up to two hours before departure.</li><li>Since the upgrades are automatic, we can’t guarantee availability of any previously selected Main Cabin seats once you’ve been assigned a spot in Main Cabin Select.</li><li>If you’re upgraded to Main Cabin Select when you have already checked in for your flight, you’ll need to check in again online or at the airport to select your new seat in Main Cabin Select.</li></ul>
+		</div>
+	</div>
+</div>
+
+<div class="header-stacked">
+	<div class="container">
+		<div class="col first">
+			<div class="wrap">		
+				<h2 class="heading"></h2>
+				<p class="subheading"></p>
+				<a href=""></a>
+			</div>
+		</div>
+		<div class="col second">
+			<div class="wrap">		
+				<h2 class="heading"></h2>
+				<p class="subheading"></p>
+				<a href=""></a>
+			</div>
+		</div>		
+	</div>	
+</div>
+
+<div class="calculator">
+    <section ng-controller="CalculatorCtrl">
+    
+       <div class="radio-buttons" origin="{{calculator.defaultOrigin=''}}" destination="{{calculator.defaultDestination=''}}" json_airports="{{calculator.json_airports='//magnolia.work.co/cms/dam/jcr:2fb3ee9b-ac56-4626-9b88-92958dba8d39'}}" json_pointsburnall="{{calculator.json_pointsBurnAll='//magnolia.work.co/cms/dam/jcr:cc339fbb-6410-4b8e-809c-a93437ed8c0e'}}" json_carriers="{{calculator.json_carriers='//magnolia.work.co/cms/dam/jcr:dece67e0-4878-455f-ab37-2e63fa91df9b'}}">
+
+            <div class="radio-buttons-container">
+                <form carrier="{{calculator.carrierSelected=''}}">
+                    <input id="" type="radio" ng-model="calculator.typeSelected" name="trip-type" value="RT">
+                    <label for="">Round Trip</label>
+                    <input id="" type="radio" ng-model="calculator.typeSelected" name="trip-type" value="OW">
+                    <label for="">One Way</label>
+                    <input id="" type="radio" ng-model="calculator.typeSelected" name="trip-type" value="MC">
+                    <label for="">Multi City</label>
+                </form>
+            </div>
+        </div>
+        <div class="header-selector">
+            <div id="header-selector-container">
+                <p class="header-selector-paragraph">Calculate points from
+                    <span class="container">
+                        <select class="header-selector-selectbox" ng-model="calculator.originSelected" ng-options="airport.name for airport in calculator.airports_origin">
+                        </select>
+                    </span> to
+                    <span class="container">
+                        <select class="header-selector-selectbox" ng-model="calculator.destinationSelected" ng-options="airport.name for airport in calculator.airports_destination">
+                        </select>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="table-column-four" ng-show="calculator.result.length > 0">
+  			<div class="container">
+            <table>
+                <thead>
+                  <tr>
+                    <th class="col first">&nbsp;<br>Class</th>
+                    <th class="col second">&nbsp;<br>Points</th>
+                    <th class="col third">Taxes &<br>Carrier Imposed Fees</th>
+                    <th class="col fourth">&nbsp;<br>Airline Name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr ng-repeat="airport in calculator.result">
+                    <td class="col first" ng-bind="airport.cabinClass"></td>
+                    <td class="col second"><span ng-bind="airport.numberOfPoints"></span><span ng-show="airport.connectingFlight==='true'"><sup>*</sup></span></td>
+                    <td class="col third" ng-bind="airport.taxesAndFees"></td>
+                    <td class="col fourth" ng-bind="airport.carrierName"></td>
+                  </tr>
+                </tbody>
+            </table>     
+            <div class="content"><p>* Requires connection.</p></div>
+            </div>
+        </div>
+        <div class="calculator-footer">
+            <p>Need a boost before you book? Buy points to top off your account.</p>
+            <a href="#">Buy points</a>
+        </div>
+    </section>
+</div>
+
+
+<div class="nav-drop-down">
+	<div class="nav-drop-down-container">
+		<form name="navform">
+			<select name="nav-drop-down-select" class="nav-drop-down-selectbox">
+				<option value="" selected="selected" disabled="disabled">All Hotel Groups</option>
+				<option value="">Option 01</option>
+				<option value="">Option 02</option>
+				<option value="">Option 03</option>
+				<option value="">Option 04</option>
+				<option value="">Option 05</option>
+			</select>
+		</form>
+	</div>
+</div>
+
+
+
+<div class="nav-row comp-bg-red">
+	<div class="nav-row-container--mobile">
+		<form name="navrowmobileform">
+			<select class="nav-row-selectbox is-trigger">
+				<option value="/" selected="selected">Teste</option>
+				<option value="#">Earn Points</option>
+				<option value="#">Redeem Points</option>
+				<option value="#">Buy Points</option>
+				<option value="#">Elevate Status</option>
+				<option value="#">Credit Card</option>
+				<option value="#">Loren Ipsun</option>
+				<option value="#">Eiusmod tempor</option>
+			</select>
+		</form>
+	</div>
+	<div class="nav-row-container">
+		<a href="#" class="nav-row-container__arrow is-trigger"></a>
+		<ul class="nav-row-list cf">
+			<li>
+				<a href="#">About Elevate</a>
+			</li>
+			<li>
+				<a href="#">Earn Points</a>
+			</li>
+			<li>
+				<a href="#">Redeem Points</a>
+			</li>
+			<li>
+				<a href="#">Buy Points</a>
+			</li>
+			<li>
+				<a href="#">Elevate Status</a>
+			</li>
+			<li>
+				<a href="#">Credit Card</a>
+			</li>
+			<li>
+				<a href="#">Loren Ipsun</a>
+			</li>
+			<li>
+				<a href="#">Dolon Loren</a>
+			</li>
+			<li>
+				<a href="#">Crisium Sepulturis</a>
+			</li>
+			<li>
+				<a href="#">Textus</a>
+			</li>
+			<li>
+				<a href="#">Aleatorius</a>
+			</li>
+			<li>
+				<a href="#">Menus Compridus</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+
+<div class="fares">		
+	<div class="wrap">
+		<div class="container">
+			<div class="col first">					
+					
+				<div class="yts-trip--lg__yts-summary">
+                    <table class="yts-summary">
+                        <tbody>
+                            <tr>
+                                <td class="image" colspan="3"><img src="images/sample_round_120x120.png"></td>
+                            </tr>
+                            <tr>
+                                <td class="fromto is-dest is-from">AUS</td>
+                                <td class="fromto is-arr">-</td>
+                                <td class="fromto is-dest is-to">PDX</td>
+                            </tr>
+                            <tr>
+                            	<td class="price" colspan="3">FROM $89</td>
+                            </tr>
+                            <tr>
+                            	<td class="compare" colspan="3">Compare at $96*</td>
+                            </tr>
+                            <tr>
+                            	<td class="button" colspan="3"><a href="http://www.work.com" rel="”nofollow”">Book</a></td>
+                            </tr>                            
+                        </tbody>
+                    </table>
+                </div>				
+			</div>
+			<div class="col second">					
+				
+				
+
+				<div class="yts-trip--lg__yts-summary">
+                    <table class="yts-summary">
+                        <tbody>
+                            <tr>
+                                <td class="image" colspan="3"><img src="images/sample_round_120x120.png"></td>
+                            </tr>                            
+                            <tr>
+                                <td class="fromto is-dest is-from">AUS</td>
+                                <td class="fromto is-arr">-</td>
+                                <td class="fromto is-dest is-to">SFO</td>
+                            </tr>
+                            <tr>
+                            	<td class="price" colspan="3">FROM $109</td>
+                            </tr>
+                            <tr>
+                            	<td class="compare" colspan="3">Compare at $126*</td>
+                            </tr>
+                            <tr>
+                            	<td class="button" colspan="3"><a href="http://www.work.com" rel="”nofollow”">Book</a></td>
+                            </tr>	                            
+                        </tbody>
+                    </table>
+                </div>
+									
+			</div>
+			<div class="col third">					
+				
+				
+
+				<div class="yts-trip--lg__yts-summary">
+                    <table class="yts-summary">
+                        <tbody>
+                            <tr>
+                                <td class="image" colspan="3"><img src="images/sample_round_120x120.png"></td>
+                            </tr>                            
+                            <tr>
+                                <td class="fromto is-dest is-from">AUS</td>
+                                <td class="fromto is-arr">-</td>
+                                <td class="fromto is-dest is-to">SFO</td>
+                            </tr>
+                            <tr>
+                            	<td class="price" colspan="3">FROM $179</td>
+                            </tr>
+                            <tr>
+                            	<td class="compare" colspan="3">Compare at $210*</td>
+                            </tr>
+                            <tr>
+                            	<td class="button" colspan="3"><a href="http://www.work.com" rel="”nofollow”">Book</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+								
+			</div>
+		</div>		
+	</div>	
+</div>
+
+<div class="image-teaser">		
+	<div class="wrap">
+		<h3 class="heading">Image Teaser Heading</h3>
+			<div class="container">
+				<div class="col first">					
+					<div class="centered">
+						<img src="images/sample_380x214.png" alt="">
+					</div>					
+				</div>
+				<div class="col second">					
+					<div class="centered">
+						<img src="images/sample_380x214.png" alt="">
+					</div>					
+				</div>
+				<div class="col third">					
+					<div class="centered">
+						<img src="images/sample_380x214.png" alt="">
+					</div>					
+				</div>
+			</div>
+		<a href="">Learn More</a>
+	</div>	
+</div>
+
+<div class="faq">
+	<div class="container">
+		<h1>San Francisco Quick Answers</h1>
+		<div class="column">
+			<h2>Where do I drop off travelers for their flight?</h2><p>The Virgin America ticket counter is located in Terminal 2. All domestic and international flights will depart from Terminal 2. Learn more</p><h2>Which gates does Virgin America use?</h2><p>Virgin America uses gates 50-54B for all departures (Mexico included) and domestic arrivals. For Mexico arrivals, Virgin America will continue to use gates in the International Terminal, which includes Concourses A and G. Learn more</p><h2>What am I allowed to take through the security checkpoint and carry on the airplane?</h2><p>Learn more about prohibited items at the TSA website.</p><h2>What kinds of items can I check in my luggage?</h2><p>Learn more about potentially hazardous materials not allowed in checked baggage at the TSA's Hazardous Materials guide.</p><h2>Where is the Virgin Atlantic Clubhouse located?</h2><p>The clubhouse is located on the 5th floor of the International Terminal. To get there, take the elevator adjacent to the Museum by the security gates.</p><h2>Where do international flights arrive and depart?</h2>   <p>Arrival flights from Cancun and Los Cabos arrive in the International Terminal, but all other arrivals and departures (Cancun and Los Cabos departures included) can be found in Terminal 2. Learn more.</p><h2>How do I get between the International Terminal and T2?</h2><p>The best option is to take the AirTrain between the two terminals. Please follow signage in each terminal to the closest AirTrain station. Learn more.</p><h2>Where can I learn more about the new Terminal 2?</h2><p>Learn more about Virgin America’s newest terminal at our T2 information page.</p><h2>Is TSA Pre-Check™ expedited screening available at San Francisco International Airport?</h2><p>TSA Pre-Check™ expedited screening benefits are available for eligible guests. Click Here for more details.</p>
+		</div>
+	</div>
+</div>
+
+<div class="text-body purple">
+	<div class="wrap">
+		<div class="content">
+			<h1>Portico is the private club that puts the ‘ahh’ in vacation. With spacious homes in 70 of the world’s most sought-after destinations, you can start relaxing before you even arrive.</h1><h2>Luxury Travel. Reinvented.</h2><p>Being on vacation isn’t good enough. We know you deserve to be in vacation. That’s why Portico combines luxury resort-style services and customized pre-trip planning with hundreds of the best homes in the world’s most sought-after destinations. So you’re free to truly detach and be completely immersed in every moment with your loved ones. After all, vacations are about more than just getting away. They’re about getting together.</p><h2>Free Upgrades to Main Cabin Select</h2><p>Opt in for free upgrades to Main Cabin Select when there’s space available.</p><ul><li>If you’re flying solo, you’ll have the chance to opt in for an upgrade while you book your flight online, through an authorized travel agent, or when booking through the Virgin America Call Center, and we’ll update your flight status with your new cabin (if available) up to two hours before departure.</li><li>Since the upgrades are automatic, we can’t guarantee availability of any previously selected Main Cabin seats once you’ve been assigned a spot in Main Cabin Select.</li><li>If you’re upgraded to Main Cabin Select when you have already checked in for your flight, you’ll need to check in again online or at the airport to select your new seat in Main Cabin Select.</li></ul>
+		</div>
+	</div>
+</div>
+<div style="clear:both;height: 30px"></div>
+
+
+
+
+
+<div class="wrap">
+<div class="spacer" style="height:; padding-top:">
+	<div class="line"></div>
+</div>
+</div>
+
+<div class="wrap">
+<div class="spacer" style="height:10px; padding-top:">
+	<div class="line"></div>
+</div>
+</div>
+<div class="promobox">
+	<div class="centered">
+		<h2>Offer</h2>
+		<h1>Join Portico and Earn 35,000 Elevate points</h1>
+	</div>
+	<a href="">Join Now</a>
+</div>
+
+
+
+
+
+
+<div class="table-fares">
+    <!-- this is breaking styling, we need to move it out of the template
+    <script language="javascript">
+        function showColumn(type){
+            var colPrices = $('span[name=colPrices]');
+            for (var i = 0; i < colPrices.length; i++) {
+                colPrices[i].style.display = (type === 'colPrices')?'block':'none';
+            }
+            var colPoints = $('span[name=colPoints]');
+            for (var i = 0; i < colPoints.length; i++) {
+                colPoints[i].style.display = (type === 'colPoints')?'block':'none';
+            }
+        }
+    </script-->
+    <div class="table-fares-container--mobile">
+        <ul class="fare-cards">
+            <li class="fare-card">
+                <ul class="fare-card__destinations">
+                    <li>San Francisco</li>
+                    <li>San Diego</li>
+                </ul>
+
+                <dl class="fare-card__details cf">
+                    <dt>Book By</dt>
+                    <dd>Oct 13</dd>
+                    <dt>Adv. Purchase</dt>
+                    <dd>3 days</dd>
+                    <dt>Travel Period</dt>
+                    <dd>Oct 19 - Oct 26</dd>
+                </dl>
+
+                <div class="fare-card__fare-deal">
+                    <div class="fare-deal__text">From</div>
+                    <div class="fare-deal__price"><span class="dollar">$</span>79<span class="ast">*</span></div>
+                    <div class="fare-deal__text">Each Way</div>
+                </div>
+
+                <div class="fare-card__btn">
+                    <a href="#" rel="nofollow">Book</a>
+                </div>
+            </li>
+            <li class="fare-card">
+                <ul class="fare-card__destinations">
+                    <li>Los Angeles</li>
+                    <li>Cancun</li>
+                </ul>
+
+                <dl class="fare-card__details cf">
+                    <dt>Book By</dt>
+                    <dd>Jul 24</dd>
+                    <dt>Adv. Purchase</dt>
+                    <dd>0 days</dd>
+                    <dt>Travel Period</dt>
+                    <dd>Oct 19 - Oct 26</dd>
+                </dl>
+
+                <div class="fare-card__fare-deal">
+                    <div class="fare-deal__text">From</div>
+                    <div class="fare-deal__price"><span class="dollar">$</span>199<span class="ast">*</span></div>
+                    <div class="fare-deal__text">Nonstop</div>
+                </div>
+
+                <div class="fare-card__btn">
+                    <a href="#" rel="nofollow">Book</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="table-fares-container">
+        <table class="fares-table">
+            <thead>
+                <tr>
+                    <th>To</th>
+                    <th>
+                        <div class="fares-table__toggle-points">
+                            <span name="colPrices" style="display: block">US Dollars&nbsp;&nbsp;<a href="javascript:showColumn('colPoints')" class="link-underline">Elevate Points</a></span>
+                            <span name="colPoints" class="medium-grey" style="display: none"><a href="javascript:showColumn('colPrices')" class="link-underline">US Dollars</a>&nbsp;&nbsp;Elevate Points</span>
+                        </div>
+                        Prices <span>Start At</span>
+                    </th>
+                    <th>Book By</th>
+                    <th>Advance Purchase</th>
+                    <th>Travel Period</th>
+                    <th><a href="#textFooter" target="_self" class="fares-table__restrictions link-underline">Restrictions apply</a></th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>New York <span>NY</span></td>
+                    <td>
+                        <span name="colPrices" style="display: block">$54</span>
+                        <span name="colPoints" style="display: none">2000</span>
+                    </td>
+                    <td>Jan 22 - <span>Mar 5</span></td>
+                    <td>21 Days</td>
+                    <td>Jan 22 - <span>Mar 5</span></td>
+                    <td><a href="#" rel="nofollow">Book</a></td>
+                </tr>
+                <tr>
+                    <td>Las Vegas <span>NV</span></td>
+                    <td>
+                        <span name="colPrices" style="display: block">$54</span>
+                        <span name="colPoints" style="display: none">2000</span>
+                    </td>
+                    <td>Jan 22 - <span>Mar 5</span></td>
+                    <td>21 Days</td>
+                    <td>Jan 22 - <span>Mar 5</span></td>
+                    <td><a href="#" rel="nofollow">Book</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        Palm Springs <span>CA</span>
+                        <div class="label"><span class="trip">1 Stop</span><span class="spacer"> - </span>ORD - 2h 30m</div>
+                    </td>
+                    <td>
+                        <span name="colPrices" style="display: block">$54</span>
+                        <span name="colPoints" style="display: none">2000</span>
+                    </td>
+                    <td>Jan 22 - <span>Mar 5</span></td>
+                    <td>21 Days</td>
+                    <td>Jan 22 - <span>Mar 5</span></td>
+                    <td><a href="#" rel="nofollow">Book</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div style="clear:both;height: 50px"></div>
+<div class="table-column-two">
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th class="col first">At-A-Grance</th>
+          <th class="col second"></th>            
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col first">City Name</td>
+          <td class="col second">San Francisco</td>            
+        </tr>
+        <tr>
+          <td class="col first">Airport Name</td>
+          <td class="col second"><a href="">San Francisco International Airport</a></td>
+        </tr>
+        <tr>
+          <td class="col first">Airport Code</td>
+          <td class="col second">50-54B</td>
+        </tr>
+        <tr>
+          <td class="col first">Virgin america Gate(s)</td>
+          <td class="col second">Terminal 2</td>
+        </tr>
+        <tr>
+          <td class="col first">TSA Pre-Check Checkpoint Location</td>
+          <td class="col second">Carousel 9</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div style="clear:both;height: 50px"></div>
+<div class="table-column-three">
+  <div class="container">
+	 <table>
+      <thead>
+        <tr>
+          <th class="col first">Priority Airport Services</th>
+          <th class="col second">Elevate Red</th>
+          <th class="col third">Elevate Silver</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col first">Priority Check-in</td>
+          <td class="col second">Loren Ipsun</td>
+          <td class="col third">V</td>
+        </tr>
+        <tr>
+          <td class="col first">Priority Security</td>
+          <td class="col second">-</td>
+          <td class="col third">V</td>
+        </tr>
+        <tr>
+          <td class="col first">Priority Boarding</td>
+          <td class="col second">-</td>
+          <td class="col third">V</td>
+        </tr>
+        <tr>
+          <td class="col first">Complimentary day passes to the Virgin America airport lounge at LAX</td>
+          <td class="col second">-</td>
+          <td class="col third">2 Day Passes</td>
+        </tr>
+        <tr>
+          <td class="col first">Priority reservation line, live chat, and email</td>
+          <td class="col second">-</td>
+          <td class="col third">Elevate Silver Dedicated Line</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div style="clear:both;height: 50px"></div>
+<div class="table-column-four">
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th class="col first">TableFourColumn</th>
+          <th class="col second">Elevate Red</th>
+          <th class="col third">Elevate Silver</th>
+          <th class="col fourth">Elevate Gold</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col first">Priority Check-in</td>
+          <td class="col second">-</td>
+          <td class="col third">V</td>
+          <td class="col fourth">Loren Ipsun et</td>
+        </tr>
+        <tr>
+          <td class="col first">Priority Security</td>
+          <td class="col second">Contentus ipsun</td>
+          <td class="col third">V</td>
+          <td class="col fourth">Ipsun dolen</td>
+        </tr>
+        <tr>
+          <td class="col first">Priority Boarding</td>
+          <td class="col second">Testtm uni loren</td>
+          <td class="col third">V</td>
+          <td class="col fourth">Cons et ud lipton</td>
+        </tr>
+        <tr>
+          <td class="col first">Complimentary day passes to the Virgin America airport lounge at LAX</td>
+          <td class="col second">Dolen loren</td>
+          <td class="col third">2 Day Passes</td>
+          <td class="col fourth">3 Day Passes</td>
+        </tr>
+        <tr>
+          <td class="col first">Priority reservation line, live chat, and email</td>
+          <td class="col second">Loren Ipsun</td>
+          <td class="col third">Elevate Silver Dedicated Line</td>
+          <td class="col fourth">Elevate Gold Dedicated Line</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<div class="nav-row comp-bg-white">
+	<div class="nav-row-container--mobile">
+		<form name="navrowmobileform">
+			<select class="nav-row-selectbox is-trigger">
+				<option value="/" selected="selected">Teste</option>
+				<option value="#">Earn Points</option>
+				<option value="#">Redeem Points</option>
+				<option value="#">Buy Points</option>
+				<option value="#">Elevate Status</option>
+				<option value="#">Credit Card</option>
+				<option value="#">Loren Ipsun</option>
+				<option value="#">Eiusmod tempor</option>
+			</select>
+		</form>
+	</div>
+	<div class="nav-row-container">
+		<a href="#" class="nav-row-container__arrow is-trigger"></a>
+		<ul class="nav-row-list cf">
+			<li>
+				<a href="#">About Elevate</a>
+			</li>
+			<li>
+				<a href="#">Earn Points</a>
+			</li>
+			<li>
+				<a href="#">Redeem Points</a>
+			</li>
+			<li>
+				<a href="#">Buy Points</a>
+			</li>
+			<li>
+				<a href="#">Elevate Status</a>
+			</li>
+			<li>
+				<a href="#">Credit Card</a>
+			</li>
+			<li>
+				<a href="#">Loren Ipsun</a>
+			</li>
+			<li>
+				<a href="#">Dolon Loren</a>
+			</li>
+			<li>
+				<a href="#">Crisium Sepulturis</a>
+			</li>
+			<li>
+				<a href="#">Textus</a>
+			</li>
+			<li>
+				<a href="#">Aleatorius</a>
+			</li>
+			<li>
+				<a href="#">Menus Compridus</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="nav-row comp-bg-red">
+	<div class="nav-row-container--mobile">
+		<form name="navrowmobileform">
+			<select class="nav-row-selectbox is-trigger">
+				<option value="/" selected="selected">Teste</option>
+				<option value="#">Earn Points</option>
+				<option value="#">Redeem Points</option>
+				<option value="#">Buy Points</option>
+				<option value="#">Elevate Status</option>
+				<option value="#">Credit Card</option>
+				<option value="#">Loren Ipsun</option>
+				<option value="#">Eiusmod tempor</option>
+			</select>
+		</form>
+	</div>
+	<div class="nav-row-container">
+		<a href="#" class="nav-row-container__arrow is-trigger"></a>
+		<ul class="nav-row-list cf">
+			<li>
+				<a href="#">About Elevate</a>
+			</li>
+			<li>
+				<a href="#">Earn Points</a>
+			</li>
+			<li>
+				<a href="#">Redeem Points</a>
+			</li>
+			<li>
+				<a href="#">Buy Points</a>
+			</li>
+			<li>
+				<a href="#">Elevate Status</a>
+			</li>
+			<li>
+				<a href="#">Credit Card</a>
+			</li>
+			<li>
+				<a href="#">Loren Ipsun</a>
+			</li>
+			<li>
+				<a href="#">Dolon Loren</a>
+			</li>
+			<li>
+				<a href="#">Crisium Sepulturis</a>
+			</li>
+			<li>
+				<a href="#">Textus</a>
+			</li>
+			<li>
+				<a href="#">Aleatorius</a>
+			</li>
+			<li>
+				<a href="#">Menus Compridus</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="nav-row comp-bg-silver">
+	<div class="nav-row-container--mobile">
+		<form name="navrowmobileform">
+			<select class="nav-row-selectbox is-trigger">
+				<option value="/" selected="selected">Teste</option>
+				<option value="#">Earn Points</option>
+				<option value="#">Redeem Points</option>
+				<option value="#">Buy Points</option>
+				<option value="#">Elevate Status</option>
+				<option value="#">Credit Card</option>
+				<option value="#">Loren Ipsun</option>
+				<option value="#">Eiusmod tempor</option>
+			</select>
+		</form>
+	</div>
+	<div class="nav-row-container">
+		<a href="#" class="nav-row-container__arrow is-trigger"></a>
+		<ul class="nav-row-list cf">
+			<li>
+				<a href="#">About Elevate</a>
+			</li>
+			<li>
+				<a href="#">Earn Points</a>
+			</li>
+			<li>
+				<a href="#">Redeem Points</a>
+			</li>
+			<li>
+				<a href="#">Buy Points</a>
+			</li>
+			<li>
+				<a href="#">Elevate Status</a>
+			</li>
+			<li>
+				<a href="#">Credit Card</a>
+			</li>
+			<li>
+				<a href="#">Loren Ipsun</a>
+			</li>
+			<li>
+				<a href="#">Dolon Loren</a>
+			</li>
+			<li>
+				<a href="#">Crisium Sepulturis</a>
+			</li>
+			<li>
+				<a href="#">Textus</a>
+			</li>
+			<li>
+				<a href="#">Aleatorius</a>
+			</li>
+			<li>
+				<a href="#">Menus Compridus</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="nav-row comp-bg-gold">
+	<div class="nav-row-container--mobile">
+		<form name="navrowmobileform">
+			<select class="nav-row-selectbox is-trigger">
+				<option value="/" selected="selected">Teste</option>
+				<option value="#">Earn Points</option>
+				<option value="#">Redeem Points</option>
+				<option value="#">Buy Points</option>
+				<option value="#">Elevate Status</option>
+				<option value="#">Credit Card</option>
+				<option value="#">Loren Ipsun</option>
+				<option value="#">Eiusmod tempor</option>
+			</select>
+		</form>
+	</div>
+	<div class="nav-row-container">
+		<a href="#" class="nav-row-container__arrow is-trigger"></a>
+		<ul class="nav-row-list cf">
+			<li>
+				<a href="#">About Elevate</a>
+			</li>
+			<li>
+				<a href="#">Earn Points</a>
+			</li>
+			<li>
+				<a href="#">Redeem Points</a>
+			</li>
+			<li>
+				<a href="#">Buy Points</a>
+			</li>
+			<li>
+				<a href="#">Elevate Status</a>
+			</li>
+			<li>
+				<a href="#">Credit Card</a>
+			</li>
+			<li>
+				<a href="#">Loren Ipsun</a>
+			</li>
+			<li>
+				<a href="#">Dolon Loren</a>
+			</li>
+			<li>
+				<a href="#">Crisium Sepulturis</a>
+			</li>
+			<li>
+				<a href="#">Textus</a>
+			</li>
+			<li>
+				<a href="#">Aleatorius</a>
+			</li>
+			<li>
+				<a href="#">Menus Compridus</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div style="clear:both;height: 30px"></div>
+<div class="text-body red">
+	<div class="wrap">
+		<div class="content">
+			<h1>Portico is the private club that puts the ‘ahh’ in vacation. With spacious homes in 70 of the world’s most sought-after destinations, you can start relaxing before you even arrive.</h1><h2>Luxury Travel. Reinvented.</h2><p>Being on vacation isn’t good enough. We know you deserve to be in vacation. That’s why Portico combines luxury resort-style services and customized pre-trip planning with hundreds of the best homes in the world’s most sought-after destinations. So you’re free to truly detach and be completely immersed in every moment with your loved ones. After all, vacations are about more than just getting away. They’re about getting together.</p><h2>Free Upgrades to Main Cabin Select</h2><p>Opt in for free upgrades to Main Cabin Select when there’s space available.</p><ul><li>If you’re flying solo, you’ll have the chance to opt in for an upgrade while you book your flight online, through an authorized travel agent, or when booking through the Virgin America Call Center, and we’ll update your flight status with your new cabin (if available) up to two hours before departure.</li><li>Since the upgrades are automatic, we can’t guarantee availability of any previously selected Main Cabin seats once you’ve been assigned a spot in Main Cabin Select.</li><li>If you’re upgraded to Main Cabin Select when you have already checked in for your flight, you’ll need to check in again online or at the airport to select your new seat in Main Cabin Select.</li></ul>
+		</div>
+	</div>
+</div>
+<div style="clear:both;height: 30px"></div>
+<div class="text-body purple">
+	<div class="wrap">
+		<div class="content">
+			<h1>Portico is the private club that puts the ‘ahh’ in vacation. With spacious homes in 70 of the world’s most sought-after destinations, you can start relaxing before you even arrive.</h1><h2>Luxury Travel. Reinvented.</h2><p>Being on vacation isn’t good enough. We know you deserve to be in vacation. That’s why Portico combines luxury resort-style services and customized pre-trip planning with hundreds of the best homes in the world’s most sought-after destinations. So you’re free to truly detach and be completely immersed in every moment with your loved ones. After all, vacations are about more than just getting away. They’re about getting together.</p><h2>Free Upgrades to Main Cabin Select</h2><p>Opt in for free upgrades to Main Cabin Select when there’s space available.</p><ul><li>If you’re flying solo, you’ll have the chance to opt in for an upgrade while you book your flight online, through an authorized travel agent, or when booking through the Virgin America Call Center, and we’ll update your flight status with your new cabin (if available) up to two hours before departure.</li><li>Since the upgrades are automatic, we can’t guarantee availability of any previously selected Main Cabin seats once you’ve been assigned a spot in Main Cabin Select.</li><li>If you’re upgraded to Main Cabin Select when you have already checked in for your flight, you’ll need to check in again online or at the airport to select your new seat in Main Cabin Select.</li></ul>
+		</div>
+	</div>
+</div>
+<div style="clear:both;height: 30px"></div>
+
+<div style="clear:both;height: 30px"></div>
+
+<div class="three-up">
+
+  <div class="container">
+
+    <div class="col first">
+      <div class="three-up-item-image">
+        <div class="centered">
+          <div class="image"><img src="images/sample_407x228.png"></div>
+          <h2>subheading elevate points are yours, for as long as you want. Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</h2>
+          <a href="">Button Text</a>
+        </div>
+      </div>
+    </div>
+    <div class="col second">
+      <div class="three-up-item-no-body">
+        <div class="centered">
+          <div class="icon"><img src="images/sample_130x130.png"></div>
+          <h1>Heading</h1>
+        </div>
+      </div>
+    </div>
+    <div class="col third">
+      
+    </div>
+
+  </div>
+  
+</div>
+
+<div style="clear:both;height: 30px"></div>
+
+
+
+<div style="clear:both"></div>
+<div class="image-teaser">		
+	<div class="wrap">
+		<h3 class="heading">Image Teaser Heading</h3>
+			<div class="container">
+				<div class="col first">					
+					<div class="centered">
+						<img src="images/sample_380x214.png" alt="">
+					</div>					
+				</div>
+				<div class="col second">					
+					<div class="centered">
+						<img src="images/sample_380x214.png" alt="">
+					</div>					
+				</div>
+				<div class="col third">					
+					<div class="centered">
+						<img src="images/sample_380x214.png" alt="">
+					</div>					
+				</div>
+			</div>
+		<a href="">Learn More</a>
+	</div>	
+</div>
+
+<div style="clear:both"></div>
+<div class="header-stacked">
+	<div class="container">
+		<div class="col first comp-bg-silver">
+			<div class="wrap">		
+				<h2 class="heading">Silver</h2>
+				<p class="subheading">20,000 Status Points</p>
+				<a href="">Learn More</a>
+			</div>
+		</div>
+		<div class="col second comp-bg-gold">
+			<div class="wrap">		
+				<h2 class="heading">Gold</h2>
+				<p class="subheading">50,000 Status Points</p>
+				<a href="">Learn More</a>
+			</div>
+		</div>		
+	</div>	
+</div>
+
+<div style="clear:both;height: 30px"></div>
+
+<div class="two-up comp-bg-xxlightgrey left">
+	<div class="wrap">
+		<div class="container">
+			<div class="col col-text comp-bg-xxlightgrey">
+				<div class="centered">
+					<h2 class="heading"></h2>
+					<p class="subheading"></p>
+					<a href=""></a>
+				</div>
+			</div>
+			<div class="col col-image">
+				<img src="" alt="">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div style="clear:both;height: 30px"></div>
+
+<div class="two-up comp-bg-white right">
+	<div class="wrap">
+		<div class="container">
+			<div class="col col-text comp-bg-white">
+				<div class="centered">
+					<h2 class="heading"></h2>
+					<p class="subheading"></p>
+					<a href=""></a>
+				</div>
+			</div>
+			<div class="col col-image">
+				<img src="" alt="">
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div style="clear:both;height: 30px"></div>
+
+<div class="one-up">
+<figure>
+  <img src="" alt="">
+  <figcaption>
+    <div class="centered">
+      <h3 class="heading"></h3>
+      <a href=""></a>
+    </div>
+  </figcaption>
+</figure>
+</div>
+
+
+<div style="clear:both;height: 30px"></div>
+
+<div class="three-up">
+<div class="wrap">
+	<div class="container">
+
+		<div class="col first">
+			
+			
+			
+						
+		</div>
+		<div class="col second">
+			
+			
+			
+				
+		</div>
+		<div class="col third">
+			
+			
+			
+				
+		</div>
+
+	</div>
+	</div>	
+</div>
+
+<div style="clear:both;height: 30px"></div>
+
+<div class="three-up">
+<div class="wrap">
+	<div class="container">
+
+		<div class="col first">
+			
+			
+			
+						
+		</div>
+		<div class="col second">
+			
+			
+			
+				
+		</div>
+		<div class="col third">
+			
+			
+			
+				
+		</div>
+
+	</div>
+	</div>	
+</div>
+
+<div class="header-medium">
+	<div class="wrap">		
+		<h1 class="heading">Redeem Points</h1>
+	</div>
+</div>
+
+
+<div style="clear:both"></div>
+
+<div class="text-footer">
+	<div class="wrap">
+		<div class="content">
+            <p><strong>Terms &amp; Conditions</strong></p>
+            <p>* Qualifying status points: Each year, Virgin America Visa cardholders will earn bonus status points if $25,000 in eligible purchases have been made using the credit card during the applicable year. Cardmembers that have an annual fee will earn a 10,000 status points (provided the annual fee has been paid) and Virgin America Visa cardholders not paying an annual fee will earn 5,000 status points. Each year will be measured based on billing cycle end dates beginning in January and ending in December of the applicable year, regardless of account open date. Any eligible purchases made after the December billing cycle end date will be applied to toward the next year’s status point earnings. Approximately 6-8 weeks after the billing cycle end date in which the $25,000 in eligible purchases threshold has been reached, the 10,000 or 5,000 Status Points earned, as applicable, will be posted to the cardholder’s Elevate account.
+            </p>
+            <p>** Valid only for nonstop or connecting travel; One time use promo code is valid for non-refundable Main Cabin tickets only in fare classes N, S, L, I, M, U, E, H, B, or V. Bookingl must occur before the end of the benefit year. Blackout dates do not apply. Tickets require advance purchase of 3 days. Promo code may be used only towards newly booked travel and may not be applied to prior bookings. Promo code discount will be deducted off of base fare. Base fares do not include Passenger Facility Charges of up to $9 each way, September 11th Security Fees of up to $5 each way and a Federal Segment Tax of $3.80 per domestic segment. A segment is a takeoff and landing. For service to/from Mexico, base fares do not include the U.S. Immigration User Fee of $7, the U.S. APHIS fee of $5, the U.S. Customs processing fee of $5.50, a U.S. International Arrival/Departure Tax of $16.70 each way and additional taxes/fees of up to $60, including: Mexico International Departure Tax and Mexico Tourism Tax. Promo code may not be redeemed for cash. Promo code may only be used for bookings made on virginamerica.com and is only valid on itinerary of 1. Offer is not transferable and cannot be combined with any other offers. Seats are limited, subject to availability, and may not be available on all flights. If travel is changed or cancelled, promo code discount will become invalid. Routes, fees and schedules are subject to change without notice.</p><p>
+		</p></div>
+	</div>
+</div>
+
+<div style="clear:both"></div>
+
+<div class="header-large comp-bg-red">
+	<div class="wrap">		
+		<h1 class="heading">Elevate</h1>
+		<p class="subheading">Start earning points, perks, and reward points with no blackouts.</p>
+	</div>
+</div>
+
+
+
+<div style="clear:both"></div>
+<div class="header-medium">
+	<div class="wrap">		
+		<h1 class="heading">Redeem Points</h1>
+	</div>
+</div>
+
+
+<div class="header-normal">
+	<div class="wrap">		
+		<h1 class="heading">Deals from Austin</h1>
+	</div>
+</div>
+
+        </div>
+
+        <footer role="contentinfo" data-ng-cloak="" data-vx-common-footer="">
+            <div bindonce="" class="wrap">
+                <div class="footer-wrap" ng-switch="footer.breakpoint">
+                    <div data-ng-cloak="" ng-switch-when="small">
+                        <nav class="footer-nav cf">
+                            <ul class="footer-nav__list" ng-repeat="linkGroup in footer.links[0]">
+                                <li class="footer-nav__item" ng-repeat="link in linkGroup">
+                                    <a ng-href="{{link.url}}" ng-bind="link.name" target="_self"></a>
+                                </li>
+                            </ul>
+                            <ul class="footer-nav__list" ng-repeat="linkGroup in footer.links[5]">
+                                <li class="footer-nav__item" ng-repeat="link in linkGroup">
+                                    <a ng-href="{{link.url}}" ng-bind="link.name" target="_self" rel="me"></a>
+                                </li>
+                            </ul>
+                            <div class="footer-nav__select">
+                                <a href="#" class="btn--select" ng-click="footer.openFooterModal()">More Options</a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div data-ng-cloak="" ng-switch-when="medium">
+                        <nav class="footer-nav cf">
+                            <div class="footer-nav__list-wrap">
+                                <ul ng-repeat="linkGroup in footer.links[0]">
+                                    <li class="footer-nav__item" ng-repeat="link in linkGroup">
+                                        <a ng-href="{{link.url}}" ng-bind="link.name" target="_self"></a>
+                                    </li>
+                                </ul>
+                                <ul ng-repeat="linkGroup in footer.links[4]">
+                                    <li class="footer-nav__item" ng-repeat="link in linkGroup">
+                                        <a ng-href="{{link.url}}" ng-bind="link.name" target="_self"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-nav__list-wrap">
+                                <ul ng-repeat="linkGroup in footer.links[1]">
+                                    <li class="footer-nav__item" ng-repeat="link in linkGroup">
+                                        <a ng-href="{{link.url}}" ng-bind="link.name" target="_self"></a>
+                                    </li>
+                                </ul>
+                                <ul ng-repeat="linkGroup in footer.links[3]">
+                                    <li class="footer-nav__item" ng-repeat="link in linkGroup">
+                                        <a ng-href="{{link.url}}" ng-bind="link.name" target="_self"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-nav__list-wrap">
+                                <ul ng-repeat="linkGroup in footer.links[2]">
+                                    <li class="footer-nav__item" ng-repeat="link in linkGroup">
+                                        <a ng-href="{{link.url}}" ng-bind="link.name" target="_self"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-nav__list-wrap">
+                                <ul ng-repeat="linkGroup in footer.links[5]">
+                                    <li class="footer-nav__item" ng-repeat="link in linkGroup">
+                                        <a ng-href="{{link.url}}" ng-bind="link.name" target="_self" rel="me"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <nav class="footer-nav cf" ng-switch-when="large">
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item"><a href="/cms/sitemap" target="_self">Sitemap</a></li>
+                            <li class="footer-nav__item"><a href="http://virginamerica.custhelp.com/">Contact Us/FAQs</a></li>
+                            <li class="footer-nav__item"><a href="/cms/about-our-airline" target="_self">About Us</a></li>
+                            <li class="footer-nav__item"><a href="/cms/about-our-airline/press" target="_self">Press</a></li>
+                        </ul>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item"><a href="/blog">Blog</a></li>
+                            <li class="footer-nav__item"><a href="/cms/airline-jobs" target="_self">Careers</a></li>
+                            <li class="footer-nav__item"><a href="/cms/corporate-travel" target="_self">Corporate &amp; Group Travel</a></li>
+                            <li class="footer-nav__item"><a href="/cms/corporate-travel/travel-agents" target="_self">Travel Agents</a></li>
+                        </ul>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item"><a href="/cms/legal/guest-service-commitment" target="_self">Guest Service Commitment</a></li>
+                            <li class="footer-nav__item"><a href="/cms/dam/vx-pdf/contract-of-carriage.pdf" target="_self">Contract of Carriage</a></li>
+                            <li class="footer-nav__item"><a href="/cms/dam/vx-pdf/international-contract-of-carriage.pdf" target="_self">Int’l Contract of Carriage</a></li>
+                            <li class="footer-nav__item"><a href="/cms/corporate-responsibility" target="_self">Corporate Responsibility</a></li>
+                        </ul>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item"><a href="http://elevate.virginamerica.com/pub/sf/ResponseForm?_ri_=X0Gzc2X%3DWQpglLjHJlYQGmAt9ur9biu27Jh9e9uzfeDcCi8SonfVXMtX%3DWQpglLjHJlYQGruK1w1EzbazdUdEGG6gmlazdJwoNGDzbf&_ei_=EmSL9xUrhFrGHt6VuHz0Fpo">Email Unsubscribe</a></li>
+                            <li class="footer-nav__item"><a href="/cms/legal/privacy-policy" target="_self">Privacy Policy</a></li>
+                            <li class="footer-nav__item"><a href="/cms/travel-guard" target="_self">Travel Insurance</a></li>
+                            <li class="footer-nav__item"><a href="/cms/news" target="_self">All News &amp; Updates</a></li>
+                        </ul>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item"><a href="/cms/elevate-frequent-flyer" target="_self">What Is Elevate?</a></li>
+                            <li class="footer-nav__item"><a href="/elevate-frequent-flyer/credit-card" target="_self">Virgin America Credit Card</a></li>
+                            <li class="footer-nav__item"><a href="/cms/advertise-onboard" target="_self">Advertise Onboard</a></li>
+                            <li class="footer-nav__item"><a href="https://plus.google.com/+VirginAmerica/" target="_blank" rel="publisher">Google+</a></li>
+                        </ul>
+                        <ul class="footer-nav__list is-omega">
+                            <li class="footer-nav__item"><a rel="me" href="http://instagram.com/virginamerica" target="_blank" rel="me">Instagram</a></li>
+                            <li class="footer-nav__item"><a rel="me" href="https://twitter.com/VirginAmerica" target="_blank" rel="me">Twitter</a></li>
+                            <li class="footer-nav__item"><a rel="me" href="https://www.facebook.com/VirginAmerica" target="_blank" rel="me">Facebook</a></li>
+                            <li class="footer-nav__item"><a href="https://www.youtube.com/user/VirginAmerica" target="_blank" rel="me">YouTube</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer-copy">
+                        &copy; <span ng-bind="footer.year | date:'yyyy'"></span> Virgin America
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <script src="scripts/vx-cms.min.js"></script>
+
+    <!--[if lt IE 10]>
+        <script src="scripts/shims/css3-multi-column.min.js"></script>
+    <![endif]-->
+
+        <!--[if lte IE 8]>
+            <div class="modal__window--ie8">
+                <div class="modal__bkgd">&nbsp;</div>
+                <div class="modal__dialog">
+                    <div class="modal__header">
+                        <h1 class="modal__title">Your browser is not currently supported</h1>
+                    </div>
+                    <div class="modal__content is-generic">
+                        <p>But there’s an easy fix! The Virgin America site works on a wide range of browsers. Click one of the icons below and follow the instructions. You’ll be flying in no time.</p>
+
+                        <p>Find the latest versions of our supported browsers below:</p>
+
+                        <ul class="supported-browsers">
+                            <li class="supported-browsers__chrome">
+                                <a href="https://www.google.com/intl/en-US/chrome/browser/‎">
+                                    <span class="btn btn-normal btn-primary btn-block">Download Google Chrome</span>
+                                </a>
+                            </li>
+                            <li class="supported-browsers__firefox">
+                                <a href="http://www.mozilla.org/en-US/firefox/new/‎">
+                                    <span class="btn btn-normal btn-primary btn-block">Download Firefox</span>
+                                </a>
+                            </li>
+                            <li class="supported-browsers__ie is-omega">
+                                <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                                    <span class="btn btn-normal btn-primary btn-block">Download Internet Explorer</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        <![endif]-->
+    </body>
+</html>

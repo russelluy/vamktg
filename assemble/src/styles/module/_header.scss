@@ -1,0 +1,90 @@
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.banner {
+  background: $purple; /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzdiNDM5NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU5JSIgc3RvcC1jb2xvcj0iI2I1MjM4YSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg3JSIgc3RvcC1jb2xvcj0iI2RjMjMyZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+  background: -moz-linear-gradient(left, $purple 0%, $gradient-mid 59%, $elevate-red 87%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,$purple), color-stop(59%,$gradient-mid), color-stop(87%,$elevate-red)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, $purple 0%,$gradient-mid 59%,$elevate-red 87%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, $purple 0%,$gradient-mid 59%,$elevate-red 87%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, $purple 0%,$gradient-mid 59%,$elevate-red 87%); /* IE10+ */
+  background: linear-gradient(to right, $purple 0%,$gradient-mid 59%,$elevate-red 87%); /* W3C */
+  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$purple', endColorstr='$elevate-red',GradientType=1 ); /* IE6-8 */
+
+  .svg & {
+    filter: none;
+  }
+
+  @include backface-visibility(hidden);
+  height: 54px;
+  min-width: 320px;
+  position: relative;
+  width: 100%;
+  z-index: $header-z-index;
+
+  .is-elevate-member-silver & {
+    background: $purple; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzdiNDM5NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU5JSIgc3RvcC1jb2xvcj0iI2I1MjM4YSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg3JSIgc3RvcC1jb2xvcj0iI2Q0ZDRkNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(left, $purple 0%, $gradient-mid 59%, $elevate-silver 87%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,$purple), color-stop(59%,$gradient-mid), color-stop(87%,$elevate-silver)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, $purple 0%,$gradient-mid 59%,$elevate-silver 87%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, $purple 0%,$gradient-mid 59%,$elevate-silver 87%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, $purple 0%,$gradient-mid 59%,$elevate-silver 87%); /* IE10+ */
+    background: linear-gradient(to right, $purple 0%,$gradient-mid 59%,$elevate-silver 87%); /* W3C */
+    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$purple', endColorstr='$elevate-silver',GradientType=1 ); /* IE6-8 */
+  }
+
+  .is-elevate-member-gold & {
+    background: $purple; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzdiNDM5NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU5JSIgc3RvcC1jb2xvcj0iI2I1MjM4YSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg3JSIgc3RvcC1jb2xvcj0iI2RmYWQ1OCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(left, $purple 0%, $gradient-mid 59%, $elevate-gold 87%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,$purple), color-stop(59%,$gradient-mid), color-stop(87%,$elevate-gold)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, $purple 0%,$gradient-mid 59%,$elevate-gold 87%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, $purple 0%,$gradient-mid 59%,$elevate-gold 87%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, $purple 0%,$gradient-mid 59%,$elevate-gold 87%); /* IE10+ */
+    background: linear-gradient(to right, $purple 0%,$gradient-mid 59%,$elevate-gold 87%); /* W3C */
+    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$purple', endColorstr='$elevate-gold',GradientType=1 ); /* IE6-8 */
+  }
+
+  &.is-nav-expanded-active {
+    background: $red-nav;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    left: 0;
+    position: fixed;
+    top: 0;
+    z-index: $modal-z-index;
+  }
+
+  &.is-nav-elevate-active {
+    background: $red-nav;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+  }
+
+  .is-yts-expanded & {
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    z-index: $modal-z-index;
+
+    @include at-large {
+      height: auto;
+    }
+  }
+
+  .is-header-fixed & {
+    left: 0;
+    position: fixed;
+    top: 0;
+  }
+
+  @include lt-ie9 {
+    background: $purple;
+    min-width: 1120px;
+  }
+}

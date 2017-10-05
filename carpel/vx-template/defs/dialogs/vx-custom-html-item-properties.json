@@ -1,0 +1,27 @@
+{
+  "title": "Custom HTML Properties",
+  "tabs": {
+    "tabMain": {
+      "label": "Custom HTML",
+      "html": {
+        "label": "HTML",
+        "type": "RICH_TEXT_FIELD",
+        "source": "true"
+      },
+      "confirmation": { 
+        "label": " ",
+        "type": "MULTIPLE_FIELD",
+        "multiselect": "true",
+        "options": {
+          "confirmed": "Security Confirmation"
+        },
+        "required": "true"
+      },
+      "message": {
+        "label": " ",
+        "type": "STATIC",
+        "value": "I am fully aware of the risks involved in using raw HTML as part of an encompassing template structure. I also accept breaking CMS principles by adding HTML data to content repository and accept the process implications."
+      }
+    }
+  }
+}

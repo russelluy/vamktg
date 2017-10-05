@@ -1,0 +1,22 @@
+{
+  "title": "Header News Properties",
+  "tabs": {
+    "tabMain": {
+      "heading": {
+        "label": "Heading",
+        "validationPattern":".{0,27}",
+        "type": "TEXT_FIELD"
+      },
+      "subheading": {
+        "label": "Subheading",
+        "rows":3,
+        "type": "TEXT_FIELD"
+      },
+      "news_date": {
+        "label": "Date",
+        "time":"false",
+        "type": "DATE_FIELD"
+      }
+    }
+  }
+}

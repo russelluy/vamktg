@@ -1,0 +1,286 @@
+<!doctype html>
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]> <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> | Virgin America</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="shortcut icon" href="/images/favicon.ico">
+
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="/styles/main-ie8.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <link rel="stylesheet" href="/styles/main.css">
+        <!--<![endif]-->
+
+        <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6612472/695864/css/fonts.css">
+
+        <!-- build:js scripts/vx-cms-head.min.js -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <script src="scripts/grunticon.js"></script>
+        <!-- endbuild -->
+
+    </head>
+
+    <body data-vx-common-window>
+        
+
+        <header data-ng-cloak data-vx-common-header role="banner" class="banner" ng-class="{'is-nav-expanded-active': header.dropdown.navActive, 'is-nav-elevate-active': header.elevateLogin}" ng-show="header.visible">
+            <h1 class="navbar__logo">
+                <a href="/" target="_self">Virgin America</a>
+            </h1>
+            <nav class="navbar__main cf">
+                <ul class="navlist--main cf" ng-hide="header.breakpoint === 'small'">
+                    <li><a href="/cms/book-travel" target="_self">Book</a></li>
+                    <li><a href="/flight-check-in">Check In</a></li>
+                    <li><a href="/manage-itinerary">Manage</a></li>
+                </ul>
+                <ul class="navlist--sub cf" ng-hide="header.breakpoint === 'small' || header.breakpoint === 'medium'">
+                    <li><a href="/cms/travel-deals" target="_self">Deals</a></li>
+                    <li><a href="/cms/fly-with-us" target="_self">Flying With Us</a></li>
+                    <li><a href="/cms/airport-destinations" target="_self">Where We Fly</a></li>
+                    <li><a href="/cms/vx-fees" target="_self">Fees</a></li>
+                    <li><a href="/check-flight-status">Flight Status</a></li>
+                    <li><a href="/get-flight-alerts">Flight Alerts</a></li>
+                </ul>
+            </nav>
+            <div class="navbar__right cf">
+                <div class="navbar__expand-nav">
+                    <a href="#" data-vx-common-prevent-default class="expand-nav icon-nav-toggle" ng-click="header.toggleDropdown()">Nav</a>
+                </div>
+                <div class="navbar__elevate-nav" ng-switch="header.mustShowElevateTicker">
+                    <span class="elevate-nav--logged-out cf" ng-switch-when="false">
+                        <a href="/cms/elevate-frequent-flyer" class="elevate-nav__link elevate-nav__link--about icon-elevate-small">About Elevate</a>
+                        <a href="/elevate-frequent-flyer" class="elevate-nav__link elevate-nav__link--sign-in icon-elevate-small">Sign In</a>
+                        <a href="/elevate-frequent-flyer/sign-up" class="elevate-nav__link" ng-show="header.breakpoint !== 'small'">Sign Up</a>
+                    </span>
+                    <a ng-href="{{(header.elevateLoggedIn) ? '/elevate-frequent-flyer/landing': '/elevate-frequent-flyer'}}" data-vx-common-prevent-default class="elevate-nav--logged-in" ng-switch-when="true">
+                        <div class="navbar-avatar">
+                            <span class="icon-avatar-{{header.memberAvatar}}-sm"></span>
+                        </div>
+                        <span>{{header.elevateUser.firstName}} {{header.elevateUser.lastName}}</span>
+                        <span>{{header.elevateUser.numOfPointsAvailable || '0' | number}} Points</span>
+                    </a>
+                </div>
+            </div>
+            <nav class="nav-dropdown js-dropdown" ng-hide="!header.dropdown.navActive || header.breakpoint === 'large'">
+                <div class="nav-expanded">
+                    <ul class="nav-expanded__list">
+                        <li>
+                            <a href="/" ng-click="header.toggleDropdown()">Home</a>
+                        </li>
+                        <li>
+                            <a href="/cms/book-travel" ng-click="header.toggleDropdown()" target="_self">Book</a>
+                        </li>
+                        <li>
+                            <a href="/flight-check-in" ng-click="header.toggleDropdown()">Check In</a>
+                        </li>
+                        <li>
+                            <a href="/manage-itinerary" ng-click="header.toggleDropdown()">Manage</a>
+                        </li>
+                    </ul>
+                    <ul class="nav-expanded__list--sub">
+                        <li><a href="/cms/travel-deals" target="_self" ng-click="header.toggleDropdown()">Deals</a></li>
+                        <li><a href="/cms/fly-with-us" target="_self" ng-click="header.toggleDropdown()">Flying With Us</a></li>
+                        <li><a href="/cms/airport-destinations" target="_self" ng-click="header.toggleDropdown()">Where We Fly</a></li>
+                        <li><a href="/cms/vx-fees" target="_self" ng-click="header.toggleDropdown()">Fees</a></li>
+                        <li><a href="/check-flight-status" target="_self" ng-click="header.toggleDropdown()">Flight Status</a></li>
+                        <li><a href="/get-flight-alerts" target="_self" ng-click="header.toggleDropdown()">Flight Alerts</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!--<div data-vx-common-saved-choices-bar></div>-->
+        </header>
+
+        <div role="main" class="content">
+            
+<!--ElevateNAVROW RED-->
+<div class="nav-row comp-bg-red" data-vx-elevate-menu>
+  <div class="nav-row-container--mobile">
+    <form name="navrowmobileform" ng-if="elevateMenu.selectOption">
+      <select class="nav-row-selectbox" ng-options="option.name for option in elevateMenu.menuOptions" ng-model="elevateMenu.selectOption" ng-change="elevateMenu.selectMenuOption(elevateMenu.selectOption)"></select>
+    </form>
+  </div>
+  <div class="nav-row-container" ng-class="{'is-expanded': elevateMenu.expandedMenu, 'is-desktop': elevateMenu.desktopView}">
+    <a href="#" class="nav-row-container__arrow" data-vx-common-prevent-default ng-click="elevateMenu.expandMenu()"></a>
+    <ul class="nav-row-list cf">
+      <li ng-show="elevateMenu.elevateLoggedIn">
+        <a href="/elevate-frequent-flyer/my-account">My Account</a>
+      </li>
+      <li ng-show="!elevateMenu.elevateLoggedIn">
+        <a href="/elevate-frequent-flyer/sign-up">Join Elevate</a>
+      </li>
+      <li><a href="/cms/elevate-frequent-flyer">About Elevate</a></li>
+      <li><a href="/cms/elevate-frequent-flyer/earn-points">Earn Points</a></li>
+      <li><a href="/cms/elevate-frequent-flyer/redeem-points">Redeem Points</a></li>
+      <li><a href="/cms/elevate-frequent-flyer/status">Status</a></li>
+      <li><a href="/cms/elevate-frequent-flyer/partners">Partners</a></li>
+      <li><a href="/elevate-frequent-flyer/buy-gift-points">Buy Points</a></li>
+      <li><a href="/elevate-frequent-flyer/credit-card">Credit Card</a></li>
+      <li ng-show="elevateMenu.elevateLoggedIn">
+        <a href="#" data-vx-common-prevent-default ng-click="elevateMenu.logOut()">SIGN OUT</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<img data-vx-global-image out="images/temp/fare-info-1.jpg" over="" alt="[Alt text here]" small="100" medium="150" large="200">
+
+        </div>
+
+        <footer role="contentinfo" data-ng-cloak data-vx-common-footer>
+            <div bindonce class="wrap">
+                <div class="footer-wrap" ng-switch="footer.breakpoint">
+                    <div data-ng-cloak ng-switch-when="small">
+                        <nav class="footer-nav cf">
+                            <ul class="footer-nav__list"  ng-repeat="linkGroup in footer.links[0]">
+                                <li class="footer-nav__item" ng-repeat="link in linkGroup">
+                                    <a ng-href="{{link.url}}" ng-bind="link.name" target="_self"></a>
+                                </li>
+                            </ul>
+                            <ul class="footer-nav__list" ng-repeat="linkGroup in footer.links[5]">
+                                <li class="footer-nav__item" ng-repeat="link in linkGroup">
+                                    <a ng-href="{{link.url}}" ng-bind="link.name" target="_self" rel="me"></a>
+                                </li>
+                            </ul>
+                            <div class="footer-nav__select">
+                                <a href="#" class="btn--select" ng-click="footer.openFooterModal()">More Options</a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div data-ng-cloak ng-switch-when="medium">
+                        <nav class="footer-nav cf">
+                            <div class="footer-nav__list-wrap">
+                                <ul ng-repeat="linkGroup in footer.links[0]">
+                                    <li class="footer-nav__item" ng-repeat="link in linkGroup">
+                                        <a ng-href="{{link.url}}" ng-bind="link.name" target="_self"></a>
+                                    </li>
+                                </ul>
+                                <ul ng-repeat="linkGroup in footer.links[4]">
+                                    <li class="footer-nav__item" ng-repeat="link in linkGroup">
+                                        <a ng-href="{{link.url}}" ng-bind="link.name" target="_self"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-nav__list-wrap">
+                                <ul ng-repeat="linkGroup in footer.links[1]">
+                                    <li class="footer-nav__item" ng-repeat="link in linkGroup">
+                                        <a ng-href="{{link.url}}" ng-bind="link.name" target="_self"></a>
+                                    </li>
+                                </ul>
+                                <ul ng-repeat="linkGroup in footer.links[3]">
+                                    <li class="footer-nav__item" ng-repeat="link in linkGroup">
+                                        <a ng-href="{{link.url}}" ng-bind="link.name" target="_self"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-nav__list-wrap">
+                                <ul ng-repeat="linkGroup in footer.links[2]">
+                                    <li class="footer-nav__item" ng-repeat="link in linkGroup">
+                                        <a ng-href="{{link.url}}" ng-bind="link.name" target="_self"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-nav__list-wrap">
+                                <ul ng-repeat="linkGroup in footer.links[5]">
+                                    <li class="footer-nav__item" ng-repeat="link in linkGroup">
+                                        <a ng-href="{{link.url}}" ng-bind="link.name" target="_self" rel="me"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <nav class="footer-nav cf" ng-switch-when="large">
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item"><a href="/cms/sitemap" target="_self">Sitemap</a></li>
+                            <li class="footer-nav__item"><a href="http://virginamerica.custhelp.com/">Contact Us/FAQs</a></li>
+                            <li class="footer-nav__item"><a href="/cms/about-our-airline" target="_self">About Us</a></li>
+                            <li class="footer-nav__item"><a href="/cms/about-our-airline/press" target="_self">Press</a></li>
+                        </ul>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item"><a href="/blog">Blog</a></li>
+                            <li class="footer-nav__item"><a href="/cms/airline-jobs" target="_self">Careers</a></li>
+                            <li class="footer-nav__item"><a href="/cms/corporate-travel" target="_self">Corporate &amp; Group Travel</a></li>
+                            <li class="footer-nav__item"><a href="/cms/corporate-travel/travel-agents" target="_self">Travel Agents</a></li>
+                        </ul>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item"><a href="/cms/legal/guest-service-commitment" target="_self">Guest Service Commitment</a></li>
+                            <li class="footer-nav__item"><a href="/cms/dam/vx-pdf/contract-of-carriage.pdf" target="_self">Contract of Carriage</a></li>
+                            <li class="footer-nav__item"><a href="/cms/dam/vx-pdf/international-contract-of-carriage.pdf" target="_self">Int’l Contract of Carriage</a></li>
+                            <li class="footer-nav__item"><a href="/cms/corporate-responsibility" target="_self">Corporate Responsibility</a></li>
+                        </ul>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item"><a href="http://elevate.virginamerica.com/pub/sf/ResponseForm?_ri_=X0Gzc2X%3DWQpglLjHJlYQGmAt9ur9biu27Jh9e9uzfeDcCi8SonfVXMtX%3DWQpglLjHJlYQGruK1w1EzbazdUdEGG6gmlazdJwoNGDzbf&_ei_=EmSL9xUrhFrGHt6VuHz0Fpo">Email Unsubscribe</a></li>
+                            <li class="footer-nav__item"><a href="/cms/legal/privacy-policy" target="_self">Privacy Policy</a></li>
+                            <li class="footer-nav__item"><a href="/cms/travel-guard" target="_self">Travel Insurance</a></li>
+                            <li class="footer-nav__item"><a href="/cms/news" target="_self">All News &amp; Updates</a></li>
+                        </ul>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item"><a href="/cms/elevate-frequent-flyer" target="_self">What Is Elevate?</a></li>
+                            <li class="footer-nav__item"><a href="/elevate-frequent-flyer/credit-card" target="_self">Virgin America Credit Card</a></li>
+                            <li class="footer-nav__item"><a href="/cms/advertise-onboard" target="_self">Advertise Onboard</a></li>
+                            <li class="footer-nav__item"><a href="https://plus.google.com/+VirginAmerica/" target="_blank" rel="publisher">Google+</a></li>
+                        </ul>
+                        <ul class="footer-nav__list is-omega">
+                            <li class="footer-nav__item"><a rel="me" href="http://instagram.com/virginamerica" target="_blank" rel="me">Instagram</a></li>
+                            <li class="footer-nav__item"><a rel="me" href="https://twitter.com/VirginAmerica" target="_blank" rel="me">Twitter</a></li>
+                            <li class="footer-nav__item"><a rel="me" href="https://www.facebook.com/VirginAmerica" target="_blank" rel="me">Facebook</a></li>
+                            <li class="footer-nav__item"><a href="https://www.youtube.com/user/VirginAmerica" target="_blank" rel="me">YouTube</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer-copy">
+                        &copy; <span ng-bind="footer.year | date:'yyyy'"></span> Virgin America
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <!-- build:js scripts/vx-cms.min.js -->
+    <script src="bower_components/requirejs/require.js"></script>
+    <script src="scripts/config.js"></script>
+    <!-- endbuild -->
+
+    <!--[if lt IE 10]>
+        <script src="scripts/shims/css3-multi-column.min.js"></script>
+    <![endif]-->
+
+        <!--[if lte IE 8]>
+            <div class="modal__window--ie8">
+                <div class="modal__bkgd">&nbsp;</div>
+                <div class="modal__dialog">
+                    <div class="modal__header">
+                        <h1 class="modal__title">Your browser is not currently supported</h1>
+                    </div>
+                    <div class="modal__content is-generic">
+                        <p>But there’s an easy fix! The Virgin America site works on a wide range of browsers. Click one of the icons below and follow the instructions. You’ll be flying in no time.</p>
+
+                        <p>Find the latest versions of our supported browsers below:</p>
+
+                        <ul class="supported-browsers">
+                            <li class="supported-browsers__chrome">
+                                <a href="https://www.google.com/intl/en-US/chrome/browser/‎">
+                                    <span class="btn btn-normal btn-primary btn-block">Download Google Chrome</span>
+                                </a>
+                            </li>
+                            <li class="supported-browsers__firefox">
+                                <a href="http://www.mozilla.org/en-US/firefox/new/‎">
+                                    <span class="btn btn-normal btn-primary btn-block">Download Firefox</span>
+                                </a>
+                            </li>
+                            <li class="supported-browsers__ie is-omega">
+                                <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                                    <span class="btn btn-normal btn-primary btn-block">Download Internet Explorer</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        <![endif]-->
+    </body>
+</html>

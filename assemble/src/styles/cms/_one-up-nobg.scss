@@ -1,0 +1,102 @@
+ /* ==========================================================================
+   COMPONENT - OneUp
+   ========================================================================== */
+.one-up{
+	@include component;
+	padding-top: 0px;
+	padding-bottom: 0px;
+
+  	figure {
+    	position: relative;
+		text-align: center;
+
+	    img {
+	    	max-width: 320px;
+
+			@include at-medium {
+				max-width: 768px;
+			}
+
+			@include at-large {
+				max-width: 2000px;
+			}
+    	}
+  	}
+  	figcaption {
+	    //@include component;
+			@include container;
+			@include button;
+			//background-repeat:no-repeat;
+			//background-position: center center;
+			//background-size: cover;
+			    top: 0px;
+	    left: 0px;
+	    right: 0px;
+	    bottom: 0px;
+	    position: absolute;
+			text-align: center;
+			margin: 0px;
+			//height: 320px;
+
+		&:before {
+			content: '';
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+			margin-right: -0.25em;  /* Adjusts for spacing */
+		}
+		.one-up-image {
+			position: relative;
+		}
+		.centered {
+			@include pad(1, 1, 12);
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			width: 99%;
+			background: none;
+		}
+		.heading{
+			@include gotham-light;
+			@include font-size(2.8);
+			@include line-height(3.2);
+			@include letter-spacing (-15);
+			color: $white;
+			text-transform: none;
+			margin-bottom: 10px;
+		}
+		a {
+			color: $white;
+			border-color: rgb(255, 255, 255);
+			border-color: rgba(255, 255, 255, 0.8);
+			&:hover{
+				border-color: rgb(255, 255, 255);
+				border-color: rgba(255, 255, 255, 1);
+				border-width: 1px;
+			}
+			&:active{
+				background-color: white !important;
+				color: black !important;
+				background-image: none;
+				border-color: white;
+			}
+		}
+		@include at-medium {
+			//height: 256px;
+			.heading{
+				@include gotham-light;
+				@include font-size(2.2);
+				@include line-height(2.2);
+				margin-bottom: 0px;
+			}
+		}
+		@include at-large {
+			//height: 525px;
+			.heading{
+			  @include gotham-thin;
+			  @include font-size(4);
+			  @include line-height(4.6);
+			}
+		}
+	}
+}

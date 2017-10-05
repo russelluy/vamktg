@@ -1,0 +1,6 @@
+$lt-ie9: true;
+$fix-mqs: 1120px;
+@import 'main';
+.bp-medium{
+	//min-width: $bp-large;
+}

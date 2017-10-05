@@ -1,0 +1,16 @@
+{
+  "title": "[VX] Subset",
+  "extends": "/modules/standard-templating-kit/templates/pages/stkArticle",
+  "category": "content",
+  "dialog": "vxPageProperties",
+  "areas": { 
+
+    "navigation": {
+      "type": "list",
+      "components": [
+
+      ]
+    }
+
+  }
+}

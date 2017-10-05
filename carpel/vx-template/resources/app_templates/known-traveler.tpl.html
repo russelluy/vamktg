@@ -1,0 +1,11 @@
+<div class="form__input--border-spacer" ng-show="travelers.length > 0">
+    <select name="choose-traveler" class="select select--block" vx-common-custom-select ng-model="currentTraveler" ng-options="currentTraveler.name for ($index, currentTraveler) in travelers" ng-change="knownTraveler.changeTraveler(currentTraveler)"></select>
+</div>
+
+<!--div ng-repeat="traveler in travelers" ng-show="currentTraveler.name === traveler.name"-->
+    <form method="POST" class="known-traveler" data-vx-form-handler data-fields="knownTraveler.fields" data-submit-message="Save" data-submit-error-message="Fill the form to proceed" data-on-success="knownTraveler.save()" novalidate>
+        <input data-vx-form-input type="text" name="ktn" placeholder="Known Traveler #" data-validate="required" autocorrect="off" pattern="\d*" />
+
+        <button data-vx-form-submit />
+    </form>
+<!--/div-->

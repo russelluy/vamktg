@@ -1,0 +1,68 @@
+.elevate-menu {
+  background: $elevate-red;
+  border-bottom: 1px solid $light-grey;
+  min-width: 320px;
+  width: 100%;
+
+  @include at-medium {
+    height: 60px;
+  }
+
+  .is-elevate-member-silver & {
+    background: $elevate-silver;
+  }
+
+  .is-elevate-member-gold & {
+    background: $elevate-gold;
+  }
+}
+
+.elevate-menu__list {
+  @include reset-list;
+  text-align: center;
+
+  @include at-medium {
+    display: table;
+    height: 60px;
+    //@include span-columns(10,12);
+    //@include push(1,12);
+    width: 100%;
+  }
+
+  > li {
+    display: inline-block;
+    @include gotham-medium;
+    @include font-size(1.1);
+    line-height: 12px;
+    width: 100%;
+
+    @include at-medium {
+      display: table-cell;
+      vertical-align: middle;
+      width: auto;
+    }
+
+    @include at-large {
+      @include font-size(1.2);
+    }
+
+    > a {
+      color: $white;
+
+      .no-touch &:hover {
+        text-decoration: underline;
+      }
+
+      &.sign-out {
+        color: $extra-dark-grey;
+        color: rgba(0,0,0,0.7);
+        text-transform: uppercase;
+      }
+
+      .is-elevate-member-silver & {
+        color: $extra-dark-grey;
+        color: rgba(0,0,0,0.7);
+      }
+    }
+  }
+}

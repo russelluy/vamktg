@@ -1,0 +1,229 @@
+/* ==========================================================================
+   Mixins
+   ========================================================================== */
+
+/* Clearfix
+   ========================================================================== */
+
+@mixin clearfix() {
+  &:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+/* Display
+   ========================================================================== */
+
+@mixin reset-list() {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin double-border-top($color: $border-grey) {
+  border-top: 2px solid $color;
+  position: relative;
+  &:before {
+    border-top: 1px solid $color;
+    content: '';
+    left: 0;
+    position: absolute;
+    top: 2px;
+    width: 100%;
+  }
+}
+
+@mixin animation($dur, $name, $count, $mode) {
+  -webkit-animation-duration: $dur;
+  -webkit-animation-name: $name;
+  -webkit-animation-iteration-count: $count;
+  -webkit-animation-fill-mode: $mode;
+  -moz-animation-duration: $dur;
+  -moz-animation-name: $name;
+  -moz-animation-iteration-count: $count;
+  -moz-animation-fill-mode: $mode;
+  animation-duration: $dur;
+  animation-name: $name;
+  animation-iteration-count: $count;
+  animation-fill-mode: $mode;
+}
+
+/* Angular animations
+   ========================================================================== */
+@mixin ng-anim-ignore() {
+  &.ng-animate {
+    @include transition-duration(0);
+  }
+}
+
+@mixin ng-anim ($class-in:'ng-enter', $class-out:'ng-leave') {
+  &.#{$class-in},
+  &.#{$class-out} {
+    @content;
+  }
+}
+
+@mixin ng-anim-in ($class-in:'ng-enter', $class-out:'ng-leave') {
+  &.#{$class-out},
+  &.#{$class-in}.#{$class-in}-active {
+    @content;
+  }
+}
+
+@mixin ng-anim-out ($class-in:'ng-enter', $class-out:'ng-leave') {
+  &.#{$class-in},
+  &.#{$class-out}.#{$class-out}-active {
+    @content;
+  }
+}
+
+/* Text
+   ========================================================================== */
+
+@mixin text-overflow-ellipsis() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin no-underline() {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@mixin link-underline() {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+/* Backgrounds
+   ========================================================================== */
+@mixin background-size($type) {
+  background-size: $type;
+
+  @if $type == 'cover' {
+    // Some IE logic here
+  }
+};
+
+/* CSS arrows
+   ========================================================================== */
+
+@mixin arrow($arrow-edge, $arrow-location, $arrow-color, $border-color: $arrow-color){
+
+  @if $arrow-edge == top{
+
+    @extend %arrow--top;
+
+    &:before{
+      border-bottom-color:$border-color!important;
+    }
+
+    &:after{
+      border-bottom-color:$arrow-color!important;
+    }
+
+    @if $arrow-location == left{
+      @extend %arrow--left;
+    }
+
+    @if $arrow-location == center{
+      @extend %arrow--center;
+    }
+
+    @if $arrow-location == right{
+      @extend %arrow--right;
+    }
+
+  }
+
+  @if $arrow-edge == right{
+
+    @extend %arrow--far;
+
+    &:before{
+      border-left-color:$border-color!important;
+    }
+
+    &:after{
+      border-left-color:$arrow-color!important;
+    }
+
+    @if $arrow-location == top{
+      @extend %arrow--upper;
+    }
+
+    @if $arrow-location == center{
+      @extend %arrow--middle;
+    }
+
+    @if $arrow-location == bottom{
+      @extend %arrow--lower;
+    }
+
+  }
+
+  @if $arrow-edge == bottom{
+
+    @extend %arrow--bottom;
+
+    &:before{
+      border-top-color:$border-color!important;
+    }
+
+    &:after{
+      border-top-color:$arrow-color!important;
+    }
+
+    @if $arrow-location == left{
+      @extend %arrow--left;
+    }
+
+    @if $arrow-location == center{
+      @extend %arrow--center;
+    }
+
+    @if $arrow-location == right{
+      @extend %arrow--right;
+    }
+
+  }
+
+  @if $arrow-edge == left{
+
+    @extend %arrow--near;
+
+    &:before{
+      border-right-color:$border-color!important;
+    }
+
+    &:after{
+      border-right-color:$arrow-color!important;
+    }
+
+    @if $arrow-location == top{
+      @extend %arrow--upper;
+    }
+
+    @if $arrow-location == center{
+      @extend %arrow--middle;
+    }
+
+    @if $arrow-location == bottom{
+      @extend %arrow--lower;
+    }
+
+  }
+
+}
+
+@mixin overflow-scroll-touch() {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}

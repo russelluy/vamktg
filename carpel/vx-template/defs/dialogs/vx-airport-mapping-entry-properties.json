@@ -1,0 +1,54 @@
+{
+  "title": "Airport Mapping Entry",
+  
+  "tabs": {
+    "entry": {
+
+      "code_from": { 
+        "label": "Origin Airport",
+        "type": "TEXT_FIELD"
+      },
+
+      "to": { 
+        "label": "Destinations",
+        "type": "MULTI_FIELD",
+	"fields":[
+		{
+			"name": "code",
+			"label": "Airport",
+			"type": "TEXT_FIELD"
+		},
+		{
+			"name": "type",
+			"label": "Type",
+			"type": "SELECT_FIELD",
+			"options": {
+				"NON-STOP": "Non-Stop",
+				"CONNECTING": "Connecting",
+				"THRU": "Thru"
+			},
+			"default": "NON-STOP"
+		}
+	]
+      },
+
+      "promoted": { 
+        "label": "Promoted",
+        "type": "MULTI_FIELD",
+	"fields":[
+		{
+		    "name": "code",
+		    "label": "Airport",
+		    "type": "TEXT_FIELD"
+		},
+		{
+		    "name": "fare",
+		    "label": "Fare",
+		    "type": "TEXT_FIELD"
+		}
+	]
+      }
+      
+    }
+  }
+}

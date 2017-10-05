@@ -1,0 +1,27 @@
+{
+  "title": "Header Medium Properties",
+  "tabs": {
+    "tabMain": {
+      "heading": { 
+        "label": "Heading",
+        "validationPattern":".{0,10}",
+        "type": "TEXT_FIELD"
+      },
+      "subheading": { 
+        "label": "Subheading",
+        "validationPattern":".{0,54}",
+        "rows":3,
+        "type": "TEXT_FIELD"
+      },
+      "buttonLabel": { 
+        "label": "Button Label",
+        "type": "TEXT_FIELD"
+      },
+      "buttonLink": { 
+        "label": "Button Link",
+        "type": "TEXT_FIELD",
+        "default": "http://"
+      }
+    }
+  }
+}

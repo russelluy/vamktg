@@ -1,0 +1,15 @@
+ /* ==========================================================================
+   COMPONENT - Spacer
+   ========================================================================== */
+.spacer{
+	@include component;
+	@include container;
+
+	width: 100%;
+	display: block;
+	padding-bottom: 0px;
+	.line {
+		height: 1px;
+		background-color: $border-grey;
+	}
+}

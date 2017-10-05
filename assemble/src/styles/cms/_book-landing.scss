@@ -1,0 +1,47 @@
+/* ==========================================================================
+COMPONENT - Book Landing
+========================================================================== */
+.book-landing {
+	@include wrap;
+	.book-spacer {
+		display: block;
+		height:50px;
+		padding-bottom: 0px;
+		padding-top: 0px;
+		width: 100%;
+	}
+
+	.book-three-up-item-image {
+		@extend .three-up-item-image;
+		height:280px;
+		@include at-medium {
+			height:200px;
+		}
+		@include at-large {
+			height:280px;
+		}
+	}
+	img {
+		max-width: 145px;
+		@include at-medium {
+			max-width: 120px;
+		}
+		@include at-large {
+			max-width: 145px;
+		}
+	}
+	.book-spacer-lined {
+		@include component;
+		@include container;
+		height: 1px;
+		width: 100%;
+		display: block;
+		padding-top: 0px;
+		padding-bottom: 0px;
+
+		.line {
+			height: 1px;
+			background-color: $border-grey;
+		}
+	}
+}

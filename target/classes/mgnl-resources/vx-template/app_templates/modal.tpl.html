@@ -1,0 +1,7 @@
+<div class="modal" ng-class="{'modal--is-small': modal.breakpoint.small, 'modal--is-large': !modal.breakpoint.small, 'modal--is-open': modal.show, 'modal--is-closed': !modal.show}">
+    <div class="modal__header">
+        <div class="modal__logo icon-vx-simplified-color-black"></div>
+        <a href="#" class="modal__close" ng-click="closeModal()">Close</a>
+    </div>
+    <div class="modal__content" ng-transclude></div>
+</div>

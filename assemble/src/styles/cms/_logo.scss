@@ -1,0 +1,46 @@
+ /* ==========================================================================
+   COMPONENT - Logo
+   ========================================================================== */
+.logo{
+	@include component;
+	@include container;
+	@include button;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	.image{
+	}
+	&:before {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+		margin-right: -0.25em;  /* Adjusts for spacing */
+	}
+	.centered {
+		@include pad(1, 1, 12);
+		display: inline-block;
+		vertical-align: middle;
+		width: 99%;
+		background: none;
+	}
+	img{
+		max-width: 206px;
+		@include at-medium {
+			max-width: 268px;
+		}
+		@include at-large {
+			max-width: 380px;
+		}
+	}
+	@include at-medium {
+		.image{
+			padding: 0px;
+		}
+	}
+	@include at-large {
+		.image{
+			padding: 0px;
+		}
+	}
+}

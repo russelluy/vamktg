@@ -1,0 +1,75 @@
+/* ==========================================================================
+   Image Teaser Component
+   ========================================================================== */
+@mixin image-teaser{
+
+	@include component;
+	@include button;
+
+	text-align: center;
+	padding-bottom: 60px;
+
+	.heading{
+		@include gotham-light;
+		@include font-size(2.8);
+		@include line-height(3.2);
+
+		text-transform: none;
+		margin-bottom: 30px;
+	}
+	img{
+		margin-bottom: 20px;
+		max-width: 284px;
+		width: 100%;
+		@include at-medium {
+			max-width: 228px;
+		}
+		@include at-large {
+			max-width: 380px;
+		}
+	}
+	a{
+		margin-top: 0px;
+	}
+	@include at-medium {
+		.heading{
+			@include gotham-light;
+			@include font-size(2.2);
+			@include line-height(2.8);
+
+			margin-bottom: 15px;
+		}
+		img{
+			margin-bottom: 0px;
+		}
+		a{
+			margin-top: 20px;
+		}
+		.container{
+			@include clearfix;
+		}
+		.col{
+
+		}
+    	.first{
+			@include span-columns(4, 12);
+		}
+		.second{
+			@include span-columns(4, 12);
+		}
+		.third{
+			@include span-columns(4 omega, 12);
+		}
+ 	}
+	@include at-large {
+		.heading{
+			@include gotham-light;
+			@include font-size(3);
+			@include line-height(3.4);
+			margin-bottom: 15px;
+		}
+	}
+}
+.image-teaser{
+	@include image-teaser;
+}

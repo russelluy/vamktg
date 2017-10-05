@@ -1,0 +1,26 @@
+{
+  "title": "Item No Body",
+  "tabs": {
+    "tabMain": {
+      "icon": {
+        "targetWorkspace": "dam",
+        "appName": "assets",
+        "identifierToPathConverter": "info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter",
+        "contentPreviewDefinition": "",
+        "label": "Icon <small>(610px)</small>",
+        "type": "IMAGE"
+      },
+      "heading": {
+        "label": "Heading",
+        "type": "TEXT_FIELD",
+        "validationPattern":".{0,20}",
+        "rows":3
+      },
+      "link": {
+        "label": "Link",
+        "type": "TEXT_FIELD",
+        "default": "http://"
+      }
+    }
+  }
+}

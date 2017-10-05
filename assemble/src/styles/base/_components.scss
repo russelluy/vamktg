@@ -1,0 +1,279 @@
+/* ==========================================================================
+   Components styles
+   ========================================================================== */
+/**
+ * COMPONENT - Background options
+ */
+.comp-bg-red{
+    background-color: $red-css;
+}
+.comp-bg-gold{
+	background-color: $gold;
+    @include background-image(linear-gradient(left, $gold-gradient-dark, $gold-gradient-light, $gold-gradient-dark));
+}
+.comp-bg-silver{
+    background-color: $silver;
+
+    @include background-image(linear-gradient(left, $silver-gradient-dark, $silver-gradient-light, $silver-gradient-dark));
+}
+.comp-bg-white{
+    background-color: $white;
+}
+.comp-bg-xxlightgrey{
+    background-color: $extra-extra-light-grey;
+}
+
+@mixin border-top() {
+	border-top: 1px solid $border-grey;
+}
+
+@mixin border-bottom() {
+	border-bottom: 1px solid $border-grey;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6{
+    text-rendering: optimizeLegibility;
+}
+
+/*
+   ========================================================================== */
+/* Components
+   ========================================================================== */
+@mixin component() {
+	padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@mixin button() {
+	a {
+		background: transparent;
+		border: 1px solid #d6d5d4;
+		color: black;
+		padding: 10px 0;
+		cursor: pointer;
+		display: block;
+		@include gotham-bold;
+		-webkit-font-smoothing: antialiased;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		min-width: 150px;
+		max-width: 150px;
+		width: 60%;
+		margin: 0 auto;
+		margin-top: 20px;
+
+		&:hover{
+
+			border-color: $black;
+		}
+		&:active{
+
+			color: $white;
+			padding: 11px 0;
+			border: none;
+			background-color: $purple;
+			@include background-image(linear-gradient($purple, $purple-hover));
+		}
+	}
+}
+@mixin header() {
+
+	@include component;
+	@include container;
+	@include button;
+
+	text-align: center;
+	margin: 0px;
+
+	&:before {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+		margin-right: -0.25em;  /* Adjusts for spacing */
+	}
+	.wrap{
+
+		display: inline-block;
+		vertical-align: middle;
+		padding: 0px;
+		background: none;
+		width: 99%;
+	}
+	.heading{
+
+		text-rendering: optimizeLegibility;
+		text-transform: uppercase;
+	}
+	@include at-medium {
+
+		.wrap{
+
+    		$grid-padding: 0px;
+			@include container;
+		}
+		.heading{
+			@include pad(1, 1, 12);
+		}
+		.subheading{
+			@include pad(2, 2, 12);
+		}
+	}
+	@include at-large {
+
+		$grid-padding: 0px;
+		@include container;
+	}
+}
+
+@mixin ThreeUpItem() {
+
+  @include component;
+  @include button;
+  //@include susy-grid-background;
+
+  text-align: center;
+  margin: 0px auto;
+  width: 100%;
+  height: 320px;
+
+
+	&.red{
+		a{
+			padding: 10px;
+			height: 40px;
+			&:hover{
+				padding: 9px;
+				color: $red;
+				border: 2px solid $red;
+			}
+			&:active{
+				padding: 10px;
+				color: $white;
+				@include background-image(linear-gradient($red, $red-hover));
+			}
+		}
+	}
+	&.purple{
+		a{
+			padding: 10px;
+			height: 40px;
+			&:hover{
+				padding: 9px;
+				color: $purple;
+				border: 2px solid $purple;
+			}
+			&:active{
+				padding: 10px;
+				color: $white;
+				@include background-image(linear-gradient($purple, $purple-hover));
+			}
+		}
+	}
+
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;  /* Adjusts for spacing */
+  }
+  .centered {
+    display: inline-block;
+    vertical-align: middle;
+    width: 80%;
+    padding: 0px;
+    background: none;
+  }
+  .heading{
+    @include gotham-light;
+    @include font-size(2.8);
+    @include line-height(3.2);
+    @include letter-spacing (-15);
+
+    margin: 0 auto 15px auto;
+    text-transform: none;
+  }
+  .subheading{
+    @include gotham-book;
+    @include font-size(1.2);
+    @include line-height(1.8);
+
+    margin-bottom: 25px;
+    a,
+		a:hover{
+			background: initial;
+			border: initial;
+			color: initial;
+			display: initial;
+			font: initial;
+			height: initial;
+			letter-spacing: initial;
+			line-height: initial;
+			text-transform: initial;
+			visibility: initial;
+			width: initial;
+			word-spacing: initial;
+			z-index: initial;
+			text-align: initial;
+			text-decoration: underline;
+			text-transform: initial;
+			cursor: initial;
+			padding: initial;
+			max-width: initial;
+			min-width: initial;
+			margin: initial;
+			@include gotham-medium;
+			@include font-size (1.2);
+			@include line-height (1.8);
+		}
+  }
+  @include at-medium {
+
+    //height: 260px;
+
+    .heading{
+      @include gotham-light;
+      @include font-size(2.2);
+      @include line-height(2.2);
+    }
+    .subheading{
+      @include gotham-book;
+      @include font-size(1.2);
+      @include line-height(1.7);
+    }
+  }
+  @include at-large {
+
+    height: 526px;
+
+    .centered {
+
+    }
+
+    .heading{
+      @include gotham-light;
+      @include font-size(2.4);
+      @include line-height(2.8);
+    }
+    .subheading{
+      @include gotham-book;
+      @include font-size(1.2);
+      @include line-height(1.7);
+    }
+  }
+}
+
+@mixin overflow-scrolling(){
+
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch; /* Momentum Scrolling on iOS */
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	padding-bottom: 20px;
+}

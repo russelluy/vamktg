@@ -1,0 +1,9 @@
+<div tabindex="-1" class="modal__window" ng-class="[windowClass, windowSize]" ng-style="{'z-index': 6000 + index*10, display: 'block'}" ng-click="close($event)">
+    <div class="modal__dialog">
+        <div class="modal__header icon-vx-simplified-color-black">
+            <h1 ng-show="title" class="modal__title">{{title}}</h1>
+            <a href="#" class="modal__close ir" data-vx-common-hover-class="icon-close" ng-click="close($event)">Close</a>
+        </div>
+        <div class="modal__content" ng-transclude></div>
+    </div>
+</div>

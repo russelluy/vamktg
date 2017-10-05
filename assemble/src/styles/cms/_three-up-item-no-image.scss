@@ -1,0 +1,42 @@
+/* ==========================================================================
+COMPONENT - ThreeUpItem - No Image
+========================================================================== */
+.three-up-item-no-image{
+	@include ThreeUpItem;
+	height: auto;
+	.subheading{
+			a,
+		a:hover{
+			background: initial;
+			border: initial;
+			color: initial;
+			display: initial;
+			font: initial;
+			height: initial;
+			letter-spacing: initial;
+			line-height: initial;
+			text-transform: initial;
+			visibility: initial;
+			width: initial;
+			word-spacing: initial;
+			z-index: initial;
+			text-align: initial;
+			text-decoration: underline;
+			text-transform: initial;
+			cursor: initial;
+			padding: initial;
+			max-width: initial;
+			min-width: initial;
+			margin: initial;
+			@include gotham-medium;
+			@include font-size (1.2);
+			@include line-height (1.8);
+		}
+	}
+	@include at-medium {
+		height: 338px;
+ 	}
+	@include at-large {
+		height: 338px;
+	}
+}

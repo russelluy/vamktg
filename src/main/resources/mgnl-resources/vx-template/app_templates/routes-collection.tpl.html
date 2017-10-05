@@ -1,0 +1,35 @@
+<div>
+    <ul class="routes-list {{layout}} cf" ng-class="{'is-first': isFirst}">
+        <li class="routes-list__route-city" ng-repeat="route in routesCollection.data" ng-class="{'is-large': route.isLarge, 'is-float-right': route.isFloatRight, 'is-no-border': route.isNoBorder, 'is-placeholder': route.isPlaceholder}">
+            <a href="#" class="route-city" data-vx-common-prevent-default ng-click="routesCollection.expandRoute(route)">
+                <div class="img" ng-switch="route.isLarge">
+                    <img ng-switch-default data-vx-global-image out="{{route.imgSrc}}" alt="{{route.cityName}}" small="142" medium="108" large="145" />
+                    <img ng-switch-when="true" data-vx-global-image out="{{route.imgSrc}}" alt="{{route.cityName}}" small="432" medium="338" large="460" />
+                </div>
+                <h2>{{route.cityName}}</h2>
+                <div>{{route.cityState}}</div>
+            </a>
+        </li>
+    </ul>
+    <div class="routes-backdrop" ng-show="expanded" ng-click="routesCollection.closeExpanded()"></div>
+    <section class="routes-expanded" ng-show="expanded">
+        <div class="wrap">
+            <header class="routes-expanded__header">
+                <img src="{{expanded.imgSrc}}" />
+                <h2><strong>{{expanded.cityName}}</strong> {{expanded.cityState}}</h2>
+                <a href="#" class="icon-close" data-vx-common-prevent-default ng-click="routesCollection.closeExpanded()">x</a>
+            </header>
+
+            <ul class="routes-expanded__routes-book cf">
+                <li ng-repeat="city in expanded.connectingCities" ng-class="{'is-odd': $odd}">
+                    <div class="routes-book" ng-class="{'is-even': $even, 'is-first': $first, 'is-second': $index === 1}">
+                        <div class="is-centered">
+                            <span class="routes-book__city"><strong>{{city.cityName}}</strong> {{city.cityState}}</span>
+                            <a href="/book/rt/a1/{{expanded.airportCode | lowercase}}_{{city.airportCode | lowercase}}" class="routes-book__btn btn btn-secondary">Book</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+</div>

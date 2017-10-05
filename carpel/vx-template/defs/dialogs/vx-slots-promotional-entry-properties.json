@@ -1,0 +1,34 @@
+{
+	"title": "Slots Entry",
+	"tabs": {
+		"entry": {
+
+			"slots": { 
+				"label": "Slots",
+				"type": "MULTI_FIELD",
+				"fields":[
+				{
+					"name": "subset",
+					"label": "Subset Name",
+					"type": "TEXT_FIELD"
+				},
+				{
+					"name": "selection",
+					"label": "Selection Type",
+					"type": "SELECT_FIELD",
+					"options": {
+						"specified": "specified",
+						"random": "random"
+					},
+					"default": "random"
+				},
+				{
+					"name": "id",
+					"label": "Unique Identification",
+					"type": "TEXT_FIELD"
+				}
+				]
+			}
+		}
+	}
+}

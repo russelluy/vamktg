@@ -1,0 +1,66 @@
+/* ==========================================================================
+COMPONENT - ThreeUpItem - Icon
+========================================================================== */
+.three-up-item-icon{
+	@include ThreeUpItem;
+	height: auto;
+	.heading{
+		margin-bottom: 10px;
+	}
+	.subheading{
+
+		margin-bottom: 20px;
+				a,
+		a:hover{
+			background: initial;
+			border: initial;
+			color: initial;
+			display: initial;
+			font: initial;
+			height: initial;
+			letter-spacing: initial;
+			line-height: initial;
+			text-transform: initial;
+			visibility: initial;
+			width: initial;
+			word-spacing: initial;
+			z-index: initial;
+			text-align: initial;
+			text-decoration: underline;
+			text-transform: initial;
+			cursor: initial;
+			padding: initial;
+			max-width: initial;
+			min-width: initial;
+			margin: initial;
+			@include gotham-medium;
+			@include font-size (1.2);
+			@include line-height (1.8);
+		}
+	}
+	.icon{
+		max-width: 90px;
+		@include at-medium {
+			max-width: 80px;
+		}
+		@include at-large {
+			max-width: 130px;
+		}
+		//max-height:110px;
+		margin: 0 auto 20px auto;
+	}
+	@include at-medium {
+		height: 338px;
+ 	}
+	@include at-large {
+		height: 338px;
+		.icon{
+			margin-bottom: 30px;
+		}
+		.heading{
+
+		}
+		.subheading{
+		}
+	}
+}

@@ -1,0 +1,62 @@
+{
+  "title": "Airport Entry",
+
+  "tabs": {
+    "entry": {
+
+      "code": {
+        "label": "Code",
+        "type": "TEXT_FIELD"
+      },
+
+      "name": {
+        "label": "Name",
+        "type": "TEXT_FIELD"
+      },
+
+      "msaCode": {
+        "label": "MSA Code",
+        "type": "TEXT_FIELD",
+        "default": ""
+      },
+
+      "state": {
+        "label": "State",
+        "type": "TEXT_FIELD"
+      },
+
+      "country": {
+        "label": "Country",
+        "type": "TEXT_FIELD",
+        "default": "USA"
+      },
+
+      "mainInState": {
+        "label": "Main In State?",
+        "type": "SELECT_FIELD",
+        "options": {
+          "false": "False",
+          "true": "True"
+        },
+        "default": "false"
+      },
+
+      "international": {
+        "label": "International?",
+        "type": "SELECT_FIELD",
+        "options": {
+          "false": "False",
+          "true": "True"
+        },
+        "default": "false"
+      },
+
+      "destinationMsg": {
+        "label": "Destination Message",
+        "type": "TEXT_FIELD",
+        "default": "Ok! Let's go!"
+      }
+
+    }
+  }
+}

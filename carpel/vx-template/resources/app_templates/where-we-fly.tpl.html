@@ -1,0 +1,24 @@
+<div ng-controller="RoutesController" ng-switch="routes.breakpoint">
+    <div ng-switch-when="small">
+        <div data-vx-routes-collection data-cities="AUS,BOS" data-layout="is-sm-double" data-is-first="true"></div>
+        <div data-vx-routes-collection data-cities="CUN,ORD" data-layout="is-sm-double"></div>
+        <div data-vx-routes-collection data-cities="LAX" data-layout="is-sm-single"></div>
+        <div data-vx-routes-collection data-cities="DAL,FLL" data-layout="is-sm-double"></div>
+        <div data-vx-routes-collection data-cities="LAS,SJD" data-layout="is-sm-double"></div>
+        <div data-vx-routes-collection data-cities="JFK" data-layout="is-sm-single"></div>
+        <div data-vx-routes-collection data-cities="LGA,EWR" data-layout="is-sm-double"></div>
+        <div data-vx-routes-collection data-cities="MCO,PSP" data-layout="is-sm-double"></div>
+        <div data-vx-routes-collection data-cities="PDX,PVR" data-layout="is-sm-double"></div>
+        <div data-vx-routes-collection data-cities="SAN,SEA" data-layout="is-sm-double"></div>
+        <div data-vx-routes-collection data-cities="SFO" data-layout="is-sm-single"></div>
+        <div data-vx-routes-collection data-cities="IAD,DCA" data-layout="is-sm-double"></div>
+        <div data-vx-routes-collection data-cities="SOON,SOON2" data-layout="is-sm-double-last"></div>
+    </div>
+    <div ng-switch-default>
+        <div data-vx-routes-collection data-cities="AUS,BOS,LAX,CUN,ORD" data-layout="is-md-block-right" data-is-first="true"></div>
+        <div data-vx-routes-collection data-cities="DAL,FLL,LAS,SJD" data-layout="is-md-row"></div>
+        <div data-vx-routes-collection data-cities="JFK,LGA,EWR,MCO,PSP" data-layout="is-md-block-left"></div>
+        <div data-vx-routes-collection data-cities="PDX,PVR,SAN,SEA" data-layout="is-md-row"></div>
+        <div data-vx-routes-collection data-cities="IAD,DCA,SFO,SOON,SOON2" data-layout="is-md-block-right-last"></div>
+    </div>
+</div>

@@ -1,0 +1,127 @@
+/* ==========================================================================
+COMPONENT - Calculator
+========================================================================== */
+.calculator{
+	@include wrap;
+	@include component;
+
+	padding-left: 0px;
+	padding-right: 0px;
+	.radio-buttons{
+		padding-bottom: 20px;
+		.radio-buttons-container {
+			padding: 0px 0 10px
+		}
+		@include at-medium {
+			padding-bottom: 45px;
+			.radio-buttons-container {
+				padding: 30px 0 10px
+			}
+		}
+	}
+	.header-selector{
+		margin-bottom: 0;
+		@include at-medium {
+			margin-bottom: 43px;
+			.header-selector-paragraph {
+				@include font-size(3);
+			}
+		}
+	}
+	.calculator-table-column-four {
+		@extend .table-column-four;
+		padding-left: 0px;
+		padding-right: 0px;
+		margin-bottom: 0px;
+		margin-left: 18px;
+		margin-right: 18px;
+	}
+	.calculator-table-column-three {
+		@extend .table-column-three;
+		padding-left: 0px;
+		padding-right: 0px;
+		margin-bottom: 0px;
+		margin-left: 18px;
+		margin-right: 18px;
+	}
+	.calculator-text-footer {
+		@extend .text-footer;
+		padding-top: 0px;
+	}
+
+	table{
+		@include table;
+		//min-width: ($lg+200)*0.75;
+		min-width: 540px;
+		thead {
+			tr {
+				th {
+					@include gotham-bold;
+					@include font-size(1.2);
+					@include line-height(1.4);
+				}
+			}
+		}
+	}
+	.calculator-footer{
+		@include gotham-light;
+		@include font-size(1.4);
+		@include line-height(1.7);
+		text-align: center;
+		padding-left: 18px;
+		padding-right: 18px;
+		p{
+			margin-bottom: 10px;
+		}
+		a{
+			@include gotham-bold;
+			@include font-size(1);
+			text-transform: uppercase;
+			border-bottom: 1px solid $black;
+		}
+	}
+	&.red{
+		a{
+			border-bottom: 1px solid $red;
+		}
+	}
+	&.purple{
+		a{
+			border-bottom: 1px solid $purple;
+		}
+	}
+	@include at-medium {
+    	.header-selector{
+			margin-bottom: 19px;
+		}
+		.table-column-four {
+			margin-bottom: 0px;
+		}
+		.table-column-three {
+			margin-bottom: 0px;
+		}
+		
+		.table-column-four table, .table-column-three table {
+			min-width: 1000px;			
+			.first {
+				padding-left: 18px;
+				height: 65px;
+			}
+		}
+ 	}
+	@include at-large {
+		.header-selector{
+			margin-bottom: 20px;
+		}
+		.table-column-four, .table-column-three {
+			margin-bottom: 0px;
+		}
+		
+		.table-column-four table, .table-column-three table {
+
+		}
+		a{
+			@include font-size(1.1);
+		}
+	}
+}

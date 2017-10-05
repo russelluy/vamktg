@@ -1,0 +1,65 @@
+<div class="calculator {{maincolor}}">
+    <section ng-controller="CalculatorCtrl">
+    {{calculator}}
+       <div class="radio-buttons {{maincolor}}" 
+       origin = "\{{calculator.defaultOrigin='{{origin}}'}}" 
+       destination = "\{{calculator.defaultDestination='{{destination}}'}}"
+json_airports = "\{{calculator.json_airports='//magnolia.work.co/cms/dam/jcr:2fb3ee9b-ac56-4626-9b88-92958dba8d39'}}"
+json_pointsBurnAll = "\{{calculator.json_pointsBurnAll='//magnolia.work.co/cms/dam/jcr:cc339fbb-6410-4b8e-809c-a93437ed8c0e'}}"
+json_carriers = "\{{calculator.json_carriers='//magnolia.work.co/cms/dam/jcr:dece67e0-4878-455f-ab37-2e63fa91df9b'}}"
+>
+
+            <div class="radio-buttons-container">
+                <form carrier="\{{calculator.carrierSelected='{{carrier}}'}}">
+                    <input id="{{id01}}" type="radio" ng-model="calculator.typeSelected" name="trip-type" value="RT" />
+                    <label for="{{id01}}">Round Trip</label>
+                    <input id="{{id02}}" type="radio" ng-model="calculator.typeSelected" name="trip-type" value="OW" />
+                    <label for="{{id02}}">One Way</label>
+                    <input id="{{id03}}" type="radio" ng-model="calculator.typeSelected" name="trip-type" value="MC" />
+                    <label for="{{id03}}">Multi City</label>
+                </form>
+            </div>
+        </div>
+        <div class="header-selector {{maincolor}}">
+            <div id="header-selector-container">
+                <p class="header-selector-paragraph">Calculate points from
+                    <span class="container">
+                        <select class="header-selector-selectbox" ng-model="calculator.originSelected" ng-options="airport.name for airport in calculator.airports_origin">
+                        </select>
+                    </span> to
+                    <span class="container">
+                        <select class="header-selector-selectbox" ng-model="calculator.destinationSelected" ng-options="airport.name for airport in calculator.airports_destination">
+                        </select>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="table-column-four" ng-show="calculator.result.length > 0">
+  			<div class="container">
+            <table>
+                <thead>
+                  <tr>
+                    <th class="col first">&nbsp;<br/>Class</th>
+                    <th class="col second">&nbsp;<br/>Points</th>
+                    <th class="col third">Taxes &<br/>Carrier Imposed Fees</th>
+                    <th class="col fourth">&nbsp;<br/>Airline Name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr ng-repeat="airport in calculator.result">
+                    <td class="col first" ng-bind="airport.cabinClass"></td>
+                    <td class="col second"><span ng-bind="airport.numberOfPoints"></span><span ng-show="airport.connectingFlight==='true'"><sup>*</sup></span></td>
+                    <td class="col third" ng-bind="airport.taxesAndFees"></td>
+                    <td class="col fourth" ng-bind="airport.carrierName"></td>
+                  </tr>
+                </tbody>
+            </table>     
+            <div class="content"><p>* Requires connection.</p></div>
+            </div>
+        </div>
+        <div class="calculator-footer">
+            <p>Need a boost before you book? Buy points to top off your account.</p>
+            <a href="#">Buy points</a>
+        </div>
+    </section>
+</div>

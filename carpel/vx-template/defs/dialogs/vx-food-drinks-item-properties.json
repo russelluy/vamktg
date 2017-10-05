@@ -1,0 +1,38 @@
+{
+  "title": "Food and Drinks",
+  
+  "tabs": {
+    "entry": {
+      "image": { 
+	  "targetWorkspace": "dam",
+	  "appName": "assets",
+	  "identifierToPathConverter": "info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter",
+	  "contentPreviewDefinition": "",
+	  "label": "Image",
+	  "type": "IMAGE"
+      },
+      "text": { 
+        "label": "Text",
+        "type": "RICH_TEXT_FIELD"
+      },
+      "availableOnLongerThan2H": { 
+        "label": "Available Longer Than 2H",
+        "type": "SELECT_FIELD",
+        "options": {
+          "false": "False",
+          "true": "True"
+        },
+        "default": "false"
+      },
+      "list": { 
+        "label": "List",
+        "type": "MULTI_FIELD",
+        "field":{
+          "name": "list",
+          "label": "List",
+          "type": "TEXT_FIELD"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "title": "Header Stacked Properties",
+  "tabs": {
+    "tabLeft": {
+      "label": "Left Header",
+      "variant_left": {
+        "label": "Variant",
+        "type": "SELECT_FIELD",
+        "options": {
+          "red": "Red",
+          "gold": "Gold",
+          "silver": "Silver"
+        },
+        "default": "red"
+      },
+      "logo_left": {
+        "label": "Logo",
+        "type": "SELECT_FIELD",
+        "options": {
+          "none": "None",
+          "elevate-logo": "Elevate",
+          "elevate-gold-logo": "Gold",
+          "elevate-silver-logo": "Silver"
+        },
+        "default": "none"
+      },
+      "heading_left": { 
+        "label": "Heading",
+        "validationPattern":".{0,14}",
+        "type": "TEXT_FIELD"
+      },
+      "subheading_left": { 
+        "label": "Subheading",
+        "validationPattern":".{0,23}",
+        "rows":3,
+        "type": "TEXT_FIELD"
+      },
+      "buttonLabel_left": { 
+        "label": "Button Label",
+        "type": "TEXT_FIELD"
+      },
+      "buttonLink_left": { 
+        "label": "Button Link",
+        "type": "TEXT_FIELD",
+        "default": "http://"
+      }
+    },
+    "tabRight": {
+      "label": "Right Header",
+      "variant_right": {
+        "label": "Variant",
+        "type": "SELECT_FIELD",
+        "options": {
+          "red": "Red",
+          "gold": "Gold",
+          "silver": "Silver"
+        },
+        "default": "red"
+      },
+      "logo_right": {
+        "label": "Logo",
+        "type": "SELECT_FIELD",
+        "options": {
+          "none": "None",
+          "elevate-logo": "Elevate",
+          "elevate-gold-logo": "Gold",
+          "elevate-silver-logo": "Silver"
+        },
+        "default": "none"
+      },
+      "heading_right": { 
+        "label": "Heading",
+        "validationPattern":".{0,14}",
+        "type": "TEXT_FIELD"
+      },
+      "subheading_right": { 
+        "label": "Subheading",
+        "rows":3,
+        "validationPattern":".{0,23}",
+        "type": "TEXT_FIELD"
+      },
+      "buttonLabel_right": { 
+        "label": "Button Label",
+        "type": "TEXT_FIELD"
+      },
+      "buttonLink_right": { 
+        "label": "Button Link",
+        "type": "TEXT_FIELD",
+        "default": "http://"
+      }
+    }
+  }
+}

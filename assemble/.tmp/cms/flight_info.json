@@ -1,0 +1,768 @@
+{
+	"currentDate":"2014-04-07T07:16:53Z",
+		
+			"flyingWithUs": [ 	
+	{
+		"title":"Seat-to-seat delivery"
+
+		,"text":"&lt;p&gt;Treat a travel companion or break the ice by sending a&amp;nbsp;drink, meal, or snack to another seat with our Red&amp;trade; touch&amp;nbsp;screen entertainment system. Just browse our in-flight menus,&amp;nbsp;select who&amp;rsquo;s having one on you, make your order, and we&amp;rsquo;ll deliver it directly to your guest of choice.&lt;/p&gt;<br/>"
+		,"image":"/cms/dam/vx-images/feature_002.png"
+		,"imageRollover":"/cms/dam/vx-images/feature_004.png"
+		,"link":"http://www.work.co"
+		,"linkText":"blabla"
+	}
+,
+	{
+		"title":"Open tab"
+
+		,"text":"&lt;p&gt;Planning on having a few drinks or snacks or watching a few&amp;nbsp;premium TV shows, and don&amp;rsquo;t want to swipe that card each time?&amp;nbsp;&lt;span style=&quot;line-height:1.6em&quot;&gt;When you purchase your first item you can open a tab, order as&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;line-height:1.6em&quot;&gt;much as you want, and close it when you want. &amp;nbsp;No worries if you&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;line-height:1.6em&quot;&gt;forget; unlike most bartenders, we&amp;rsquo;ll close your tab for you at the&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;line-height:1.6em&quot;&gt;end of the flight.&lt;/span&gt;&lt;/p&gt;<br/>"
+		,"image":"/cms/dam/vx-images/feature_002.png"
+		,"imageRollover":"/cms/dam/vx-images/feature_004.png"
+		,"link":"http://www.work.co"
+		,"linkText":"blabla"
+	}
+,
+	{
+		"title":"Entertainment with a touch"
+
+		,"text":"&lt;p&gt;Meet Red, our in-flight entertainment system. With just a few &amp;nbsp;light taps on your screen, you&amp;rsquo;re ready to enjoy newly released movies,&amp;nbsp;live TV, music videos and songs from our music library. You can even play games.&lt;/p&gt;<br/>"
+		,"image":"/cms/dam/vx-images/feature_002.png"
+		,"imageRollover":"/cms/dam/vx-images/feature_004.png"
+		,"link":"http://www.work.co"
+		,"linkText":"blabla"
+	}
+,
+	{
+		"title":"Internet"
+
+		,"text":"&lt;p&gt;You&amp;rsquo;re living in the 21st century. Isn&amp;rsquo;t it time to fly like it? &amp;nbsp;Hop on a brand new Virgin America plane, discover that the future is now,&amp;nbsp;and stay connected with our in&amp;ndash;flight WiFi. It&amp;rsquo;ll make Al Gore proud.&lt;br /&gt;<br/>&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/p&gt;<br/>"
+		,"image":"/cms/dam/vx-images/feature_002.png"
+		,"imageRollover":"/cms/dam/vx-images/feature_004.png"
+		,"link":"http://www.work.co"
+		,"linkText":"blabla"
+	}
+,
+	{
+		"title":"Plugs"
+
+		,"text":"&lt;p&gt;Not only do we have WiFi on every flight to keep you connected, we also have standard and USB plugs at every seat. Keep your devices juiced up&amp;nbsp;while you connect in the air.&lt;/p&gt;<br/>"
+		,"image":"/cms/dam/vx-images/feature_002.png"
+		,"imageRollover":"/cms/dam/vx-images/feature_004.png"
+		,"link":"http://www.work.co"
+		,"linkText":"blabla"
+	}
+,
+	{
+		"title":"Buy things"
+
+		,"text":"&lt;p&gt;Red just got even better. Now you can shop over 200 covetable items&amp;nbsp;through The Red Store, powered by SkyMall. Grab gadgets, jewelry, and more from top brands and we&amp;rsquo;ll ship them wherever you like.&lt;/p&gt;<br/>"
+		,"image":"/cms/dam/vx-images/feature_002.png"
+		,"imageRollover":"/cms/dam/vx-images/feature_004.png"
+		,"link":"http://www.work.co"
+		,"linkText":"blabla"
+	}
+,
+	{
+		"title":"Chat"
+
+		,"text":"&lt;p&gt;Debrief with travel companions in other rows, mingle in a chat room, or wing it and strike up a chat with someone new. Go ahead; you know you&amp;nbsp;want to.&lt;/p&gt;<br/>"
+		,"image":"/cms/dam/vx-images/feature_002.png"
+		,"imageRollover":"/cms/dam/vx-images/feature_004.png"
+		,"link":"http://www.work.co"
+		,"linkText":"blabla"
+	}
+,
+	{
+		"title":"Google maps"
+
+		,"text":"&lt;p&gt;Kalamazoo? Tulsa? Where are we, and what was that giant mountain? Get&amp;nbsp;answers with Google Terrain View maps, now equipped with fresher images&amp;nbsp;and eight levels of zoom functionality.&lt;/p&gt;<br/>"
+		,"image":"/cms/dam/vx-images/feature_002.png"
+		,"imageRollover":"/cms/dam/vx-images/feature_004.png"
+		,"link":"http://www.work.co"
+		,"linkText":"blabla"
+	}
+,
+	{
+		"title":"Make a difference"
+
+		,"text":"&lt;p&gt;Red lets you buy more than tantalizing food and drinks; it allows you&amp;nbsp;to give back. Whether it&amp;rsquo;s carbon offsets or fighting cancer, a simple&amp;nbsp;swipe gives you that good feeling deep down.&lt;/p&gt;<br/>"
+		,"image":"/cms/dam/vx-images/feature_002.png"
+		,"imageRollover":"/cms/dam/vx-images/feature_004.png"
+		,"link":"http://www.work.co"
+		,"linkText":"blabla"
+	}
+ ]
+		,
+			"entertainment": [ 	
+	{
+		"categoryName":"Movies",
+		"id":0,
+		"template":"standard",
+		"items":[
+	
+	{
+		"title":"Iron Man 3"
+
+		,"info":"Rated PG-13 | 2:20"
+		,"img":""
+	}
+,
+	{
+		"title":"Star Trek Into Darkness"
+
+		,"info":"Rated PG-13 | 2:20"
+		,"img":""
+	}
+,
+	{
+		"title":"Hangover: Part III"
+
+		,"info":"Rated PG-13 | 2:20"
+		,"img":""
+	}
+,
+	{
+		"title":"Test movie"
+
+		,"info":"Rated PG-13 | 2:20"
+		,"img":""
+	}
+,
+	{
+		"title":"Test movie II"
+
+		,"info":"Rated PG-13 | 2:20"
+		,"img":""
+	}
+,
+	{
+		"title":"Test movie III"
+
+		,"info":"Rated PG-13 | 2:20"
+		,"img":""
+	}
+		]
+	}
+,
+	{
+		"categoryName":"Live TV",
+		"id":1,
+		"template":"standard",
+		"items":[
+	
+	{
+		"title":"NBC"
+
+		,"img":""
+	}
+,
+	{
+		"title":"CNS"
+
+		,"img":""
+	}
+,
+	{
+		"title":"NBC"
+
+		,"img":""
+	}
+,
+	{
+		"title":"CNS"
+
+		,"img":""
+	}
+,
+	{
+		"title":"NBC"
+
+		,"img":""
+	}
+,
+	{
+		"title":"CNS"
+
+		,"img":""
+	}
+,
+	{
+		"title":"NBC"
+
+		,"img":""
+	}
+,
+	{
+		"title":"CNS"
+
+		,"img":""
+	}
+		]
+	}
+,
+	{
+		"categoryName":"Premium TV",
+		"id":2,
+		"template":"standard",
+		"items":[
+	
+	{
+		"title":"NBC"
+
+		,"img":""
+	}
+,
+	{
+		"title":"CNS"
+
+		,"img":""
+	}
+		]
+	}
+,
+	{
+		"categoryName":"Music Videos",
+		"id":3,
+		"template":"standard",
+		"items":[
+	
+	{
+		"title":"Megan Nicole (Live)"
+
+		,"overview":"&lt;p&gt;What&amp;rsquo;s Trending&lt;/p&gt;<br/>"
+		,"img":""
+	}
+,
+	{
+		"title":"Passenger"
+
+		,"overview":"&lt;p&gt;What&amp;rsquo;s Trending&lt;/p&gt;<br/>"
+		,"img":""
+	}
+,
+	{
+		"title":"Pink"
+
+		,"overview":"&lt;p&gt;What&amp;rsquo;s Trending&lt;/p&gt;<br/>"
+		,"img":""
+	}
+,
+	{
+		"title":"Smashing Pumpkins"
+
+		,"overview":"&lt;p&gt;What&amp;rsquo;s Trending&lt;/p&gt;<br/>"
+		,"img":""
+	}
+,
+	{
+		"title":"Nirvana"
+
+		,"overview":"&lt;p&gt;What&amp;rsquo;s Trending&lt;/p&gt;<br/>"
+		,"img":""
+	}
+,
+	{
+		"title":"DEVO"
+
+		,"overview":"&lt;p&gt;What&amp;rsquo;s Trending&lt;/p&gt;<br/>"
+		,"img":""
+	}
+,
+	{
+		"title":"Marvin Gaye"
+
+		,"overview":"&lt;p&gt;What&amp;rsquo;s Trending&lt;/p&gt;<br/>"
+		,"img":""
+	}
+,
+	{
+		"title":"Tiesto"
+
+		,"overview":"&lt;p&gt;What&amp;rsquo;s Trending&lt;/p&gt;<br/>"
+		,"img":""
+	}
+		]
+	}
+,
+	{
+		"categoryName":"Playlist",
+		"id":4,
+		"template":"standard",
+		"items":[
+	
+	{
+		"title":"NBC"
+
+		,"img":""
+	}
+,
+	{
+		"title":"CNS"
+
+		,"img":""
+	}
+		]
+	}
+,
+	{
+		"categoryName":"Channel 11",
+		"id":5,
+		"template":"list",
+		"items":[
+	
+	{
+		"title":"Virgin Produced Channel"
+
+		,"overview":"&lt;p&gt;We\\&amp;#39;ve teamed up with our friends at Virgin Produced&amp;nbsp;to bring you an exclusive channel packed with fresh content available&amp;nbsp;at 35,000 feet. Catch your favorite comedians in Mile High with Funny&amp;nbsp;or Die, music videos on Vevo, original web series by Blip, and more.&amp;nbsp;The Virgin Produced Channel is a one-stop shop for cutting-edge&amp;nbsp;entertainment and a behind-the-scenes peek at Virgin Produced\\&amp;#39;s&amp;nbsp;latest films. Check out the lineup here, and tune into Channel 11&amp;nbsp;on your next flight.&lt;/p&gt;<br/>"
+		,"img":""
+		,"lineup": [
+			
+			{"title":"Vevo on Virgin Produced"}
+			,
+			{"title":"Comedy Give Back"}
+			,
+			{"title":"Nokia Presents Los Angeles"}
+			,
+			{"title":"What's Trending"}
+			,
+			{"title":"Dog for Dog"}
+			,
+			{"title":"Leaf: Pop Bottle Vases"}
+			,
+			{"title":"Wreckroom"}
+			,
+			{"title":"Spy vs Guy"}
+			,
+			{"title":"The Vault Intro"}
+			,
+			{"title":"Leaf: Two Way to Layer"}
+			,
+			{"title":"Studio Killers: Ode to the Bouncer"}
+			,
+			{"title":"The Vault: Episode 4"}
+			,
+			{"title":"Mile High with Funny or Die"}
+			,
+			{"title":"Blip on Virgin Produced"}
+			,
+			{"title":"Beyond It"}
+		]
+	}
+		]
+	}
+,
+	{
+		"categoryName":"Featured Content",
+		"id":6,
+		"template":"standard",
+		"items":[
+	
+	{
+		"title":"CNS"
+
+		,"img":""
+	}
+,
+	{
+		"title":"NBC"
+
+		,"img":""
+	}
+		]
+	}
+ ]
+		,
+			"foodDrinks": [ 	
+	{
+		"categoryName":"Meals",
+		"id":0,
+		"template":"meals",
+		"items":[
+	
+	{
+		"title":"Flight Bites"
+
+		,"text":"Six of our freshest salads and snacks in one guilt-free sampler:  roasted beets with orange and feta; asparagus antipasto with marinated mozzarella and tomatoes; honey mushroom and fig salad; cheese bites; a smoked chicken with green lentil salad; and chocolate mousse with raspberry. Calories: 500; Fat: 33g; Carbohydrates: 34g; Protein: 18g (Contains dairy, poultry, and sugar.)"
+		,"image":"/cms/dam/vx-images/feature_005.png"
+		,"availableOnLongerThan2H":true
+	}
+,
+	{
+		"title":"San Francisco Club Sandwich"
+
+		,"text":"Sliced sourdough bread piled high with turkey breast, smoked bacon, baby arugula, crisp lettuce, and Roma tomatoes. Served with a creamy feta cheese spread, and a Tcho chocolate on the side. Calories: 570; Fat: 18g; Carbohydrates: 67g; Protein: 32g (Contains wheat, dairy, and sugar.)"
+		,"image":"/cms/dam/vx-images/feature_005.png"
+		,"availableOnLongerThan2H":true
+	}
+,
+	{
+		"title":"Mexican Cheese Plate **"
+
+		,"text":"A selection of Cotija, Chihuahua, and provolone cheese, served with red and green seedless grapes, dried peach and apple, with habanera crackers. (Contains dairy and wheat.)"
+		,"image":"/cms/dam/vx-images/feature_005.png"
+		,"availableOnLongerThan2H":true
+	}
+,
+	{
+		"title":"Vegetable &amp; Plantain Salad"
+
+		,"text":"Fresh lettuce tossed with ribbons of plantain, and zucchini, topped with panela cheese, black olives and a cherry tomato. Served with creamy tamarind dressing. (Contains dairy.)"
+		,"image":"/cms/dam/vx-images/feature_005.png"
+		,"availableOnLongerThan2H":true
+	}
+,
+	{
+		"title":"Tomato &amp; Mozzarella Sandwich"
+
+		,"text":"Freshly baked cornbread baguette with sun dried tomato and basil pesto spread, layered with baby spinach, green leaf lettuce, fresh mozzarella and Roma tomatoes, served with a Choco Mazapan candy on the side. (Contains dairy, wheat, and sugar)"
+		,"image":"/cms/dam/vx-images/feature_005.png"
+		,"availableOnLongerThan2H":true
+	}
+,
+	{
+		"title":"Marinated Chicken Half Wrap"
+
+		,"text":"Lightly-marinated chicken breast with spinach leaves, tomato, plantains, green bell pepper, cheddar cheese, and refried beans rolled in a whole wheat tortilla wrap. Served with a refreshing cucumber and dill salad, and a Choco Mazapan candy for dessert. (Contains poultry, wheat, and dairy.)"
+		,"image":"/cms/dam/vx-images/feature_005.png"
+		,"availableOnLongerThan2H":true
+	}
+,
+	{
+		"title":"Hearty Meal"
+
+		,"text":"This anytime combination includes Old Wisconsin beef salami, Late July Organic Crackers, Oakfield Farms cheddar cheese, Snyder’s mini pretzels, Welch’s fruit snacks, and Thin Addictives Cranberry Almond cookies."
+		,"image":"/cms/dam/vx-images/feature_005.png"
+		,"availableOnLongerThan2H":false
+	}
+,
+	{
+		"title":"Protein Meal"
+
+		,"text":"This protein-packed meal combines Bumble Bee lemon pepper tuna, multi-seed crackers, Wild Garden sundried tomato hummus, Partners crackers, Emerald\\&#039;s natural almonds and yummy fruit snacks."
+		,"image":"/cms/dam/vx-images/feature_005.png"
+		,"availableOnLongerThan2H":false
+	}
+,
+	{
+		"title":"Jet Set Kid Pack"
+
+		,"text":"This fun kids’ snack box comes with Giddy Dip’ems Snacks, Ritz Peanut Butter Crackers, Pepperidge Farm Whole Grain Goldfish, 18 Rabbits Bunny Bar, Dolphin Earbuds, and a slide puzzle to pass the time."
+		,"image":"/cms/dam/vx-images/feature_005.png"
+		,"availableOnLongerThan2H":false
+	}
+		]
+	}
+,
+	{
+		"categoryName":"Travel Light",
+		"id":1,
+		"template":"standard",
+		"items":[
+	
+	{
+		"title":"Udi&#039;s Granola with Fruit and Yogurt"
+
+		,"text":"This fun kids’ snack box comes with Giddy Dip’ems Snacks, Ritz Peanut Butter Crackers, Pepperidge Farm Whole Grain Goldfish, 18 Rabbits Bunny Bar, Dolphin Earbuds, and a slide puzzle to pass the time."
+		,"image":"/cms/dam/vx-images/feature_005.png"
+		,"availableOnLongerThan2H":false
+	}
+,
+	{
+		"title":"Artisan Cheese Box"
+
+		,"text":"Six of our freshest salads and snacks in one guilt-free sampler: roasted beets with orange and feta; asparagus antipasto with marinated mozzarella and tomatoes; honey mushroom and fig salad; cheese bites; a smoked chicken with green lentil salad; and chocolate mousse with raspberry. Calories: 500; Fat: 33g; Carbohydrates: 34g; Protein: 18g (Contains dairy, poultry, and sugar.)"
+		,"image":"/cms/dam/vx-images/feature_005.png"
+		,"availableOnLongerThan2H":false
+	}
+,
+	{
+		"title":"479 Popcorn Sea Salt Caramel"
+
+		,"text":"This fun kids’ snack box comes with Giddy Dip’ems Snacks, Ritz Peanut Butter Crackers, Pepperidge Farm Whole Grain Goldfish, 18 Rabbits Bunny Bar, Dolphin Earbuds, and a slide puzzle to pass the time."
+		,"image":"/cms/dam/vx-images/feature_005.png"
+		,"availableOnLongerThan2H":false
+	}
+,
+	{
+		"title":"Cheddar Popchips"
+
+		,"text":"Six of our freshest salads and snacks in one guilt-free sampler: roasted beets with orange and feta; asparagus antipasto with marinated mozzarella and tomatoes; honey mushroom and fig salad; cheese bites; a smoked chicken with green lentil salad; and chocolate mousse with raspberry. Calories: 500; Fat: 33g; Carbohydrates: 34g; Protein: 18g (Contains dairy, poultry, and sugar.)"
+		,"image":"/cms/dam/vx-images/feature_005.png"
+		,"availableOnLongerThan2H":false
+	}
+,
+	{
+		"title":"Peanut Butter and Jam Half Sandwich"
+
+		,"text":"This fun kids’ snack box comes with Giddy Dip’ems Snacks, Ritz Peanut Butter Crackers, Pepperidge Farm Whole Grain Goldfish, 18 Rabbits Bunny Bar, Dolphin Earbuds, and a slide puzzle to pass the time."
+		,"image":"/cms/dam/vx-images/feature_005.png"
+		,"availableOnLongerThan2H":false
+	}
+,
+	{
+		"title":"Spicy Southwestern Half Wrap"
+
+		,"text":"Six of our freshest salads and snacks in one guilt-free sampler: roasted beets with orange and feta; asparagus antipasto with marinated mozzarella and tomatoes; honey mushroom and fig salad; cheese bites; a smoked chicken with green lentil salad; and chocolate mousse with raspberry. Calories: 500; Fat: 33g; Carbohydrates: 34g; Protein: 18g (Contains dairy, poultry, and sugar.)"
+		,"image":"/cms/dam/vx-images/feature_005.png"
+		,"availableOnLongerThan2H":false
+	}
+		]
+	}
+,
+	{
+		"categoryName":"Snacks",
+		"id":2,
+		"template":"standard",
+		"items":[
+	
+	{
+		"title":"Holly Baking Company Chocolate Chip Cookies"
+
+		,"text":"Six of our freshest salads and snacks in one guilt-free sampler: roasted beets with orange and feta; asparagus antipasto with marinated mozzarella and tomatoes; honey mushroom and fig salad; cheese bites; a smoked chicken with green lentil salad; and chocolate mousse with raspberry. Calories: 500; Fat: 33g; Carbohydrates: 34g; Protein: 18g (Contains dairy, poultry, and sugar.)"
+		,"image":"/cms/dam/vx-images/feature_005.png"
+		,"availableOnLongerThan2H":false
+	}
+,
+	{
+		"title":"Chex Mix"
+
+		,"text":"This fun kids’ snack box comes with Giddy Dip’ems Snacks, Ritz Peanut Butter Crackers, Pepperidge Farm Whole Grain Goldfish, 18 Rabbits Bunny Bar, Dolphin Earbuds, and a slide puzzle to pass the time."
+		,"image":"/cms/dam/vx-images/feature_005.png"
+		,"availableOnLongerThan2H":false
+	}
+,
+	{
+		"title":"Hail Merry Seasoned Nut Blend"
+
+		,"text":"Six of our freshest salads and snacks in one guilt-free sampler: roasted beets with orange and feta; asparagus antipasto with marinated mozzarella and tomatoes; honey mushroom and fig salad; cheese bites; a smoked chicken with green lentil salad; and chocolate mousse with raspberry. Calories: 500; Fat: 33g; Carbohydrates: 34g; Protein: 18g (Contains dairy, poultry, and sugar.)"
+		,"image":"/cms/dam/vx-images/feature_005.png"
+		,"availableOnLongerThan2H":false
+	}
+,
+	{
+		"title":"Pringles"
+
+		,"text":"This fun kids’ snack box comes with Giddy Dip’ems Snacks, Ritz Peanut Butter Crackers, Pepperidge Farm Whole Grain Goldfish, 18 Rabbits Bunny Bar, Dolphin Earbuds, and a slide puzzle to pass the time."
+		,"image":"/cms/dam/vx-images/feature_005.png"
+		,"availableOnLongerThan2H":false
+	}
+,
+	{
+		"title":"Krave Basil Citrus Turkey Jerky"
+
+		,"text":"Six of our freshest salads and snacks."
+		,"image":"/cms/dam/vx-images/feature_005.png"
+		,"availableOnLongerThan2H":false
+	}
+,
+	{
+		"title":"Hail Merry Chocolate Macaroons"
+
+		,"text":"This fun kids’ snack box comes with Giddy Dip’ems Snacks, Ritz Peanut Butter Crackers, Pepperidge Farm Whole Grain Goldfish, 18 Rabbits Bunny Bar, Dolphin Earbuds, and a slide puzzle to pass the time."
+		,"image":"/cms/dam/vx-images/feature_005.png"
+		,"availableOnLongerThan2H":false
+	}
+		]
+	}
+,
+	{
+		"categoryName":"Drinks",
+		"id":3,
+		"template":"drinks",
+		"items":[
+	
+	{
+		"title":"The Good Stuff"
+
+		,"availableOnLongerThan2H":false
+		,"list": [
+			
+			{"item":"360 Vodka"}
+			,
+			{"item":"Bombay Sapphire Gin"}
+			,
+			{"item":"Funkin Margarita Mixer"}
+			,
+			{"item":"Jack Daniel’s"}
+			,
+			{"item":"Bacardi Rum"}
+			,
+			{"item":"Bailey’s Irish Cream"}
+			,
+			{"item":"Glenfiddich Single Malt Scotch Whisky"}
+			,
+			{"item":"Sauza Hornitos Reposado Tequila"}
+			,
+			{"item":"Veev Acaí Spirit"}
+			,
+			{"item":"35° South Cabernet Sauvignon"}
+			,
+			{"item":"La Campana Sparkling Wine"}
+			,
+			{"item":"Hayes Ranch Chardonnay"}
+			,
+			{"item":"Bon Voyage Red"}
+			,
+			{"item":"Bon Voyage White"}
+		]
+	}
+,
+	{
+		"title":"Beer"
+
+		,"availableOnLongerThan2H":false
+		,"list": [
+			
+			{"item":"Anchor Steam"}
+			,
+			{"item":"Samuel Adams"}
+			,
+			{"item":"Bud Light"}
+			,
+			{"item":"21st Amendment Back in Black"}
+			,
+			{"item":"Heineken"}
+		]
+	}
+,
+	{
+		"title":"The Good Stuff (minus the booze)"
+
+		,"availableOnLongerThan2H":false
+		,"list": [
+			
+			{"item":"Honest Tea - Honey Green"}
+			,
+			{"item":"Honest Ade - Pomegranate Blue"}
+			,
+			{"item":"Mighty Leaf Chamomile Citrus"}
+			,
+			{"item":"Mighty Leaf Organic Spring Jasmine"}
+			,
+			{"item":"EBOOST"}
+			,
+			{"item":"ROCKSTAR Recovery"}
+		]
+	}
+,
+	{
+		"title":"On the House"
+
+		,"availableOnLongerThan2H":false
+		,"list": [
+			
+			{"item":"Coca Cola"}
+			,
+			{"item":"Sprite"}
+			,
+			{"item":"Ginger Ale"}
+			,
+			{"item":"Diet Coke"}
+			,
+			{"item":"Coke Zero"}
+		]
+	}
+		]
+	}
+,
+	{
+		"categoryName":"First Class",
+		"id":4,
+		"template":"first-class",
+		"items":[
+	
+	{
+		"title":"The Good Stuff"
+
+		,"availableOnLongerThan2H":false
+		,"list": [
+			
+			{"item":"360 Vodka"}
+			,
+			{"item":"Bombay Sapphire Gin"}
+			,
+			{"item":"Funkin Margarita Mixer"}
+			,
+			{"item":"Jack Daniel’s"}
+			,
+			{"item":"Bacardi Rum"}
+			,
+			{"item":"Bailey’s Irish Cream"}
+			,
+			{"item":"Glenfiddich Single Malt Scotch Whisky"}
+			,
+			{"item":"Sauza Hornitos Reposado Tequila"}
+			,
+			{"item":"Veev Acaí Spirit"}
+			,
+			{"item":"35° South Cabernet Sauvignon"}
+			,
+			{"item":"La Campana Sparkling Wine"}
+			,
+			{"item":"Hayes Ranch Chardonnay"}
+			,
+			{"item":"Bon Voyage Red"}
+			,
+			{"item":"Bon Voyage White"}
+		]
+	}
+,
+	{
+		"title":"The Good Stuff (minus the booze)"
+
+		,"availableOnLongerThan2H":false
+		,"list": [
+			
+			{"item":"Honest Tea - Honey Green"}
+			,
+			{"item":"Honest Ade - Pomegranate Blue"}
+			,
+			{"item":"Mighty Leaf Chamomile Citrus"}
+			,
+			{"item":"Mighty Leaf Organic Spring Jasmine"}
+			,
+			{"item":"EBOOST"}
+			,
+			{"item":"ROCKSTAR Recovery"}
+		]
+	}
+,
+	{
+		"title":"Beer"
+
+		,"availableOnLongerThan2H":false
+		,"list": [
+			
+			{"item":"Anchor Steam"}
+			,
+			{"item":"Samuel Adams"}
+			,
+			{"item":"Bud Light"}
+			,
+			{"item":"21st Amendment Back in Black"}
+			,
+			{"item":"Heineken"}
+		]
+	}
+,
+	{
+		"title":"On the House"
+
+		,"availableOnLongerThan2H":false
+		,"list": [
+			
+			{"item":"Coca Cola"}
+			,
+			{"item":"Sprite"}
+			,
+			{"item":"Ginger Ale"}
+			,
+			{"item":"Diet Coke"}
+			,
+			{"item":"Coke Zero"}
+		]
+	}
+		]
+	}
+ ]
+}

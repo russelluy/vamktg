@@ -1,0 +1,105 @@
+/* ==========================================================================
+COMPONENT - Masterhead
+========================================================================== */
+.masterhead{			
+	@include component;
+	@include container;
+	@include button;
+	background-repeat:no-repeat;
+	background-position: center center;
+	background-size: cover;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	figure {
+		position: relative;
+		text-align: center;
+		img {
+			@include at-medium {
+			}
+			@include at-large {
+			}
+		}
+	}
+	figcaption {
+		@include container;
+		@include button;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		position: absolute;
+		text-align: center;
+		margin: 0px;
+		.masterhead-image {
+			position: relative;
+		}
+		&:before {
+			content: '';
+			display: inline-block;
+			height: 100%; 
+			vertical-align: middle;
+			margin-right: -0.25em;  /* Adjusts for spacing */
+		}
+		.centered {
+			@include pad(1, 1, 12);
+			display: inline-block;
+			vertical-align: middle;
+			width: 99%;
+			background: none;
+		}
+		.heading{
+			@include gotham-light;
+			@include font-size(2.8);
+			@include line-height(3.2);
+			@include letter-spacing (-15);
+			color: $white;
+			text-transform: none;
+			margin-bottom: 10px;
+		}
+		.subheading{
+			@include gotham-light;
+			@include font-size(1.7);
+			@include line-height(2.4);
+			@include letter-spacing (-25);
+			color: $white;
+			margin: 0 auto;
+		}
+		a{
+			height: 40px;
+			color: $white;
+			padding: 10px;
+			&:hover{
+				padding: 9px;
+				border: 2px solid $white;
+			}
+			&:active{
+				padding: 10px;
+				color: $black;
+				@include background-image(linear-gradient($white, $white));
+			}
+		}
+		@include at-medium {
+			@include wrap;
+			.centered {
+			}
+			.heading{
+				@include gotham-light;
+				@include font-size(2.2);
+				@include line-height(2.2);
+				margin-bottom: 0px;
+			}
+		}
+		@include at-large {	
+			.centered {
+			}
+			.heading{
+				@include gotham-thin;
+				@include font-size(4);
+				@include line-height(4.6);
+			}
+		}
+		@include lt-ie9 {
+		}
+	}
+}

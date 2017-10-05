@@ -1,0 +1,44 @@
+{
+  "title": "No Fly Dates Entry",
+  
+  "tabs": {
+    "entry": {
+
+      "code_from": { 
+        "label": "Airport From",
+        "type": "TEXT_FIELD",
+        "teste_type": "SELECT_FIELD",
+	"teste_repository": "config",
+	"teste_path": "/airports/*",
+	"teste_valueProperty": "code",
+	"teste_labelProperty": "name"
+      },
+      "code_to": { 
+        "label": "Airport To",
+        "type": "TEXT_FIELD",
+        "teste_type": "SELECT_FIELD",
+	"teste_repository": "config",
+	"teste_path": "/airports",
+	"teste_valueProperty": "code",
+	"teste_labelProperty": "name"
+      },
+
+      "weekDays": { 
+        "label": "Days of the Week",
+        "type": "MULTIPLE_FIELD",
+        "multiselect": "true",
+        "options": {
+		"Sun": "1 - Sunday",
+		"Mon": "2 - Monday",
+		"Tue": "3 - Tuesday",
+		"Wed": "4 - Wednesday",
+		"Thu": "5 - Thursday",
+		"Fri": "6 - Friday",
+		"Sat": "7 - Saturday"
+        },
+        "default": "false"
+      }
+
+    }
+  }
+}

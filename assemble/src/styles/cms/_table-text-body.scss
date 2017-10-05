@@ -1,0 +1,20 @@
+/* ==========================================================================
+COMPONENT - TableTextBody
+========================================================================== */
+.table-text-body {
+	@include wrap;
+	@include component;
+
+    .container{
+		@include overflow-scrolling;
+	}
+
+    table {
+		@include table;
+		//min-width: $lg*0.75;
+		.first,
+    	.second{
+    		width: 50%;
+    	}
+	}
+}

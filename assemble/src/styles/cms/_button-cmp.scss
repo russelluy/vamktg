@@ -1,0 +1,68 @@
+/* ==========================================================================
+COMPONENT - Button-Cmp
+========================================================================== */
+.button-cmp{
+	@include component;
+	@include button;
+	@include wrap;
+	text-align: center;
+	padding-left: 18px;
+	padding-right: 18px;
+	//display: inline-block;
+	max-width: initial;
+	width: initial;
+	padding: 10px 20px;
+	a{
+		margin-top: 0px;
+		border: none;
+		color: $white;
+		&:hover{
+		}
+		&:active{
+			padding: 10px 0;
+		}
+	}
+
+	&.red {
+		a {
+			background-color: $red;
+			&:hover{
+				background-color: $red-hover;
+			}
+			&:active{
+				@include background-image(linear-gradient($red, $red-hover));
+			}
+		}
+	}
+
+	&.purple {
+		a{
+			background-color: $purple;
+			&:hover{
+				background-color: $purple-hover;
+			}
+			&:active{
+				@include background-image(linear-gradient($purple, $purple-hover));
+			}
+		}
+	}
+
+	.centered {
+		border: 1px solid $border-grey;
+		padding: 17px;
+	}
+
+	@include at-medium {
+		@include pad(1, 1, 12);
+		.centered{
+			padding: 19px;
+		}
+ 	}
+
+	@include at-large {
+		@include pad(2, 2, 12);
+		.centered{
+			padding: 20px;
+		}
+	}
+}

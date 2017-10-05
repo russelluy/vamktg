@@ -1,0 +1,36 @@
+{
+  "title": "One Up Properties",
+  "tabs": {
+    "tabMain": {
+      "image": { 
+        "targetWorkspace": "dam",
+        "appName": "assets",
+        "identifierToPathConverter": "info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter",
+        "contentPreviewDefinition": "",
+        "label": "Background Image <small>(3000px)</small>",
+        "type": "IMAGE"
+      },
+      "heading": { 
+        "label": "Heading",
+        "type": "TEXT_FIELD",
+        "validationPattern":".{0,20}",
+        "rows":3
+      },
+      "subheading": { 
+        "label": "Subheading",
+        "rows":3,
+        "validationPattern":".{0,84}",
+        "type": "TEXT_FIELD"
+      },
+      "buttonLabel": { 
+        "label": "Button Label",
+        "type": "TEXT_FIELD"
+      },
+      "buttonLink": { 
+        "label": "Button Link",
+        "type": "TEXT_FIELD",
+        "default": "http://"
+      }
+    }
+  }
+}

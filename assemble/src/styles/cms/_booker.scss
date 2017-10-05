@@ -1,0 +1,316 @@
+/* ==========================================================================
+   Homepage Booking Module
+   ========================================================================== */
+
+/* Display
+   ========================================================================== */
+
+@mixin reset-list() {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin double-border-top($color: $border-grey) {
+  border-top: 2px solid $color;
+  position: relative;
+  &:before {
+    border-top: 1px solid $color;
+    content: '';
+    left: 0;
+    position: absolute;
+    top: 2px;
+    width: 100%;
+  }
+}
+
+/* Backgrounds
+   ========================================================================== */
+@mixin background-size($type) {
+  background-size: $type;
+
+  @if $type == 'cover' {
+    // Some IE logic here
+  }
+};
+
+.booker {
+  @include double-border-top;
+  padding-top: 40px;
+
+  @include at-large {
+    padding-top: 72px;
+  }
+}
+
+.booker__trip-type {
+  margin-bottom: 45px;
+
+  @include at-medium {
+    margin-bottom: 100px;
+  }
+}
+
+.booker__trip-type--is-hidden {
+  visibility: hidden;
+}
+
+/* Origin City and Travellers
+   ========================================================================== */
+.booker__trip-origin {
+  @include clearfix;
+  @include font-size(2.2);
+  font-weight: 300;
+  line-height: 135%;
+  margin: 0 0 25px;
+  text-align: center;
+
+  @include at-medium {
+    @include font-size(3.2);
+    letter-spacing: -1px;
+  }
+
+  @include at-large {
+    @include font-size(4.0);
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+  }
+}
+
+.trip-select {
+  color: #7D4194;
+  @include gotham-bold;
+  white-space: nowrap;
+
+  &:hover {
+    color: $purple-turbo;
+    text-decoration: none;
+  }
+
+  &:after {
+    @include background-size(contain);
+    content: '';
+    display: inline-block;
+    height: 8px;
+    margin-left: 2px;
+    width: 14px;
+    vertical-align: middle;
+  }
+
+  .multi-city & {
+    white-space: normal;
+  }
+
+  @include at-medium {
+    &:after {
+      @include background-size(15px auto);
+      background-position: 100% 50%;
+      border-left: 1px solid #EDDDF5;
+      height: 16px;
+      margin-left: 4px;
+      width: 19px;
+    }
+
+    .multi-city & {
+      white-space: nowrap;
+    }
+  }
+
+  @include at-large {
+    &:after {
+      height: 23px;
+    }
+  }
+
+  .city-leg--two & {
+    color: $mc-leg-2;
+  }
+
+  &.is-unselected {
+    @include gotham-light;
+  }
+
+  &.is-disabled {
+    color: $light-grey;
+    @include gotham-light;
+    pointer-events: none;
+
+    &:hover {
+      color: $light-grey;
+      cursor: default;
+    }
+  }
+}
+
+.bp-small .booker__modal {
+  background: $purple;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 2000;
+}
+
+.booker__trip-wrap {
+  position: relative;
+}
+
+.booker__close-overlay {
+  position: absolute;
+  right: 0;
+  text-transform: uppercase;
+  top: -10px;
+
+  &:after {
+    @include background-size(contain);
+    content: '';
+    display: inline-block;
+    height: 11px;
+    margin-left: 7px;
+    width: 11px;
+    vertical-align: middle;
+  }
+}
+
+.bp-small .booker__close-overlay {
+  display: none;
+}
+
+/* Multi-city
+   ========================================================================== */
+.booker__multi-city {
+  position: relative;
+}
+
+.multi-city {
+
+}
+
+.multi-city__city-legs {
+  @include reset-list;
+  margin-top: -32px;
+
+  > li {
+    border-bottom: 1px solid $border-grey;
+    line-height: 32px;
+    padding: 32px 0;
+
+    @include at-medium {
+      line-height: 42px;
+      padding: 40px 0;
+    }
+
+    @include at-large {
+      line-height: 50px;
+    }
+
+    &.is-selecting {
+      border: 0;
+    }
+  }
+}
+
+.city-leg {
+  color: $black;
+  @include gotham-xlight;
+  @include font-size(2.2);
+  padding-left: 80px;
+  position: relative;
+
+  @include at-medium {
+    @include font-size(2.8);
+  }
+
+  @include at-large {
+    @include font-size(4);
+    letter-spacing: -2px;
+  }
+
+  &.is-disabled {
+    color: $light-grey !important;
+  }
+}
+
+.city-leg--one {
+  @extend .city-leg;
+
+
+}
+
+.city-leg--two {
+  @extend .city-leg;
+
+
+}
+
+.city-leg__number {
+  color: $white;
+  display: block;
+  @include gotham-xlight;
+  @include font-size(2.2);
+  height: 32px;
+  left: 0;
+  line-height: 32px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 32px;
+
+  @include at-medium {
+    @include font-size(2.8);
+    height: 42px;
+    line-height: 42px;
+    width: 42px;
+  }
+
+  @include at-large {
+    @include font-size(3.2);
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+  }
+
+  .city-leg--one & {
+    background: $mc-leg-1;
+  }
+
+  .city-leg--two & {
+    background: $mc-leg-2;
+  }
+
+  &.is-disabled {
+    background: $light-grey;
+  }
+}
+
+.trip-city {
+  .city-leg--one & {
+    color: $mc-leg-1;
+  }
+
+  .city-leg--two & {
+    color: $mc-leg-2;
+  }
+
+  &.is-disabled {
+    color: $light-grey;
+  }
+}
+
+.multi-city__multi-city-confirm {
+  position: relative;
+}
+
+.multi-city-confirm {
+  padding: 40px 0 0;
+
+  @include at-medium {
+    float: right;
+  }
+
+  > a.btn {
+    margin: 0 auto;
+    width: 260px;
+  }
+}

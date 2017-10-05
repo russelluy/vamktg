@@ -1,0 +1,13 @@
+{
+    "title": "[VX] Site Map",
+    "dialog": "vxSiteMapItemProperties",
+
+  "areas": {
+    "items": {
+      "type": "list",
+      "components": [
+        "vxSiteMapSingleItemMsg"
+      ]
+    }
+  }
+}

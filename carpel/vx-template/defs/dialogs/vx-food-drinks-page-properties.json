@@ -1,0 +1,74 @@
+{
+  "title": "Food and Drinks Page Properties",
+  "tabs": {
+    "tabMain": {
+      "label":"Main Properties",
+      "title": {
+        "label": "Title",
+        "required": "true",
+        "type": "TEXT_FIELD"
+      },
+      "abstract": {
+        "label": "Abstract Description",
+        "rows": "5",
+        "type": "TEXT_FIELD"
+      },
+      "template": {
+        "label": "Template Style",
+        "type": "SELECT_FIELD",
+        "options": {
+          "standard": "Standard",
+          "meals": "Meals",
+          "drinks": "Drinks",
+          "first-class": "First Class"
+        },
+        "default": "standard"
+      }
+    },
+    "tabMetaData": {
+      "label":"Meta Data",
+      "keywords": {
+        "label": "Keywords",
+        "rows": "3",
+        "type": "TEXT_FIELD"
+      },
+      "description": {
+        "label": "Description",
+        "rows": "3",
+        "type": "TEXT_FIELD"
+      },
+      "author": {
+        "label": "Author",
+        "type": "TEXT_FIELD"
+      },
+      "robots": {
+        "label": "Robots",
+        "type": "TEXT_FIELD"
+      }
+    },
+    "tabFacebook": {
+      "label":"Facebook",
+      "face_url": {
+        "label": "URL",
+        "type": "TEXT_FIELD"
+      },
+      "face_site_name": {
+        "label": "Site Name",
+        "type": "TEXT_FIELD"
+      },
+      "face_title": {
+        "label": "Title",
+        "type": "TEXT_FIELD"
+      },
+      "face_admins": {
+        "label": "Admins",
+        "type": "TEXT_FIELD"
+      },
+      "face_description": {
+        "label": "Description",
+        "rows": "3",
+        "type": "TEXT_FIELD"
+      }
+    }
+  }
+}

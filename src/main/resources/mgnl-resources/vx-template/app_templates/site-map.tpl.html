@@ -1,0 +1,70 @@
+<div bindonce class="site-map cf" ng-controller="SiteMapCtrl">
+    <div class="site-map-col">
+        <section ng-repeat="siteMapSection in siteMap | limitTo: 6">
+            <header class="site-map-list-header">
+                <h1><a bo-href="siteMapSection.path" bo-text="siteMapSection.name" target="_self"></a></h1>
+            </header>
+            <ul class="site-map-list" bo-show="siteMapSection.links">
+                <li ng-repeat="mainLinks in siteMapSection.links">
+                    <a bo-href="mainLinks.path" bo-text="mainLinks.name" target="_self"></a>
+                    <ul class="site-map-list is-indented" bo-show="mainLinks.links">
+                        <li ng-repeat="subLinks in mainLinks.links">
+                            <a bo-href="subLinks.path" bo-text="subLinks.name" target="_self"></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <div class="site-map-col">
+        <section ng-repeat="siteMapSection in siteMap | limitTo: 8 | limitTo: -2">
+            <header class="site-map-list-header">
+                <h1><a bo-href="siteMapSection.path" bo-text="siteMapSection.name" target="_self"></a></h1>
+            </header>
+            <ul class="site-map-list" bo-show="siteMapSection.links">
+                <li ng-repeat="mainLinks in siteMapSection.links">
+                    <a bo-href="mainLinks.path" bo-text="mainLinks.name" target="_self"></a>
+                    <ul class="site-map-list is-indented" bo-show="mainLinks.links">
+                        <li ng-repeat="subLinks in mainLinks.links">
+                            <a bo-href="subLinks.path" bo-text="subLinks.name" target="_self"></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <div class="site-map-col">
+        <section ng-repeat="siteMapSection in siteMap | limitTo: 10 | limitTo: -2">
+            <header class="site-map-list-header">
+                <h1><a bo-href="siteMapSection.path" bo-text="siteMapSection.name" target="_self"></a></h1>
+            </header>
+            <ul class="site-map-list" bo-show="siteMapSection.links">
+                <li ng-repeat="mainLinks in siteMapSection.links">
+                    <a bo-href="mainLinks.path" bo-text="mainLinks.name" target="_self"></a>
+                    <ul class="site-map-list is-indented" bo-show="mainLinks.links">
+                        <li ng-repeat="subLinks in mainLinks.links">
+                            <a bo-href="subLinks.path" bo-text="subLinks.name" target="_self"></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <div class="site-map-col">
+        <section ng-repeat="siteMapSection in siteMap | limitTo: 21 | limitTo: -11">
+            <header class="site-map-list-header">
+                <h1><a bo-href="siteMapSection.path" bo-text="siteMapSection.name" target="_self"></a></h1>
+            </header>
+            <ul class="site-map-list" bo-show="siteMapSection.links">
+                <li ng-repeat="mainLinks in siteMapSection.links">
+                    <a bo-href="mainLinks.path" bo-text="mainLinks.name" target="_self"></a>
+                    <ul class="site-map-list is-indented" bo-show="mainLinks.links">
+                        <li ng-repeat="subLinks in mainLinks.links">
+                            <a bo-href="subLinks.path" bo-text="subLinks.name" target="_self"></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </div>
+</div>

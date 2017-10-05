@@ -1,0 +1,13 @@
+{
+    "title": "[VX] FAQ",
+    "dialog": "vxFaqItemProperties",
+
+  "areas": { 
+    "items": {
+      "type": "list",
+      "components": [
+        "vxFaqSingleItemMsg"
+      ]
+    }
+  }
+}

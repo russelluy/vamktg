@@ -1,0 +1,128 @@
+<div class="table-fares">
+    <!-- this is breaking styling, we need to move it out of the template
+    <script language="javascript">
+        function showColumn(type){
+            var colPrices = $('span[name=colPrices]');
+            for (var i = 0; i < colPrices.length; i++) {
+                colPrices[i].style.display = (type === 'colPrices')?'block':'none';
+            }
+            var colPoints = $('span[name=colPoints]');
+            for (var i = 0; i < colPoints.length; i++) {
+                colPoints[i].style.display = (type === 'colPoints')?'block':'none';
+            }
+        }
+    </script-->
+    <div class="table-fares-container--mobile">
+        <ul class="fare-cards">
+            <li class="fare-card">
+                <ul class="fare-card__destinations">
+                    <li>San Francisco</li>
+                    <li>San Diego</li>
+                </ul>
+
+                <dl class="fare-card__details cf">
+                    <dt>Book By</dt>
+                    <dd>Oct 13</dd>
+                    <dt>Adv. Purchase</dt>
+                    <dd>3 days</dd>
+                    <dt>Travel Period</dt>
+                    <dd>Oct 19 - Oct 26</dd>
+                </dl>
+
+                <div class="fare-card__fare-deal">
+                    <div class="fare-deal__text">From</div>
+                    <div class="fare-deal__price"><span class="dollar">$</span>79<span class="ast">*</span></div>
+                    <div class="fare-deal__text">Each Way</div>
+                </div>
+
+                <div class="fare-card__btn">
+                    <a href="#" rel="nofollow">Book</a>
+                </div>
+            </li>
+            <li class="fare-card">
+                <ul class="fare-card__destinations">
+                    <li>Los Angeles</li>
+                    <li>Cancun</li>
+                </ul>
+
+                <dl class="fare-card__details cf">
+                    <dt>Book By</dt>
+                    <dd>Jul 24</dd>
+                    <dt>Adv. Purchase</dt>
+                    <dd>0 days</dd>
+                    <dt>Travel Period</dt>
+                    <dd>Oct 19 - Oct 26</dd>
+                </dl>
+
+                <div class="fare-card__fare-deal">
+                    <div class="fare-deal__text">From</div>
+                    <div class="fare-deal__price"><span class="dollar">$</span>199<span class="ast">*</span></div>
+                    <div class="fare-deal__text">Nonstop</div>
+                </div>
+
+                <div class="fare-card__btn">
+                    <a href="#" rel="nofollow">Book</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="table-fares-container">
+        <table class="fares-table">
+            <thead>
+                <tr>
+                    <th>To</th>
+                    <th>
+                        <div class="fares-table__toggle-points">
+                            <span name="colPrices" style="display: block">US Dollars&nbsp;&nbsp;<a href="javascript:showColumn('colPoints')" class="link-underline">Elevate Points</a></span>
+                            <span name="colPoints" class="medium-grey" style="display: none"><a href="javascript:showColumn('colPrices')" class="link-underline">US Dollars</a>&nbsp;&nbsp;Elevate Points</span>
+                        </div>
+                        Prices <span>Start At</span>
+                    </th>
+                    <th>Book By</th>
+                    <th>Advance Purchase</th>
+                    <th>Travel Period</th>
+                    <th><a href="#textFooter" target="_self" class="fares-table__restrictions link-underline">Restrictions apply</a></th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>New York <span>NY</span></td>
+                    <td>
+                        <span name="colPrices" style="display: block">$54</span>
+                        <span name="colPoints" style="display: none">2000</span>
+                    </td>
+                    <td>Jan 22 - <span>Mar 5</span></td>
+                    <td>21 Days</td>
+                    <td>Jan 22 - <span>Mar 5</span></td>
+                    <td><a href="#" rel="nofollow">Book</a></td>
+                </tr>
+                <tr>
+                    <td>Las Vegas <span>NV</span></td>
+                    <td>
+                        <span name="colPrices" style="display: block">$54</span>
+                        <span name="colPoints" style="display: none">2000</span>
+                    </td>
+                    <td>Jan 22 - <span>Mar 5</span></td>
+                    <td>21 Days</td>
+                    <td>Jan 22 - <span>Mar 5</span></td>
+                    <td><a href="#" rel="nofollow">Book</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        Palm Springs <span>CA</span>
+                        <div class="label"><span class="trip">1 Stop</span><span class="spacer"> - </span>ORD - 2h 30m</div>
+                    </td>
+                    <td>
+                        <span name="colPrices" style="display: block">$54</span>
+                        <span name="colPoints" style="display: none">2000</span>
+                    </td>
+                    <td>Jan 22 - <span>Mar 5</span></td>
+                    <td>21 Days</td>
+                    <td>Jan 22 - <span>Mar 5</span></td>
+                    <td><a href="#" rel="nofollow">Book</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

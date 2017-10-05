@@ -1,0 +1,124 @@
+ /* ==========================================================================
+   COMPONENT - OneUp
+   ========================================================================== */
+.one-up{
+
+	@include component;
+	@include container;
+	@include button;
+
+	background-repeat:no-repeat;
+	background-position: center center;
+	background-size: cover;
+	text-align: center;
+	margin: 0px;
+	height: 320px;
+
+	&:before {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+		margin-right: -0.25em;  /* Adjusts for spacing */
+	}
+	.centered {
+		@include pad(1, 1, 12);
+
+		display: inline-block;
+		vertical-align: middle;
+		width: 99%;
+		background: none;
+	}
+	.heading{
+		@include gotham-light;
+		@include font-size(2.8);
+		@include line-height(3.2);
+		@include letter-spacing (-15);
+
+		color: $white;
+		text-transform: none;
+		margin-bottom: 10px;
+	}
+	.subheading{
+		@include gotham-light;
+		@include font-size(1.7);
+		@include line-height(2.4);
+		@include letter-spacing (-25);
+		
+		color: $white;
+		margin: 0 auto;
+		a,
+		a:hover{
+			background: initial;
+			border: initial;
+			color: initial;
+			display: initial;
+			font: initial;
+			height: initial;
+			letter-spacing: initial;
+			line-height: initial;
+			text-transform: initial;
+			visibility: initial;
+			width: initial;
+			word-spacing: initial;
+			z-index: initial;
+			text-align: initial;
+			text-decoration: underline;
+			text-transform: initial;
+			cursor: initial;
+			padding: initial;
+			max-width: initial;
+			min-width: initial;
+			margin: initial;
+			@include gotham-light;
+			@include font-size(1.7);
+			@include line-height(2.4);
+			@include letter-spacing (-25);
+			
+			color: $white;
+		}
+	}
+	a{
+		height: 40px;
+		color: $white;
+		padding: 10px;
+		&:hover{
+			padding: 9px;
+			border: 2px solid $white;
+		}
+		&:active{
+			padding: 10px;
+			color: $black;
+			@include background-image(linear-gradient($white, $white));
+		}
+	}
+	
+	@include at-medium {
+		@include wrap;
+		height: 256px;
+
+		.centered {
+
+		}
+
+		.heading{
+			@include gotham-light;
+			@include font-size(2.2);
+			@include line-height(2.2);
+
+			margin-bottom: 0px;
+		}
+	}
+	@include at-large {
+
+		height: 525px;
+		.centered {
+		}
+
+		.heading{
+		  @include gotham-thin;
+		  @include font-size(4);
+		  @include line-height(4.6);
+		}
+	}
+}

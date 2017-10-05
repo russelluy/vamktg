@@ -1,0 +1,26 @@
+{
+  "title": "Site Map Item Properties",
+  "tabs": {
+    "tabMain": {
+      "variant": {
+        "label": "Variant",
+        "type": "SELECT_FIELD",
+        "options": {
+          "first": "First",
+          "second": "Second",
+          "third": "Third"
+        },
+        "default": "first"
+      },
+      "heading": {
+        "label": "Heading",
+        "type": "TEXT_FIELD"
+      },
+      "link": {
+        "label": "Link",
+        "type": "TEXT_FIELD",
+        "default":"http://"
+      }
+    }
+  }
+}

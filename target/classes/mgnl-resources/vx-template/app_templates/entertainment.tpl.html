@@ -1,0 +1,35 @@
+<div ng-controller="EntertainmentCtrl">
+    <header class="promotion-select" ng-switch="success.breakpoint">
+        <div ng-switch-when="small">
+            <select class="tab-select"
+                data-vx-common-custom-select
+                ng-model="entertainment.category"
+                ng-options="cat.id as cat.categoryName for cat in accordion.content"
+                ng-change="entertainment.changeCategory(entertainment.category)">
+            </select>
+        </div>
+        <ul class="tab-list cf" ng-switch-default>
+            <li class="tab-list__item" ng-class="{'is-selected': cat.id === entertainment.category}" ng-repeat="cat in accordion.content">
+                <a href="#" data-vx-common-prevent-default ng-click="entertainment.changeCategory($index); entertainment.category = $index">{{cat.categoryName}}</a>
+            </li>
+        </ul>
+    </header>
+    <div class="promotion-selection" ng-switch="entertainment.template">
+        <ul class="promotion-list cf" ng-switch-default>
+            <li class="entertainment-item" ng-class="{'is-tight': !media.title && !media.info}" ng-repeat="media in entertainment.items">
+                <img class="entertainment-item__img" out="{{media.img}}" alt="{{media.title}}" vx-global-image small="137" medium="166" large="180"/>
+                <div class="entertainment-item__title" vx-bind-html-unsafe="media.title"></div>
+                <div class="entertainment-item__meta" vx-bind-html-unsafe="media.info"></div>
+            </li>
+        </ul>
+        <section class="virgin-channel" ng-switch-when="list">
+            <header class="virgin-channel__header">
+                <h2><img out="{{entertainment.items[0].img}}" alt="{{entertainment.items[0].title}}" vx-global-image small="137" medium="166" large="180"/></h2>
+            </header>
+            <p class="virgin-channel__about" vx-bind-html-unsafe="entertainment.items[0].overview"></p>
+            <ul class="virgin-channel__lineup cf">
+                <li ng-repeat="channel in entertainment.items[0].lineup"><span vx-bind-html-unsafe="channel.title"></span></li>
+            </ul>
+        </section>
+    </div>
+</div>

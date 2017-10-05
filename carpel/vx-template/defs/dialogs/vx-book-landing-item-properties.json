@@ -1,0 +1,191 @@
+{
+  "title": "Book Landing Properties",
+  "tabs": {
+    "tabOne": {
+      "label": "First",
+      "firstImage": {
+        "targetWorkspace": "dam",
+        "appName": "assets",
+        "identifierToPathConverter": "info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter",
+        "contentPreviewDefinition": "",
+        "label": "Image <small>(407x228)</small>",
+        "type": "IMAGE"
+      },
+      "firstHeading": {
+        "label": "Heading",
+        "rows": "2",
+        "type": "TEXT_FIELD"
+      },
+      "firstColor": {
+        "label": "Color",
+        "type": "SELECT_FIELD",
+        "options": {
+          "#D52341": "Red",
+          "#7B4397": "Purple",
+          "#999": "Grey"
+        },
+        "default": "red"
+      },
+      "firstLink": {
+        "label": "Link",
+        "type": "TEXT_FIELD",
+        "default": "http://"
+      }
+    },
+    "tabTwo": {
+      "label": "Second",
+      "secondImage": {
+        "targetWorkspace": "dam",
+        "appName": "assets",
+        "identifierToPathConverter": "info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter",
+        "contentPreviewDefinition": "",
+        "label": "Image <small>(407x228)</small>",
+        "type": "IMAGE"
+      },
+      "secondHeading": {
+        "label": "Heading",
+        "rows": "2",
+        "type": "TEXT_FIELD"
+      },
+      "secondColor": {
+        "label": "Color",
+        "type": "SELECT_FIELD",
+        "options": {
+          "#D52341": "Red",
+          "#7B4397": "Purple",
+          "#999": "Grey"
+        },
+        "default": "red"
+      },
+      "secondLink": {
+        "label": "Link",
+        "type": "TEXT_FIELD",
+        "default": "http://"
+      }
+    },
+    "tabThree": {
+      "label": "Third",
+      "thirdImage": {
+        "targetWorkspace": "dam",
+        "appName": "assets",
+        "identifierToPathConverter": "info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter",
+        "contentPreviewDefinition": "",
+        "label": "Image <small>(407x228)</small>",
+        "type": "IMAGE"
+      },
+      "thirdHeading": {
+        "label": "Heading",
+        "rows": "2",
+        "type": "TEXT_FIELD"
+      },
+      "thirdColor": {
+        "label": "Color",
+        "type": "SELECT_FIELD",
+        "options": {
+          "#D52341": "Red",
+          "#7B4397": "Purple",
+          "#999": "Grey"
+        },
+        "default": "red"
+      },
+      "thirdLink": {
+        "label": "Link",
+        "type": "TEXT_FIELD",
+        "default": "http://"
+      }
+    },
+    "tabFour": {
+      "label": "Fourth",
+      "fourthImage": {
+        "targetWorkspace": "dam",
+        "appName": "assets",
+        "identifierToPathConverter": "info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter",
+        "contentPreviewDefinition": "",
+        "label": "Image <small>(407x228)</small>",
+        "type": "IMAGE"
+      },
+      "fourthHeading": {
+        "label": "Heading",
+        "rows": "2",
+        "type": "TEXT_FIELD"
+      },
+      "fourthColor": {
+        "label": "Color",
+        "type": "SELECT_FIELD",
+        "options": {
+          "#D52341": "Red",
+          "#7B4397": "Purple",
+          "#999": "Grey"
+        },
+        "default": "red"
+      },
+      "fourthLink": {
+        "label": "Link",
+        "type": "TEXT_FIELD",
+        "default": "http://"
+      }
+    },
+    "tabFive": {
+      "label": "Fifth",
+      "fifthImage": {
+        "targetWorkspace": "dam",
+        "appName": "assets",
+        "identifierToPathConverter": "info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter",
+        "contentPreviewDefinition": "",
+        "label": "Image <small>(407x228)</small>",
+        "type": "IMAGE"
+      },
+      "fifthHeading": {
+        "label": "Heading",
+        "rows": "2",
+        "type": "TEXT_FIELD"
+      },
+      "fifthColor": {
+        "label": "Color",
+        "type": "SELECT_FIELD",
+        "options": {
+          "#D52341": "Red",
+          "#7B4397": "Purple",
+          "#999": "Grey"
+        },
+        "default": "red"
+      },
+      "fifthLink": {
+        "label": "Link",
+        "type": "TEXT_FIELD",
+        "default": "http://"
+      }
+    },
+    "tabSix": {
+      "label": "Sixth",
+      "sixthImage": {
+        "targetWorkspace": "dam",
+        "appName": "assets",
+        "identifierToPathConverter": "info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter",
+        "contentPreviewDefinition": "",
+        "label": "Image <small>(407x228)</small>",
+        "type": "IMAGE"
+      },
+      "sixthHeading": {
+        "label": "Heading",
+        "rows": "2",
+        "type": "TEXT_FIELD"
+      },
+      "sixthColor": {
+        "label": "Color",
+        "type": "SELECT_FIELD",
+        "options": {
+          "#D52341": "Red",
+          "#7B4397": "Purple",
+          "#999": "Grey"
+        },
+        "default": "red"
+      },
+      "sixthLink": {
+        "label": "Link",
+        "type": "TEXT_FIELD",
+        "default": "http://"
+      }
+    }
+  }
+}

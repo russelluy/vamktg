@@ -1,0 +1,6 @@
+{
+	"type": "VANITY_DEFAULT",
+	"fromURI": "/testing",
+	"method": "FORWARD",
+	"toURI": "/flight_info/foodDrinks/meals/meal_0001"
+}

@@ -1,0 +1,1104 @@
+{
+    "currentDate":"2014-05-27T20:09:45Z",
+    "airports": {
+    	"AUS":{
+		"name":"Austin",
+    "msaCode":"640",
+		"state":"TX",
+		"country":"USA",
+		"destinationMsg":"Make time for breakfast tacos. ",
+    "mainInState":false,
+    "international":false
+	},
+	"BOS":{
+		"name":"Boston",
+    "msaCode":"1122",
+		"state":"MA",
+		"country":"USA",
+		"destinationMsg":"Going to &quot;Hahvahd,&quot; perchance? ",
+    "mainInState":false,
+    "international":false
+	},
+	"CUN":{
+		"name":"Cancun",
+    
+		
+		"country":"MEXICO",
+		"destinationMsg":"No, you can&#039;t take the sand home. ",
+    "mainInState":false,
+    "international":true
+	},
+	"ORD":{
+		"name":"Chicago",
+    "msaCode":"1602",
+		"state":"IL",
+		"country":"USA",
+		"destinationMsg":"Three words: deep dish pizza. ",
+    "mainInState":false,
+    "international":false
+	},
+	"DFW":{
+		"name":"Dallas Ft. Worth",
+    "msaCode":"1922",
+		"state":"TX",
+		"country":"USA",
+		"destinationMsg":"Get in a Lone Star state of mind. ",
+    "mainInState":false,
+    "international":false
+	},
+	"DAL":{
+		"name":"Dallas - Love Field",
+    
+		"state":"TX",
+		"country":"USA",
+		"destinationMsg":"Get in a Lone Star state of mind",
+    "mainInState":false,
+    "international":false
+	},
+	"LAS":{
+		"name":"Las Vegas",
+    "msaCode":"4120",
+		"state":"NV",
+		"country":"USA",
+		"destinationMsg":"Repent before you land in Sin City. ",
+    "mainInState":false,
+    "international":false
+	},
+	"JFK":{
+		"name":"New York/JFK",
+    
+		"state":"NY",
+		"country":"USA",
+		"destinationMsg":"It&#039;s got everything but parking.",
+    "mainInState":false,
+    "international":false
+	},
+	"EWR":{
+		"name":"New York/EWR",
+    
+		"state":"NJ",
+		"country":"USA",
+		"destinationMsg":"If it ain&#039;t Newark, fuggedaboutit! Accent not required.",
+    "mainInState":false,
+    "international":false
+	},
+	"FLL":{
+		"name":"Ft. Lauderdale",
+    "msaCode":"4992",
+		"state":"FL",
+		"country":"USA",
+		"destinationMsg":"Life isn&#039;t a beach, but Florida has plenty of them.  Soak up some rays in the Sunshine State.     ",
+    "mainInState":false,
+    "international":false
+	},
+	"LAX":{
+		"name":"Los Angeles",
+    "msaCode":"4472",
+		"state":"CA",
+		"country":"USA",
+		"destinationMsg":"We don&#039;t like bad weather either.",
+    "mainInState":false,
+    "international":false
+	},
+	"MCO":{
+		"name":"Orlando",
+    "msaCode":"5960",
+		"state":"FL",
+		"country":"USA",
+		"destinationMsg":"There&#039;s a theme park for every mood. ",
+    "mainInState":false,
+    "international":false
+	},
+	"PDX":{
+		"name":"Portland",
+    "msaCode":"6442",
+		"state":"OR",
+		"country":"USA",
+		"destinationMsg":"Pack your plaid. ",
+    "mainInState":false,
+    "international":false
+	},
+	"PHL":{
+		"name":"Philadelphia",
+    "msaCode":"6162",
+		"state":"PA",
+		"country":"USA",
+		"destinationMsg":"We like cheesesteaks too. ",
+    "mainInState":false,
+    "international":false
+	},
+	"PSP":{
+		"name":"Palm Springs",
+    
+		"state":"CA",
+		"country":"USA",
+		"destinationMsg":"With 350 sunny days per year, you can’t go wrong.  ",
+    "mainInState":false,
+    "international":false
+	},
+	"PVR":{
+		"name":"Puerto Vallarta",
+    
+		
+		"country":"MEXICO",
+		"destinationMsg":"Viva la playa!",
+    "mainInState":false,
+    "international":true
+	},
+	"SAN":{
+		"name":"San Diego",
+    "msaCode":"7320",
+		"state":"CA",
+		"country":"USA",
+		"destinationMsg":"Stay classy, San Diego. ",
+    "mainInState":false,
+    "international":false
+	},
+	"SEA":{
+		"name":"Seattle",
+    "msaCode":"7602",
+		"state":"WA",
+		"country":"USA",
+		"destinationMsg":"We &lt;3 coffee too.",
+    "mainInState":false,
+    "international":false
+	},
+	"SFO":{
+		"name":"San Francisco",
+    "msaCode":"7362",
+		"state":"CA",
+		"country":"USA",
+		
+    "mainInState":false,
+    "international":false
+	},
+	"SJD":{
+		"name":"Los Cabos",
+    
+		
+		"country":"MEXICO",
+		"destinationMsg":"The beaches are complimentary.",
+    "mainInState":false,
+    "international":true
+	},
+	"IAD":{
+		"name":"Washington DC-Dulles",
+    
+		"state":"DC",
+		"country":"USA",
+		"destinationMsg":"We encourage conversations across the aisle.  ",
+    "mainInState":false,
+    "international":false
+	},
+	"DCA":{
+		"name":"Washington DC-Reagan",
+    
+		"state":"DC",
+		"country":"USA",
+		"destinationMsg":"The President will see you now.",
+    "mainInState":false,
+    "international":false
+	},
+	"NYC":{
+		"name":"New York City",
+    "msaCode":"5602",
+		"state":"All Airports",
+		"country":"USA",
+		
+    "mainInState":false,
+    "international":false
+	},
+	"WAS":{
+		"name":"Washington, DC",
+    "msaCode":"8872",
+		"state":"All Airports",
+		"country":"USA",
+		"destinationMsg":"The President will see you now.",
+    "mainInState":false,
+    "international":false
+	},
+	"LGA":{
+		"name":"New York/LGA",
+    
+		"state":"NY",
+		"country":"USA",
+		"destinationMsg":"Only in New York!",
+    "mainInState":false,
+    "international":false
+	}
+    },
+    "airportMapping": {
+    	"SFO": {
+		"to":{
+			"AUS":"NON-STOP",
+			"BOS":"NON-STOP",
+			"CUN":"NON-STOP",
+			"DFW":"NON-STOP",
+			"EWR":"NON-STOP",
+			"FLL":"NON-STOP",
+			"JFK":"NON-STOP",
+			"LAS":"NON-STOP",
+			"LAX":"NON-STOP",
+			"MCO":"CONNECTING",
+			"ORD":"NON-STOP",
+			"SJD":"NON-STOP",
+			"PSP":"NON-STOP",
+			"PHL":"NON-STOP",
+			"PDX":"NON-STOP",
+			"PVR":"NON-STOP",
+			"SAN":"NON-STOP",
+			"SEA":"NON-STOP",
+			"IAD":"NON-STOP",
+			"DCA":"NON-STOP",
+			"DAL":"NON-STOP",
+			"LGA":"CONNECTING",
+			"WAS":"NON-STOP",
+			"NYC":"NON-STOP"
+		},
+		"promoted":{
+			"JFK":{"fare": " "},
+			"LAX":{"fare": " "},
+			"LAS":{"fare": " "},
+			"EWR":{"fare": " "},
+			"BOS":{"fare": " "}
+		}
+	}
+	,
+	"JFK": {
+		"to":{
+			"LAS":"NON-STOP",
+			"LAX":"CONNECTING",
+			"SJD":"CONNECTING",
+			"PSP":"NON-STOP",
+			"PDX":"CONNECTING",
+			"PVR":"CONNECTING",
+			"SAN":"CONNECTING",
+			"SFO":"NON-STOP",
+			"SEA":"CONNECTING"
+		},
+		"promoted":{
+			"LAX":{"fare": " "},
+			"SFO":{"fare": " "},
+			"LAS":{"fare": " "},
+			"PSP":{"fare": " "},
+			"SEA":{"fare": " "}
+		}
+	}
+	,
+	"CUN": {
+		"to":{
+			"SFO":"CONNECTING",
+			"LAX":"NON-STOP",
+			"SEA":"NON-STOP",
+			"PDX":"NON-STOP"
+		},
+		"promoted":{
+			"LAX":{"fare": " "},
+			"SFO":{"fare": " "},
+			"SEA":{"fare": " "},
+			"PDX":{"fare": " "}
+		}
+	}
+	,
+	"AUS": {
+		"to":{
+			"LAS":"CONNECTING",
+			"LAX":"CONNECTING",
+			"PDX":"CONNECTING",
+			"SAN":"CONNECTING",
+			"SFO":"NON-STOP",
+			"SEA":"CONNECTING"
+		},
+		"promoted":{
+			"SFO":{"fare": " "},
+			"LAX":{"fare": " "},
+			"PDX":{"fare": " "},
+			"SEA":{"fare": " "},
+			"SAN":{"fare": " "}
+		}
+	}
+	,
+	"BOS": {
+		"to":{
+			"LAS":"CONNECTING",
+			"LAX":"NON-STOP",
+			"PSP":"CONNECTING",
+			"PDX":"CONNECTING",
+			"SAN":"CONNECTING",
+			"SFO":"NON-STOP",
+			"SEA":"CONNECTING"
+		},
+		"promoted":{
+			"SFO":{"fare": "    "},
+			"LAX":{"fare": " "},
+			"LAS":{"fare": "   "},
+			"PDX":{"fare": "    "}
+		}
+	}
+	,
+	"ORD": {
+		"to":{
+			"LAS":"CONNECTING",
+			"LAX":"NON-STOP",
+			"SJD":"CONNECTING",
+			"PSP":"CONNECTING",
+			"PDX":"CONNECTING",
+			"SAN":"CONNECTING",
+			"SFO":"NON-STOP",
+			"SEA":"CONNECTING"
+		},
+		"promoted":{
+			"LAX":{"fare": " "},
+			"SFO":{"fare": "  "},
+			"LAS":{"fare": " "},
+			"SAN":{"fare": "  "},
+			"SEA":{"fare": " "}
+		}
+	}
+	,
+	"DFW": {
+		"to":{
+			"LAS":"CONNECTING",
+			"LAX":"NON-STOP",
+			"SJD":"CONNECTING",
+			"PSP":"CONNECTING",
+			"PDX":"CONNECTING",
+			"SAN":"CONNECTING",
+			"SFO":"NON-STOP",
+			"SEA":"CONNECTING"
+		},
+		"promoted":{
+			"LAX":{"fare": "  "},
+			"SFO":{"fare": "  "},
+			"SEA":{"fare": "  "},
+			"LAS":{"fare": " "}
+		}
+	}
+	,
+	"FLL": {
+		"to":{
+			"LAS":"CONNECTING",
+			"LAX":"NON-STOP",
+			"PSP":"CONNECTING",
+			"PDX":"CONNECTING",
+			"SAN":"CONNECTING",
+			"SFO":"NON-STOP",
+			"SEA":"CONNECTING"
+		},
+		"promoted":{
+			"LAX":{"fare": " "},
+			"SFO":{"fare": " "},
+			"LAS":{"fare": " "},
+			"PDX":{"fare": " "}
+		}
+	}
+	,
+	"LAS": {
+		"to":{
+			"AUS":"CONNECTING",
+			"BOS":"CONNECTING",
+			"ORD":"CONNECTING",
+			"DFW":"CONNECTING",
+			"FLL":"CONNECTING",
+			"LAX":"NON-STOP",
+			"SJD":"CONNECTING",
+			"JFK":"NON-STOP",
+			"EWR":"CONNECTING",
+			"PHL":"CONNECTING",
+			"PDX":"CONNECTING",
+			"SFO":"NON-STOP",
+			"SEA":"CONNECTING",
+			"IAD":"CONNECTING",
+			"DAL":"CONNECTING"
+		},
+		"promoted":{
+			"SFO":{"fare": " "},
+			"LAX":{"fare": " "},
+			"JFK":{"fare": "  "},
+			"BOS":{"fare": " "},
+			"PDX":{"fare": " "}
+		}
+	}
+	,
+	"LAX": {
+		"to":{
+			"AUS":"CONNECTING",
+			"BOS":"NON-STOP",
+			"CUN":"NON-STOP",
+			"ORD":"NON-STOP",
+			"DFW":"NON-STOP",
+			"FLL":"NON-STOP",
+			"LAS":"NON-STOP",
+			"JFK":"NON-STOP",
+			"EWR":"NON-STOP",
+			"MCO":"NON-STOP",
+			"PHL":"NON-STOP",
+			"PDX":"CONNECTING",
+			"SFO":"NON-STOP",
+			"SEA":"NON-STOP",
+			"IAD":"NON-STOP",
+			"PVR":"CONNECTING",
+			"SJD":"CONNECTING",
+			"DAL":"NON-STOP",
+			"LGA":"CONNECTING",
+			"WAS":"CONNECTING",
+			"NYC":"CONNECTING"
+		},
+		"promoted":{
+			"JFK":{"fare": " "},
+			"EWR":{"fare": " "},
+			"FLL":{"fare": "  "},
+			"SFO":{"fare": " "},
+			"BOS":{"fare": " "}
+		}
+	}
+	,
+	"SJD": {
+		"to":{
+			"BOS":"CONNECTING",
+			"LAS":"CONNECTING",
+			"JFK":"CONNECTING",
+			"EWR":"CONNECTING",
+			"SFO":"CONNECTING",
+			"SEA":"CONNECTING",
+			"IAD":"CONNECTING"
+		},
+		"promoted":{
+			"SFO":{"fare": " "},
+			"SEA":{"fare": " "},
+			"PDX":{"fare": " "},
+			"EWR":{"fare": " "},
+			"LAX":{"fare": " "}
+		}
+	}
+	,
+	"EWR": {
+		"to":{
+			"LAS":"CONNECTING",
+			"LAX":"NON-STOP",
+			"SJD":"CONNECTING",
+			"PSP":"CONNECTING",
+			"PDX":"CONNECTING",
+			"SAN":"NON-STOP",
+			"SFO":"NON-STOP",
+			"SEA":"NON-STOP"
+		},
+		"promoted":{
+			"LAX":{"fare": " "},
+			"SFO":{"fare": " "},
+			"LAS":{"fare": " "},
+			"SAN":{"fare": " "},
+			"PDX":{"fare": " "}
+		}
+	}
+	,
+	"MCO": {
+		"to":{
+			"LAX":"NON-STOP",
+			"SFO":"CONNECTING",
+			"SAN":"CONNECTING",
+			"SEA":"CONNECTING",
+			"LAS":"CONNECTING"
+		},
+		"promoted":{
+			"LAX":{"fare": " "},
+			"SFO":{"fare": "   "},
+			"LAS":{"fare": "   "},
+			"SEA":{"fare": " "},
+			"SAN":{"fare": " "}
+		}
+	}
+	,
+	"PSP": {
+		"to":{
+			"BOS":"CONNECTING",
+			"ORD":"CONNECTING",
+			"FLL":"CONNECTING",
+			"JFK":"CONNECTING",
+			"EWR":"CONNECTING",
+			"PHL":"CONNECTING",
+			"PDX":"CONNECTING",
+			"SFO":"NON-STOP",
+			"SEA":"CONNECTING",
+			"IAD":"CONNECTING",
+			"DAL":"CONNECTING"
+		},
+		"promoted":{
+			"LAX":{"fare": " "},
+			"SFO":{"fare": " "},
+			"LAS":{"fare": " "},
+			"SAN":{"fare": " "}
+		}
+	}
+	,
+	"PHL": {
+		"to":{
+			"LAS":"CONNECTING",
+			"LAX":"NON-STOP",
+			"PSP":"CONNECTING",
+			"SAN":"CONNECTING",
+			"SFO":"NON-STOP",
+			"SEA":"CONNECTING",
+			"PDX":"CONNECTING"
+		},
+		"promoted":{
+			"SFO":{"fare": " "},
+			"LAX":{"fare": " "},
+			"LAS":{"fare": " "},
+			"SEA":{"fare": " "},
+			"PDX":{"fare": " "}
+		}
+	}
+	,
+	"PDX": {
+		"to":{
+			"AUS":"CONNECTING",
+			"BOS":"CONNECTING",
+			"CUN":"CONNECTING",
+			"ORD":"CONNECTING",
+			"DFW":"CONNECTING",
+			"FLL":"CONNECTING",
+			"LAS":"CONNECTING",
+			"LAX":"CONNECTING",
+			"SJD":"CONNECTING",
+			"JFK":"CONNECTING",
+			"EWR":"CONNECTING",
+			"PSP":"CONNECTING",
+			"PHL":"CONNECTING",
+			"PVR":"CONNECTING",
+			"PSP ":"CONNECTING",
+			"SAN":"CONNECTING",
+			"SFO":"NON-STOP",
+			"IAD":"CONNECTING",
+			"DAL":"CONNECTING"
+		},
+		"promoted":{
+			"SFO":{"fare": "  "},
+			"LAX":{"fare": "  "},
+			"LAS":{"fare": " "},
+			"PSP":{"fare": " "},
+			"LAS":{"fare": "   "}
+		}
+	}
+	,
+	"PVR": {
+		"to":{
+			"JFK":"CONNECTING",
+			"EWR":"CONNECTING",
+			"SFO":"NON-STOP",
+			"SEA":"CONNECTING",
+			"LAX":"NON-STOP"
+		},
+		"promoted":{
+			"SFO":{"fare": " "},
+			"SEA":{"fare": " "},
+			"PDX":{"fare": " "},
+			"LAX":{"fare": " "},
+			"JFK":{"fare": " "}
+		}
+	}
+	,
+	"SAN": {
+		"to":{
+			"AUS":"CONNECTING",
+			"BOS":"CONNECTING",
+			"ORD":"CONNECTING",
+			"DFW":"CONNECTING",
+			"FLL":"CONNECTING",
+			"JFK":"CONNECTING",
+			"EWR":"CONNECTING",
+			"MCO":"CONNECTING",
+			"PHL":"CONNECTING",
+			"PDX":"CONNECTING",
+			"SFO":"NON-STOP",
+			"SEA":"CONNECTING",
+			"IAD":"CONNECTING",
+			"DAL":"CONNECTING"
+		},
+		"promoted":{
+			"SFO":{"fare": "  "},
+			"SEA":{"fare": " "},
+			"PDX":{"fare": " "},
+			"IAD":{"fare": " "},
+			"EWR":{"fare": " "}
+		}
+	}
+	,
+	"SEA": {
+		"to":{
+			"AUS":"CONNECTING",
+			"BOS":"CONNECTING",
+			"CUN":"CONNECTING",
+			"ORD":"CONNECTING",
+			"DFW":"CONNECTING",
+			"FLL":"CONNECTING",
+			"LAS":"CONNECTING",
+			"LAX":"NON-STOP",
+			"SJD":"CONNECTING",
+			"JFK":"CONNECTING",
+			"EWR":"CONNECTING",
+			"MCO":"CONNECTING",
+			"PSP":"CONNECTING",
+			"PHL":"CONNECTING",
+			"PVR":"CONNECTING",
+			"SAN":"CONNECTING",
+			"SFO":"NON-STOP",
+			"IAD":"CONNECTING",
+			"DAL":"CONNECTING"
+		},
+		"promoted":{
+			"SFO":{"fare": " "},
+			"LAX":{"fare": " "},
+			"LAS":{"fare": " "},
+			"IAD":{"fare": "  "},
+			"SAN":{"fare": " "}
+		}
+	}
+	,
+	"IAD": {
+		"to":{
+			"LAS":"CONNECTING",
+			"LAX":"CONNECTING",
+			"SJD":"CONNECTING",
+			"PSP":"CONNECTING",
+			"PDX":"CONNECTING",
+			"SAN":"CONNECTING",
+			"SFO":"NON-STOP",
+			"SEA":"CONNECTING"
+		},
+		"promoted":{
+			"LAX":{"fare": " "},
+			"SFO":{"fare": " "},
+			"SEA":{"fare": " "},
+			"LAS":{"fare": " "},
+			"SAN":{"fare": " "}
+		}
+	}
+	,
+	"DCA": {
+		"to":{
+			"DAL":"NON-STOP",
+			"SFO":"NON-STOP",
+			"SAN":"CONNECTING",
+			"LAX":"CONNECTING",
+			"LAS":"CONNECTING"
+		},
+		"promoted":{
+			"SFO":{"fare": " "},
+			"LAX":{"fare": " "},
+			"SAN":{"fare": " "},
+			"DAL":{"fare": " "},
+			"LAS":{"fare": " "}
+		}
+	}
+	,
+	"WAS": {
+		"to":{
+			"LAS":"CONNECTING",
+			"LAX":"NON-STOP",
+			"SJD":"CONNECTING",
+			"PSP":"CONNECTING",
+			"PDX":"CONNECTING",
+			"SAN":"CONNECTING",
+			"SFO":"NON-STOP",
+			"SEA":"NON-STOP",
+			"DAL":"NON-STOP"
+		},
+		"promoted":{
+			"SFO":{"fare": " "},
+			"LAX":{"fare": " "},
+			"PDX":{"fare": " "},
+			"SEA":{"fare": " "},
+			"LAS":{"fare": " "}
+		}
+	}
+	,
+	"NYC": {
+		"to":{
+			"LAS":"NON-STOP",
+			"LAX":"NON-STOP",
+			"SJD":"CONNECTING",
+			"PSP":"NON-STOP",
+			"PDX":"CONNECTING",
+			"PVR":"CONNECTING",
+			"SAN":"CONNECTING",
+			"SFO":"NON-STOP",
+			"SEA":"CONNECTING",
+			"DAL":"NON-STOP"
+		},
+		"promoted":{
+			"SFO":{"fare": " "},
+			"LAX":{"fare": " "},
+			"LAS":{"fare": " "},
+			"PSP":{"fare": " "},
+			"SEA":{"fare": " "}
+		}
+	}
+	,
+	"LGA": {
+		"to":{
+			"DAL":"NON-STOP",
+			"SFO":"CONNECTING",
+			"LAX":"CONNECTING"
+		},
+		"promoted":{
+			"DAL":{"fare": " "},
+			"LAX":{"fare": " "},
+			"SFO":{"fare": " "}
+		}
+	}
+	,
+	"DAL": {
+		"to":{
+			"SFO":"NON-STOP",
+			"LAX":"NON-STOP",
+			"DCA":"NON-STOP",
+			"LGA":"NON-STOP",
+			"LAS":"CONNECTING",
+			"PSP":"CONNECTING",
+			"SJD":"CONNECTING",
+			"PDX":"CONNECTING",
+			"PVR":"CONNECTING",
+			"SAN":"CONNECTING",
+			"SEA":"CONNECTING"
+		},
+		"promoted":{
+			"SFO":{"fare": " "},
+			"LAX":{"fare": " "},
+			"DCA":{"fare": " "},
+			"LGA":{"fare": " "},
+			"LAS":{"fare": " "},
+			"SAN":{"fare": " "},
+			"SEA":{"fare": " "}
+		}
+	}
+	
+},
+    "noFlyDates": {
+    	"SJD_SFO": ["None"],
+	"SFO_SJD": ["None"],
+	"CUN_LAX": ["Thu","Mon"],
+	"LAX_CUN": ["Thu","Mon"],
+	"PVR_SFO": ["Fri","Thu","Tue","Mon","Sun"],
+	"SFO_PVR": ["Sun","Mon","Tue","Thu","Fri"],
+	"CUN_SFO": ["Thu","Mon"],
+	"SFO_CUN": ["Thu","Mon"],
+	"LAX_PVR": ["Sun","Mon","Tue","Thu","Fri"],
+	"PVR_LAX": ["Thu","Sun","Fri","Tue","Mon"],
+	"LAX_SJD": ["None"],
+	"SJD_LAX": ["Sat"],
+	"SFO_MCO": ["None"],
+	"MCO_SFO": ["None"],
+	"PDX_CUN": ["Mon","Thu"],
+	"CUN_PDX": ["Mon","Thu"],
+	"SEA_CUN": ["Mon","Thu"],
+	"CUN_SEA": ["Mon","Thu"]
+    },
+    "seasonalAvailability": {
+    	"SFO_PSP":{
+		"from":"2014-09-08", 
+		"to":"2015-04-30"
+	}
+	,
+	"PSP_SFO":{
+		"from":"2014-09-08", 
+		"to":"2015-04-30"
+	}
+	,
+	"PSP_JFK":{
+		"from":"2014-09-08", 
+		"to":"2015-04-30"
+	}
+	,
+	"JFK_PSP":{
+		"from":"2014-09-08", 
+		"to":"2015-04-30"
+	}
+	,
+	"PVR_SFO":{
+		"from":"2014-10-17", 
+		"to":"2015-09-05"
+	}
+	,
+	"SFO_PVR":{
+		"from":"2014-10-16", 
+		"to":"2015-09-04"
+	}
+	,
+	"PVR_SFO":{
+		"from":"2014-04-06", 
+		"to":"2014-09-05"
+	}
+	,
+	"SFO_PVR":{
+		"from":"2014-04-05", 
+		"to":"2014-09-04"
+	}
+	,
+	"SFO_DFW":{
+		"from":"2014-04-30", 
+		"to":"2014-10-12"
+	}
+	,
+	"DFW_SFO":{
+		"from":"2014-04-30", 
+		"to":"2014-10-12"
+	}
+	,
+	"LAX_DFW":{
+		"from":"2014-04-30", 
+		"to":"2014-10-12"
+	}
+	,
+	"DFW_LAX":{
+		"from":"2014-04-30", 
+		"to":"2014-10-12"
+	}
+	,
+	"DAL_SFO":{
+		"from":"2014-10-13", 
+		"to":"2199-12-31"
+	}
+	,
+	"SFO_DAL":{
+		"from":"2014-10-13", 
+		"to":"2199-01-01"
+	}
+	,
+	"LAX_DAL":{
+		"from":"2014-10-13", 
+		"to":"2199-01-01"
+	}
+	,
+	"DAL_LAX":{
+		"from":"2014-10-13", 
+		"to":"2199-01-01"
+	}
+	,
+	"LGA_DAL":{
+		"from":"2014-10-28", 
+		"to":"2199-01-01"
+	}
+	,
+	"DAL_LGA":{
+		"from":"2014-10-28", 
+		"to":"2199-01-01"
+	}
+	,
+	"DCA_DAL":{
+		"from":"2014-10-13", 
+		"to":"2199-01-01"
+	}
+	,
+	"DAL_DCA":{
+		"from":"2014-10-13", 
+		"to":"2199-01-01"
+	}
+	,
+	"LAS_DAL":{
+		"from":"2014-10-13", 
+		"to":"2199-01-01"
+	}
+	,
+	"DAL_LAS":{
+		"from":"2014-10-13", 
+		"to":"2199-01-01"
+	}
+	,
+	"SJD_DAL":{
+		"from":"2014-10-13", 
+		"to":"2199-01-01"
+	}
+	,
+	"DAL_SJD":{
+		"from":"2014-10-13", 
+		"to":"2199-01-01"
+	}
+	,
+	"PSP_DAL":{
+		"from":"2014-10-13", 
+		"to":"2199-01-01"
+	}
+	,
+	"DAL_PSP":{
+		"from":"2014-10-13", 
+		"to":"2199-01-01"
+	}
+	,
+	"PDX_DAL":{
+		"from":"2014-10-13", 
+		"to":"2199-10-13"
+	}
+	,
+	"DAL_PDX":{
+		"from":"2014-10-13", 
+		"to":"2199-01-01"
+	}
+	,
+	"PVR_DAL":{
+		"from":"2014-10-13", 
+		"to":"2199-01-01"
+	}
+	,
+	"DAL_PVR":{
+		"from":"2014-10-13", 
+		"to":"2199-01-01"
+	}
+	,
+	"SAN_DAL":{
+		"from":"2014-10-13", 
+		"to":"2199-01-01"
+	}
+	,
+	"DAL_SAN":{
+		"from":"2014-10-13", 
+		"to":"2199-01-01"
+	}
+	,
+	"SEA_DAL":{
+		"from":"2014-10-13", 
+		"to":"2199-01-01"
+	}
+	,
+	"DAL_SEA":{
+		"from":"2014-10-13", 
+		"to":"2199-01-01"
+	}
+	,
+	"NYC_PSP":{
+		"from":"2014-09-08", 
+		"to":"2015-04-30"
+	}
+	,
+	"PSP_NYC":{
+		"from":"2014-09-08", 
+		"to":"2015-04-30"
+	}
+	,
+	"WAS_PSP":{
+		"from":"2014-09-08", 
+		"to":"2015-04-30"
+	}
+	,
+	"PSP_WAS":{
+		"from":"2014-09-08", 
+		"to":"2015-04-30"
+	}
+	,
+	"WAS_DAL":{
+		"from":"2014-10-13", 
+		"to":"2199-01-01"
+	}
+	,
+	"BOS_PSP":{
+		"from":"2014-09-08", 
+		"to":"2015-04-30"
+	}
+	,
+	"PSP_BOS":{
+		"from":"2014-09-08", 
+		"to":"2015-04-30"
+	}
+	,
+	"ORD_PSP":{
+		"from":"2014-09-08", 
+		"to":"2015-04-30"
+	}
+	,
+	"PSP_ORD":{
+		"from":"2014-09-08", 
+		"to":"2015-04-30"
+	}
+	,
+	"DFW_PSP":{
+		"from":"2014-09-08", 
+		"to":"2015-04-30"
+	}
+	,
+	"PSP_DFW":{
+		"from":"2014-09-08", 
+		"to":"2015-04-30"
+	}
+	,
+	"FLL_PSP":{
+		"from":"2014-09-08", 
+		"to":"2014-04-30"
+	}
+	,
+	"PSP_FLL":{
+		"from":"2014-09-08", 
+		"to":"2015-04-30"
+	}
+	,
+	"EWR_PSP":{
+		"from":"2014-09-08", 
+		"to":"2015-04-30"
+	}
+	,
+	"PSP_EWR":{
+		"from":"2014-09-08", 
+		"to":"2015-04-30"
+	}
+	,
+	"PHL_PSP":{
+		"from":"2014-09-08", 
+		"to":"2015-04-30"
+	}
+	,
+	"PSP_PHL":{
+		"from":"2014-09-08", 
+		"to":"2015-04-30"
+	}
+	,
+	"PDX_PSP":{
+		"from":"2014-09-08", 
+		"to":"2015-04-30"
+	}
+	,
+	"PSP_PDX":{
+		"from":"2014-09-08", 
+		"to":"2015-04-30"
+	}
+	,
+	"SEA_PSP":{
+		"from":"2014-09-08", 
+		"to":"2015-04-30"
+	}
+	,
+	"PSP_SEA":{
+		"from":"2014-09-08", 
+		"to":"2015-04-30"
+	}
+	,
+	"IAD_PSP":{
+		"from":"2014-09-08", 
+		"to":"2015-04-30"
+	}
+	,
+	"PSP_IAD":{
+		"from":"2014-09-08", 
+		"to":"2015-04-30"
+	}
+	,
+	"LAX_LGA":{
+		"from":"2014-10-28", 
+		"to":"2199-01-01"
+	}
+	,
+	"LGA_LAX":{
+		"from":"2014-10-28", 
+		"to":"2199-01-01"
+	}
+	,
+	"SFO_LGA":{
+		"from":"2014-10-28", 
+		"to":"2199-01-01"
+	}
+	,
+	"LGA_SFO":{
+		"from":"2014-10-28", 
+		"to":"2199-01-01"
+	}
+	
+    }
+}

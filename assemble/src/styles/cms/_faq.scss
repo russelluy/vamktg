@@ -1,0 +1,81 @@
+/* ==========================================================================
+   FAQ Component
+   ========================================================================== */
+.faq{
+	@include component;
+	@include wrap;
+
+	@include gotham-book;
+	@include font-size(1.8);
+	@include line-height(1.8);
+	@include letter-spacing(1.8);
+
+	color: $black222;
+  div {
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
+    //display: inline-block;
+    display: inherit;
+	.faqtitle{
+		@include gotham-medium;
+    	@include font-size(1.4);
+    	@include letter-spacing(1.4);
+    	text-transform: uppercase;
+    	border-bottom: 3px solid $light-grey;
+    	padding-bottom: 18px;
+    	color: $black;
+	}
+	h2{
+		@include gotham-medium;
+    	@include font-size(1.4);
+    	@include line-height(2.1);
+
+    	margin-top: 0px;
+
+		color: $purple;
+	}
+	p{
+    	@include font-size(1.2);
+    	@include line-height(1.8);
+		margin-top: 4px;
+	}
+	a{
+		border-bottom: 1px solid $black222;
+	}
+	.container{
+		display: block;
+	}
+}
+	@include at-medium {
+
+		.column {
+
+		    -moz-column-count: 2;
+		    -moz-column-gap: 20px;
+		    -ms-column-count: 2;
+		    -ms-column-gap: 20px;
+		    -webkit-column-count: 2;
+		    -webkit-column-gap: 20px;
+		    column-count: 2;
+		    column-gap: 20px;
+		}
+ 	}
+
+	@include at-large {
+
+		@include pad(1,1);
+
+		.column {
+
+		    -moz-column-count: 3;
+		    -moz-column-gap: 40px;
+		    -ms-column-count: 3;
+		    -ms-column-gap: 40px;
+		    -webkit-column-count: 3;
+		    -webkit-column-gap: 40px;
+		    column-count: 3;
+		    column-gap: 40px;
+		}
+	}
+}

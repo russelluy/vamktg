@@ -1,0 +1,20 @@
+/* ==========================================================================
+   TextFooter Component
+   ========================================================================== */
+.text-footer {
+
+	@include component;
+	@include arial;
+	@include font-size(1);
+	@include line-height(1.6);
+
+	color: $medium-grey;
+
+	@include at-large {
+		.wrap{
+			.content{
+				@include pad(2, 2, 12);
+			}
+		}
+	}
+}

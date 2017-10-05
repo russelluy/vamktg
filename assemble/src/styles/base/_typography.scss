@@ -1,0 +1,110 @@
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+@mixin gotham-thin {
+  font-family: 'Gotham 1r', 'Gotham A', 'Gotham B', Arial, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+@mixin gotham-xlight {
+  font-family: 'Gotham SSm 2r', 'Gotham SSm A', 'Gotham SSm B', Arial, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+@mixin gotham-light {
+  font-family: 'Gotham SSm 3r', 'Gotham SSm A', 'Gotham SSm B', Arial, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin gotham-book {
+  font-family: 'Gotham SSm 4r', 'Gotham SSm A', 'Gotham SSm B', Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin gotham-medium {
+  font-family: 'Gotham SSm 5r', 'Gotham SSm A', 'Gotham SSm B', Arial, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin gotham-bold {
+  font-family: 'Gotham SSm 7r', 'Gotham SSm A', 'Gotham SSm B', Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin arial {
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin font-size ($sizeValue) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+@mixin line-height ($sizeValue) {
+  line-height: ($sizeValue * 10) + px;
+}
+
+@mixin letter-spacing ($sizeValue) {
+  letter-spacing: ($sizeValue/100) + px;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+strong {
+  font-weight: normal;
+  @include gotham-bold;
+}
+
+.heading {
+  color: $black;
+  @include gotham-bold;
+  line-height: inherit;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.heading--page {
+  color: $black;
+  @include gotham-medium;
+  @include font-size(3);
+  margin: 0;
+}
+
+.link-tertiary {
+  border-bottom: 1px solid $purple;
+  font-weight: 500;
+  @include font-size(1.1);
+
+  .no-touch &:hover {
+    border-bottom: 0;
+  }
+}
+
+.link-utility {
+  line-height: 120%;
+
+  span {
+    display: inline-block;
+    border-bottom: 1px solid $purple;
+    display: inline-block;
+    font-weight: 700;
+    @include font-size (1);
+    line-height: 1;
+    @include single-transition(border-color, 100ms, ease-in-out);
+    text-transform: uppercase;
+  }
+
+  &:hover span {
+    border-bottom-color: $white;
+  }
+}

@@ -1,0 +1,30 @@
+#!/usr/bin/env ruby
+
+load 'lib/carpel.rb'
+
+require 'optparse'
+require 'json'
+
+puts "\n[Carpel] for [Magnolia] - version 0.1"
+puts "-------------------------------------\n"
+
+options = { :mode => :package }
+
+OptionParser.new do |opts|
+
+  opts.banner = "Usage: carpel [options]"
+
+  opts.on('-p', '--package', 'Build package files for module (default)') { |v| options[:mode] = :package }
+  opts.on('-f', '--fast', 'Fast deploy into temporary path') { |v| options[:mode] = :fast }
+
+end.parse!
+
+settings = JSON.load(open('carpel.json'))
+
+settings['module']['mode'] = options[:mode]
+
+version = Carpel::VersionEngine.new(settings['module'])
+version.generate
+
+engine = Carpel::AdapterEngine.new(settings['module'])
+engine.generate

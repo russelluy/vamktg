@@ -1,0 +1,85 @@
+[#assign currentPage = cmsfn.page(content)]
+[#macro renderItens pageNode ]
+	[#assign childfirst="true"]
+	[#list cmsfn.children(pageNode, "mgnl:page") as currPage][#if childfirst="false"],[/#if]
+	[#assign childfirst="false"]
+	{
+		"title":"${currPage.title!}"
+	[#list currPage?children as properties ]
+	[#list properties.getNodes() as pair ][#if pair.hasProperty('subheading')]
+		,"subheading":"${pair.getProperty('subheading').string!}"[/#if][#if pair.hasProperty('text')]
+		,"text":"${pair.getProperty('text').string?replace("	", "")?j_string}"[/#if][#if pair.hasProperty('overview')]
+		,"overview":"${pair.getProperty('overview').string?replace("	", "")?j_string}"[/#if][#if pair.hasProperty('info')]
+		,"info":"${pair.getProperty('info').string?replace("	", "")?j_string}"[/#if][#if pair.hasProperty('news_date')]
+		,"date":"${pair.getProperty('news_date').string!}"[/#if][#if pair.hasProperty('image')]
+		,"image":"${cmsfn.link("dam", pair.getProperty('image').string?replace("jcr:", "")!  )}"[/#if][#if pair.hasProperty('imageRollover')]
+		,"imageRollover":"${cmsfn.link("dam", pair.getProperty('imageRollover').string?replace("jcr:", "")!  )}"[/#if][#if pair.hasProperty('link')]
+		,"link":"${pair.getProperty('link').string!}"[/#if][#if pair.hasProperty('linkText')]
+		,"linkText":"${pair.getProperty('linkText').string!}"[/#if][#if pair.hasProperty('cover')]
+		,"cover":"${cmsfn.link("dam", pair.getProperty('cover').string?replace("jcr:", "")!  )}"[/#if][#if pair.hasProperty('img')]
+		,"img":"${cmsfn.link("dam", pair.getProperty('img').string?replace("jcr:", "")!  )}"[/#if][#if pair.hasProperty('length')]
+		,"length":"${pair.getProperty('length').string!}"[/#if][#if pair.hasProperty('rating')]
+		,"rating":"${pair.getProperty('rating').string!}"[/#if][#if pair.hasProperty('availableOnLongerThan2H')]
+		,"availableOnLongerThan2H":${pair.getProperty('availableOnLongerThan2H').string!}[/#if][#if pair.hasProperty('list')]
+		,"list": [
+			[#assign value=pair.getProperty('list').values]
+			[#assign value_first="true"]
+			[#list value as ble]
+			[#if value_first="false"],[/#if]
+			[#assign value_first="false"]
+			{"item":"${ble.string}"}
+			[/#list]
+		][/#if][#if pair.hasProperty('lineup')]
+		,"lineup": [
+			[#assign values=pair.getProperty('lineup').values]
+			[#assign values_first="true"]
+			[#list values as bla]
+			[#if values_first="false"],[/#if]
+			[#assign values_first="false"]
+			{"title":"${bla.string}"}
+			[/#list]
+		][/#if]
+	[/#list]
+	[/#list]
+	}
+	[/#list]
+[/#macro]
+[#macro renderCategories pageNode ]
+	[#assign catefirst="true"]
+	[#list cmsfn.children(pageNode, "mgnl:page") as currPage][#if catefirst="false"],[/#if]
+	[#assign catefirst="false"]
+	{
+		"categoryName":"${currPage.title!}",
+		"id":${categoriesCounter},
+		[#if currPage.template??]
+		"template":"${currPage.template!}",
+		[/#if]
+		"items":[
+			[@renderItens currPage /]
+		]
+	}
+	[#assign categoriesCounter = categoriesCounter + 1 ]
+	[/#list]
+[/#macro]
+{
+[#assign categoriesCounter = 0]
+[#assign aDateTime = .now]
+	"currentDate":"${aDateTime?iso("UTC")}",
+	[#assign rootPage = cmsfn.root(content, "mgnl:page")!]
+	[#assign first="true"]
+	[#list cmsfn.children(currentPage, "mgnl:page") as childPage]
+		[#if first="false"],[/#if]
+		[#assign first="false"]
+		[#if cmsfn.metaData(childPage, 'template') = "vx-template:pages/vxFlyingWithUsList" ]
+			"${childPage.@name}": [ [@renderItens childPage /] ]
+		[/#if]
+		[#if cmsfn.metaData(childPage, 'template') = "vx-template:pages/vxEntertainmentList" ]
+			[#assign categoriesCounter = 0]
+			"${childPage.@name}": [ [@renderCategories childPage /] ]
+		[/#if]
+		[#if cmsfn.metaData(childPage, 'template') = "vx-template:pages/vxFoodDrinksList" ]
+			[#assign categoriesCounter = 0]
+			"${childPage.@name}": [ [@renderCategories childPage /] ]
+		[/#if]
+	[/#list]
+}

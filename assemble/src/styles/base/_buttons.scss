@@ -1,0 +1,571 @@
+/* ==========================================================================
+   Buttons
+
+   ** Examples **
+
+   * Default button *
+   <a href="#" class="btn btn-primary btn-normal">
+
+   * Style options *
+   - btn-primary
+   - btn-secondary
+   - btn-elevate-primary
+   - btn-elevate-secondary
+   - btn-check-in-primary
+   - btn-check-in-secondary
+   - btn-alt-primary
+   - btn-alt-secondary
+
+   * Size options *
+   - btn-normal, btn-xl, btn-lg, btn-sm
+
+   * Block-level options *
+   - btn-block, btn-centered
+
+   * Disabled (works with all the above options) *
+   - btn-disabled
+   ========================================================================== */
+button {
+  width: 100%;
+  overflow: visible;
+  border: 0;
+  background: transparent;
+  outline: 0;
+
+  // remove dotted outline on butoons in firefox
+  &::-moz-focus-inner {
+    border: 0;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  display: block;
+  @include gotham-bold;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-normal {
+  @include font-size(1.1);
+  line-height: 14px;
+  max-width: 284px;
+  width: 100%;
+}
+
+.btn-xl {
+  @include font-size(1.4);
+  line-height: 18px;
+  max-width: 380px;
+  width: 100%;
+}
+
+.btn-lg {
+  @include font-size(1.4);
+  line-height: 18px;
+  max-width: 260px;
+  width: 100%;
+}
+
+.btn-sm {
+  @include font-size(1);
+  line-height: 14px;
+  max-width: 180px;
+  width: 100%;
+}
+
+.btn-centered {
+  margin: 0 auto;
+}
+
+.btn-block {
+  max-width: 9999px;
+  width: 100%;
+}
+
+
+/* Primary button
+   ========================================================================== */
+.btn-primary {
+  background: $purple;
+  color: $white;
+  padding: 11px 0;
+
+  .no-touch & {
+    &:hover,
+    &:focus {
+      background: $purple-hover;
+    }
+  }
+
+  &:active {
+    @include background(
+      linear-gradient(top, #671186, #A321D3)
+    );
+  }
+
+  &.btn-disabled {
+    border: 1px solid $purple;
+    color: $purple;
+    padding: 10px 0;
+
+    .no-touch & {
+      &:hover,
+      &:focus {
+        background: $white;
+      }
+    }
+
+    &:active {
+      background: $white;
+    }
+  }
+
+  &.btn-xl {
+    padding: 23px 0;
+
+    &.btn-disabled {
+      padding: 22px 0;
+    }
+  }
+
+  &.btn-lg {
+    padding: 12px 0;
+
+    &.btn-disabled {
+      padding: 11px 0;
+    }
+  }
+}
+
+
+/* Secondary button
+   ========================================================================== */
+.btn-secondary {
+  background: transparent;
+  border: 1px solid $border-grey;
+  color: $black;
+  padding: 10px 0;
+
+  .no-touch & {
+    &:hover,
+    &:focus {
+      border: 1px solid $purple;
+      color: $purple;
+    }
+    &:active {
+      color: $white;
+    }
+  }
+
+  &:active {
+    @include background(
+      linear-gradient(top, #671186, #A321D3)
+    );
+    color: $white;
+  }
+
+  &.btn-disabled {
+    color: $border-grey;
+
+    .no-touch & {
+      &:hover,
+      &:focus {
+        border: 1px solid $border-grey;
+        color: $border-grey;
+      }
+    }
+
+    &:active {
+      background: $white;
+    }
+  }
+
+  &.btn-xl {
+    padding: 22px 0;
+  }
+
+  &.btn-lg {
+    padding: 11px 0;
+  }
+}
+
+
+/* Elevate buttons
+   ========================================================================== */
+.btn-elevate-primary {
+  background: $red;
+  color: $white;
+  padding: 11px 0;
+
+  .no-touch & {
+    &:hover,
+    &:focus {
+      background: $invalid-red;
+    }
+  }
+
+  &:active {
+     @include background(
+      linear-gradient(top, #C53940, $invalid-red)
+    );
+  }
+
+  &.btn-disabled {
+    border: 1px solid $red;
+    color: $red;
+    padding: 10px 0;
+
+    .no-touch & {
+      &:hover,
+      &:focus {
+        background: $white;
+      }
+    }
+
+    &:active {
+      background: $white;
+    }
+  }
+
+  &.btn-xl {
+    padding: 23px 0;
+
+    &.btn-disabled {
+      padding: 22px 0;
+    }
+  }
+
+  &.btn-lg {
+    padding: 12px 0;
+
+    &.btn-disabled {
+      padding: 11px 0;
+    }
+  }
+}
+
+.btn-elevate-secondary {
+  background: transparent;
+  border: 1px solid $border-grey;
+  color: $black;
+  padding: 10px 0;
+
+  .no-touch & {
+    &:hover,
+    &:focus {
+      border: 3px solid $invalid-red;
+      padding: 8px 0;
+    }
+  }
+
+  &:active {
+    @include background(
+      linear-gradient(top, #C53940, $invalid-red)
+    );
+  }
+
+  &.btn-disabled {
+    color: $border-grey;
+
+    .no-touch & {
+      &:hover,
+      &:focus {
+        border: 1px solid $border-grey;
+        color: $border-grey;
+        padding: 10px 0;
+      }
+    }
+
+    &:active {
+      background: $white;
+    }
+  }
+
+  &.btn-xl {
+    padding: 22px 0;
+  }
+
+  &.btn-lg {
+    padding: 11px 0;
+  }
+}
+
+/* Check-in buttons
+   ========================================================================== */
+.btn-check-in-primary {
+  background: $check-in-purple;
+  color: $white;
+  padding: 11px 0;
+
+  .no-touch & {
+    &:hover,
+    &:focus {
+      background: $check-in-pink;
+    }
+  }
+
+  &:active {
+    @include background(
+      linear-gradient(top, #A6067E, $check-in-pink)
+    );
+  }
+
+  &.btn-disabled {
+    background: transparent;
+    border: 1px solid $check-in-purple;
+    color: $check-in-purple;
+    padding: 10px 0;
+
+    .no-touch & {
+      &:hover,
+      &:focus {
+        background: transparent;
+      }
+    }
+
+    &:active {
+      background: transparent;
+    }
+  }
+
+  &.btn-xl {
+    padding: 23px 0;
+
+    &.btn-disabled {
+      padding: 22px 0;
+    }
+  }
+
+  &.btn-lg {
+    padding: 12px 0;
+
+    &.btn-disabled {
+      padding: 11px 0;
+    }
+  }
+}
+
+.btn-check-in-secondary {
+  border: 1px solid $border-grey;
+  color: $white;
+  padding: 10px 0;
+
+  .no-touch & {
+    &:hover,
+    &:focus {
+      border: 3px solid $check-in-pink;
+      padding: 8px 0;
+    }
+  }
+
+  &:active {
+    @include background(
+      linear-gradient(top, #A6067E, $check-in-pink)
+    );
+  }
+
+  &.btn-disabled {
+    color: $border-grey;
+
+    .no-touch & {
+      &:hover,
+      &:focus {
+        border: 1px solid $border-grey;
+        padding: 10px 0;
+      }
+    }
+
+    &:active {
+      background: transparent;
+    }
+  }
+
+  &.btn-xl {
+    padding: 22px 0;
+
+    .no-touch & {
+      &:hover,
+      &:focus {
+        padding: 20px 0;
+      }
+    }
+  }
+
+  &.btn-lg {
+    padding: 11px 0;
+
+    .no-touch & {
+      &:hover,
+      &:focus {
+        padding: 9px 0;
+      }
+    }
+  }
+}
+
+
+/* Alt buttons
+   ========================================================================== */
+.btn-alt-primary {
+  background: $black;
+  background: rgba(0,0,0,0.4);
+  color: $white;
+  padding: 11px 0;
+
+  .no-touch & {
+    &:hover,
+    &:focus {
+      background: $dark-grey;
+      background: rgba(0,0,0,0.7);
+    }
+  }
+
+  &:active {
+    @include background(
+      linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.4))
+    );
+  }
+
+  &.btn-disabled {
+    background: $white;
+    border: 1px solid $black;
+    color: $black;
+    padding: 10px 0;
+
+    .no-touch & {
+      &:hover,
+      &:focus {
+        background: $white;
+      }
+    }
+
+    &:active {
+      background: $white;
+    }
+  }
+
+  &.btn-xl {
+    padding: 23px 0;
+
+    &.btn-disabled {
+      padding: 22px 0;
+    }
+  }
+
+  &.btn-lg {
+    padding: 12px 0;
+
+    &.btn-disabled {
+      padding: 11px 0;
+    }
+  }
+}
+
+.btn-alt-secondary {
+  background: transparent;
+  border: 1px solid $white;
+  color: $white;
+  padding: 10px 0;
+
+  .no-touch & {
+    &:hover,
+    &:focus {
+      border: 3px solid $white;
+      padding: 8px 0;
+    }
+  }
+
+  &:active {
+    background: $white;
+    color: $black;
+  }
+
+  &.btn-disabled {
+    color: $border-grey;
+    color: rgba(255,255,255,0.5);
+
+    .no-touch & {
+      &:hover,
+      &:focus {
+        border: 1px solid $border-grey;
+        border: 1px solid rgba(255,255,255,0.5);
+        padding: 10px 0;
+      }
+    }
+
+    &:active {
+      background: transparent;
+      color: $border-grey;
+      color: rgba(255,255,255,0.5);
+    }
+  }
+
+  &.btn-xl {
+    padding: 22px 0;
+
+    .no-touch & {
+      &:hover,
+      &:focus {
+        padding: 20px 0;
+      }
+    }
+  }
+
+  &.btn-lg {
+    padding: 11px 0;
+
+    .no-touch & {
+      &:hover,
+      &:focus {
+        padding: 9px 0;
+      }
+    }
+  }
+}
+
+
+/* Disabled button
+   ========================================================================== */
+.btn-disabled {
+  background: $white;
+  cursor: default;
+  left: 0;
+  position: relative;
+  @include transform(translate3d(0,0,0));
+
+  &.is-disabled-animation {
+    .csstransforms3d & {
+      @include animation(.35s, disabledtransforms, 1, forwards);
+    }
+    .no-csstransforms3d & {
+      @include animation(.35s, disablednotransforms, 1, forwards);
+    }
+  }
+}
+
+
+/* List of stacked buttons
+   ========================================================================== */
+.buttons-stacked {
+  @include reset-list;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  > li {
+    margin-top: 20px;
+
+    &:first-child {
+      margin: 0;
+    }
+  }
+}

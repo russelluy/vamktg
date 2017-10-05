@@ -1,0 +1,19 @@
+{
+  "carriersData": [
+    {
+      "value":"VS", "name": "Virgin Atlantic"
+    },
+    {
+      "value":"VA", "name": "Virgin Australia"
+    },
+    {
+      "value":"HA", "name": "Hawaiian Airlines"
+    },
+    {
+      "value":"SQ", "name": "Singapore Airlines"
+    },
+    {
+      "value":"", "name": "N/A"
+    }
+  ]
+}

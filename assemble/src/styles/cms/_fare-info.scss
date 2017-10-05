@@ -1,0 +1,231 @@
+.fare-info {
+  margin-bottom: 40px;
+}
+
+.fare-info__header {
+  background: $purple-dark;
+  margin-bottom: 30px;
+}
+
+.fare-info__title {
+  color: $white;
+  @include gotham-light;
+  @include font-size (2.0);
+  margin: 0;
+  padding: 18px 20px;
+}
+
+.fare-info__highlights {
+  @include reset-list;
+
+  li {
+    border-bottom: 1px solid #DDD;
+    display: table;
+    margin-bottom: 30px;
+    padding: 0;
+    position: relative;
+
+    &:last-child { margin-bottom: 0; }
+  }
+
+  li > * {
+    display: table-cell;
+    padding-bottom: 30px;
+    vertical-align: top;
+  }
+
+  .desc {
+    margin: 0;
+  }
+
+  .img-wrap,
+  .highlight-number {
+    width: 30%;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .copy-wrap {
+    padding-left: 6%;
+  }
+
+  .title {
+    color: $medium-grey;
+    @include gotham-book;
+    @include font-size(1.8);
+    line-height: 125%;
+    margin: 0 0 12px;
+    text-transform: uppercase;
+  }
+
+  .desc {
+    @include font-size (1.2);
+  }
+
+  .highlight-number {
+    color: #C12473;
+    display: table-cell;
+    @include font-size(8);
+    @include gotham-light;
+    line-height: 1;
+    text-align: center;
+  }
+}
+
+.fare-info__details-table {
+  td {
+    border-bottom: 1px solid #DDD;
+    padding: 15px 0;
+    vertical-align: top;
+
+    &:first-child {
+      font-weight: 700;
+      padding-right: 5px;
+    }
+
+    &:last-child {
+      text-align: right;
+      padding-left: 10px;
+    }
+  }
+}
+
+.fare-info__image-list {
+  @include reset-list;
+
+  > li {
+    margin-bottom: 30px;
+  }
+
+  figure {
+    position: relative;
+  }
+
+  figcaption {
+    bottom: 20px;
+    color: $white;
+    @include gotham-medium;
+    @include font-size (1.2);
+    left: 20px;
+    position: absolute;
+  }
+}
+
+// Medium breakpoint
+@media only screen and (min-width: 600px) {
+  .fare-info {
+    margin-bottom: 45px;
+  }
+
+  .fare-info__header {
+    margin-bottom: 40px;
+  }
+
+  .fare-info__title {
+    @include font-size (2.6);
+    padding-bottom: 35px;
+    padding-top: 35px;
+  }
+
+  .fare-info__image-list {
+    float: left;
+    width: 58%;
+  }
+
+  .fare-info__details-wrap {
+    float: right;
+    padding-top: 10px;
+    width: 39.8%;
+  }
+
+  .fare-info__highlights {
+    li {
+      margin-bottom: 40px;
+      padding-left: 0;
+      text-align: center;
+    }
+
+    li > * {
+      display: block;
+      padding-bottom: 40px;
+    }
+
+    .img-wrap,
+    .highlight-number {
+      padding-bottom: 20px;
+      width: auto;
+    }
+
+    .img-wrap {
+      padding: 0 20% 25px;
+    }
+
+    img {
+      display: block;
+      left: auto;
+      position: relative;
+      top: auto;
+    }
+
+    .highlight-number {
+      display: block;
+      @include font-size(10);
+      left: auto;
+      padding-bottom: 10px;
+      position: static;
+      top: auto;
+      width: auto;
+    }
+
+    .title {
+      &.is-large {
+        @include font-size (2.7);
+        line-height: normal;
+        @include gotham-xlight;
+      }
+    }
+  }
+}
+
+// Large breakpoint
+@media only screen and (min-width: 769px) {
+  .fare-info {
+    margin: 0;
+  }
+
+  .fare-info__header {
+    margin-bottom: 20px;
+  }
+
+  .fare-info__details-wrap {
+    width: 36.75%;
+  }
+
+  // Image list
+  .fare-info__image-list {
+    width: 59%;
+
+    > li {
+      margin-bottom: 20px;
+    }
+  }
+
+  .fare-info__highlights {
+    .img-wrap {
+      padding: 0 0 20px;
+    }
+
+    .highlight-number {
+      padding: 0;
+    }
+
+    .title {
+      &.is-large {
+        @include font-size (4.0);
+      }
+    }
+  }
+}

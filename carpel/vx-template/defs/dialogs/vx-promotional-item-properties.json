@@ -1,0 +1,32 @@
+{
+  "title": "Promotional Options",
+  
+  "tabs": {
+    "entry": {
+      "link": { 
+        "label": "Link",
+        "type": "TEXT_FIELD"
+      },
+      "linkText": { 
+        "label": "Link Text",
+        "type": "TEXT_FIELD"
+      },
+      "image": { 
+    "targetWorkspace": "dam",
+    "appName": "assets",
+    "identifierToPathConverter": "info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter",
+    "contentPreviewDefinition": "",
+    "label": "Image",
+    "type": "IMAGE"
+      },
+      "iframe": { 
+    "targetWorkspace": "dam",
+    "appName": "assets",
+    "identifierToPathConverter": "info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter",
+    "contentPreviewDefinition": "",
+    "label": "Animation",
+    "type": "IMAGE"
+      }
+    }
+  }
+}

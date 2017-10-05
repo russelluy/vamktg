@@ -1,0 +1,13 @@
+{
+  "title": "[VX] Food and Drinks Category",
+  "extends": "/modules/standard-templating-kit/templates/pages/stkArticle",
+  "category": "section",
+  "dialog": "vxFoodDrinksPageProperties",
+  "areas": {
+    "navigation": {
+      "type": "list",
+      "components": [
+      ]
+    }
+  }
+}

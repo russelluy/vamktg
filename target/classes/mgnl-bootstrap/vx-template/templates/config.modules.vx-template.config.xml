@@ -1,0 +1,243 @@
+<sv:node sv:name='config' xmlns:sv='http://www.jcp.org/jcr/sv/1.0' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+  <sv:property sv:multiple='true' sv:name='jcr:mixinTypes' sv:type='Name'>
+    <sv:value>mix:lockable</sv:value>
+  </sv:property>
+  <sv:property sv:name='jcr:primaryType' sv:type='Name'>
+    <sv:value>mgnl:content</sv:value>
+  </sv:property>
+  <sv:node sv:name='site'>
+    <sv:property sv:multiple='true' sv:name='jcr:mixinTypes' sv:type='Name'>
+      <sv:value>mix:lockable</sv:value>
+    </sv:property>
+    <sv:property sv:name='jcr:primaryType' sv:type='Name'>
+      <sv:value>mgnl:contentNode</sv:value>
+    </sv:property>
+    <sv:node sv:name='templates'>
+      <sv:property sv:multiple='true' sv:name='jcr:mixinTypes' sv:type='Name'>
+        <sv:value>mix:lockable</sv:value>
+      </sv:property>
+      <sv:property sv:name='jcr:primaryType' sv:type='Name'>
+        <sv:value>mgnl:contentNode</sv:value>
+      </sv:property>
+      <sv:node sv:name='availability'>
+        <sv:property sv:multiple='true' sv:name='jcr:mixinTypes' sv:type='Name'>
+          <sv:value>mix:lockable</sv:value>
+        </sv:property>
+        <sv:property sv:name='jcr:primaryType' sv:type='Name'>
+          <sv:value>mgnl:contentNode</sv:value>
+        </sv:property>
+        <sv:property sv:name='class' sv:type='String'>
+          <sv:value>info.magnolia.module.templatingkit.sites.TemplateAvailability</sv:value>
+        </sv:property>
+        <sv:node sv:name='templates'>
+          <sv:property sv:multiple='true' sv:name='jcr:mixinTypes' sv:type='Name'>
+            <sv:value>mix:lockable</sv:value>
+          </sv:property>
+          <sv:property sv:name='jcr:primaryType' sv:type='Name'>
+            <sv:value>mgnl:contentNode</sv:value>
+          </sv:property>
+          <sv:node sv:name='vxBookCruise'>
+            <sv:property sv:name='id' sv:type='String'>
+              <sv:value>vx-template:pages/vxBookCruise</sv:value>
+            </sv:property>
+            <sv:property sv:name='jcr:primaryType' sv:type='Name'>
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+          </sv:node>
+          <sv:node sv:name='vxDeals'>
+            <sv:property sv:name='id' sv:type='String'>
+              <sv:value>vx-template:pages/vxDeals</sv:value>
+            </sv:property>
+            <sv:property sv:name='jcr:primaryType' sv:type='Name'>
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+          </sv:node>
+          <sv:node sv:name='vxEntertainmentCategory'>
+            <sv:property sv:name='id' sv:type='String'>
+              <sv:value>vx-template:pages/vxEntertainmentCategory</sv:value>
+            </sv:property>
+            <sv:property sv:name='jcr:primaryType' sv:type='Name'>
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+          </sv:node>
+          <sv:node sv:name='vxEntertainmentList'>
+            <sv:property sv:name='id' sv:type='String'>
+              <sv:value>vx-template:pages/vxEntertainmentList</sv:value>
+            </sv:property>
+            <sv:property sv:name='jcr:primaryType' sv:type='Name'>
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+          </sv:node>
+          <sv:node sv:name='vxEntertainment'>
+            <sv:property sv:name='id' sv:type='String'>
+              <sv:value>vx-template:pages/vxEntertainment</sv:value>
+            </sv:property>
+            <sv:property sv:name='jcr:primaryType' sv:type='Name'>
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+          </sv:node>
+          <sv:node sv:name='vxFeaturesList'>
+            <sv:property sv:name='id' sv:type='String'>
+              <sv:value>vx-template:pages/vxFeaturesList</sv:value>
+            </sv:property>
+            <sv:property sv:name='jcr:primaryType' sv:type='Name'>
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+          </sv:node>
+          <sv:node sv:name='vxFeatures'>
+            <sv:property sv:name='id' sv:type='String'>
+              <sv:value>vx-template:pages/vxFeatures</sv:value>
+            </sv:property>
+            <sv:property sv:name='jcr:primaryType' sv:type='Name'>
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+          </sv:node>
+          <sv:node sv:name='vxFlyWithUs'>
+            <sv:property sv:name='id' sv:type='String'>
+              <sv:value>vx-template:pages/vxFlyWithUs</sv:value>
+            </sv:property>
+            <sv:property sv:name='jcr:primaryType' sv:type='Name'>
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+          </sv:node>
+          <sv:node sv:name='vxFlyingWithUsList'>
+            <sv:property sv:name='id' sv:type='String'>
+              <sv:value>vx-template:pages/vxFlyingWithUsList</sv:value>
+            </sv:property>
+            <sv:property sv:name='jcr:primaryType' sv:type='Name'>
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+          </sv:node>
+          <sv:node sv:name='vxFlyingWithUs'>
+            <sv:property sv:name='id' sv:type='String'>
+              <sv:value>vx-template:pages/vxFlyingWithUs</sv:value>
+            </sv:property>
+            <sv:property sv:name='jcr:primaryType' sv:type='Name'>
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+          </sv:node>
+          <sv:node sv:name='vxFoodDrinksCategory'>
+            <sv:property sv:name='id' sv:type='String'>
+              <sv:value>vx-template:pages/vxFoodDrinksCategory</sv:value>
+            </sv:property>
+            <sv:property sv:name='jcr:primaryType' sv:type='Name'>
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+          </sv:node>
+          <sv:node sv:name='vxFoodDrinksList'>
+            <sv:property sv:name='id' sv:type='String'>
+              <sv:value>vx-template:pages/vxFoodDrinksList</sv:value>
+            </sv:property>
+            <sv:property sv:name='jcr:primaryType' sv:type='Name'>
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+          </sv:node>
+          <sv:node sv:name='vxFoodDrinks'>
+            <sv:property sv:name='id' sv:type='String'>
+              <sv:value>vx-template:pages/vxFoodDrinks</sv:value>
+            </sv:property>
+            <sv:property sv:name='jcr:primaryType' sv:type='Name'>
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+          </sv:node>
+          <sv:node sv:name='vxHomeConfig'>
+            <sv:property sv:name='id' sv:type='String'>
+              <sv:value>vx-template:pages/vxHomeConfig</sv:value>
+            </sv:property>
+            <sv:property sv:name='jcr:primaryType' sv:type='Name'>
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+          </sv:node>
+          <sv:node sv:name='vxHomeFlightInfo'>
+            <sv:property sv:name='id' sv:type='String'>
+              <sv:value>vx-template:pages/vxHomeFlightInfo</sv:value>
+            </sv:property>
+            <sv:property sv:name='jcr:primaryType' sv:type='Name'>
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+          </sv:node>
+          <sv:node sv:name='vxHomeInfo'>
+            <sv:property sv:name='id' sv:type='String'>
+              <sv:value>vx-template:pages/vxHomeInfo</sv:value>
+            </sv:property>
+            <sv:property sv:name='jcr:primaryType' sv:type='Name'>
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+          </sv:node>
+          <sv:node sv:name='vxHomePayment'>
+            <sv:property sv:name='id' sv:type='String'>
+              <sv:value>vx-template:pages/vxHomePayment</sv:value>
+            </sv:property>
+            <sv:property sv:name='jcr:primaryType' sv:type='Name'>
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+          </sv:node>
+          <sv:node sv:name='vxMaster'>
+            <sv:property sv:name='id' sv:type='String'>
+              <sv:value>vx-template:pages/vxMaster</sv:value>
+            </sv:property>
+            <sv:property sv:name='jcr:primaryType' sv:type='Name'>
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+          </sv:node>
+          <sv:node sv:name='vxNewsList'>
+            <sv:property sv:name='id' sv:type='String'>
+              <sv:value>vx-template:pages/vxNewsList</sv:value>
+            </sv:property>
+            <sv:property sv:name='jcr:primaryType' sv:type='Name'>
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+          </sv:node>
+          <sv:node sv:name='vxNews'>
+            <sv:property sv:name='id' sv:type='String'>
+              <sv:value>vx-template:pages/vxNews</sv:value>
+            </sv:property>
+            <sv:property sv:name='jcr:primaryType' sv:type='Name'>
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+          </sv:node>
+          <sv:node sv:name='vxPromotionalList'>
+            <sv:property sv:name='id' sv:type='String'>
+              <sv:value>vx-template:pages/vxPromotionalList</sv:value>
+            </sv:property>
+            <sv:property sv:name='jcr:primaryType' sv:type='Name'>
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+          </sv:node>
+          <sv:node sv:name='vxPromotional'>
+            <sv:property sv:name='id' sv:type='String'>
+              <sv:value>vx-template:pages/vxPromotional</sv:value>
+            </sv:property>
+            <sv:property sv:name='jcr:primaryType' sv:type='Name'>
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+          </sv:node>
+          <sv:node sv:name='vxSubset'>
+            <sv:property sv:name='id' sv:type='String'>
+              <sv:value>vx-template:pages/vxSubset</sv:value>
+            </sv:property>
+            <sv:property sv:name='jcr:primaryType' sv:type='Name'>
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+          </sv:node>
+          <sv:node sv:name='vxVersion'>
+            <sv:property sv:name='id' sv:type='String'>
+              <sv:value>vx-template:pages/vxVersion</sv:value>
+            </sv:property>
+            <sv:property sv:name='jcr:primaryType' sv:type='Name'>
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+          </sv:node>
+          <sv:node sv:name='vxWhereWeFly'>
+            <sv:property sv:name='id' sv:type='String'>
+              <sv:value>vx-template:pages/vxWhereWeFly</sv:value>
+            </sv:property>
+            <sv:property sv:name='jcr:primaryType' sv:type='Name'>
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+          </sv:node>
+        </sv:node>
+      </sv:node>
+    </sv:node>
+  </sv:node>
+</sv:node>

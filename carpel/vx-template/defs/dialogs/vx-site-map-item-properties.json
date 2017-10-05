@@ -1,0 +1,12 @@
+{
+  "title": "Site Map Properties",
+  "tabs": {
+    "tabMain": {
+      "message": {
+        "label": " ",
+        "type": "STATIC",
+        "value": "Component to be used for generate the site map."
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+$drop-down-small-width: 284;
+$drop-down-medium-width: 352;
+$drop-down-large-width: 477;
+$drop-down-width: $drop-down-small-width;
+
+.drop-down{
+
+	width: $drop-down-width+px;
+	height: 55px;
+	margin: 0 auto 3px auto;
+
+	.drop-down-container{
+		display: block;
+		padding: 0;
+	    margin: 0;
+	    padding: 2px;
+	    overflow: hidden;
+	    border: 1px solid $medium-grey;
+	    height: 100%;
+		position: relative;
+	    background-color: $white;
+		@include box-shadow(
+			$off-white 0 0 0 3px inset,
+			$purple-light 2px 3px 0
+		);
+		.no-touch &:hover,
+		&.is-selected {
+			@include box-shadow($purple-light 2px 3px 0);
+			border: 3px solid $purple;
+			padding: 0px;
+			text-decoration: none;
+			//background-position: $drop-down-width - 34+px 20px;
+		}
+
+		.is-leg-two & {
+			.no-touch &:hover,
+			&.is-selected {
+		  		border: 3px solid $purple;
+			}
+		}
+		label {
+			@include gotham-book;
+			@include font-size(1.6);
+			@include line-height(5.3);
+
+			color: $dark-grey;
+			position: absolute;
+			margin-left: 18px;
+		}
+	  .drop-down-selectbox {
+	    @include gotham-book;
+			@include font-size(1.6);
+			@include line-height(5.3);
+
+			color: $dark-grey;
+		    float:right;
+		    width: 100%;
+		    min-height: 53px;
+		    border: none;
+		    margin-right: 20px;
+		    padding-left: 38px;
+		    //text-indent: -1000px;
+		    box-shadow: none;
+		    background-position: right center;
+		    -webkit-appearance: none;
+		       -moz-appearance: none;
+		            appearance: none;
+		}
+		.drop-down-selectbox:focus {
+		    outline: none;
+		}
+		.drop-down-selectbox.customSelectHover {
+
+		}
+		.drop-down-selectbox.customSelectOpen {
+
+		}
+		.drop-down-selectbox.customSelectFocus {
+
+		}
+		.drop-down-selectbox .customSelectInner {
+		}
+	}
+	@include at-medium {
+		$drop-down-width: $drop-down-medium-width;
+		width: $drop-down-width+px;
+		.drop-down-container{
+			//background-position: $drop-down-width - 32+px 22px;
+			.no-touch &:hover,
+			&.is-selected {
+				//padding: 16px;
+				//background-position: $drop-down-width - 34+px 20px;
+			}
+		}
+	}
+	@include at-large {
+		$drop-down-width: $drop-down-large-width;
+		width: $drop-down-width+px;
+		.drop-down-container{
+
+			//background-position: $drop-down-width - 32+px 22px;
+			.no-touch &:hover,
+			&.is-selected {
+				//padding: 16px;
+				//background-position: $drop-down-width - 34+px 20px;
+			}
+		}
+	}
+}

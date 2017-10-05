@@ -1,0 +1,9 @@
+{
+  "title": "[VX] Home Flight Info",
+  "extends": "/modules/standard-templating-kit/templates/pages/stkArticle",
+  "category": "home",
+  "dialog": "vxPageProperties",
+  "areas": {
+    "navigation": { "type": "list", "components": [ ] }
+  }
+}

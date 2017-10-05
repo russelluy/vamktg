@@ -1,0 +1,535 @@
+<div class="promotions-accordion" id="promotions-accordion" ng-controller="PromotionsCtrl">
+<div id="components">
+<div class="nav-row comp-bg-white" data-vx-elevate-menu>
+  <div class="nav-row-container--mobile">
+    <form name="navrowmobileform" ng-if="elevateMenu.selectOption">
+      <select class="nav-row-selectbox" ng-options="option.name for option in elevateMenu.menuOptions" ng-model="elevateMenu.selectOption" ng-change="elevateMenu.selectMenuOption(elevateMenu.selectOption)"></select>
+    </form>
+  </div>
+  <div class="nav-row-container" ng-class="{'is-expanded': elevateMenu.expandedMenu, 'is-desktop': elevateMenu.desktopView}">
+    <a href="#" class="nav-row-container__arrow" data-vx-common-prevent-default ng-click="elevateMenu.expandMenu()"></a>
+    <ul class="nav-row-list cf">
+      <li ng-show="elevateMenu.elevateLoggedIn">
+        <a href="/elevate-frequent-flyer/my-account">My Account</a>
+      </li>
+      <li ng-show="!elevateMenu.elevateLoggedIn">
+        <a href="/elevate-frequent-flyer/sign-up">Join Elevate</a>
+      </li>
+      <li><a href="/cms/elevate-frequent-flyer">About Elevate</a></li>
+      <li><a href="/cms/elevate-frequent-flyer/earn-points">Earn Points</a></li>
+      <li><a href="/cms/elevate-frequent-flyer/redeem-points">Redeem Points</a></li>
+      <li><a href="/cms/elevate-frequent-flyer/status">Status</a></li>
+      <li><a href="/cms/elevate-frequent-flyer/partners">Partners</a></li>
+      <li><a href="/elevate-frequent-flyer/buy-gift-points">Buy Points</a></li>
+      <li><a href="/elevate-frequent-flyer/credit-card">Credit Card</a></li>
+      <li ng-show="elevateMenu.elevateLoggedIn">
+        <a href="#" data-vx-common-prevent-default ng-click="elevateMenu.logOut()">SIGN OUT</a>
+      </li>
+    </ul>
+  </div>
+</div><div class="header-normal">
+  <div class="wrap">
+    <h1 class="heading-h1" style="border:1px solid red">Flying With Us</h1>
+    <p class="subheading">We&#039;ve stocked our magnificent flying machines with everything your little heart could want.<br/>On-demand movies? Check. Tasty bites and satisfying libations? Check.</p>
+    
+  </div>
+</div><div class="spacer" style="height:1px; padding-top:0.5">
+  <div class="line"></div>
+</div><div class="wrap">
+<header class="promotion__header">
+    <h1>
+      <span>Cabins</span>
+    </h1>
+</header>
+<script language="javascript">
+function changeAccordion(){
+  if(document.getElementById('cabinsAccordion').className == 'accordion__main'){
+    document.getElementById('cabinsAccordion').className = 'accordion__main is-active';
+    document.getElementById('cabinsTitle').className = 'is-active';
+  }else{
+    document.getElementById('cabinsAccordion').className = 'accordion__main';
+    document.getElementById('cabinsTitle').className = '';
+  }
+}
+function changeCabin(type) {
+  document.getElementById('cabins_main').style.display = 'none';
+  document.getElementById('cabins_main_bt').className  = 'tab-list__item';
+  document.getElementById('cabins_select').style.display = 'none';
+  document.getElementById('cabins_select_bt').className  = 'tab-list__item';
+  document.getElementById('cabins_first').style.display = 'none';
+  document.getElementById('cabins_first_bt').className  = 'tab-list__item';
+  document.getElementById(type).style.display = 'block';
+  document.getElementById(type + '_bt').className  = 'tab-list__item is-selected';
+}
+</script>
+<section id="cabinsAccordion" class="accordion__main is-active">
+    <div>
+    <header class="promotion-select">
+      <ul class="tab-list cf">
+        <li class="tab-list__item is-selected" id="cabins_main_bt">
+            <a href="javascript:changeCabin('cabins_main')">Main Cabin</a>
+        </li>
+        <li class="tab-list__item" id="cabins_select_bt">
+            <a href="javascript:changeCabin('cabins_select')">Main Cabin Select</a>
+        </li>
+        <li class="tab-list__item" id="cabins_first_bt">
+            <a href="javascript:changeCabin('cabins_first')">First Class</a>
+        </li>
+      </ul>
+    </header>
+
+
+    <!----- cabins_main ----->
+      <div class="fare-info cf is-selected" id="cabins_main">
+          <ul class="fare-info__image-list">
+            <li>
+                <figure>
+                      <img out="/cms/dam/vx-images/fare-info/fare-info-1.jpg" vx-global-image small="284" medium="476" large="714"/>
+                    <figcaption>Custom Black Leather Seats</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                      <img out="/cms/dam/vx-images/fare-info/fare-info-2.jpg" vx-global-image small="284" medium="476" large="714"/>
+                    <figcaption>Free In-Flight Entertainment</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                      <img out="/cms/dam/vx-images/fare-info/fare-info-3.jpg" vx-global-image small="284" medium="476" large="714"/>
+                    <figcaption>Priority Check-In and Boarding</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                      <img out="/cms/dam/vx-images/fare-info/fare-info-4.jpg" vx-global-image small="284" medium="476" large="714"/>
+                    <figcaption>Dedicated Luggage Space</figcaption>
+                </figure>
+            </li>
+          </ul>
+          <div class="fare-info__details-wrap">
+              <ul class="fare-info__highlights">
+                  <li>
+                      <div class="img-wrap">
+                      <img alt="" out="/cms/dam/vx-images/fare-info/fare-info-highlight-1.jpg" vx-global-image small="186" medium="188" large="300"/>
+                      </div>
+                      <div class="copy-wrap">
+                          <h3 class="title ng-binding">More Legroom</h3>
+                          <p class="desc ng-binding">Quisque ut dolor gravida, placerat libero vel, euismod. Gallia est omnis divisa in partes.</p>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="img-wrap">
+                      <img alt="" out="/cms/dam/vx-images/fare-info/fare-info-highlight-2.jpg" vx-global-image small="186" medium="188" large="300"/>
+                      </div>
+                      <div class="copy-wrap">
+                          <h3 class="title ng-binding">Unlimited Drinks</h3>
+                          <p class="desc ng-binding">Quisque ut dolor gravida, placerat libero vel, euismod. Gallia est omnis divisa in partes.</p>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="img-wrap">
+                      <img alt="" out="/cms/dam/vx-images/fare-info/fare-info-highlight-3.jpg" vx-global-image small="186" medium="188" large="300"/>
+                      </div>
+                      <div class="copy-wrap">
+                          <h3 class="title ng-binding">Free Checked Bags</h3>
+                          <p class="desc ng-binding">Quisque ut dolor gravida, placerat libero vel, euismod. Gallia est omnis divisa in partes.</p>
+                      </div>
+                  </li>
+              </ul>
+              <table class="fare-info__details-table" style="width:100%">
+                  <tbody>
+
+
+
+                  <tr>
+                      <td>Change / Cancel Fee</td>
+                      <td>$0</td>
+                  </tr>
+
+                  <tr>
+                      <td>Elevate Booking Redeposit Fee</td>
+                      <td>$100</td>
+                  </tr>
+
+                  <tr>
+                      <td>Refundable</td>
+                      <td>Yes - to original form of payment</td>
+                  </tr>
+
+                  <tr>
+                      <td>Transferable</td>
+                      <td>Yes</td>
+                  </tr>
+
+                  <tr>
+                      <td>Free Checked Bags</td>
+                      <td>1</td>
+                  </tr>
+
+                  <tr>
+                      <td>Food, Beverages &amp; Entertainment</td>
+                      <td>Lots for Free</td>
+                  </tr>
+
+                  <tr>
+                      <td>Leg Room (Seat Pitch)</td>
+                      <td>38 Inches</td>
+                  </tr>
+
+                  <tr>
+                      <td>Seats</td>
+                      <td>Black Leather</td>
+                  </tr>
+
+                  <tr>
+                      <td>Main Cabin Express Seats</td>
+                      <td>N/A</td>
+                  </tr>
+
+                  <tr>
+                      <td>Priority Check-In</td>
+                      <td>Yes</td>
+                  </tr>
+
+                  <tr>
+                      <td>Priority Boarding</td>
+                      <td>Yes</td>
+                  </tr>
+
+                  <tr>
+                      <td>Dedicated Carry-On Bin Space</td>
+                      <td>Yes</td>
+                  </tr>
+
+                  <tr>
+                      <td>Pillows &amp; Blankets</td>
+                      <td>No</td>
+                  </tr>
+
+                  <tr>
+                      <td>Free Headset</td>
+                      <td>Yes</td>
+                  </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+
+
+
+    <!----- cabins_select ----->
+      <div class="fare-info cf" id="cabins_select" style="display:none">
+          <ul class="fare-info__image-list">
+            <li>
+                <figure>
+                      <img out="/cms/dam/vx-images/fare-info/fare-info-3.jpg" vx-global-image small="284" medium="476" large="714"/>
+                    <figcaption>Custom Black Leather Seats</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                      <img out="/cms/dam/vx-images/fare-info/fare-info-4.jpg" vx-global-image small="284" medium="476" large="714"/>
+                    <figcaption>Free In-Flight Entertainment</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                      <img out="/cms/dam/vx-images/fare-info/fare-info-1.jpg" vx-global-image small="284" medium="476" large="714"/>
+                    <figcaption>Priority Check-In and Boarding</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                      <img out="/cms/dam/vx-images/fare-info/fare-info-2.jpg" vx-global-image small="284" medium="476" large="714"/>
+                    <figcaption>Dedicated Luggage Space</figcaption>
+                </figure>
+            </li>
+          </ul>
+          <div class="fare-info__details-wrap">
+              <ul class="fare-info__highlights">
+                  <li>
+                      <div class="img-wrap">
+                      <img alt="" out="/cms/dam/vx-images/fare-info/fare-info-highlight-2.jpg" vx-global-image small="186" medium="188" large="300"/>
+                      </div>
+                      <div class="copy-wrap">
+                          <h3 class="title ng-binding">More Legroom</h3>
+                          <p class="desc ng-binding">Quisque ut dolor gravida, placerat libero vel, euismod. Gallia est omnis divisa in partes.</p>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="img-wrap">
+                      <img alt="" out="/cms/dam/vx-images/fare-info/fare-info-highlight-3.jpg" vx-global-image small="186" medium="188" large="300"/>
+                      </div>
+                      <div class="copy-wrap">
+                          <h3 class="title ng-binding">Unlimited Drinks</h3>
+                          <p class="desc ng-binding">Quisque ut dolor gravida, placerat libero vel, euismod. Gallia est omnis divisa in partes.</p>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="img-wrap">
+                      <img alt="" out="/cms/dam/vx-images/fare-info/fare-info-highlight-1.jpg" vx-global-image small="186" medium="188" large="300"/>
+                      </div>
+                      <div class="copy-wrap">
+                          <h3 class="title ng-binding">Free Checked Bags</h3>
+                          <p class="desc ng-binding">Quisque ut dolor gravida, placerat libero vel, euismod. Gallia est omnis divisa in partes.</p>
+                      </div>
+                  </li>
+              </ul>
+              <table class="fare-info__details-table" style="width:100%">
+                  <tbody>
+
+
+
+                  <tr>
+                      <td>Change / Cancel Fee</td>
+                      <td>$0</td>
+                  </tr>
+
+                  <tr>
+                      <td>Elevate Booking Redeposit Fee</td>
+                      <td>$100</td>
+                  </tr>
+
+                  <tr>
+                      <td>Refundable</td>
+                      <td>Yes - to original form of payment</td>
+                  </tr>
+
+                  <tr>
+                      <td>Transferable</td>
+                      <td>Yes</td>
+                  </tr>
+
+                  <tr>
+                      <td>Free Checked Bags</td>
+                      <td>1</td>
+                  </tr>
+
+                  <tr>
+                      <td>Food, Beverages &amp; Entertainment</td>
+                      <td>Lots for Free</td>
+                  </tr>
+
+                  <tr>
+                      <td>Leg Room (Seat Pitch)</td>
+                      <td>38 Inches</td>
+                  </tr>
+
+                  <tr>
+                      <td>Seats</td>
+                      <td>Black Leather</td>
+                  </tr>
+
+                  <tr>
+                      <td>Main Cabin Express Seats</td>
+                      <td>N/A</td>
+                  </tr>
+
+                  <tr>
+                      <td>Priority Check-In</td>
+                      <td>Yes</td>
+                  </tr>
+
+                  <tr>
+                      <td>Priority Boarding</td>
+                      <td>Yes</td>
+                  </tr>
+
+                  <tr>
+                      <td>Dedicated Carry-On Bin Space</td>
+                      <td>Yes</td>
+                  </tr>
+
+                  <tr>
+                      <td>Pillows &amp; Blankets</td>
+                      <td>No</td>
+                  </tr>
+
+                  <tr>
+                      <td>Free Headset</td>
+                      <td>Yes</td>
+                  </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+
+    <!----- cabins_first ----->
+      <div class="fare-info cf" id="cabins_first" style="display:none">
+          <ul class="fare-info__image-list">
+            <li>
+                <figure>
+                      <img out="/cms/dam/vx-images/fare-info/fare-info-4.jpg" vx-global-image small="284" medium="476" large="714"/>
+                    <figcaption>Custom Black Leather Seats</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                      <img out="/cms/dam/vx-images/fare-info/fare-info-3.jpg" vx-global-image small="284" medium="476" large="714"/>
+                    <figcaption>Free In-Flight Entertainment</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                      <img out="/cms/dam/vx-images/fare-info/fare-info-1.jpg" vx-global-image small="284" medium="476" large="714"/>
+                    <figcaption>Priority Check-In and Boarding</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                      <img out="/cms/dam/vx-images/fare-info/fare-info-2.jpg" vx-global-image small="284" medium="476" large="714"/>
+                    <figcaption>Dedicated Luggage Space</figcaption>
+                </figure>
+            </li>
+          </ul>
+          <div class="fare-info__details-wrap">
+              <ul class="fare-info__highlights">
+                  <li>
+                      <div class="img-wrap">
+                      <img alt="" out="/cms/dam/vx-images/fare-info/fare-info-highlight-3.jpg" vx-global-image small="186" medium="188" large="300"/>
+                      </div>
+                      <div class="copy-wrap">
+                          <h3 class="title ng-binding">More Legroom</h3>
+                          <p class="desc ng-binding">Quisque ut dolor gravida, placerat libero vel, euismod. Gallia est omnis divisa in partes.</p>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="img-wrap">
+                      <img alt="" out="/cms/dam/vx-images/fare-info/fare-info-highlight-1.jpg" vx-global-image small="186" medium="188" large="300"/>
+                      </div>
+                      <div class="copy-wrap">
+                          <h3 class="title ng-binding">Unlimited Drinks</h3>
+                          <p class="desc ng-binding">Quisque ut dolor gravida, placerat libero vel, euismod. Gallia est omnis divisa in partes.</p>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="img-wrap">
+                      <img alt="" out="/cms/dam/vx-images/fare-info/fare-info-highlight-2.jpg" vx-global-image small="186" medium="188" large="300"/>
+                      </div>
+                      <div class="copy-wrap">
+                          <h3 class="title ng-binding">Free Checked Bags</h3>
+                          <p class="desc ng-binding">Quisque ut dolor gravida, placerat libero vel, euismod. Gallia est omnis divisa in partes.</p>
+                      </div>
+                  </li>
+              </ul>
+              <table class="fare-info__details-table" style="width:100%">
+                  <tbody>
+
+
+
+                  <tr>
+                      <td>Change / Cancel Fee
+</td>
+                      <td>$0
+</td>
+                  </tr>
+
+                  <tr>
+                      <td>Elevate Booking Redeposit Fee
+</td>
+                      <td>$100
+</td>
+                  </tr>
+
+                  <tr>
+                      <td>Refundable
+</td>
+                      <td>Yes - to original form of payment
+</td>
+                  </tr>
+
+                  <tr>
+                      <td>Transferable
+</td>
+                      <td>Yes
+</td>
+                  </tr>
+
+                  <tr>
+                      <td>Free Checked Bags
+</td>
+                      <td>1
+</td>
+                  </tr>
+
+                  <tr>
+                      <td>Food, Beverages &amp; Entertainment
+</td>
+                      <td>Lots for Free
+</td>
+                  </tr>
+
+                  <tr>
+                      <td>Leg Room (Seat Pitch)
+</td>
+                      <td>38 Inches
+</td>
+                  </tr>
+
+                  <tr>
+                      <td>Seats
+</td>
+                      <td>Black Leather
+</td>
+                  </tr>
+
+                  <tr>
+                      <td>Main Cabin Express Seats
+</td>
+                      <td>N/A
+</td>
+                  </tr>
+
+                  <tr>
+                      <td>Priority Check-In
+</td>
+                      <td>Yes
+</td>
+                  </tr>
+
+                  <tr>
+                      <td>Priority Boarding
+</td>
+                      <td>Yes
+</td>
+                  </tr>
+
+                  <tr>
+                      <td>Dedicated Carry-On Bin Space
+</td>
+                      <td>Yes
+</td>
+                  </tr>
+
+                  <tr>
+                      <td>Pillows &amp; Blankets
+</td>
+                      <td>No
+</td>
+                  </tr>
+
+                  <tr>
+                      <td>Free Headset
+</td>
+                      <td>Yes
+</td>
+                  </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+      <div class="spacer" style="height:20px;"></div>
+    </div>
+</section>
+</div></div>
+  <div class="spacer" style="height:1px; padding-top:0px"><div class="line"></div></div>
+          <div data-vx-accordion data-content-type="promotion" data-title="What's Onboard" data-template="/app/success/templates/flying-with-us.tpl.html" data-content="promotions.flyingWithUs" data-expanded="true" data-expandable="false">
+  </div>
+  <div class="spacer" style="height:1px; padding-top:0px"><div class="line"></div></div>
+          <div data-vx-accordion data-content-type="promotion" data-title="Onboard Entertainment" data-template="/app/success/templates/entertainment.tpl.html" data-content="promotions.onboardEntertainment" data-expanded="true" data-expandable="false" data-header-class="promotion__header--entertainment">
+          </div>
+  <div class="spacer" style="height:1px; padding-top:0px"><div class="line"></div></div>
+          <div data-vx-accordion data-content-type="promotion" data-title="Food &amp; Drinks" data-template="/app/success/templates/food-and-drinks.tpl.html" data-content="promotions.foodAndDrink" data-expanded="true" data-expandable="false" data-header-class="promotion__header--food">
+          </div>
+</div>

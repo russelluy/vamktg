@@ -1,0 +1,188 @@
+{
+  "arrow-down": [
+    ".booker__trip-origin > a:after",
+    ".trip-select:after",
+    ".city-list__title--all-cities:after"
+  ],
+  "arrow-down-1": [
+    ".icon-arrow-down-black",
+    ".custom-select:after",
+    ".select--avatar > a:after",
+    ".nav-drop-down-container .nav-drop-down-selectbox",
+    "span.customSelect.header-selector-selectbox",
+    ".nav-row-selectbox",
+    ".nav-row-container__arrow"
+  ],
+  "arrow-down-2": [
+    ".icon-arrow-down-red",
+    ".city-leg--two .trip-select:after",
+    ".sign-up .custom-select:after",
+    ".tab-select--food.custom-select:after",
+    ".red span.customSelect.header-selector-selectbox",
+    ".nav-drop-down-container-red span.customSelect.nav-drop-down-selectbox"
+  ],
+  "arrow-down-3": [
+    ".icon-arrow-down-purple",
+    ".booker__trip-origin > a:hover:after",
+    ".city-leg--one .trip-select:hover:after"
+  ],
+  "arrow-down-4": [
+    ".icon-arrow-down-white",
+    ".yts__cta:after",
+    ".banner__yts--alt .is-mouseover .yts__cta:after",
+    ".comp-bg-red .nav-row-selectbox",
+    ".comp-bg-red .nav-row-container__arrow",
+    ".comp-bg-gold .nav-row-selectbox",
+    ".comp-bg-gold .nav-row-container__arrow",
+    ".is-elevate-member-red .nav-row-selectbox",
+    ".is-elevate-member-red .nav-row-container__arrow",
+    ".is-elevate-member-gold .nav-row-selectbox",
+    ".is-elevate-member-gold .nav-row-container__arrow"
+  ],
+  "arrow-down-5": [
+    ".icon-arrow-down-light-grey",
+    ".is-disabled.trip-select:after",
+    ".is-disabled.trip-select:hover:after",
+    ".bg-dark .select.custom-select:after",
+    ".selector-selectbox"
+  ],
+  "arrow-down-6": [
+    ".icon-arrow-down-purple-dark",
+    ".footer-nav__select:after",
+    ".tab-select.custom-select:after",
+    ".promotion__header > h1 > a:after",
+    ".select--avatar.custom-selectFocus > a:after",
+    ".manage-trips__header > a:after",
+    ".purple span.customSelect.header-selector-selectbox",
+    ".nav-drop-down-container-purple span.customSelect.nav-drop-down-selectbox"
+  ],
+  "arrow-down-7": [
+    ".icon-arrow-down-red-purple",
+    ".promotion__header--entertainment > h1 > a:after"
+  ],
+  "arrow-down-8": [
+    ".icon-arrow-down-reddish",
+    ".promotion__header--food > h1 > a:after"
+  ],
+  "arrow-up-1": [
+    ".icon-arrow-up-black",
+    ".is-expanded .nav-row-container__arrow"
+  ],
+  "arrow-up-2": ".icon-arrow-up-red",
+  "arrow-up-3": [
+    ".icon-arrow-up-purple"
+  ],
+  "arrow-up-4": [
+    ".icon-arrow-up-white",
+    ".comp-bg-red .is-expanded .nav-row-selectbox",
+    ".comp-bg-red .is-expanded .nav-row-container__arrow",
+    ".comp-bg-gold .is-expanded .nav-row-selectbox",
+    ".comp-bg-gold .is-expanded .nav-row-container__arrow",
+    ".is-elevate-member-red .is-expanded .nav-row-selectbox",
+    ".is-elevate-member-red .is-expanded .nav-row-container__arrow",
+    ".is-elevate-member-gold .is-expanded .nav-row-selectbox",
+    ".is-elevate-member-gold .is-expanded .nav-row-container__arrow"
+  ],
+  "arrow-up-5": [
+    ".icon-arrow-up-red-purple",
+    ".promotion__header--entertainment > h1 > a.is-active:after"
+  ],
+  "arrow-up-6": [
+    ".icon-arrow-up-reddish",
+    ".promotion__header--food > h1 > a.is-active:after",
+    ".promotion__header > h1 > a.is-active:after",
+    ".is-expanded .manage-trips__header > a:after"
+  ],
+  "vx-simplified-color": [
+    ".bp-large .is-nav-expanded-active .navbar__logo > a",
+    ".banner__yts--alt .is-mouseover .yts__logo > a",
+    ".navbar__logo > a",
+    ".header__mobile > h1"
+  ],
+  "vx-simplified-color-black": [
+    ".banner__yts--expanded .yts__logo > a",
+    ".banner__yts--alt .yts__logo > a",
+    ".header__print-only > h1"
+  ],
+  "vx-simplified-mono": [
+    ".is-nav-expanded-active .navbar__logo > a",
+    ".is-nav-elevate-active .navbar__logo > a"
+  ],
+  "close": [
+    ".booker__close-overlay:after",
+    ".status-bar__close"
+  ],
+  "close-1": [
+    ".close-white",
+    ".bg-dark .modal__close",
+    ".change-status-header .btn-cancel:after"
+  ],
+  "close-2": [
+    ".modal__close",
+    ".bg-dark .modal__close:hover"
+  ],
+  "close-3": [
+    ".icon-close-x-light-purple",
+    ".yts__cta--expanded:after"
+  ],
+  "check": [
+    ".check-valid-green",
+    ".is-departing .day__date"
+  ],
+  "check-1": [
+    ".check-purple",
+    ".checklist > li",
+    ".is-selected .option-box__price:after"
+  ],
+  "check-2": [
+    ".check-purple-check-in",
+    ".option__info-list > li:before"
+  ],
+  "check-3": [
+    ".check-grey-check-in",
+    ".is-unavailable .option__info-list > li:before"
+  ],
+  "check-4": [
+    ".check-white",
+    ".is-selected .option-box__price:after"
+  ],
+  "arrow-right-long": [
+    ".bp-medium .yts-trip--med__arr"
+  ],
+  "arrow-right-long-1": ".arrow-right-long-black",
+  "arrow-right-long-2": [
+    ".arrow-right-long-grey",
+    ".flight-details__flight-info--dep:after",
+    ".flight-dur__time:after"
+  ],
+  "arrow-right-short": [
+  ".icon-arrow-right-short-white",
+    ".bp-large .yts-trip__middle.is-arr"
+  ],
+  "arrow-right-short-1": [
+    ".icon-arrow-right-short-grey",
+    ".bp-large .banner__yts--alt .yts-trip__middle.is-arr",
+    ".banner__yts--alt .icon-arrow-right-short"
+  ],
+  "arrow-right-short-2": [
+    ".icon-arrow-right-short-purple",
+    "td.fromto.is-arr"
+  ],
+  "arrow-right-short-3": [
+    ".icon-arrow-right-short-black"
+  ],
+  "virgin": [
+    ".icon-va-card"
+  ],
+  "round-trip": [
+    ".icon-round-trip-white",
+    ".bp-medium .yts-trip--med__arr.is-round-trip"
+  ],
+  "round-trip-1": [
+    ".icon-round-trip-purple"
+  ],
+  "calendar": [
+    ".icon-calendar-purple",
+    ".flight-summary-cities__date a:after"
+  ]
+}

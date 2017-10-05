@@ -1,0 +1,17 @@
+{
+  "title": "Traveler Advisory Message",
+  
+  "tabs": {
+    "entry": {
+      "message": { 
+        "label": "Message",
+        "type": "TEXT_FIELD"
+      },
+      
+      "link": { 
+        "label": "Link",
+        "type": "TEXT_FIELD"
+      }
+    }
+  }
+}

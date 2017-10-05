@@ -1,0 +1,11 @@
+<section bindonce class="accordion" ng-class="{'is-expanded': isExpanded}" bo-class="{'promotion': accordion.contentType === 'promotion'}">
+    <header class="promotion__header" bo-class="{{headerClass}}" bo-show="accordion.contentType === 'promotion'">
+        <h2 ng-switch="isExpandable">
+            <a href="#" ng-switch-when="true" ng-class="{'is-active': isExpanded}" data-vx-common-prevent-default ng-click="accordion.toggleAccordion()">{{title}}</a>
+            <span ng-switch-when="false">{{title}}</span>
+        </h2>
+    </header>
+    <section class="accordion__main wrap" ng-class="{'is-active': isExpanded}">
+        <div ng-transclude></div>
+    </section>
+</section>

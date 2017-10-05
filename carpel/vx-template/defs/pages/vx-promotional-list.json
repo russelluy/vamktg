@@ -1,0 +1,20 @@
+{
+  "title": "[VX] Promotional List",
+  "extends": "/modules/standard-templating-kit/templates/pages/stkArticle",
+  "category": "section",
+  "dialog": "vxPageProperties",
+  "areas": {
+    "slotsPromotional": {
+      "type": "list",
+      "components": [
+        "vxSlotsPromotionalEntry"
+      ]
+    },
+    "subsetsPromotional": {
+      "type": "list",
+      "components": [
+      ]
+    }
+
+  }
+}

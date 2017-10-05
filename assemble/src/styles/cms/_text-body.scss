@@ -1,0 +1,152 @@
+ /* ==========================================================================
+   COMPONENT - TextHeader
+   ========================================================================== */
+.text-body{
+
+	@include component;
+	@include gotham-book;
+	@include font-size(1.4);
+	@include line-height(2.4);
+
+	//padding-top: 30px;
+	padding-bottom: 30px;
+	
+	.content {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
+	.heading{
+		@include gotham-light;
+		@include font-size(1.5);
+		@include line-height(2.2);
+		text-align: left;
+		text-transform: none;
+	}
+	.subheading{
+		@include gotham-medium;
+		@include font-size(2.1);
+		@include line-height(2.9);
+		text-align: left;
+	}
+	p{
+		@include gotham-light;
+		@include font-size(1.5);
+		@include line-height(2.3);
+		margin-bottom: 21px;
+		text-align: left;
+	}
+	li{
+		@include gotham-light;
+		@include font-size(1.5);
+		@include line-height(2.2);
+		text-align: left;
+		a, a:hover{
+			background: initial;
+			border: initial;
+			color: initial;
+			display: initial;
+			font: initial;
+			height: initial;
+			letter-spacing: initial;
+			line-height: initial;
+			text-transform: initial;
+			visibility: initial;
+			width: initial;
+			word-spacing: initial;
+			z-index: initial;
+			text-align: initial;
+			//text-decoration: underline;
+			text-transform: initial;
+			cursor: initial;
+			padding: initial;
+			max-width: initial;
+			min-width: initial;
+			margin: initial;
+			@include gotham-light;
+			@include font-size(1.5);
+			@include line-height(2.2);
+			text-align: left;
+		}
+	}
+	a{
+		color: $black;
+		border-bottom: 1px solid $black;
+	}
+	&.blue{
+		.subheading{
+			color: $blue;
+		}
+		a{
+			border-bottom: 1px solid $blue;
+			&:hover, &:active{
+				border: none;
+			}
+		}
+	}
+	&.red{
+		.subheading{
+			color: $gradient-red;
+		}
+		a{
+			border-bottom: 1px solid $gradient-red;
+			&:hover, &:active{
+				border: none;
+			}
+		}
+	}
+	&.purple{
+		.subheading{
+			color: $purple;
+		}
+		a{
+			border-bottom: 1px solid $purple;
+			&:hover, &:active{
+
+				border: none;
+			}
+		}
+	}
+	@include at-medium {
+
+		@include font-size(1.8);
+		@include line-height(2.8);
+
+	
+		.content {
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+
+    	.heading{
+			@include font-size(2);
+			@include line-height(2.4);
+			margin-bottom: 36px;
+		}
+		.subheading{
+			@include font-size(2.1);
+			@include line-height(2.9);
+		}
+    	.wrap{
+    		.content{
+				@include pad(1, 1, 12);
+			}
+		}
+ 	}
+	@include at-large {
+		.heading{
+			@include font-size(2);
+			@include line-height(2.4);
+			margin-bottom: 36px;
+		}
+		.subheading{
+			@include font-size(2.1);
+			@include line-height(2.9);
+		}
+		.wrap{
+			.content{
+				@include pad(2, 2, 12);
+			}
+		}
+	}
+}

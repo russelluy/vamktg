@@ -1,0 +1,42 @@
+/* ==========================================================================
+COMPONENT - ThreeUpItem - No Body
+========================================================================== */
+.three-up-item-no-body{
+	@include ThreeUpItem;
+	min-height: 320px;
+	height: 320px;
+	.icon{
+		max-width: 90px;
+		@include at-medium {
+			max-width: 110px;
+		}
+		@include at-large {
+			max-width: 190px;
+		}
+		margin: 0 auto 20px auto;
+	}
+	.heading{
+		@include gotham-xlight;
+		@include font-size (2.8);
+		@include line-height (3.2);
+		text-transform:uppercase;
+	}
+	@include at-medium {
+		height: 338px;
+		.heading{
+			@include font-size (2.2);
+			@include line-height (2.6);
+		}
+ 	}
+	@include at-large {
+		height: 338px;
+		.icon{
+			margin-bottom: 30px;
+		}
+		.heading{
+			@include gotham-xlight;
+			@include font-size (3);
+			@include line-height (3.8);
+		}
+	}
+}

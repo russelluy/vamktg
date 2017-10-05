@@ -1,0 +1,19 @@
+/* ==========================================================================
+   Global States
+   ========================================================================== */
+
+/**
+ * module specific states should be included in the _module.scss file
+ * !important flags are tolerated in this file only
+ */
+
+.is-vishidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}

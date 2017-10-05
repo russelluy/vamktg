@@ -1,0 +1,24 @@
+{
+  "name": "jquery.customSelect",
+  "main": [
+    "./jquery.customSelect.js",
+    "./jquery.customSelect.min.js"
+  ],
+  "dependencies": {
+    "jquery": ">=1.7.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/adamcoulombe/jquery.customSelect.git"
+  },
+  "homepage": "https://github.com/workco/jquery.customSelect",
+  "_release": "80f5095e3a",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "80f5095e3ae62860d26e9ae00365d8b7bb48140c"
+  },
+  "_source": "git://github.com/workco/jquery.customSelect.git",
+  "_target": "*",
+  "_originalSource": "git://github.com/workco/jquery.customSelect/"
+}

@@ -1,0 +1,214 @@
+.icon-amex { background-image: url(png/amex.png); background-repeat: no-repeat; }
+
+.icon-arrow-down-1,
+.icon-arrow-down-black,.custom-select:after,.select--avatar > a:after,.nav-drop-down-container .nav-drop-down-selectbox,span.customSelect.header-selector-selectbox,.nav-row-selectbox,.nav-row-container__arrow { background-image: url(png/arrow-down-1.png); background-repeat: no-repeat; }
+
+.icon-arrow-down-2,
+.icon-arrow-down-red,.city-leg--two .trip-select:after,.sign-up .custom-select:after,.tab-select--food.custom-select:after,.red span.customSelect.header-selector-selectbox,.nav-drop-down-container-red span.customSelect.nav-drop-down-selectbox { background-image: url(png/arrow-down-2.png); background-repeat: no-repeat; }
+
+.icon-arrow-down-3,
+.icon-arrow-down-purple,.booker__trip-origin > a:hover:after,.city-leg--one .trip-select:hover:after { background-image: url(png/arrow-down-3.png); background-repeat: no-repeat; }
+
+.icon-arrow-down-4,
+.icon-arrow-down-white,.yts__cta:after,.banner__yts--alt .is-mouseover .yts__cta:after,.comp-bg-red .nav-row-selectbox,.comp-bg-red .nav-row-container__arrow,.comp-bg-gold .nav-row-selectbox,.comp-bg-gold .nav-row-container__arrow,.is-elevate-member-red .nav-row-selectbox,.is-elevate-member-red .nav-row-container__arrow,.is-elevate-member-gold .nav-row-selectbox,.is-elevate-member-gold .nav-row-container__arrow { background-image: url(png/arrow-down-4.png); background-repeat: no-repeat; }
+
+.icon-arrow-down-5,
+.icon-arrow-down-light-grey,.is-disabled.trip-select:after,.is-disabled.trip-select:hover:after,.bg-dark .select.custom-select:after,.selector-selectbox { background-image: url(png/arrow-down-5.png); background-repeat: no-repeat; }
+
+.icon-arrow-down-6,
+.icon-arrow-down-purple-dark,.footer-nav__select:after,.tab-select.custom-select:after,.promotion__header > h1 > a:after,.select--avatar.custom-selectFocus > a:after,.manage-trips__header > a:after,.purple span.customSelect.header-selector-selectbox,.nav-drop-down-container-purple span.customSelect.nav-drop-down-selectbox { background-image: url(png/arrow-down-6.png); background-repeat: no-repeat; }
+
+.icon-arrow-down-7,
+.icon-arrow-down-red-purple,.promotion__header--entertainment > h1 > a:after { background-image: url(png/arrow-down-7.png); background-repeat: no-repeat; }
+
+.icon-arrow-down-8,
+.icon-arrow-down-reddish,.promotion__header--food > h1 > a:after { background-image: url(png/arrow-down-8.png); background-repeat: no-repeat; }
+
+.icon-arrow-down,
+.booker__trip-origin > a:after,.trip-select:after,.city-list__title--all-cities:after { background-image: url(png/arrow-down.png); background-repeat: no-repeat; }
+
+.icon-arrow-left-1 { background-image: url(png/arrow-left-1.png); background-repeat: no-repeat; }
+
+.icon-arrow-left { background-image: url(png/arrow-left.png); background-repeat: no-repeat; }
+
+.icon-arrow-right-long-1,
+.arrow-right-long-black { background-image: url(png/arrow-right-long-1.png); background-repeat: no-repeat; }
+
+.icon-arrow-right-long-2,
+.arrow-right-long-grey,.flight-details__flight-info--dep:after,.flight-dur__time:after { background-image: url(png/arrow-right-long-2.png); background-repeat: no-repeat; }
+
+.icon-arrow-right-long,
+.bp-medium .yts-trip--med__arr { background-image: url(png/arrow-right-long.png); background-repeat: no-repeat; }
+
+.icon-arrow-right-short-purple-1 { background-image: url(png/arrow-right-short-purple-1.png); background-repeat: no-repeat; }
+
+.icon-arrow-right-short-purple { background-image: url(png/arrow-right-short-purple.png); background-repeat: no-repeat; }
+
+.icon-arrow-right-short-1,
+.icon-arrow-right-short-grey,.bp-large .banner__yts--alt .yts-trip__middle.is-arr,.banner__yts--alt .icon-arrow-right-short { background-image: url(png/arrow-right-short-1.png); background-repeat: no-repeat; }
+
+.icon-arrow-right-short-2,
+.icon-arrow-right-short-purple,td.fromto.is-arr { background-image: url(png/arrow-right-short-2.png); background-repeat: no-repeat; }
+
+.icon-arrow-right-short,
+.icon-arrow-right-short-white,.bp-large .yts-trip__middle.is-arr { background-image: url(png/arrow-right-short.png); background-repeat: no-repeat; }
+
+.icon-arrow-up-1,
+.icon-arrow-up-black,.is-expanded .nav-row-container__arrow { background-image: url(png/arrow-up-1.png); background-repeat: no-repeat; }
+
+.icon-arrow-up-2,
+.icon-arrow-up-red { background-image: url(png/arrow-up-2.png); background-repeat: no-repeat; }
+
+.icon-arrow-up-3,
+.icon-arrow-up-purple { background-image: url(png/arrow-up-3.png); background-repeat: no-repeat; }
+
+.icon-arrow-up-4,
+.icon-arrow-up-white,.comp-bg-red .is-expanded .nav-row-selectbox,.comp-bg-red .is-expanded .nav-row-container__arrow,.comp-bg-gold .is-expanded .nav-row-selectbox,.comp-bg-gold .is-expanded .nav-row-container__arrow,.is-elevate-member-red .is-expanded .nav-row-selectbox,.is-elevate-member-red .is-expanded .nav-row-container__arrow,.is-elevate-member-gold .is-expanded .nav-row-selectbox,.is-elevate-member-gold .is-expanded .nav-row-container__arrow { background-image: url(png/arrow-up-4.png); background-repeat: no-repeat; }
+
+.icon-arrow-up-5,
+.icon-arrow-up-red-purple,.promotion__header--entertainment > h1 > a.is-active:after { background-image: url(png/arrow-up-5.png); background-repeat: no-repeat; }
+
+.icon-arrow-up-6,
+.icon-arrow-up-reddish,.promotion__header--food > h1 > a.is-active:after,.promotion__header > h1 > a.is-active:after,.is-expanded .manage-trips__header > a:after { background-image: url(png/arrow-up-6.png); background-repeat: no-repeat; }
+
+.icon-arrow-up-7 { background-image: url(png/arrow-up-7.png); background-repeat: no-repeat; }
+
+.icon-arrow-up-8 { background-image: url(png/arrow-up-8.png); background-repeat: no-repeat; }
+
+.icon-arrow-up { background-image: url(png/arrow-up.png); background-repeat: no-repeat; }
+
+.icon-avatar-A1-rect { background-image: url(png/avatar-A1-rect.png); background-repeat: no-repeat; }
+
+.icon-avatar-A1-sm { background-image: url(png/avatar-A1-sm.png); background-repeat: no-repeat; }
+
+.icon-avatar-A2-rect { background-image: url(png/avatar-A2-rect.png); background-repeat: no-repeat; }
+
+.icon-avatar-A2-sm { background-image: url(png/avatar-A2-sm.png); background-repeat: no-repeat; }
+
+.icon-avatar-A3-rect { background-image: url(png/avatar-A3-rect.png); background-repeat: no-repeat; }
+
+.icon-avatar-A3-sm { background-image: url(png/avatar-A3-sm.png); background-repeat: no-repeat; }
+
+.icon-avatar-A4-rect { background-image: url(png/avatar-A4-rect.png); background-repeat: no-repeat; }
+
+.icon-avatar-A4-sm { background-image: url(png/avatar-A4-sm.png); background-repeat: no-repeat; }
+
+.icon-avatar-B1-rect { background-image: url(png/avatar-B1-rect.png); background-repeat: no-repeat; }
+
+.icon-avatar-B1-sm { background-image: url(png/avatar-B1-sm.png); background-repeat: no-repeat; }
+
+.icon-avatar-B2-rect { background-image: url(png/avatar-B2-rect.png); background-repeat: no-repeat; }
+
+.icon-avatar-B2-sm { background-image: url(png/avatar-B2-sm.png); background-repeat: no-repeat; }
+
+.icon-avatar-B3-rect { background-image: url(png/avatar-B3-rect.png); background-repeat: no-repeat; }
+
+.icon-avatar-B3-sm { background-image: url(png/avatar-B3-sm.png); background-repeat: no-repeat; }
+
+.icon-avatar-B4-rect { background-image: url(png/avatar-B4-rect.png); background-repeat: no-repeat; }
+
+.icon-avatar-B4-sm { background-image: url(png/avatar-B4-sm.png); background-repeat: no-repeat; }
+
+.icon-avatar-B5-rect { background-image: url(png/avatar-B5-rect.png); background-repeat: no-repeat; }
+
+.icon-avatar-B5-sm { background-image: url(png/avatar-B5-sm.png); background-repeat: no-repeat; }
+
+.icon-avatar-B6-rect { background-image: url(png/avatar-B6-rect.png); background-repeat: no-repeat; }
+
+.icon-avatar-B6-sm { background-image: url(png/avatar-B6-sm.png); background-repeat: no-repeat; }
+
+.icon-avatar-B7-rect { background-image: url(png/avatar-B7-rect.png); background-repeat: no-repeat; }
+
+.icon-avatar-B7-sm { background-image: url(png/avatar-B7-sm.png); background-repeat: no-repeat; }
+
+.icon-avatar-B8-rect { background-image: url(png/avatar-B8-rect.png); background-repeat: no-repeat; }
+
+.icon-avatar-B8-sm { background-image: url(png/avatar-B8-sm.png); background-repeat: no-repeat; }
+
+.icon-avatar-C1-rect { background-image: url(png/avatar-C1-rect.png); background-repeat: no-repeat; }
+
+.icon-avatar-C2-rect { background-image: url(png/avatar-C2-rect.png); background-repeat: no-repeat; }
+
+.icon-avatar-C3-rect { background-image: url(png/avatar-C3-rect.png); background-repeat: no-repeat; }
+
+.icon-avatar-C4-rect { background-image: url(png/avatar-C4-rect.png); background-repeat: no-repeat; }
+
+.icon-blank-card { background-image: url(png/blank-card.png); background-repeat: no-repeat; }
+
+.icon-calendar,
+.icon-calendar-purple,.flight-summary-cities__date a:after { background-image: url(png/calendar.png); background-repeat: no-repeat; }
+
+.icon-check-1,
+.check-purple,.checklist > li,.is-selected .option-box__price:after { background-image: url(png/check-1.png); background-repeat: no-repeat; }
+
+.icon-check-2,
+.check-purple-check-in,.option__info-list > li:before { background-image: url(png/check-2.png); background-repeat: no-repeat; }
+
+.icon-check-3,
+.check-grey-check-in,.is-unavailable .option__info-list > li:before { background-image: url(png/check-3.png); background-repeat: no-repeat; }
+
+.icon-check-4,
+.check-white,.is-selected .option-box__price:after { background-image: url(png/check-4.png); background-repeat: no-repeat; }
+
+.icon-check,
+.check-valid-green,.is-departing .day__date { background-image: url(png/check.png); background-repeat: no-repeat; }
+
+.icon-close-light { background-image: url(png/close-light.png); background-repeat: no-repeat; }
+
+.icon-close-1,
+.close-white,.bg-dark .modal__close,.change-status-header .btn-cancel:after { background-image: url(png/close-1.png); background-repeat: no-repeat; }
+
+.icon-close-2,
+.modal__close,.bg-dark .modal__close:hover { background-image: url(png/close-2.png); background-repeat: no-repeat; }
+
+.icon-close-3,
+.icon-close-x-light-purple,.yts__cta--expanded:after { background-image: url(png/close-3.png); background-repeat: no-repeat; }
+
+.icon-close,
+.booker__close-overlay:after,.status-bar__close { background-image: url(png/close.png); background-repeat: no-repeat; }
+
+.icon-close,
+.booker__close-overlay:after,.status-bar__close { background-image: url(png/close.png); background-repeat: no-repeat; }
+
+.icon-discover { background-image: url(png/discover.png); background-repeat: no-repeat; }
+
+.icon-elevate-small { background-image: url(png/elevate-small.png); background-repeat: no-repeat; }
+
+.icon-master { background-image: url(png/master.png); background-repeat: no-repeat; }
+
+.icon-minus { background-image: url(png/minus.png); background-repeat: no-repeat; }
+
+.icon-nav-toggle { background-image: url(png/nav-toggle.png); background-repeat: no-repeat; }
+
+.icon-plus { background-image: url(png/plus.png); background-repeat: no-repeat; }
+
+.icon-print { background-image: url(png/print.png); background-repeat: no-repeat; }
+
+.icon-round-trip-1,
+.icon-round-trip-purple { background-image: url(png/round-trip-1.png); background-repeat: no-repeat; }
+
+.icon-round-trip,
+.icon-round-trip-white,.bp-medium .yts-trip--med__arr.is-round-trip { background-image: url(png/round-trip.png); background-repeat: no-repeat; }
+
+.icon-travelbank { background-image: url(png/travelbank.png); background-repeat: no-repeat; }
+
+.icon-uatp { background-image: url(png/uatp.png); background-repeat: no-repeat; }
+
+.icon-virgin,
+.icon-va-card { background-image: url(png/virgin.png); background-repeat: no-repeat; }
+
+.icon-visa { background-image: url(png/visa.png); background-repeat: no-repeat; }
+
+.icon-vx-simplified-color-black,
+.banner__yts--expanded .yts__logo > a,.banner__yts--alt .yts__logo > a,.header__print-only > h1 { background-image: url(png/vx-simplified-color-black.png); background-repeat: no-repeat; }
+
+.icon-vx-simplified-color,
+.bp-large .is-nav-expanded-active .navbar__logo > a,.banner__yts--alt .is-mouseover .yts__logo > a,.navbar__logo > a,.header__mobile > h1 { background-image: url(png/vx-simplified-color.png); background-repeat: no-repeat; }
+
+.icon-vx-simplified-mono-1 { background-image: url(png/vx-simplified-mono-1.png); background-repeat: no-repeat; }
+
+.icon-vx-simplified-mono,
+.is-nav-expanded-active .navbar__logo > a,.is-nav-elevate-active .navbar__logo > a { background-image: url(png/vx-simplified-mono.png); background-repeat: no-repeat; }
+
+.icon-vx-simplified-mono,
+.is-nav-expanded-active .navbar__logo > a,.is-nav-elevate-active .navbar__logo > a { background-image: url(png/vx-simplified-mono.png); background-repeat: no-repeat; }

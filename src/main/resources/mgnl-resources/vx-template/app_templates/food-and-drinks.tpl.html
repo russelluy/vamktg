@@ -1,0 +1,87 @@
+<div ng-controller="FoodAndDrinkCtrl">
+    <header class="promotion-select" ng-switch="success.breakpoint">
+        <div ng-switch-when="small">
+            <select class="tab-select--food"
+                data-vx-common-custom-select
+                ng-model="food.category"
+                ng-options="cat.id as cat.categoryName for cat in accordion.content"
+                ng-change="food.changeCategory(food.category)">
+            </select>
+        </div>
+        <ul class="tab-list cf" ng-switch-default>
+            <li class="tab-list__item" ng-class="{'is-selected': cat.id === food.category}" ng-repeat="cat in accordion.content">
+                <a href="#" data-vx-common-prevent-default ng-click="food.changeCategory($index); food.category = $index">{{cat.categoryName}}</a>
+            </li>
+        </ul>
+    </header>
+    <div class="promotion-selection" ng-switch="food.template">
+        <div class="promotion-selection__promotion-food" ng-switch-default>
+            <ul class="promotion-food__list--columns-3 cf">
+                <li class="food-item cf" ng-repeat="food in food.longHaul">
+                    <div class="food-item__img">
+                        <img out="{{food.image}}" alt="{{food.title}}" vx-global-image small="39" medium="60" large="80"/>
+                    </div>
+                    <div class="food-item__main">
+                        <h2 vx-bind-html-unsafe="food.title"></h2>
+                        <p vx-bind-html-unsafe="food.text"></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="promotion-selection__promotion-food" ng-switch-when="meals">
+            <div class="promotion-food--long-haul">
+                <div class="promotion-food__heading">Offered on flights over 2 hours:</div>
+                <ul class="promotion-food__list--columns-2 cf">
+                    <li class="food-item cf" ng-repeat="food in food.allFlights">
+                        <div class="food-item__img">
+                            <img out="{{food.image}}" alt="{{food.title}}" vx-global-image small="39" medium="60" large="80"/>
+                        </div>
+                        <div class="food-item__main">
+                            <h2 vx-bind-html-unsafe="food.title"></h2>
+                            <p vx-bind-html-unsafe="food.text"></p>
+                        </div>
+                    </li>
+                    <li class="food-item--smallprint">
+                        <div>*Selections may vary by route and time of flight. Available for purchase in Main Cabin.</div>
+                        <div>**Available on flights from Mexico.</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="promotion-food--all-flights">
+                <div class="promotion-food__heading">Offered on all flights:</div>
+                <ul class="promotion-food__list">
+                    <li class="food-item cf" ng-repeat="food in food.longHaul">
+                        <div class="food-item__img">
+                            <img out="{{food.image}}" alt="{{food.title}}" vx-global-image small="39" medium="60" large="80"/>
+                        </div>
+                        <div class="food-item__main">
+                            <h2 vx-bind-html-unsafe="food.title"></h2>
+                            <p vx-bind-html-unsafe="food.text"></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="promotion-selection__promotion-food" ng-switch-when="drinks">
+            <ul class="promotion-food__list--columns-3 cf">
+                <li class="food-item cf" ng-repeat="food in food.longHaul">
+                    <h3 class="food-item__list-title" vx-bind-html-unsafe="food.title"></h3>
+                    <ul class="food-item__list">
+                        <li ng-repeat="item in food.list"><span vx-bind-html-unsafe="item.item"></span></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="promotion-selection__promotion-food" ng-switch-when="first-class">
+            <div class="promotion-food__first-class">Selection of First Class meals varies on each flight:</div>
+            <ul class="promotion-food__list--columns-3 cf">
+                <li class="food-item cf" ng-repeat="food in food.longHaul">
+                    <h3 class="food-item__list-title" vx-bind-html-unsafe="food.title"></h3>
+                    <ul class="food-item__list">
+                        <li ng-repeat="item in food.list"><span vx-bind-html-unsafe="item.item"></span></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

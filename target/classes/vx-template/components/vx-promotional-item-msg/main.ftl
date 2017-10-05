@@ -1,0 +1,3 @@
+<img id="img" alt="${cmsfn.contentById( content.image?replace("jcr:", "") ,'dam').caption!}" src="${cmsfn.link("dam", content.image?replace("jcr:", "")! )}"/><br/>
+<iframe src="${cmsfn.link("dam", content.iframe?replace("jcr:", "")! )}" style="width:400px; height:400px; border: none; background: transparent; margin:0 2em 2em 0;"></iframe><br/>
+<a href="${content.link}" target="_blank">${content.linkText!}</a>

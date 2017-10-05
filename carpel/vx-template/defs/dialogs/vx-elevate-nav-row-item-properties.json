@@ -1,0 +1,18 @@
+{
+  "title": "Elevate Navigation Row Properties",
+  "tabs": {
+    "tabMain": {
+      "variant": {
+        "label": "Variant",
+        "type": "SELECT_FIELD",
+        "options": {
+          "red": "Red",
+          "white": "White",
+          "gold": "Gold",
+          "silver": "Silver"
+        },
+        "default": "red"
+      }
+    }
+  }
+}

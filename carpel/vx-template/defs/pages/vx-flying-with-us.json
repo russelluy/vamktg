@@ -1,0 +1,14 @@
+{
+  "title": "[VX] Flying With Us",
+  "extends": "/modules/standard-templating-kit/templates/pages/stkArticle",
+  "dialog": "vxPageProperties",
+  "category": "content",
+  "areas": { 
+    "flyingWithUsItem": {
+      "type": "single",
+      "components": [
+        "vxFlyingWithUsItemMsg"
+      ]
+    }
+  }
+}

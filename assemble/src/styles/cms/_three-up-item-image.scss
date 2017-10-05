@@ -1,0 +1,86 @@
+/* ==========================================================================
+COMPONENT - ThreeUpItem - Image
+========================================================================== */
+.three-up-item-image{
+
+	@include ThreeUpItem;
+	height: 380px;
+	.image {
+		max-width:264px;
+		@include at-medium {
+			max-width: 228px;
+		}
+
+		@include at-large {
+			max-width: 380px;
+		}
+
+		//max-height:148px;
+		margin: 0 auto 20px auto;
+	}
+
+	.caption{
+		@include gotham-medium;
+		@include font-size (1.2);
+		@include line-height (1.7);
+		margin-bottom: 20px;
+		a,
+		a:hover{
+			background: initial;
+			border: initial;
+			color: initial;
+			display: initial;
+			font: initial;
+			height: initial;
+			letter-spacing: initial;
+			line-height: initial;
+			text-transform: initial;
+			visibility: initial;
+			width: initial;
+			word-spacing: initial;
+			z-index: initial;
+			text-align: initial;
+			text-decoration: underline;
+			text-transform: initial;
+			cursor: initial;
+			padding: initial;
+			max-width: initial;
+			min-width: initial;
+			margin: initial;
+			@include gotham-medium;
+			@include font-size (1.2);
+			@include line-height (1.8);
+		}
+	}
+	@include at-medium {
+		height: 360px;
+		.caption {
+			@include gotham-medium;
+			@include font-size (1.4);
+			@include line-height (1.7);
+
+			a,
+			a:hover {
+				@include gotham-medium;
+				@include font-size (1.4);
+				@include line-height (1.7);
+			}
+		}
+ 	}
+	@include at-large {
+		height: 526px;
+
+		.caption{
+			@include gotham-medium;
+			@include font-size (1.6);
+			@include line-height (2.3);
+
+			a,
+			a:hover {
+				@include gotham-medium;
+				@include font-size (1.6);
+				@include line-height (2.3);
+			}
+		}
+	}
+}

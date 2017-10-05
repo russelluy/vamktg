@@ -1,0 +1,247 @@
+ /* ==========================================================================
+   COMPONENT - TwoUp
+   ========================================================================== */
+.two-up{
+	@include component;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	max-height: 320px;
+	min-height: 320px;
+	.heading{
+		text-transform: none;
+	}
+	
+	.subheading{
+		a, a:hover{
+			background: initial;
+			border: initial;
+			color: initial;
+			display: initial;
+			font: initial;
+			height: initial;
+			letter-spacing: initial;
+			line-height: initial;
+			text-transform: initial;
+			visibility: initial;
+			width: initial;
+			word-spacing: initial;
+			z-index: initial;
+			text-align: initial;
+			text-decoration: underline;
+			text-transform: initial;
+			cursor: initial;
+			padding: initial;
+			max-width: initial;
+			min-width: initial;
+			margin: initial;
+			font-size: 1.3rem;
+		}
+	}
+	.wrap{
+		@include container;
+		@include clearfix;
+		.container{
+			.col{
+				width: 100%;
+			}
+			.col-text{
+				@include ThreeUpItem;
+				height: 320px;
+			}
+			.col-image{
+				display:none;
+				img{
+					max-width: 352px;
+					padding-bottom: 1px;
+					padding-top: 1px;
+					@include at-medium {
+						max-width: 352px;
+					}
+					@include at-large {
+						max-width: 580px;
+					}
+				}
+			}
+		}
+	}
+	&.comp-bg-xxlightgrey{
+
+		border: none !important;
+	}
+	&.comp-bg-white{
+
+		&.border-top{
+
+			@include border-top;
+		}
+
+		&.border-bottom{
+
+			@include border-bottom;
+		}
+	}
+	@include at-medium {
+
+		$grid-padding: 0px;
+		.heading{
+			@include font-size(3);
+			@include line-height(3.2);
+		}
+		.subheading{
+			@include font-size(1.2);
+			@include line-height(1.7);
+		}
+		.wrap{
+			.container{
+				.col{
+					//max-height: 256px;
+				}
+				.col-text{
+					@include ThreeUpItem;
+
+					width: 49.999%;
+					min-height: 256px;
+				}
+				.col-image{
+					width: 49.999%;
+					display:block;
+					overflow: hidden;
+
+					img{
+						/* corrects small inline gap at bottom of containing div */
+						display: block;
+						width: 100%; /* corrects obscure Firefox bug */
+						//max-width: 100%;
+						/* just in case, to force correct aspect ratio */
+						height: auto !important;
+						display: block; /* corrects small inline gap at bottom of containing div */
+						width: 100%; /* corrects obscure Firefox bug */
+						//max-width: 100%;
+						/* just in case, to force correct aspect ratio */
+						height: auto !important;
+						/*width: auto\9;
+						/* ie8+9 - use modernizr instead of this \9 hack */
+						/* lt ie8 */
+						-ms-interpolation-mode: bicubic;
+						 width: 100%;
+					 	 height: auto;
+					}
+				}
+			}
+		}
+		&.left{
+			.wrap{
+				.container{
+					.col-text{
+						float: left;
+					}
+					.col-image{
+						float: right;
+
+						img{
+							margin: 0 auto;
+						}
+					}
+				}
+			}
+		}
+		&.right{
+			.wrap{
+				.container{
+					.col-text{
+						float: right;
+					}
+					.col-image{
+						float: left;
+
+						img{
+							margin: 0 auto;
+						}
+					}
+				}
+			}
+		}
+	}
+	@include at-large {
+		max-height: 400px;
+		min-height: 400px;
+		$grid-padding: 0px;
+		.heading{
+			@include font-size(3);
+			@include line-height(3.2);
+		}
+		.subheading{
+			@include font-size(1.2);
+			@include line-height(1.7);
+		}
+		.wrap{
+			.container{
+				.col{			
+					max-width: 686px;
+					max-height: 400px;
+					min-height: 400px;
+				}
+				.col-text{
+					@include ThreeUpItem;
+					width: 49.999%;
+				}
+				.col-image{
+					width: 49.999%;
+					overflow: hidden;
+
+					img{
+						/* corrects small inline gap at bottom of containing div */
+						display: block;
+						width: 100%; /* corrects obscure Firefox bug */
+						//max-width: 100%;
+						/* just in case, to force correct aspect ratio */
+						height: auto !important;
+						display: block; /* corrects small inline gap at bottom of containing div */
+						width: 100%; /* corrects obscure Firefox bug */
+						//max-width: 100%;
+						/* just in case, to force correct aspect ratio */
+						height: auto !important;
+						/*width: auto\9;
+						/* ie8+9 - use modernizr instead of this \9 hack */
+						/* lt ie8 */
+						-ms-interpolation-mode: bicubic;
+						max-height: 400px; 
+					 	width:auto;
+					}
+				}
+			}
+		}
+		&.left{
+			.wrap{
+				.container{
+					.col-text{
+						float: left;
+					}
+					.col-image{
+						float: right;
+
+						img{
+							float: left;
+						}
+					}
+				}
+			}
+		}
+		&.right{
+			.wrap{
+				.container{
+					.col-text{
+						float: right;
+					}
+					.col-image{
+						float: left;
+
+						img{
+							float: right;
+						}
+					}
+				}
+			}
+		}
+	}
+}

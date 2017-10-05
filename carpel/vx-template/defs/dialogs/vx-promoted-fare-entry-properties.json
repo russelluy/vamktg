@@ -1,0 +1,19 @@
+{
+  "title": "Promoted Fare Entry",
+  
+  "tabs": {
+    "entry": {
+
+      "destinationAirport": { 
+        "label": "Destination Airport",
+        "type": "TEXT_FIELD"
+      },
+
+      "name": { 
+        "label": "Fare",
+        "type": "TEXT_FIELD"
+      }
+      
+    }
+  }
+}

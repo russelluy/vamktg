@@ -1,0 +1,33 @@
+{
+  	"title": "[VX] Three Up",
+  	"dialog": "vxThreeUpItemProperties",
+	"areas": { 
+		"itemLeft": {
+			"type": "single",
+			"components": [
+				"vxThreeUpItemIconItemMsg",
+				"vxThreeUpItemImageItemMsg",
+				"vxThreeUpItemNobodyItemMsg",
+				"vxThreeUpItemNoimageItemMsg"
+			]
+		},
+			"itemCenter": {
+			"type": "single",
+			"components": [
+				"vxThreeUpItemIconItemMsg",
+				"vxThreeUpItemImageItemMsg",
+				"vxThreeUpItemNobodyItemMsg",
+				"vxThreeUpItemNoimageItemMsg"
+			]
+		},
+			"itemRight": {
+			"type": "single",
+			"components": [
+				"vxThreeUpItemIconItemMsg",
+				"vxThreeUpItemImageItemMsg",
+				"vxThreeUpItemNobodyItemMsg",
+				"vxThreeUpItemNoimageItemMsg"
+			]
+		}
+	}
+}

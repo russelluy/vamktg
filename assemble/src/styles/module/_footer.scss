@@ -1,0 +1,131 @@
+footer[role="contentinfo"] {
+  @include clearfix;
+  background: $extra-light-grey;
+  @include arial;
+  min-width: 320px;
+  padding-bottom: 20px;
+  @include single-transition (background-color, 500ms, ease-in-out);
+
+  .bg-dark & {
+    background: $dark-bg;
+
+    a {
+      color: $white;
+    }
+  }
+
+  .is-footer-hidden & {
+    display: none;
+  }
+
+  .is-chrome-hidden & {
+    display: none;
+  }
+}
+
+.footer-wrap {
+  padding: 24px 0 32px;
+
+  @include at-medium {
+    padding: 50px 0;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  .bg-dark & {
+    @include double-border-top($check-in-border-grey);
+  }
+}
+
+.footer-copy {
+  color: $medium-grey;
+  @include font-size(1.1);
+  line-height: 24px;
+}
+
+.footer-nav {
+  margin-bottom: 24px;
+
+  @include at-medium {
+    margin-bottom: 21px;
+  }
+}
+
+.footer-nav__list-wrap {
+  @include span-columns(3, 12);
+  @include nth-omega('4n+4');
+  float: left;
+
+  > ul {
+    @include reset-list;
+  }
+}
+
+.footer-nav__list {
+  @include reset-list;
+  @include span-columns(3, 6);
+  @include nth-omega(2n);
+  float: left;
+  padding-bottom: 14px;
+
+  @include at-large {
+    @include span-columns(2, 12);
+    @include remove-nth-omega(2n);
+    @include nth-omega('6n+6');
+  }
+}
+
+.footer-nav__item {
+  padding-bottom: 10px;
+  @include font-size(1.4);
+  line-height: 14px;
+
+  @include at-medium {
+    @include font-size(1.1);
+    line-height: 11px;
+  }
+
+  > a {
+    color: #000;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer-nav__select {
+  clear: both;
+  pointer-events: none;
+  position: relative;
+
+  &:after {
+    background-position: 0 0;
+    content: '';
+    height: 10px;
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    width: 15px;
+  }
+
+  > a {
+    border: 1px solid $border-grey;
+    border-radius: 0;
+    color: $black;
+    display: block;
+    @include font-size(1.4);
+    height: 36px;
+    line-height: 34px;
+    padding: 0 10px;
+    pointer-events: all;
+    width: 100%;
+
+    &:hover {
+      border-color: $purple;
+    }
+  }
+}

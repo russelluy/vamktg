@@ -1,0 +1,15 @@
+{
+  "title": "Masthead Properties",
+  "tabs": {
+    "tabMain": {
+      "image": { 
+        "targetWorkspace": "dam",
+        "appName": "assets",
+        "identifierToPathConverter": "info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter",
+        "contentPreviewDefinition": "",
+        "label": "Background Image <small>(3000px)</small>",
+        "type": "IMAGE"
+      }
+    }
+  }
+}

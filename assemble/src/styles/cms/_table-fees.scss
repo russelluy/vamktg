@@ -1,0 +1,28 @@
+/* ==========================================================================
+COMPONENT - TableFees
+========================================================================== */
+.table-fees{
+
+	@include wrap;
+	@include component;
+
+	.container{
+		@include overflow-scrolling;
+	}
+	table{
+		@include table;
+    	min-width: 1000px;
+		.first{
+    		width: 30%;
+    	}
+    	.second,
+    	.third,
+    	.fourth,
+      .fifth,
+      .sixth,
+      .seventh
+    	{
+			width: 11.666%;
+		}
+	}
+}

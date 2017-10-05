@@ -1,0 +1,36 @@
+<sv:node sv:name='virtualURIMapping' xmlns:sv='http://www.jcp.org/jcr/sv/1.0' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+  <sv:property sv:multiple='true' sv:name='jcr:mixinTypes' sv:type='Name'>
+    <sv:value>mix:lockable</sv:value>
+  </sv:property>
+  <sv:property sv:name='jcr:primaryType' sv:type='Name'>
+    <sv:value>mgnl:content</sv:value>
+  </sv:property>
+  <sv:node sv:name='vxExampleWithregexp'>
+    <sv:property sv:name='fromURI' sv:type='String'>
+      <sv:value>/contentFeeds/([a-zA-Z0-9]*)/([a-zA-Z0-9]*)/(.*)</sv:value>
+    </sv:property>
+    <sv:property sv:name='toURI' sv:type='String'>
+      <sv:value>redirect:/rss/?generatorName=templateContent&amp;amp;category=$1&amp;amp;subCategory=$2&amp;amp;siteRoot=/$3</sv:value>
+    </sv:property>
+    <sv:property sv:name='class' sv:type='String'>
+      <sv:value>info.magnolia.cms.beans.config.RegexpVirtualURIMapping</sv:value>
+    </sv:property>
+    <sv:property sv:name='jcr:primaryType' sv:type='Name'>
+      <sv:value>mgnl:contentNode</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name='vxSuperTest'>
+    <sv:property sv:name='fromURI' sv:type='String'>
+      <sv:value>/testing</sv:value>
+    </sv:property>
+    <sv:property sv:name='toURI' sv:type='String'>
+      <sv:value>forward:/flight_info/foodDrinks/meals/meal_0001</sv:value>
+    </sv:property>
+    <sv:property sv:name='class' sv:type='String'>
+      <sv:value>info.magnolia.cms.beans.config.DefaultVirtualURIMapping</sv:value>
+    </sv:property>
+    <sv:property sv:name='jcr:primaryType' sv:type='Name'>
+      <sv:value>mgnl:contentNode</sv:value>
+    </sv:property>
+  </sv:node>
+</sv:node>

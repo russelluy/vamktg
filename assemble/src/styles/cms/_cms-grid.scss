@@ -1,0 +1,31 @@
+$max-width: 1200px;
+
+/* Container
+   ========================================================================== */
+
+.wrap {
+  @include container;
+  padding-left: 10px;
+  padding-right: 10px;
+  @include at-medium {
+  }
+  @include at-large {
+    //max-width: 1292px; // max-width of content is 1292-(22*2) = 1248px
+    max-width: 1200px;
+  }
+
+}
+
+@mixin wrap{
+  @include container;
+
+  @include at-medium {
+    @include container;
+  }
+
+  @include at-large {
+    //max-width: 1292px; // max-width of content is 1292-(22*2) = 1248px
+    max-width: 1200px;
+    @include container;
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "title": "Fares Table Properties",
+  "tabs": {
+    "tabMain": {
+      "variant": {
+        "label": "Variant",
+        "type": "SELECT_FIELD",
+        "options": {
+          "one": "Destination Only",
+          "both": "Both"
+        },
+        "default": "one"
+      },
+      "placement": {
+        "label": "Placement",
+        "type": "TEXT_FIELD",
+        "required": "true"
+      },
+      "airport": {
+        "label": "Airport",
+        "type": "TEXT_FIELD",
+        "required": "true",
+        "default": "ALL"
+      }
+    }
+  }
+}

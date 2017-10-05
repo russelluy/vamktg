@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module SYSTEM "module.dtd" >
+<module>
+  <name>vx-template</name>
+  <displayName>${project.name}</displayName>
+  <description>${project.description}</description>
+  <class>com.virginamerica.VXTemplate</class>
+  <versionHandler>com.virginamerica.setup.VXTemplateVersionHandler</versionHandler>
+  <version>${project.version}</version>
+
+  <dependencies>
+    <dependency>
+      <name>core</name>
+      <version>5.1.1/*</version>
+    </dependency>
+    <dependency>
+      <name>inplace-templating</name>
+      <version>2.1.1/*</version>
+    </dependency>
+  </dependencies>
+</module>

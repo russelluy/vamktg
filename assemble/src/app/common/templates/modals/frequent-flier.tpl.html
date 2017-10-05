@@ -1,0 +1,18 @@
+<div class="form__input--border-spacer" ng-show="travelers.length > 0">
+    <select name="choose-traveler" class="select select--block" vx-common-custom-select ng-model="currentTraveler" ng-options="currentTraveler.name for ($index, currentTraveler) in travelers" ng-change="frequentFlier.changeTraveler(currentTraveler)"></select>
+</div>
+
+<!--div ng-repeat="traveler in travelers" ng-show="currentTraveler.name === traveler.name"-->
+    <form method="POST" class="frequent-flier" data-vx-form-handler data-fields="frequentFlier.fields" data-submit-message="Save" data-submit-error-message="Fill the form to proceed" data-on-success="frequentFlier.save()" novalidate>
+        <div class="form__input">
+            <div data-vx-form-select data-select-class="select select--block" data-select-name="ffname" data-select-title="Frequent Flier Program" data-select-options="programs" data-validate="required"></div>
+        </div>
+
+        <input data-vx-form-input type="text" name="ffn" placeholder="Frequent Flyer #" data-validate="required" autocorrect="off" pattern="\d*" />
+
+        <div ng-switch="frequentFlier.ninjaMode">
+            <button data-vx-form-submit data-alt-classes="btn-check-in-primary" ng-switch-when="true" />
+            <button data-vx-form-submit ng-switch-default />
+        </div>
+    </form>
+<!--/div-->

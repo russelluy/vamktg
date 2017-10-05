@@ -1,0 +1,13 @@
+<div class="promotion-selection">
+<ul class="promotion-list cf">
+    <li class="promotion-flying cf" ng-repeat="promo in accordion.content">
+        <div class="promotion-flying__img">
+            <img out="{{promo.image}}" alt="{{promo.title}}" vx-global-image small="39" medium="60" large="80"/>
+        </div>
+        <div class="promotion-flying__main">
+            <h2 vx-bind-html-unsafe="promo.title"></h2>
+            <p><span vx-bind-html-unsafe="promo.text"></span><a href="{{promo.link}}" ng-show="promo.link">{{promo.linkText}}</a></p>
+        </div>
+    </li>
+</ul>
+</div>

@@ -1,0 +1,91 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+
+
+/* Global Values
+   ========================================================================== */
+$offcanvas-width:           250px;
+
+
+/* Colors
+   ========================================================================== */
+
+$black:                     #000;
+$white:                     #FFF;
+$off-white:                 #F0F0F0;
+$extra-light-grey:          #EBEBEB;
+$border-grey:               #D6D5D4;
+$light-grey:                #CCC;
+$middling-grey:             #A0A0A0;
+$extra-dark-grey:           #333;
+$dark-grey:                 #666;
+$medium-grey:               #999;
+
+$blue:                      #009CDF;
+$red:                       #D52341;
+$red-bright:                #DC232E;
+$red-dark:                  #670000;
+$red-nav:                   #DF1A2D;
+$reddish:                   #D1234E;
+$red-purple:                #BB2381;
+$red-argh:                  #9A1820;
+$red-fml:                   #80141C;
+$gradient-mid:              #B5238A;
+$purple:                    #7B4397;
+$purple-turbo:              #AA1CE0;
+$purple-light:              #EDDDF5;
+$purple-medium:             #A977C1;
+$purple-dark:               #55266C;
+$purple-x-dark:             #421353;
+$purple-x-light:            #A973C4;
+$purple-hover:              #9D27D9;
+$pink:                      #B70D8A;
+$pink-light:                #FFBFBF;
+$sky-blue:                  #019CDF;
+$dark-blue:                 #006699;
+$valid-green:               #33CC00;
+$invalid-red:               #FF3333;
+
+$check-in-border-grey:      #484949;
+$check-in-purple:           #BA008A;
+$check-in-pink:             #FF00BD;
+
+$elevate-red:               #DC2430;
+$elevate-gold:              #DFAD58;
+$elevate-silver:            #D4D4D4;
+
+// Backgrounds
+$dark-bg:                   #252A2D;
+
+// Multi-City legs
+$mc-leg-1: $purple;
+$mc-leg-1-hover: $purple-turbo;
+$mc-leg-2: $red;
+$mc-leg-2-hover: $red;
+
+
+/* z-index
+   ========================================================================== */
+$header-z-index:            2000;
+$modal-z-index:             5000;
+$travel-advisory-z-index:   3000;
+$status-bar-z-index:        1000;
+$stickybar-z-index:         1000;
+
+
+/* Scaffolding
+   ========================================================================== */
+
+$body-bg:                   $white;
+$text-color:                $black;
+
+$font-family-sans-serif:    'Gotham SSm 4r', 'Gotham SSm A', 'Gotham SSm B', Arial, sans-serif;
+$font-family-serif:         Georgia, 'Times New Roman', Times, serif;
+$font-family-base:          $font-family-sans-serif;
+
+$font-size-base:            12px;
+$line-height-base:          150%;
+
+$link-color:                $black;
+$link-hover-color:          $black;

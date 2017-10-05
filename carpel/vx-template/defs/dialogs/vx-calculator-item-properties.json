@@ -1,0 +1,37 @@
+{
+  "title": "Calculator Properties",
+  "tabs": {
+    "tabMain": {
+      "origin": {
+        "label": "Origin",
+        "type": "TEXT_FIELD"
+      },
+      "destination": {
+        "label": "Destination",
+        "type": "TEXT_FIELD"
+      },
+      "carrier": {
+        "label": "Carrier",
+        "type": "TEXT_FIELD"
+      },
+      "legalFooter": {
+        "label": "Legal Footer",
+        "type": "RICH_TEXT_FIELD"
+      },
+      "text": {
+        "label": "Text",
+        "type": "TEXT_FIELD",
+        "rows":3
+      },
+      "buttonLabel": {
+        "label": "Button Label",
+        "type": "TEXT_FIELD"
+      },
+      "buttonLink": {
+        "label": "Button Link",
+        "type": "TEXT_FIELD",
+        "default": "http://"
+      }
+    }
+  }
+}

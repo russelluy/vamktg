@@ -1,0 +1,14 @@
+{
+  "title": "[VX] Entertainment",
+  "extends": "/modules/standard-templating-kit/templates/pages/stkArticle",
+  "category": "content",
+  "dialog": "vxPageProperties",
+  "areas": { 
+    "entertainmentItem": {
+      "type": "single",
+      "components": [
+        "vxEntertainmentItemMsg"
+      ]
+    }
+  }
+}

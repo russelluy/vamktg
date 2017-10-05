@@ -1,0 +1,63 @@
+---
+headerselector:
+  maincolor: purple
+
+fares:
+
+  image01: images/sample_round_120x120.png
+  image01headerfrom: AUS
+  image01headerto: PDX
+  image01subheader: FROM $89
+  image01text: Compare at $96*
+  image01bttext: Book
+  image01btlink: http://www.work.com
+  image02: images/sample_round_120x120.png
+  image02headerfrom: AUS
+  image02headerto: SFO
+  image02subheader: FROM $109
+  image02text: Compare at $126*
+  image02bttext: Book
+  image02btlink: http://www.work.com
+  image03: images/sample_round_120x120.png
+  image03headerfrom: AUS
+  image03headerto: SFO
+  image03subheader: FROM $179
+  image03text: Compare at $210*
+  image03bttext: Book
+  image03btlink: http://www.work.com
+
+spacer:
+  varheight: 30px
+  varheighthalf: 15px
+---
+  <div class="page-deals" ng-controller="DealsCtrl">
+    <section class="page-deals-header">
+      <div class="header-selector purple">
+        <div id="header-selector-container">
+          <p class="header-selector-paragraph">
+            Great deals from
+            <span class="container">
+              <select id="dealsCombo" name="dealsCombo" class="header-selector-selectbox" data-ng-model="selectedOption">
+                <option airport="JFK" value="JFK.html">New York, NY (JFK)</option>
+                <option airport="SFO" value="SFO.html">San Francisco, CA (SFO)</option>
+                <option airport="WAS" value="WAS.html">Washington, DC (WAS)</option>
+              </select>
+            </span>
+          </p>
+        </div>
+      </div>
+      <a href="javascript:document.location.href=$('#dealsCombo').val();" rel="”nofollow”">Find Deals</a>
+    </section>
+    <section class="page-deals-body">
+      <div class="page-deals-body-container">
+        <h2 class="subheading">Our Current Lowest Fares</h2>
+        {{partial 'Fares' fares }}
+        {{partial 'Fares' fares }}
+        {{partial 'Spacer' spacer }}
+        {{partial 'Fares' fares }}
+        {{partial 'Spacer' spacer }}
+        {{> 'TextFooter'}}
+        {{partial 'Spacer' spacer }}
+      </div>
+    </section>
+  </div>

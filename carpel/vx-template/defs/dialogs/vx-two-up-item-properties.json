@@ -1,0 +1,74 @@
+{
+  "title": "Two Up Properties",
+  "tabs": {
+    "tabMain": {
+      "variant": {
+        "label": "Border",
+        "type": "SELECT_FIELD",
+        "options": {
+          "regular": "None",
+          "border-top":"Top",
+          "border-bottom":"Bottom",
+          "border-top border-bottom":"Top and Bottom"
+        },
+        "default": "regular"
+      },
+      "background": {
+        "label": "Background Color",
+        "type": "SELECT_FIELD",
+        "options": {
+          "white": "White",
+          "xxlightgrey": "Grey"
+        },
+        "default": "white"
+      },
+      "side": {
+        "label": "Side",
+        "type": "SELECT_FIELD",
+        "options": {
+          "left": "Left",
+          "right": "Right"
+        },
+        "default": "left"
+      },
+      "image": {
+        "targetWorkspace": "dam",
+        "appName": "assets",
+        "identifierToPathConverter": "info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter",
+        "contentPreviewDefinition": "",
+        "label": "Image <small>(870px)</small>",
+        "type": "IMAGE"
+      },
+      "heading": { 
+        "label": "Heading",
+        "type": "TEXT_FIELD",
+        "validationPattern":".{0,10}",
+        "rows":3
+      },
+      "subheading": { 
+        "label": "Subheading",
+        "type": "TEXT_FIELD",
+        "validationPattern":".{0,54}",
+        "rows":3
+      },
+      "buttonVariant": {
+        "label": "Button Variant",
+        "type": "SELECT_FIELD",
+        "options": {
+          "red": "Red",
+          "purple": "Purple"
+        },
+        "default": "purple"
+      },
+      "buttonLabel": { 
+        "label": "Button Label",
+        "type": "TEXT_FIELD"
+      },
+      "buttonLink": { 
+        "label": "Button Link",
+        "type": "TEXT_FIELD",
+        "default": "http://"
+      }
+    }
+  }
+}

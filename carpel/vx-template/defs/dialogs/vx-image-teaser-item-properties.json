@@ -1,0 +1,46 @@
+{
+  "title": "Image Teaser Properties",
+  "tabs": {
+    "tabMain": {
+      "image_left": { 
+        "targetWorkspace": "dam",
+        "appName": "assets",
+        "identifierToPathConverter": "info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter",
+        "contentPreviewDefinition": "",
+        "label": "Image Left <small>(570px)</small>",
+        "type": "IMAGE"
+      },
+      "image_center": { 
+        "targetWorkspace": "dam",
+        "appName": "assets",
+        "identifierToPathConverter": "info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter",
+        "contentPreviewDefinition": "",
+        "label": "Image Center <small>(570px)</small>",
+        "type": "IMAGE"
+      },
+      "image_right": { 
+        "targetWorkspace": "dam",
+        "appName": "assets",
+        "identifierToPathConverter": "info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter",
+        "contentPreviewDefinition": "",
+        "label": "Image Right <small>(570px)</small>",
+        "type": "IMAGE"
+      },
+      "heading": { 
+        "label": "Heading",
+        "type": "TEXT_FIELD",
+        "validationPattern":".{0,17}",
+        "rows":3
+      },
+      "buttonLabel": { 
+        "label": "Button Label",
+        "type": "TEXT_FIELD"
+      },
+      "buttonLink": { 
+        "label": "Button Link",
+        "type": "TEXT_FIELD",
+        "default": "http://"
+      }
+    }
+  }
+}

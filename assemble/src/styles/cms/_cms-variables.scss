@@ -1,0 +1,32 @@
+/* ==========================================================================
+   CMS - Variables
+   ========================================================================== */
+
+/* Colors
+   ========================================================================== */
+
+$black222:                  #222;
+$extra-extra-light-grey:    #f7f7f6;
+$gold:						          #dfad58;
+$gold-gradient-dark:		    #daa654;
+$gold-gradient-light:		    #e1b05e;
+$silver:					          #c2c2c3;
+$silver-gradient-dark:		  #c8c8c8;
+$silver-gradient-light:		  #dadada;
+$red-h1:                    #df1a2e;
+$fare-grey:                 #888888;
+
+$red-css:                   #DC232E;
+$red-light:                 #f8c8d4;
+$red-hover:                 #FF0000;
+
+// TEMP
+$gradient-red:              #DC232E;
+$gradient-mid:              #B5238A;
+
+// Fix for the logo preventing the first navRow item being clicked
+.navbar__logo {
+  overflow: hidden;
+  font-size: 2em;
+  font-weight: bold;
+}

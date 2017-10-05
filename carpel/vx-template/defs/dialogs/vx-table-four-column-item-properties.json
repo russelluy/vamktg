@@ -1,0 +1,33 @@
+{
+  "title": "Table Properties",
+  "tabs": {
+    "tabMain": {
+      "columns": {
+        "label": "Columns",
+        "type": "MULTI_FIELD",
+        "fields":[
+          {
+            "name": "one",
+            "label": " ",
+            "type": "TEXT_FIELD"
+          },
+          {
+            "name": "two",
+            "label": " ",
+            "type": "TEXT_FIELD"
+          },
+          {
+            "name": "three",
+            "label": " ",
+            "type": "TEXT_FIELD"
+          },
+          {
+            "name": "four",
+            "label": " ",
+            "type": "TEXT_FIELD"
+          }
+        ]
+      }
+    }
+  }
+}

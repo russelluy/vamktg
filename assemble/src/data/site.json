@@ -1,0 +1,23 @@
+{
+  "title": "Virgin America",
+
+  "test": {
+    "meta": {
+      "title": "Components",
+      "description": "Components testing page"
+    },
+    "title": "Components",
+    "summary": "Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+  },
+
+
+  "whereWeFly": {
+    "meta": {
+      "title": "Where We Fly",
+      "description": "Where We Fly"
+    },
+    "title": "Where We Fly",
+    "summary": "Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+  }
+
+}

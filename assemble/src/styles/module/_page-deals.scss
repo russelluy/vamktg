@@ -1,0 +1,76 @@
+.page-deals{
+
+	.page-deals-header{
+
+		padding: 125px 0px;
+
+		a {
+			@include font-size(1.5);
+
+			color: $white;
+			margin: 27px auto 0px auto;
+			background: $purple;
+	      	border: none;
+			cursor: pointer;
+			display: table;
+			@include gotham-bold;
+			-webkit-font-smoothing: antialiased;
+			text-align: center;
+			text-decoration: none;
+			text-transform: uppercase;
+			padding: 12px 64px;
+
+			@include at-medium {
+				padding: 12px 74px;
+			}
+
+			@include at-large {
+				padding: 12px 84px;
+			}
+		}
+	}
+
+	.page-deals-body{
+
+		background-color: $extra-light-grey;
+		padding-top: 57px;
+
+		.page-deals-body-container{
+
+			@include wrap;
+		}
+
+		.subheading{
+
+			@include gotham-medium;
+		    @include font-size(2.0);
+		    @include letter-spacing (-25);
+
+		    margin: 0 auto;
+				text-align: center;
+		    text-transform: uppercase;
+		}
+		.restrictions {
+			@include gotham-medium;
+		    @include font-size(1.0);
+			text-align: center;
+			color: $fare-grey;
+			a{
+				color: $fare-grey;
+				display: inline;
+			}
+			text-transform:capitalize;
+		}
+		.fares{
+
+			padding-top: 14px;
+			padding-bottom: 14px;
+
+			.col {
+				@include at-medium {
+					border: none !important;
+				}
+			}
+		}
+	}
+}

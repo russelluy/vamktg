@@ -1,0 +1,31 @@
+{
+    "title": "Entertainment",
+    "tabs": {
+        "entry": {
+            "img": {
+                "targetWorkspace": "dam",
+                "appName": "assets",
+                "identifierToPathConverter": "info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter",
+                "contentPreviewDefinition": "",
+                "label": "Cover",
+                "type": "IMAGE"
+            },
+            "overview": {
+                "label": "Overview",
+                "type": "RICH_TEXT_FIELD"
+            },
+            "info": {
+                "label": "Info",
+                "type": "TEXT_FIELD"
+            },
+            "lineup": {
+                "label": "Line Up",
+                "type": "MULTI_FIELD",
+                "field": {
+                    "name": "text",
+                    "type": "TEXT_FIELD"
+                }
+            }
+        }
+    }
+}
